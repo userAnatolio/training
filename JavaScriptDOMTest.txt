@@ -1,0 +1,771 @@
+
+text/plain test2.txt ( UTF-8 Unicode text, with very long lines )
+
+Лекция №1 по JavaScript. Классная работа
+
+Комбинации функций
+
+1. В следующем видео я показываю, как используя комбинации функций решить задачу на дружественные числа: ссылка на видео. Посмотрите это видео, закройте его и повторите это решение самостоятельно. Затем решите все задачи ниже, используя приведенный подход.
+
+<script>
+
+
+
+function getDividers(num) {
+arr = [];
+for(var i = 1; i < num; i++) {
+if(num % i == 0) {
+arr.push(i);
+}
+}
+return arr;
+}
+
+function getSum(arr) {
+var sum = 0;
+for(var i = 0; i < arr.length; i++) {
+sum += arr[i];
+}
+return sum;
+}
+
+function getSumDividers(num) {
+return getSum(getDividers(num));
+}
+
+function friendNum(num1, num2) {
+return getSumDividers(num1) == num2 && getSumDividers(num2) == num1;
+}
+
+alert(friendNum(220, 284));
+
+</script>
+*********
+*********
+********* 9 июл 2018 в 20:14
+2. Дана строка. Сделайте заглавным первый символ каждого слова этой строки. Для этого сделайте вспомогательную функцию ucfirst, которая будет получать строку, делать первый символ этой строки заглавным и возвращать обратно строку с заглавной первой буквой.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<p class="str">Сделайте заглавным первый символ каждого слова этой строки.</p>
+<input type="submit" onclick="ucfirst()" value="Cделать">
+
+<script>
+
+function getStr(str) {
+var str = $('p.str').html();
+return str;
+}
+
+function toUpperFirst(str) {
+var arr = str.split(' ');
+for(var i = 0; i < arr.length; i++) {
+arr[i] = arr[i].substr(0, 1).toUpperCase() + arr[i].substr(1);
+}
+return arr.join(' ');
+}
+
+function newString(str) {
+return toUpperFirst(getStr(str));
+}
+
+function ucfirst() {
+$('p.str').html(newString());
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+********* 9 июл 2018 в 20:59
+3. Дана строка вида 'var_text_hello'. Сделайте из него текст 'varTextHello'.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<p class="str">var_text_hello.</p>
+<input type="submit" onclick="ucfirst(str)" value="Cделать">
+
+<script>
+
+var str = $('p.str').html();
+
+
+function toUpperFirst(str) {
+var arr = str.split('_');
+for(var i = 1; i < arr.length - 1; i++) {
+arr[i] = arr[i].substr(0, 1).toUpperCase() + arr[i].substr(1);
+}
+return arr.join('');
+}
+
+function ucfirst(str) {
+$('p.str').html(toUpperFirst(str));
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+********* 9 июл 2018 в 22:50
+4. Сделайте функцию isSimple, которая параметром будет принимать целое число и возвращать true, если число простое и false - если не простое. Простое число - это такое число, которое не делится ни на какое другое, кроме кроме себя самого и единицы. Например, число 31 - простое. То есть в нашем случае нужно проверить, что число 31 не делится на все числа от 2 до 30.
+
+<script>
+
+function isSimple(num) {
+var flag = true;
+for(var i = 2; i < num; i++) {
+if(num % i == 0) {
+flag = false;
+}
+}
+return flag;
+}
+
+
+</script>
+*********
+*********
+********* 9 июл 2018 в 22:50
+5. С помощью функцию isSimple из предыдущей задачи выведите на экран все простые числа из промежутка от 1 до 100.
+
+<script>
+
+function isSimple(num) {
+var flag = true;
+for(var i = 2; i < num; i++) {
+if(num % i == 0) {
+flag = false;
+}
+}
+return flag;
+}
+
+
+function getSimple(num) {
+for(var i = 1; i <= num; i++) {
+if(isSimple(i)) {
+document.write(i + '<br>');
+}
+}
+}
+
+getSimple(100);
+
+</script>
+*********
+*********
+********* 10 июл 2018 в 0:23
+6. Сделайте функцию, которая возвращает множественное или единственное число существительного. Пример: 1 яблоко, 2 (3, 4) яблока, 5 яблок. Функция первым параметром принимает число, а следующие 3 параметра — форма для единственного числа, для чисел два, три, четыре и для чисел, больших четырех, например, func(3, 'яблоко', 'яблока', 'яблок').
+
+<script>
+
+function getDecline(num, form1, form2, form3) {
+
+var arr = [form1, form2, form3];
+var str = '';
+if(num == 1 || num % 10 == 1 && num != 11) { str = arr[0]; }
+else if(num % 10 > 1 && num % 10 < 5 && num % 100 != 12 && num % 100 != 13 && num % 100 != 14) { str = arr[1]; }
+else { str = arr[2]; }
+return str;
+}
+
+alert(getDecline(26, 'яблоко', 'яблока', 'яблок'));
+
+</script>
+*********
+*********
+********* 10 июл 2018 в 0:28
+7. Сделайте функцию getDivisors, которая параметром принимает число и возвращает массив его делителей (чисел, на которое делится данное число).
+
+function getDivisors(num) {
+var arr = [];
+for(var i = 0; i <= num; i++) {
+if(num % i == 0) {
+arr.push(i);
+}
+}
+console.log(arr);
+return arr;
+}
+
+getDivisors(100);
+
+</script>
+*********
+*********
+********* 10 июл 2018 в 0:55
+8. Сделайте функцию getIntersect, которая параметром принимает два массива и возвращает массив элементов, которые есть в обоих массивах.
+
+<script>
+
+arr1 = [1, 2, 4, 5, 6, 7, 8];
+arr2 = [-1, 0, 4, 5, 6, 7, 9, 10];
+
+function getIntersect(arr1, arr2) {
+var arrResult = [];
+for(var i = 0; i < arr1.length; i++) {
+for(var j = 0; j < arr2.length; j++) {
+if(arr2[j] == arr1[i]) {
+arrResult.push(arr1[i]);
+}
+}
+}
+return arrResult;
+}
+
+console.log(getIntersect(arr1, arr2));
+
+</script>
+*********
+*********
+********* 10 июл 2018 в 0:57
+Лекция №2 по JavaScript. Классная работа
+*********
+*********
+*********
+********* 10 июл 2018 в 22:01
+Толя, +
+*********
+*********
+Ответить
+********* 14 июл 2018 в 22:26
+1. Дан массив. Выведите его элементы в виде списка ul так, чтобы каждый элемент попал в свою li.
+
+<script>
+
+var arr = ['Вишня', 'Яблоко', 'Банан', 'Груша'];
+
+function func() {
+var ul = document.createElement('ul');
+document.documentElement.appendChild(ul);
+for(var i = 0; i < arr.length; i++) {
+var li = document.createElement('li');
+ul.appendChild(li);
+li.innerHTML = arr[i];
+}
+}
+
+</script>
+*********
+*********
+********* 14 июл 2018 в 22:32
+2. Модифицируйте предыдущую задачу так, чтобы по клику на li ей в конец добавлялся '!'.
+
+<script>
+
+var arr = ['Вишня', 'Яблоко', 'Банан', 'Груша'];
+
+function func() {
+var ul = document.createElement('ul');
+document.documentElement.appendChild(ul);
+for(var i = 0; i < arr.length; i++) {
+var li = document.createElement('li');
+ul.appendChild(li);
+li.innerHTML = arr[i];
+li.addEventListener('click', addSymbol);
+}
+}
+
+function addSymbol() {
+this.innerHTML += '!';
+}
+</script>
+*********
+*********
+********* 14 июл 2018 в 22:37
+3. Модифицируйте предыдущую задачу так, чтобы по повторное нажатие на li не приводило к добавлению второго '!'.
+
+<script>
+
+var arr = ['Вишня', 'Яблоко', 'Банан', 'Груша'];
+
+function func() {
+var ul = document.createElement('ul');
+document.documentElement.appendChild(ul);
+for(var i = 0; i < arr.length; i++) {
+var li = document.createElement('li');
+ul.appendChild(li);
+li.innerHTML = arr[i];
+li.addEventListener('click', addSymbol);
+}
+}
+
+function addSymbol() {
+this.innerHTML += '!';
+this.removeEventListener('click', addSymbol);
+}
+</script>
+*********
+*********
+********* 14 июл 2018 в 22:53
+4. Дан абзац и инпут. Сделайте так, чтобы по заходу на страницу текст абзаца отображался в инпуте.
+
+<body>
+
+<p>Я абзац</p>
+
+<input>
+
+
+<script>
+
+var p = document.querySelector('p');
+var input = document.querySelector('input');
+input.value = p.innerHTML;
+
+</script>
+
+</body>
+*********
+*********
+********* 14 июл 2018 в 22:59
+5. Модифицируйте предыдущую задачу так, чтобы можно было поредактировать содержимое инпута - и содержимое абзаца также поменялось.
+
+<script>
+
+var p = document.querySelector('p');
+var input = document.querySelector('input');
+input.value = p.innerHTML;
+input.addEventListener('keyup', func);
+
+function func() {
+p.innerHTML = input.value;
+}
+
+</script>
+*********
+*********
+********* 15 июл 2018 в 1:05
+6. Дан абзац с текстом. Сделайте так, чтобы по клику на этот абзац рядом с ним появлялся инпут, с помощью которого можно будет поредактировать текст нашего абзаца. По потери фокуса инпут должен исчезнуть, а содержимое абзаца поменяться.
+
+<body>
+
+<p>Я спелая вишня, покурить на балкон вышла</p>
+
+<script>
+
+var text = document.querySelector('p');
+text.addEventListener('click', func);
+
+function func() {
+var input = document.createElement('input');
+input.addEventListener('change', addText);
+document.documentElement.appendChild(input);
+this.removeEventListener('click', func);
+}
+
+function addText() {
+text.innerHTML = this.value;
+}
+
+</script>
+
+</body>
+*********
+*********
+********* 15 июл 2018 в 1:22
+7. Модифицируйте предыдущую задачу так, чтобы инпут появлялся вместо абзаца, а не рядом с ним.
+
+<body>
+
+<div id="wrap">
+<p>А я свежий огурец, оторви меня от ботвы и тебе конец</p>
+</div>
+
+<script>
+
+var text = document.querySelector('p');
+text.addEventListener('click', func);
+var wrap = document.getElementById('wrap');
+
+function func() {
+var input = document.createElement('input');
+input.addEventListener('change', addText);
+text.innerHTML = '';
+wrap.appendChild(input);
+this.removeEventListener('click', func);
+}
+
+function addText() {
+text.innerHTML = this.value;
+}
+
+</script>
+
+</body>
+*********
+*********
+********* 15 июл 2018 в 2:03
+8. Дан массив [[1, 2, 3], [4, 5, 6], [7, 8, 9]]. Выведите его элементы в виде таблицы table размером 3 на 3.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+td {
+border: 1px solid blue;
+width: 100px;
+height: 30px;
+text-align: center;
+}
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<input type="submit" value="создать таблицу" onclick="func(arr)">
+
+<script>
+
+var arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+function func(arr) {
+var table = document.createElement('table');
+document.documentElement.appendChild(table);
+for(var i = 0; i < arr.length; i++) {
+var tr = document.createElement('tr');
+table.appendChild(tr);
+for(var j = 0; j < arr[i].length; j++) {
+var td = document.createElement('td');
+td.innerHTML = arr[i][j];
+tr.appendChild(td);
+}
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 июл 2018 в 2:39
+9. Дан массив [1, 2, 3, 4, 5, 6, 7, 8, 9]. Выведите его элементы в виде таблицы table размером 3 на 3.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+td {
+border: 1px solid blue;
+width: 100px;
+height: 30px;
+text-align: center;
+}
+
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<input type="submit" value="создать таблицу" onclick="func(arr)">
+
+<script>
+
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+function func(arr) {
+var table = document.createElement('table');
+document.documentElement.appendChild(table);
+for(var k = 0; k < 3; k++) {
+var tr = document.createElement('tr');
+table.appendChild(tr);
+for(var j = 0; j < 3; j++) {
+var td = document.createElement('td');
+tr.appendChild(td);
+}
+}
+var cols = document.getElementsByTagName('td');
+for(var i = 0; i < arr.length; i++) {
+cols[i].innerHTML = arr[i];
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 июл 2018 в 2:42
+10. Выведите на экран таблицу table размером 5 на 5 так, чтобы в ее ячейках последовательно стояли числа от 1 до 25.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+td {
+border: 1px solid blue;
+width: 100px;
+height: 30px;
+text-align: center;
+}
+
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<input type="submit" value="создать таблицу" onclick="func(arr)">
+
+<script>
+
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+function func(arr) {
+var table = document.createElement('table');
+document.documentElement.appendChild(table);
+for(var k = 0; k < 5; k++) {
+var tr = document.createElement('tr');
+table.appendChild(tr);
+for(var j = 0; j < 5; j++) {
+var td = document.createElement('td');
+tr.appendChild(td);
+}
+}
+var cols = document.getElementsByTagName('td');
+for(var i = 0; i < 25; i++) {
+cols[i].innerHTML = i+1;
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 июл 2018 в 17:37
+11. Дан следующий массив с работниками:
+
+<script>
+
+var products = [
+{name: 'Коля', age: 30},
+{name: 'Вася', age: 31},
+{name: 'Петя', age: 32},
+];
+
+for(var i = 0; i < products.length; i++) {
+document.write(products[i].name + ', возраст: ' + products[i].age + '<br>');
+}
+
+</script>
+*********
+*********
+*********
+********* 15 июл 2018 в 17:45
+Таймеры
+12. Дан абзац и кнопка. Сделайте так, чтобы по нажатию на кнопку в абзаце начал тикать таймер от 1 до бесконечности. Чтобы предотвратить повторное нажатие на кнопку она должна переходить в состояние disabled.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<p>0</p>
+<button>Жми</button>
+
+<script>
+
+var num = 0;
+
+var button = document.querySelector('button');
+var p = document.querySelector('p');
+button.addEventListener('click', start);
+
+function start() {
+window.setInterval(timer, 1000);
+}
+
+function timer() {
+num++;
+p.innerHTML = num;
+button.disabled = true;
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 июл 2018 в 19:09
+13. Дан абзац и две кнопки. Сделайте так, чтобы по нажатию на первую кнопку в абзаце начал тикать таймер от 1 до бесконечности, а по нажатию на вторую таймер останавливался.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<p>0</p>
+<button id="startTimer">Запустить</button>
+<button id="stopTimer">Остановить</button>
+
+<script>
+
+var num = 0;
+
+var startTimer = document.getElementById('startTimer');
+var p = document.querySelector('p');
+startTimer.addEventListener('click', start);
+
+function start() {
+stopTimer = setInterval(timer, 1000);
+}
+
+$('#stopTimer').on('click', function() {
+clearInterval(stopTimer);
+startTimer.disabled = false;
+});
+
+function timer() {
+num++;
+p.innerHTML = num;
+startTimer.disabled = true;
+}
+
+
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 июл 2018 в 19:18
+14. Дан абзац и кнопка. Изначально в абзаце написано какое-то число, например 10. Сделайте так, чтобы по нажатию на кнопку в абзаце начал тикать обратный отсчет. Как только он дойдет до нуля - он должен закончится и под ним должна вывестись фраза 'отсчет закончен'.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<p>10</p>
+<button id="startTimer">Запустить</button>
+<b></b>
+<script>
+
+var startTimer = document.getElementById('startTimer');
+var p = document.querySelector('p');
+startTimer.addEventListener('click', start);
+var num = p.innerHTML;
+
+function start() {
+stop = setInterval(timer, 1000);
+}
+
+function timer() {
+num--;
+p.innerHTML = num;
+startTimer.disabled = true;
+if(num == 0) {
+stopTimer();
+}
+}
+
+function stopTimer() {
+clearInterval(stop);
+$('b').append('Отсчет окончен');
+}
+
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 июл 2018 в 19:19
+Лекция №3 по JavaScript. Классная работа
+*********
+*********
+*********
+********* 18 июл 2018 в 15:22
+Толя, +
+*********
+*********
+Ответить
+
+

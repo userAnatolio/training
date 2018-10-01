@@ -1,0 +1,660 @@
+
+text/plain test2.txt ( UTF-8 Unicode text, with very long lines )
+
+Задачи на продвинутые SQL запросы
+*********
+*********
+********* 10 сен 2018 в 2:05
+1. Выберите из таблицы workers записи с id равным 1, 2, 3, 5, 14.
+
+$query = 'SELECT*FROM clients WHERE client_id IN(1,2,3)';
+$query = "SELECT*FROM Trip WHERE ID_comp IN(1,2,3)";
+$query = "SELECT*FROM Trip WHERE trip_no IN (1100, 1101, 1123)";
+*********
+*********
+********* 10 сен 2018 в 2:07
+2. Выберите из таблицы workers записи с login равным 'eee', 'bbb', 'zzz'.
+
+$query = "SELECT*FROM clients WHERE name IN('Марина', 'Иван')";
+$query = "SElECT*FROM Trip WHERE town_from IN('Rostov', 'Moscow')";
+$query = "SElECT*FROM Trip WHERE town_to IN('London', 'Singapore')";
+*********
+*********
+********* 10 сен 2018 в 2:08
+3. Выберите из таблицы workers записи с id равным 1, 2, 3, 7, 9, и логином, равным 'user', 'admin', 'ivan' и зарплатой больше 300.
+
+$query = "SELECT*FROM clients WHERE name IN('Марина', 'Иван') AND client_id IN(1,2)";
+$query = "SELECT*FROM Trip WHERE town_from IN('Moscow', 'London') AND town_to IN('Singapore', 'Rostov')";
+$query = "SELECT*FROM auto WHERE marka IN('БМВ', 'Лада') AND color IN('красный','Серебристый')"
+*********
+*********
+********* 11 сен 2018 в 15:39
+4. Выберите из таблицы workers записи c зарплатой от 100 до 1000.
+
+$query = "SELECT*FROM clients WHERE client_ID BETWEEN 1 AND 3";
+$query = "SELECT*FROM auto WHERE probeg BETWEEN 4000 AND 5000" ;
+*********
+*********
+********* 11 сен 2018 в 15:49
+5. Выберите из таблицы workers записи c id от 3 до 10 и зарплатой от 300 до 500.
+
+$query = "SELECT*FROM Trip WHERE ID_comp BETWEEN 1 AND 2 AND plane='TU-134'";
+выбрал из прайса все цены от 2000 до 5000 руб.
+$query = "SELECT*FROM remont WHERE price BETWEEN 2000 AND 5000 " ;
+*********
+*********
+********* 12 сен 2018 в 2:30
+На AS
+6. Выберите из таблицы workers все записи так, чтобы вместо id было userId, вместо login – userLogin, вместо salary - userSalary.
+
+$query = "SELECT marka AS марка, client_id AS номер_клиента FROM auto" ;
+$query = "SELECT town_from AS откуда, town_to AS куда FROM Trip";
+$query = "SELECT name AS имя_отчество FROM Passenger";
+
+здесь просто вывел два раза под разными заголовками
+$query = "SELECT name AS Перевозчик, name AS компания FROM Company"
+*********
+*********
+********* 12 сен 2018 в 2:58
+На DISTINCT
+
+7. Выберите из таблицы workers все записи так, чтобы туда попали только записи с разной зарплатой (без дублей).
+
+$query = "SELECT DISTINCT town_from AS Путкты_отправки FROM Trip";
+$query = "SELECT DISTINCT town_from AS Путкты_отправки, town_to AS путкты_прибытия FROM Trip WHERE town_to = 'Rostov'";
+*********
+*********
+********* 12 сен 2018 в 3:13
+8. Получите SQL запросом все возрасты без дублирования.
+Колличество названий самолетов
+$query = "SELECT COUNT(DISTINCT plane) FROM Trip";
+Модели самолетов
+$query = "SELECT DISTINCT plane AS модель FROM Trip";
+*********
+*********
+********* 12 сен 2018 в 3:21
+На MIN и MAX
+9. Найдите в таблице workers минимальную зарплату.
+
+Выбрал машину в автосервисе с минимальным пробегом
+$query = "SELECT MIN(probeg) FROM auto" ;
+и наоборот
+$query = "SELECT MAX(probeg) FROM auto" ;
+только пускай она будет красного цвета
+$query = "SELECT MAX(probeg) AS пробег FROM auto WHERE color='красный' "
+ну или и то и другое
+$query = "SELECT MAX(probeg) AS max_пробег, MIN(probeg) AS min_пробег FROM auto " ;
+*********
+*********
+********* 12 сен 2018 в 3:28
+10. Найдите в таблице workers максимальную зарплату.
+Максимальная сумма из прайса автосервиса
+$query = "SELECT MAX(price) AS максимальная_Сумма_ремонта FROM remont "
+*********
+*********
+********* 12 сен 2018 в 3:45
+На SUM
+
+11. Найдите в таблице workers суммарную зарплату.
+Выручка автосервиса, допустим за день
+$query = "SELECT DISTINCT plane AS max_сумма_ремонта FROM Auto ";
+выручка за определенные услуги автосервиса
+$query = "SELECT SUM(price) AS выручка FROM remont WHERE breaking='замена масла'" ;
+*********
+*********
+********* 12 сен 2018 в 4:29
+12. Найдите в таблице workers суммарную зарплату для людей в возрасте от 21 до 25.
+
+$query = "SELECT SUM(salary) AS зарплата FROM workers WHERE age BETWEEN 21 AND 25 "
+*********
+*********
+********* 12 сен 2018 в 4:32
+13. Найдите в таблице workers суммарную зарплату для id, равного 1, 2, 3 и 5.
+
+$query = "SELECT SUM(salary) AS зарплата FROM workers WHERE id IN(1,2,3,5) ";
+*********
+*********
+********* 12 сен 2018 в 5:01
+На AVG
+14. Найдите в таблице workers среднюю зарплату.
+
+$query = "SELECT AVG(salary) AS средняя_зарплата FROM workers "
+*********
+*********
+********* 12 сен 2018 в 5:03
+15. Найдите в таблице workers средний возраст.
+
+$query = "SELECT AVG(age) AS средний_возраст FROM workers ";
+*********
+*********
+********* 12 сен 2018 в 5:21
+На NOW, CURRENT_DATE, CURRENT_TIME
+
+16. Выберите из таблицы workers все записи, у которых дата больше текущей.
+$query = "SELECT login FROM workers WHERE date>CURRENT_DATE()";
+*********
+*********
+********* 12 сен 2018 в 10:09
+17. Вставьте в таблицу workers запись с полем date с текущим моментом времени в формате 'год-месяц-день часы:минуты:секунды'.
+
+$query = "INSERT INTO `workers`(`name`,`date`) VALUES ('Евгений', NOW()) ";
+*********
+*********
+********* 12 сен 2018 в 10:12
+18. Вставьте в таблицу workers запись с полем date с текущей датой в формате 'год-месяц-день'.
+
+$query = "INSERT INTO `workers`(`name`,`date`) VALUES ('Евгений', CURRENT_DATE()) ";
+*********
+*********
+********* 12 сен 2018 в 10:31
+19. Вставьте в таблицу workers запись с полем time с текущим моментом времени в формате 'часы:минуты:секунды'.
+$query = "INSERT INTO `workers`(`name`,`date`) VALUES ('Евгений', CURTIME()) ";
+*********
+*********
+********* 12 сен 2018 в 18:31
+20. На NOW, CURRENT_DATE, CURRENT_TIME
+
+$query = "SELECT * FROM `workers` WHERE YEAR(date)=2016";
+$query = "SELECT * FROM Trip WHERE YEAR(time_out)=1900 and town_from='Moscow' ";
+*********
+*********
+********* 12 сен 2018 в 18:45
+21. Выберите из таблицы workers все записи за март любого года.
+
+$query = "SELECT * FROM `workers` WHERE MONTH(date)=3";
+*********
+*********
+********* 12 сен 2018 в 18:46
+22. Выберите из таблицы workers все записи за третий день месяца.
+
+$query = "SELECT * FROM `workers` WHERE DAY(date)=3";
+*********
+*********
+********* 12 сен 2018 в 19:13
+23. Выберите из таблицы workers все записи за пятый день апреля любого года.
+
+$query = "SELECT * FROM `workers` WHERE MONTH(date)=4 AND DAY(date)=5";
+*********
+*********
+********* 12 сен 2018 в 19:17
+24. Выберите из таблицы workers все записи за следующие дни любого месяца: 1, 7, 11, 12, 15, 19, 21, 29.
+
+$query = "SELECT * FROM `workers` WHERE DAY(date) IN(1, 7, 11, 12, 15, 19, 21, 29)";
+*********
+*********
+********* 12 сен 2018 в 19:24
+25. Выберите из таблицы workers все записи за вторник
+
+$query = "SELECT * FROM `workers` WHERE DAYOFWEEK(date)=3";
+*********
+*********
+********* 12 сен 2018 в 19:29
+26. Выберите из таблицы workers все записи за первую декаду любого месяца 2016 года.
+
+$query = "SELECT * FROM `workers` WHERE DAY(date)=1 AND YEAR(date)=2016";
+*********
+*********
+********* 12 сен 2018 в 19:30
+27. Выберите из таблицы workers все записи, в которых день меньше месяца.
+
+$query = "SELECT * FROM `workers` WHERE DAY(date)<MONTH(date)";
+*********
+*********
+********* 12 сен 2018 в 19:33
+28. При выборке из таблицы workers запишите день, месяц и год в отдельные поля.
+
+$query = "SELECT *, DAY(date) AS day, MONTH(date) AS month, YEAR(date) AS year FROM `workers`";
+*********
+*********
+********* 12 сен 2018 в 19:35
+29. При выборке из таблицы workers создайте новое поле today, в котором будет номер текущего дня недели.
+
+$query = "SELECT *, DAY(date) AS day, MONTH(date) AS month, YEAR(date) AS year, DAYOFWEEK(date) AS День_недели FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 7:45
+На EXTRACT, DATE
+*********
+*********
+********* 13 сен 2018 в 8:02
+30. При выборке из таблицы workers запишите год, месяц и день в отдельные поля с помощью EXTRACT.
+
+$query = "SELECT EXTRACT(YEAR FROM date) AS year, EXTRACT(MONTH FROM date) AS month, EXTRACT(DAY FROM date) AS day FROM `workers`";
+
+$query = "SELECT EXTRACT(DAY FROM time_out) AS day FROM Trip WHERE town_from='Moscow' ";
+*********
+*********
+********* 13 сен 2018 в 8:04
+31. При выборке из таблицы workers запишите день, месяц и год в отдельное поле с помощью DATE в формате 'год-месяц-день'.
+
+$query = "SELECT DATE(date) AS дата FROM `workers`";
+$query = "SELECT DATE(time_out) FROM Trip WHERE town_from='Moscow' ";
+*********
+*********
+********* 13 сен 2018 в 18:55
+На DATE_FORMAT
+*********
+*********
+********* 13 сен 2018 в 19:32
+32. При выборке из таблицы workers выведите дату в формате '31.12.2025'.
+
+$query = "SELECT DATE_FORMAT(date, '%d.%m.%Y') as new_date FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 19:33
+33. При выборке из таблицы workers выведите дату в формате '2025% 31.12'.
+
+$query = "SELECT DATE_FORMAT(date, '%Y.%m.%d') as new_date FROM `workers`";
+
+$query = "SELECT DATE_FORMAT(date, '%d.%m.%Y %H:%i:%S') as new_date FROM `workers`";
+$query = "SELECT DATE_FORMAT(date, '%d.%M.%Y year %W %H:%i:%S ') as new_date FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 19:41
+На INTERVAL, DATE_ADD, DATE_SUB
+*********
+*********
+********* 13 сен 2018 в 20:57
+34. При выборке из таблицы workers прибавьте к дате 1 день.
+
+$query = "SELECT *, date + INTERVAL 1 DAY AS new_date FROM `workers`";
+$query = "SELECT *, DATE_ADD(date, INTERVAL 1 DAY) AS new_date FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 20:57
+35. При выборке из таблицы workers отнимите от даты 1 день.
+
+$query = "SELECT *, date - INTERVAL 1 DAY AS new_date FROM `workers`";
+$query = "SELECT *, DATE_SUB(date, INTERVAL 1 DAY) AS new_date FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 21:00
+36. При выборке из таблицы workers прибавьте к дате 1 день, 2 часа
+
+$query = "SELECT *, date - INTERVAL '1-2' DAY_HOUR AS new_date FROM `workers`";
+$query = "SELECT *, DATE_ADD(date, INTERVAL '1-2' DAY_HOUR) AS new_date FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 21:02
+37. При выборке из таблицы workers прибавьте к дате 1 год, 2 месяца.
+
+$query = "SELECT *, date + INTERVAL '1-2' YEAR_MONTH AS new_date FROM `workers`";
+$query = "SELECT *, DATE_ADD(date, INTERVAL '1-2' YEAR_MONTH) AS new_date FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 21:19
+38. При выборке из таблицы workers прибавьте к дате 1 день, 2 часа, 3 минуты.
+
+$query = "SELECT *, DATE_ADD(date, INTERVAL '1-2-3' DAY_MINUTE) AS new_date FROM `workers`";
+$query = "SELECT *, date + INTERVAL '1-2-3' DAY_MINUTE AS new_date FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 21:27
+39. При выборке из таблицы workers прибавьте к дате 1 день, 2 часа, 3 минуты, 5 секунд.
+
+$query = "SELECT *, date + INTERVAL '1-2-3-5' DAY_SECOND AS new_date FROM `workers`";
+$query = "SELECT *, DATE_ADD(date, INTERVAL '1-2-3-5' DAY_SECOND) AS new_date FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 21:30
+40. При выборке из таблицы workers прибавьте к дате 2 часа, 3 минуты, 5 секунд.
+$query = "SELECT *, DATE_ADD(date, INTERVAL '2-3-5' HOUR_SECOND) AS new_date FROM `workers`";
+$query = "SELECT *, date+INTERVAL '2-3-5' HOUR_SECOND AS new_date FROM `workers`";
+*********
+*********
+*********
+********* 13 сен 2018 в 21:41
+Толя, +
+1
+*********
+*********
+Ответить
+********* 13 сен 2018 в 21:56
+41. При выборке из таблицы workers прибавьте к дате 1 день и отнимите 2 часа.
+$query = "SELECT date, (date + INTERVAL 1 DAY) - INTERVAL 2 HOUR AS new_date FROM `workers`";
+$query = "SELECT date, (DATE_ADD(date, INTERVAL 1 DAY))-INTERVAL 2 HOUR AS new_date FROM `workers` WHERE id=29";
+*********
+*********
+********* 13 сен 2018 в 22:05
+42. При выборке из таблицы workers прибавьте к дате 1 день и отнимите 2 часа, 3 минуты.
+$query = "SELECT date, (DATE_ADD(date, INTERVAL 1 DAY))-INTERVAL '2:3' HOUR_MINUTE AS new_date FROM `workers` WHERE id=29";
+и 5 сек))
+$query = "SELECT date, (date+INTERVAL 1 DAY)-INTERVAL '2-3-5' HOUR_SECOND AS new_date FROM `workers` WHERE id=29";
+*********
+*********
+********* 13 сен 2018 в 22:06
+На математические операции
+*********
+*********
+********* 13 сен 2018 в 23:57
+43. При выборке из таблицы workers создайте новое поле res, в котором будет число 3.
+$query = "SELECT 3 AS res FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 23:59
+44. При выборке из таблицы workers создайте новое поле res, в котором будет строка 'eee'.
+
+$query = "SELECT 'eee' AS res FROM `workers`";
+*********
+*********
+********* 14 сен 2018 в 0:01
+45. При выборке из таблицы workers создайте новое поле 3, в котором будет число 3.
+
+$query = "SELECT 3 AS '3' FROM `workers`";
+*********
+*********
+********* 14 сен 2018 в 0:19
+46. При выборке из таблицы workers создайте новое поле res, в котором будет лежать сумма зарплаты и возраста.
+$query = "SELECT SUM(salary)+SUM(age) AS res FROM `workers`";
+
+$query = "SELECT CONCAT('Сумма зарплаты: ', SUM(salary), ' Сумма возрастов: ', SUM(age))AS res FROM `workers`";
+*********
+*********
+********* 14 сен 2018 в 0:22
+47. При выборке из таблицы workers создайте новое поле res, в котором будет лежать разность зарплаты и возраста.
+При выборке из таблицы workers создайте новое поле res, в котором будет лежать разность зарплаты и возраста.
+*********
+*********
+********* 14 сен 2018 в 0:25
+48. При выборке из таблицы workers создайте новое поле res, в котором будет лежать произведение зарплаты и возраста.
+
+$query = "SELECT SUM(salary)*SUM(age) AS res FROM `workers`";
+*********
+*********
+********* 14 сен 2018 в 0:29
+49. При выборке из таблицы workers создайте новое поле res, в котором будет лежать среднее арифметическое зарплаты и возраста.
+
+$query = "SELECT (age + salary)/2 AS res FROM `workers`";
+*********
+*********
+********* 14 сен 2018 в 0:34
+50. Выберите из таблицы workers все записи, в которых сумма дня и месяца меньше 10-ти.
+
+$query = "SELECT*FROM workers WHERE DAY(date) + MONTH(date) < 10";
+*********
+*********
+********* 14 сен 2018 в 0:34
+На LEFT, RIGHT, SUBSTRING
+*********
+*********
+********* 14 сен 2018 в 1:00
+51. При выборке из таблицы workers получите первые 5 символов поля description.
+
+$query = "SELECT id, LEFT(description, 5) AS text FROM workers";
+$query = "SELECT id, SUBSTRING(description, 1, 5) AS text FROM workers";
+*********
+*********
+********* 14 сен 2018 в 1:05
+52. При выборке из таблицы workers получите последние 5 символов поля description.
+
+$query = "SELECT id, RIGHT(description, 5) AS text FROM workers";
+$query = "SELECT id, SUBSTRING(description, -5) AS text FROM workers";
+*********
+*********
+********* 14 сен 2018 в 1:16
+53. При выборке из таблицы workers получите из поля description символы со второго по десятый.
+
+$query = "SELECT id, SUBSTRING(description, 2, 10) AS text FROM workers";
+*********
+*********
+********* 14 сен 2018 в 1:16
+На UNION
+*********
+*********
+********* 14 сен 2018 в 2:27
+54. Даны две таблицы: таблица category и таблица sub_category с полями id и name. Достаньте одним запросом названия категорий и подкатегорий.
+
+$query = "SELECT id, name FROM workers UNION ALL SELECT id, name FROM opinion";
+*********
+*********
+********* 14 сен 2018 в 2:46
+На CONCAT, CONCAT_WS
+55. При выборке из таблицы workers создайте новое поле res, в котором будут лежать одновременно зарплата и возраст (слитно).
+
+$query = "SELECT CONCAT(age, salary) FROM workers";
+*********
+*********
+********* 14 сен 2018 в 2:48
+56. При выборке из таблицы workers создайте новое поле res, в котором будут лежать одновременно зарплата и возраст (слитно), а после возраста будут идти три знака '!'.
+
+$query = "SELECT CONCAT(age, '!!!', salary) FROM workers";
+*********
+*********
+********* 14 сен 2018 в 2:49
+57. При выборке из таблицы workers создайте новое поле res, в котором будут лежать одновременно зарплата и возраст через дефис.
+
+$query = "SELECT CONCAT_WS('-', age, salary) FROM workers";
+*********
+*********
+********* 14 сен 2018 в 2:51
+58. При выборке из таблицы workers получите первые 5 символов логина и добавьте троеточие.
+
+$query = "SELECT CONCAT(LEFT(login, 5), '...') FROM workers";
+*********
+*********
+********* 14 сен 2018 в 2:52
+На GROUP BY
+*********
+*********
+********* 14 сен 2018 в 3:23
+59. Найдите самые маленькие зарплаты по группам возрастов (для каждого возраста свою минимальную зарплату).
+
+$query = "SELECT MIN(salary) FROM workers GROUP BY age";
+*********
+*********
+********* 14 сен 2018 в 3:24
+60. Найдите самый большой возраст по группам зарплат (для каждой зарплаты свой максимальный возраст).
+
+$query = "SELECT MAX(age) FROM workers GROUP BY salary";
+*********
+*********
+********* 14 сен 2018 в 3:24
+На GROUP_CONCAT
+*********
+*********
+********* 14 сен 2018 в 3:40
+61. Выберите из таблицы workers уникальные возраста так, чтобы для каждого возраста было поле res, в котором будут лежать через дефис id записей с таким возрастом.
+
+$query = "SELECT GROUP_CONCAT(id) FROM workers GROUP BY age";
+
+$query = "SELECT GROUP_CONCAT(plane) FROM Trip GROUP BY town_from" ;
+$query = "SELECT GROUP_CONCAT(id) FROM workers GROUP BY age";
+*********
+*********
+********* 14 сен 2018 в 3:44
+На подзапросы
+*********
+*********
+********* 14 сен 2018 в 3:58
+62. Выберите из таблицы workers все записи, зарплата в которых больше средней зарплаты.
+
+$query = "SELECT*FROM workers WHERE salary > (SELECT AVG(salary) FROM workers)";
+*********
+*********
+********* 14 сен 2018 в 4:01
+63. Выберите из таблицы workers все записи, возраст в которых меньше среднего возраста, деленного на 2 и умноженного на 3.
+
+$query = "SELECT*FROM workers WHERE age < (SELECT AVG(age)/2*3 FROM workers)";
+*********
+*********
+********* 14 сен 2018 в 4:05
+64. Выберите из таблицы workers записи с минимальной зарплатой.
+
+$query = "SELECT*FROM workers WHERE salary = (SELECT MIN(salary) FROM workers)";
+*********
+*********
+********* 14 сен 2018 в 4:06
+65. Выберите из таблицы workers записи с максимальной зарплатой.
+
+$query = "SELECT*FROM workers WHERE salary = (SELECT MAX(salary) FROM workers)";
+*********
+*********
+********* 14 сен 2018 в 4:12
+66. При выборке из таблицы workers создайте новое поле max, в котором будет лежать максимальное значение зарплаты для возраста 25 лет.
+
+$query = "SELECT MAX(salary) AS max FROM workers WHERE age=26";
+*********
+*********
+********* 14 сен 2018 в 4:18
+67. При выборке из таблицы workers создайте новое поле avg, в котором будет лежать деленная на 2 разница между максимальным значением возраста и минимальным значением возраста в во всей таблице.
+
+$query = "SELECT (MAX(age)-MIN(age))/2 AS avg FROM workers";
+*********
+*********
+********* 14 сен 2018 в 4:25
+68. При выборке из таблицы workers создайте новое поле avg, в котором будет лежать деленная на 2 разница между максимальным значением зарплаты и минимальным значением зарплаты для возраста 25 лет.
+
+$query = "SELECT (MAX(salary)-MIN(salary))/2 AS avg FROM workers WHERE age=20";
+*********
+*********
+********* 14 сен 2018 в 4:25
+На JOIN
+*********
+*********
+********* 14 сен 2018 в 5:22
+69. Даны две таблицы: таблица category с полями id и name и таблица page с полями id, name и category_id. Достаньте одним запросом все страницы вместе с их категориями.
+"SELECT clients.client_id AS номер_клиента, clients.name AS имя_клиена, auto.marka FROM clients JOIN auto ON auto.client_id = clients.client_id
+*********
+*********
+********* 14 сен 2018 в 5:34
+70. Даны 3 таблицы: таблица category с полями id и name, таблица sub_category с полями id и name и таблица page с полями id, name и sub_category_id. Достаньте одним запросом все страницы вместе с их подкатегориями и категориями.
+
+$query = "SELECT clients.client_id AS номер_клиента, clients.name AS имя_клиена, auto.marka AS марка_авто, remont.price AS стоимость_ремонта, remont.breaking AS неисправность FROM clients
+JOIN auto ON auto.client_id = clients.client_id
+JOIN remont ON remont.auto_id = auto.auto_id";
+*********
+*********
+********* 14 сен 2018 в 5:36
+На работу с полями
+*********
+*********
+********* 14 сен 2018 в 5:37
+71. Создайте базы данных test1 и test2.
+CREATE DATABASE test1
+CREATE DATABASE test2
+*********
+*********
+********* 14 сен 2018 в 5:42
+72. Удалите базу данных test2
+
+$query = "DROP DATABASE test2";
+*********
+*********
+********* 14 сен 2018 в 6:05
+73. Создайте в базе данных test1 таблицы table1 и table2 с полями id, login, salary, age, date.
+
+CREATE TABLE table1(
+id INT(1),
+login VARCHAR(255),
+salary INT(6),
+age INT(6),
+date DATE NOT NULL,
+primary key (id)
+)
+
+CREATE TABLE table2(
+id INT(1),
+login VARCHAR(255),
+salary INT(6),
+age INT(6),
+date DATE NOT NULL,
+primary key (id)
+)
+*********
+*********
+********* 14 сен 2018 в 6:08
+74. Переименуйте таблицу table2 в table3.
+
+$query = "
+RENAME TABLE table2 TO table1
+";
+*********
+*********
+********* 14 сен 2018 в 6:13
+75. Удалите таблицу table3.
+
+$query = "DROP TABLE table3";
+*********
+*********
+********* 14 сен 2018 в 6:20
+76. Добавьте в таблицу table1 поле status.
+
+$query = "ALTER TABLE table1 ADD status TEXT";
+$query = "ALTER TABLE table1 ADD COLUMN age INT";
+*********
+*********
+********* 14 сен 2018 в 6:23
+77. Удалите из таблицы table1 поле age.
+
+$query = "ALTER TABLE table1 DROP COLUMN age ";
+*********
+*********
+********* 14 сен 2018 в 6:32
+78. Переименуйте поле login на user_login.
+
+$query = "ALTER TABLE table1 CHANGE COLUMN login user_login int(10)";
+*********
+*********
+********* 14 сен 2018 в 6:34
+79. Смените типа поля salary с int на varchar(255).
+
+$query = "ALTER TABLE table1 CHANGE salary salary varchar(255)";
+*********
+*********
+********* 14 сен 2018 в 6:38
+80. Очистите таблицу table1.
+
+$query = "DELETE FROM table1";
+*********
+*********
+********* 14 сен 2018 в 6:40
+81. Очистите все таблицы базы данных test1.
+
+TRUNCATE `test1`
+*********
+*********
+********* 14 сен 2018 в 6:41
+Задачи на правильную организацию баз данных
+*********
+*********
+*********
+********* 18 сен 2018 в 18:05
+Толя, +
+*********
+*********
+Ответить
+********* вчера в 2:05
+1. Товар (название, цена, количество), категория товара. Запросы: (1) достать товары вместе с категориями, (2) достать товары из категории 'Овощи', (3) достать товары из категорий 'Овощи', 'Мясо', 'Морепродукты', (4) достать все категории (без товаров, только названия категорий), (5) достать все категории, в которых есть товары (без товаров, только названия категорий, без дублей).
+
+$query = "SELECT warehouse.category as 'категория товара', product.name as 'наименование', product.price as 'цена', product.number as 'колличество'
+FROM product LEFT JOIN warehouse ON product.category_id = warehouse.warehouse_id";
+*
+$query = "SELECT warehouse.category as 'категория товара', product.name as 'наименование', product.price as 'цена', product.number as 'колличество'
+FROM product LEFT JOIN warehouse ON warehouse.warehouse_id = product.category_id WHERE warehouse.category = 'produce'";
+*
+$query = "SELECT warehouse.category as 'категория товара', product.name as 'наименование', product.price as 'цена', product.number as 'колличество'
+FROM product LEFT JOIN warehouse ON warehouse.warehouse_id = product.category_id WHERE warehouse.category IN ('produce', 'meat', 'seafood')";
+*
+$query = "SELECT warehouse.category FROM warehouse";
+*
+$query = "SELECT DISTINCT warehouse.category FROM warehouse
+LEFT JOIN product ON warehouse.warehouse_id = product.category_id";
+*********
+*********
+*********
+********* вчера в 3:05
+2. Товар (название, цена, количество), подкатегория товара, категория товара. Товар принадлежит подкатегории, подкатегория — категории. Пример: помидорки черри (товар), помидоры (подкатегория), овощи (категория). Запросы: (1) достать товары вместе с подкатегориями и категориями, (2) достать товары из подкатегории 'Помидоры', (3) достать все подкатегории категории 'Овощи'.
+
+$query = "SELECT DISTINCT warehouse.category_, subcategory.category, product.name, product.price, product.number FROM warehouse
+INNER JOIN subcategory ON subcategory.warehouse_id = warehouse.warehouse_id
+INNER JOIN product ON subcategory.subcategory_id = product.subcategory_id";
+*
+$query = "SELECT product.name, product.price, product.number FROM product
+INNER JOIN subcategory ON subcategory.subcategory_id = product.subcategory_id WHERE subcategory.category = 'помидоры'";
+*
+$query = "SELECT subcategory.category FROM subcategory
+INNER JOIN warehouse ON subcategory.warehouse_id = warehouse.warehouse_id WHERE warehouse.category_ = 'produce'";
+*********
+*********
+
+
