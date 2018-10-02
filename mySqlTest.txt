@@ -657,4 +657,13 @@ INNER JOIN warehouse ON subcategory.warehouse_id = warehouse.warehouse_id WHERE 
 *********
 *********
 
+3. Товар, категория, склад, брэнд. Товар принадлежит категории, складу и бренду. Запросы: (1) достать товары с их категорией, складом и брэндом, (2) достать все склады.
 
+$query = "SELECT stock.name_stock, brand.brand_name, category.category, goods.name FROM stock
+INNER JOIN category ON category.stock_id = stock.stock_id
+INNER JOIN goods ON goods.category_id = category.category_id
+INNER JOIN brand ON brand.brand_id = goods.brand_id
+
+*
+
+$query = "SELECT stock.name_stock FROM stock";
