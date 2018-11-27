@@ -1,4 +1,4 @@
-
+﻿
 text/plain test2.txt ( UTF-8 Unicode text, with very long lines )
 
 Задачи на продвинутые SQL запросы
@@ -667,3 +667,338 @@ INNER JOIN brand ON brand.brand_id = goods.brand_id
 *
 
 $query = "SELECT stock.name_stock FROM stock";
+
+
+
+
+4. Товар, подкатегория, категория, склад, брэнд. Последние 3 никак не связаны, подкатегория принадлежит категории (например, помидоры овощам). Запросы: (1) достать товары с их подкатегорией и категорией, складом и брэндом. Показать решение.
+
+$query = "SELECT stock.name_stock, brand.brand_name, category.name_, subcategory.name, goods.vendor_code FROM category
+JOIN subcategory ON subcategory.category_id = category.category_id
+JOIN goods ON goods.subcategory_id = subcategory.subсategory_id
+JOIN stock 
+JOIN brand
+";
+
+
+
+
+
+5. Пользователь, его город. Запросы: (1) достать пользователей вместе с их городом, (2) достать все города, (3) достать всех пользователей из города Минск, (4) достать все города, в которых есть пользователи, (5) достать все города, в которых нет пользователей, (6) вывести список городов с количеством пользователей в них, (7) вывести список городов, в которых количество пользователей больше трех. 
+
+$query = "SELECT users.name, city.city FROM city
+LEFT JOIN users ON city.city_id = users.city_id
+";
+
+***
+
+$query = "SELECT city.city FROM city";
+
+***
+
+$query = "SELECT users.name, city.city FROM users 
+JOIN city ON city.city_id = users.city_id WHERE city.city = 'Москва'
+";
+
+***
+
+$query = "SELECT DISTINCT city.city FROM users 
+JOIN city ON city.city_id = users.city_id
+";
+
+***
+
+$query = "SELECT city.city, users.name FROM city
+LEFT JOIN users ON users.city_id = city.city_id WHERE users.city_id IS NULL
+";
+
+***
+
+$query = "SELECT city.name AS 'город', COUNT(user.city_id) AS 'кол-во пользователей' FROM city 
+RIGHT JOIN user ON city.id = user.city_id Group By city.name";
+
+***
+
+$query = "SELECT city.name AS 'город', COUNT(user.city_id) AS 'кол-во пользователей' FROM city
+RIGHT JOIN user ON city.id = user.city_id GROUP BY city.name HAVING COUNT(user.city_id) > 3";
+
+
+
+
+
+
+6. Пользователь, его город, страна. Запросы: (1) достать всех пользователей вместе с их городом и страной, (2) достать все города с их странами, (3) достать всех пользователей из страны Беларусь (без городов), (4) достать всех пользователей из города Минск (без страны), (5) вывести список стран с количеством пользователей в них.
+
+$query = "SELECT user.name, city.name AS 'город', country.name AS 'cтрана' FROM city
+RIGHT JOIN user ON city.id = user.city_id 
+RIGHT JOIN country ON country.id = city.country_id
+";
+
+***
+
+$query = "SELECT city.name AS 'город', country.name AS 'cтрана' FROM city
+RIGHT JOIN country ON country.id = city.country_id
+";
+
+***
+
+$query = "SELECT user.name, country.name AS 'cтрана' FROM city
+RIGHT JOIN user ON city.id = user.city_id 
+RIGHT JOIN country ON country.id = city.country_id WHERE country.name = 'Беларусь'
+";
+
+***
+
+$query = "SELECT user.name, city.name AS 'город' FROM city 
+JOIN user ON city.id = user.city_id WHERE city.name = 'Минск'
+";
+
+***
+
+$query = "SELECT country.name, COUNT(city_id) AS 'кол-во пользователй' FROM country 
+INNER JOIN city ON country.id = city.country_id 
+INNER JOIN user ON city.id = user.city_id GROUP BY country.id
+";
+
+
+
+
+
+7. У отца всегда только один сын. Сыновья в свою очередь также могут быть отцами. Запросы: (1) получить пользователя вместе с его отцом и сыном, (2) получить дедушку пользователя, (3) получить прадедушку пользователя.
+
+$query = "SELECT family.name AS 'юзеры', son.name AS 'сыны', grandfather.name AS 'дед', great_grandfather.name AS 'прадед' FROM family
+LEFT JOIN family AS son ON son.father_id = family.id
+LEFT JOIN family AS grandfather ON grandfather.father_id = son.id
+LEFT JOIN family AS great_grandfather ON great_grandfather.father_id = grandfather.id
+";
+
+
+
+
+
+8. Есть мужья и жены, а также неженатые/незамужние. Для всех указывается имя, фамилия, возраст, адрес. Муж с женой имеют одну фамилию и живут по одному адресу. Запросы: (1) получить мужей с женами и наоборот, (2) получить холостых, (3) получить семьи (муж+жена), семьи не должны дублироваться (пара должна быть только 1 раз).
+
+$query = "SELECT DISTINCT family_2.name, family_2.surname FROM family_2
+JOIN family_2 AS married ON married.family_id = family_2.family_id WHERE family_2.family_id != NULL OR family_2.family_id != 0
+";
+
+***
+
+$query = "SELECT * FROM family_2 WHERE family_id IS NULL";
+
+***
+
+$query = "SELECT DISTINCT CONCAT_WS(' ', husband.name, husband.surname) AS 'муж', CONCAT_WS(' ', wife.name, wife.surname) AS 'жена' FROM family_2
+JOIN family_2 AS husband ON husband.family_id = family_2.family_id AND husband.gender = 'муж.'
+JOIN family_2 AS wife ON wife.family_id = husband.family_id AND wife.gender = 'жен.'
+";
+
+
+
+
+
+9. Товар, который может принадлежать нескольким категориям одновременно. Запросы: (1) достать все товары вместе с их категориями, (2) достать товар 'Огурец' вместе с его категориями, (3) достать все товары из категории 'Овощи', (4) достать все товары, которые принадлежат более чем одной категории.
+
+$query = "SELECT * FROM goods
+JOIN subcategory ON subcategory.id = goods.subcategory_id
+JOIN category ON category.id = subcategory.category_id
+";
+
+***
+
+$query = "SELECT * FROM goods
+JOIN subcategory ON subcategory.id = goods.subcategory_id
+JOIN category ON category.id = subcategory.category_id WHERE goods.vendor_code = 'AE32'
+";
+
+***
+
+$query = "SELECT * FROM goods
+JOIN subcategory ON subcategory.id = goods.subcategory_id
+JOIN category ON category.id = subcategory.category_id WHERE category.name = 'нижнее белье'
+";
+
+***
+
+$query = "SELECT * FROM goods
+JOIN subcategory ON subcategory.id = goods.subcategory_id
+JOIN category ON category.id = subcategory.category_id
+GROUP BY goods.vendor_code HAVING COUNT(goods.subcategory_id) > 1
+";
+
+
+
+
+
+10. Пользователь и его интересы (могут быть одинаковыми у разных пользователей). Запросы: (1) достать интересы пользователя, (2) достать всех пользователей с данным интересом.
+
+$query = "SELECT user.name Имя, GROUP_CONCAT(hobby.description SEPARATOR ' ') AS увлечения FROM user
+JOIN bond ON bond.user_id = user.id
+JOIN hobby ON hobby.id = bond.hobby_id
+WHERE user.id = 7
+";
+
+***
+
+$query = "SELECT user.name Имя FROM user
+JOIN bond ON bond.user_id = user.id
+JOIN hobby ON hobby.id = bond.hobby_id
+WHERE hobby.description = 'Футбол'
+";
+
+
+
+
+
+11. Пользователь, товары, покупки пользователей. У товара есть цена, пользователь может купить не один экземпляр товара, а одновременно несколько. Запросы: (1) вывести пользователей вместе с их покупками, (2) вывести пользователей вместе с суммами всех их покупок, (3) найти суммарные покупки на сайте за определенный месяц, (4) найти суммарные покупки на сайте помесячно (то есть результат будет в таком виде: март 2010 — сумма1, апрель 2010 — сумма2, май 2010 — сумма3 и тд).
+
+$query = "SELECT user.name AS 'пользователь', CONCAT_WS(' ', goods.vendor_code, purchase.name) AS 'покупка' FROM user
+JOIN purchase ON purchase.user_id = user.id
+JOIN goods ON goods.id = purchase.goods_id
+";
+
+***
+
+$query = "SELECT user.name AS 'пользователь', 
+GROUP_CONCAT(CONCAT_WS(' ', goods.vendor_code, purchase.name)SEPARATOR ' ') AS 'покупка', 
+SUM(goods.price) AS 'сумма' 
+FROM user
+JOIN purchase ON purchase.user_id = user.id
+JOIN goods ON goods.id = purchase.goods_id
+GROUP BY user.id
+";
+
+***
+
+$query = "SELECT SUM(goods.price) AS сумма, purchase.date AS 'ноябрь' FROM goods
+JOIN purchase ON purchase.goods_id = goods.id
+WHERE MONTH(purchase.date) = 11
+";
+
+***
+
+$query = "SELECT SUM(goods.price) AS сумма, DATE_FORMAT(purchase.date, '%m.%Y') AS 'месяц' FROM goods
+JOIN purchase ON purchase.goods_id = goods.id
+GROUP BY месяц
+";
+
+
+
+
+12. Есть отцы и сыновья. У отца может быть много сыновей. Запросы: (1) получить всех сыновей пользователя, (2) получить отца пользователя, (3) получить дедушку пользователя, (4) получить внуков пользователя.
+
+$query = "SELECT family.name_f AS 'Родители', GROUP_CONCAT(name_s SEPARATOR ' ') AS 'Дети' FROM son
+JOIN order_family ON order_family.son_id = son.id
+JOIN family ON order_family.family_id = family.id
+WHERE family.id = '17'
+";
+
+***
+
+$query = "SELECT father.name_f FROM family
+JOIN order_family ON order_family.id = family.father_id
+JOIN family AS father ON father.id = order_family.family_id
+WHERE family.id = 16
+";
+
+***
+
+$query = "SELECT grand_father.name_f FROM family
+JOIN order_family ON order_family.id = family.father_id
+JOIN family AS grand_father ON grand_father.id = order_family.family_id
+WHERE family.id = (SELECT father.id FROM family
+JOIN order_family ON order_family.id = family.father_id
+JOIN family AS father ON father.id = order_family.family_id
+WHERE family.id = 24)
+"
+
+
+
+
+13. Море, реки, притоки (притоки делятся на правые и левые). Реки могут быть притоками других рек или впадать прямо в море. Запросы: (1) получить все реки Черного Моря, (2) получить все реки Черного Моря вместе с притоками, (3) получить все притоки реки Днепр, (4) получить куда впадает данная река (в какую реку или в какое море). 
+
+$query = "SELECT river.name AS 'реки', sea.name_sea AS 'море' FROM sea
+JOIN tributaries ON tributaries.sea_id = sea.id
+JOIN river ON river.id = tributaries.river_id
+WHERE sea.name_sea = 'Черное'
+";
+
+***
+
+$query = "SELECT river.name AS 'реки', sea.name_sea AS 'море', tributaries.name_t AS 'притоки' FROM sea
+JOIN tributaries ON tributaries.sea_id = sea.id
+JOIN river ON river.id = tributaries.river_id
+WHERE sea.name_sea = 'Черное'
+";
+
+***
+
+$query = "SELECT river.name AS 'река', tributaries.name_t AS 'притоки' FROM sea
+JOIN tributaries ON tributaries.sea_id = sea.id
+JOIN river ON river.id = tributaries.river_id
+WHERE river.name = 'Днепр'
+";
+
+***
+
+$query = "SELECT river.name AS 'река', sea.name_sea AS 'море' FROM sea
+JOIN tributaries ON tributaries.sea_id = sea.id
+JOIN river ON river.id = tributaries.river_id
+WHERE river.name = 'Днепр'
+GROUP BY sea.name_sea
+";
+
+
+
+Закрепление
+
+
+
+
+
+14. Пользователь, обмен сообщениями между пользователями (в личку). Сообщение можно пометить как прочитанное (это может только получатель сообщения).
+
+*
+*
+*
+*
+15. Есть сайт с датами футбольных игр. В каждой игре нужно выводить дату игры, первую команду и вторую команду. После того, как игра прошла — нужно выводить еще и счет. Запросы: (1) получить все игры вместе с командами, (2) получить все игры с командами за текущий месяц, (3) получить все игры с командами за предыдущий месяц, (4) получить все сыгранные игры, (5) получить все несыгранные игры. 
+
+$query = "SELECT team.name_team AS 'команда1', team2.name_team AS 'команда2', game.result, DATE_FORMAT(game.date, '%d.%m.%y') 'дата' FROM game
+JOIN team ON game.team1_id = team.id
+JOIN team AS team2 ON game.team2_id = team2.id
+";
+
+***
+
+$query = "SELECT team.name_team AS 'команда1', team2.name_team AS 'команда2', game.result, DATE_FORMAT(game.date, '%d.%m.%y') 'дата' FROM game
+JOIN team ON game.team1_id = team.id
+JOIN team AS team2 ON game.team2_id = team2.id
+WHERE MONTH(game.date) = 11
+";
+
+***
+
+$query = "SELECT team.name_team AS 'команда1', team2.name_team AS 'команда2', game.result, DATE_FORMAT(game.date, '%d.%m.%y') 'дата' FROM game
+JOIN team ON game.team1_id = team.id
+JOIN team AS team2 ON game.team2_id = team2.id
+WHERE MONTH(game.date) = 11 - 1
+";
+
+***
+
+$query = "SELECT team.name_team AS 'команда1', team2.name_team AS 'команда2', game.result, DATE_FORMAT(game.date, '%d.%m.%y') 'дата' FROM game
+JOIN team ON game.team1_id = team.id
+JOIN team AS team2 ON game.team2_id = team2.id
+WHERE game.status = 1
+";
+
+***
+
+$query = "SELECT team.name_team AS 'команда1', team2.name_team AS 'команда2', game.result, DATE_FORMAT(game.date, '%d.%m.%y') 'дата' FROM game
+JOIN team ON game.team1_id = team.id
+JOIN team AS team2 ON game.team2_id = team2.id
+WHERE game.status IS NULL OR game.status = 0
+";
+
+***
