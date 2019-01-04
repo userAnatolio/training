@@ -98,7 +98,7 @@ func1();
 }
 
 var arrDigit = [];
-for(var i=0; i<10; i++){
+for(var i=0; i<100; i++){
 	arrDigit[i] = count;
 	count += userNum;
 }
