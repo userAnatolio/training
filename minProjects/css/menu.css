@@ -1,0 +1,81 @@
+#menu a:link, a:visited {
+text-decoration: none;
+color: #a52a2a;
+font-family: Georgia, Times, serif;
+}
+
+#menu a:hover{
+text-decoration: none;
+color: white;
+background-color:#444444;
+}
+
+#menu {
+background-color: #c1c1c1;
+padding-bottom: 20px;
+border-radius: 10px;
+}
+
+#menu a {
+background-color: #c1c1c1;
+display: block;
+padding: 10px 0px 10px 0px;
+font-family: Georgia, Times, serif;
+font-size: 25px;
+}
+
+/* **********************меню*********************** */
+
+#menu li {
+width: 200px;
+float: left;
+border-left: 1px solid black;
+list-style-type: none;
+text-align: center;
+margin: 0px 0px 0px 0px;
+border-radius: 5px;
+}
+
+.clearfix {
+clear: both;
+}
+
+#li a:link, a:visited {
+text-decoration: none;
+color: #a52a2a;
+font-family: Georgia, Times, serif;
+}
+
+#li a:hover{
+text-decoration: none;
+color: white;
+background-color:#444444;
+}
+
+#li {
+width: 100%;
+background-color: #c1c1c1;;
+border: 1px solid black;
+text-align: center;
+margin: 0px auto;
+}
+
+#li a {
+background-color: #c1c1c1;
+display: block;
+font-family: Georgia, Times, serif;
+font-size: 25px;
+}
+
+#li li {
+width: 370px;
+height: 300px;
+border: 1px solid black;
+text-align: center;
+list-style-type: none;
+float: left;
+margin-left: 15px;
+margin-bottom: 15px;
+border-radius: 10px;
+
+}

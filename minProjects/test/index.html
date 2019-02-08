@@ -1,0 +1,563 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+  <title>Тестовая страница</title>
+ 
+  <style>
+	
+        #menu-top {
+            display: block;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            background-color: white;
+            width: 100%;
+            border-bottom: 1px solid gray;
+        }
+		
+        #menu-top a {
+            display: inline-block;
+            border: 1px solid lightgray;
+            padding: 20px 50px;
+            margin: 0;
+            list-style: none;
+            font-weight: bold;
+        }
+		
+        #menu-top a {
+            text-decoration: none;
+        }
+		
+        #menu-top a:hover {
+            background-color: gray;
+            color: white;
+        }
+		
+		/*------------------------------------ диалоговое окно-----------------------------------------*/
+		
+		#result_form {
+		border: 2px solid black;
+		width:  500px;
+		height: 350px;
+		background: #811e1e;
+		color: white;
+		font-size: 20px;
+		text-align: center;
+		padding: 10px;
+		border-radius: 10px;
+		position: absolute;
+	    left: 400px;
+	    top: 100px; 
+		display: none;
+		}
+		#result_form textarea {
+		width: 400px;
+		height: 200px;
+		font-size: 16px;
+		margin: 10px;
+		}
+		
+		#result_form input {
+		background: #010000;
+		color: white;
+		width: 200px;
+		height: 35px;
+		margin: 10px;
+		}
+
+		
+    </style>
+	<script type="text/javascript" src="jquery.js"></script>
+  <script src="ajax.js"></script>
+</head>
+    <body style="padding-top: 100px;"  class="shadow">
+	
+	<!-- ********************************Диалоговое окно будет всплывать при нажатии кнопки опрос*******************************************  -->
+	
+	<div id="result_form">
+	<p>Пожалуйста, напишите ваши предложения и замечания при работе с компанией.</p>
+            <form method="post" id="form" action="" >
+<textarea placeholder="введите текст" name="text"></textarea><br>
+             <input type="button" id="btn" value="Отправить" />
+             <input type="button" onclick="closed()" value="Закрыть" />
+        </form>
+        </div>
+        <br/>
+		
+	<!-- ********************************При вводе текста и нажатии кнопки "отправить", окно даст ответ...*******************************************  -->
+		
+        <div id="menu-top">
+            <a href="#">Главная</a>
+            <a href="#" onclick="func()">Опрос</a>
+            <a href="#">Форум</a>
+        </div>
+
+        <div class="content">
+            <div class="breadcrumbs"><span class="B_crumbBox"><span class="B_firstCrumb"><a class="B_homeCrumb" href="/" title="Компания МВиФ предлагает широкий спектр комплектующих и систем для управления потоками жидкостей и газов">Продукция</a></span>  »  <a class="B_crumb" href="/type" title="Типовая продукция и услуги собственного производства">Типовая продукция и услуги собственного производства</a>  »  <span class="B_lastCrumb"><span class="B_currentCrumb">Атмосферные испарители</span></span></span></div>
+            <h1 class="page_title">Атмосферные испарители для сжиженного природного газа и продуктов разделения воздуха</h1>
+            <div class="content_inner">
+                <div style="text-align: justify; width: 720px; overflow: hidden; font-size: 17px;">
+
+                    <table class="imagesInColumn">
+                        <tbody><tr>
+                            <td style="vertical-align: top;">
+                                <p>
+                                    Криогенные атмосферные испарители являются наиболее экономичным оборудованием для газификации сжиженных продуктов разделения воздуха (кислород, азот, аргон), двуокиси углерода и сжиженного природного газа.<br><br>
+                                    Для газификации криогенных жидкостей не требуются энергозатраты, так как в качестве источника тепла используется только энергия из окружающей среды.
+                                    Для изготовления испарителей среднего давления (4,0МПа) применяются алюминиевые трубы с наружным и внутренним оребрением (удельная поверхность теплообмена 1,4 м2 на погонный метр трубы). Применяются для газификации продукта и в качестве испарителей наддува.</p>
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">
+
+                                <i>Испаритель ИА-76-4-3</i>
+                            </td>
+                            <td style="vertical-align: top;">
+                                <img src="images/-type/20160325_112118.JPG" alt="Испаритель углекислоты">
+                                <i>Испаритель углекислоты ИА-50-4-3,<br>номинальная производительность 48 нм<sup>3</sup>/ч</i>
+                            </td>
+                        </tr>
+                        </tbody></table>
+
+                    Существуют экономичные и компактные  модели атмосферных испарителей высокого давления с принудительной конвекцией воздушного потока (с вентиляторами).
+
+                    <br><br>Для испарителей высокого давления применяются биметаллические трубы с наружным оребрением. (удельная поверхность теплообмена 2,25 м2 на погонный метр трубы). Рабочее давление от 24 до 60 МПа. Применяются для газификации продукта после поршневых криогенных насосов. Для заправки баллонов, моноблоков и реципиентов компримированным природным газом или продуктами разделения воздуха. Для подачи азота высокого давления в нефтяные скважины.
+
+                    <table class="imagesInColumn">
+                        <tbody><tr>
+                            <td>
+                                <img style="align: center; margin-left: 10px; " src="assets/images/pages/ispariteli/isparitel-2.jpg" alt="Испаритель высокого давления ИА-68-24-3" width="80%">
+                                <i>Испаритель высокого давления ИА-68-24-3</i>
+                            </td>
+                        </tr>
+                        </tbody></table>
+
+
+
+                    Испарители подъёма давления (наддува) используются для газификации жидкого продукта находящегося в криогенной ёмкости с целью повышения давления в этой ёмкости. Испарители подъёма давления имеют малую высоту, рабочая жидкость заходит одновременно во все трубы через общий коллектор. Подача жидкого продукта в испаритель подъёма давления как правило регулируется экономайзером.
+
+
+                    <table class="imagesInColumn">
+                        <tbody><tr><td><img src="images/-type/isparitel-nabora-davleniya.jpg" alt="Испаритель высокого давления ИА-22-4-1-П"><br><i>Испаритель набора давления ИА-22-4-1-П</i></td></tr>
+                        <tr><td><img src="assets/images/isparitel-123.png" alt="Испаритель набора давления"><br><i>Испаритель набора давления ИА-5.6-4-2-П горизонтальное исполнение</i></td></tr>
+                        </tbody></table>
+
+                    <h1 class="page_title">Типовые модели атмосферных испарителей среднего давления</h1>
+
+                    <img style="display:block; align: center; margin: 10px;" src="assets/images/atmisparcodes.jpg">
+
+                    <table class="atmosphere_table" cellspacing="0" border="1">
+                        <tbody><tr class="atmosphere_header">
+                            <td rowspan="2">Заказной код</td>
+                            <td colspan="5">Производительность*, нм3/ч</td>
+                            <td colspan="3">Габариты, мм</td>
+                        </tr>
+
+                        <tr style="font-weight: bold;">
+                            <td>N2</td>
+                            <td>O2</td>
+                            <td>Ar</td>
+                            <td>СПГ</td>
+                            <td>СО2</td>
+                            <td>длина</td>
+                            <td>ширина</td>
+                            <td>высота</td>
+                        </tr>
+
+                        <tr>
+                            <td>ИА-2.8-4-1</td>
+                            <td>10</td>
+                            <td>9,2</td>
+                            <td>11</td>
+                            <td>8,0</td>
+                            <td>2,7</td>
+                            <td>398</td>
+                            <td>144</td>
+                            <td>1 750</td>
+                        </tr>
+
+                        <tr>
+                            <td>ИА-4.2-4-1.5</td>
+                            <td>15</td>
+                            <td>14</td>
+                            <td>16</td>
+                            <td>12</td>
+                            <td>4,0</td>
+                            <td>398</td>
+                            <td>144</td>
+                            <td>2 250</td>
+                        </tr>
+
+                        <tr>
+                            <td>ИА-5.6-4-1</td>
+                            <td>20</td>
+                            <td>18</td>
+                            <td>21</td>
+                            <td>16</td>
+                            <td>5,3</td>
+                            <td>398</td>
+                            <td>398</td>
+                            <td>1 750</td>
+                        </tr>
+
+                        <tr>
+                            <td>ИА-8.4-4-1.5</td>
+                            <td>30</td>
+                            <td>28</td>
+                            <td>32</td>
+                            <td>24</td>
+                            <td>8,0</td>
+                            <td>398</td>
+                            <td>398</td>
+                            <td>2 250</td>
+                        </tr>
+
+                        <tr>
+                            <td>ИА-11-4-2</td>
+                            <td>40</td>
+                            <td>37</td>
+                            <td>42</td>
+                            <td>32</td>
+                            <td>11</td>
+                            <td>398</td>
+                            <td>398</td>
+                            <td>2 750</td>
+                        </tr>
+
+                        <tr>
+                            <td>ИА-13-4-1.5</td>
+                            <td>45</td>
+                            <td>41</td>
+                            <td>48</td>
+                            <td>36</td>
+                            <td>12</td>
+                            <td>652</td>
+                            <td>398</td>
+                            <td>2 250</td>
+                        </tr>
+
+                        <tr>
+                            <td>ИА-17-4-2</td>
+                            <td>60</td>
+                            <td>55</td>
+                            <td>63</td>
+                            <td>48</td>
+                            <td>16</td>
+                            <td>652</td>
+                            <td>398</td>
+                            <td>2 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-19-4-1.5</td>
+                            <td>67</td>
+                            <td>62</td>
+                            <td>71</td>
+                            <td>54</td>
+                            <td>18</td>
+                            <td>652</td>
+                            <td>652</td>
+                            <td>2 250</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-22-4-2</td>
+                            <td>80</td>
+                            <td>74</td>
+                            <td>85</td>
+                            <td>64</td>
+                            <td>21</td>
+                            <td>906</td>
+                            <td>398</td>
+                            <td>2 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-25-4-2</td>
+                            <td>90</td>
+                            <td>83</td>
+                            <td>95</td>
+                            <td>72</td>
+                            <td>24</td>
+                            <td>652</td>
+                            <td>652</td>
+                            <td>2 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-34-4-2</td>
+                            <td>120</td>
+                            <td>110</td>
+                            <td>127</td>
+                            <td>96</td>
+                            <td>32</td>
+                            <td>906</td>
+                            <td>652</td>
+                            <td>2 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-42-4-2</td>
+                            <td>150</td>
+                            <td>138</td>
+                            <td>159</td>
+                            <td>121</td>
+                            <td>40</td>
+                            <td>1 160</td>
+                            <td>652</td>
+                            <td>2 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-50-4-3</td>
+                            <td>180</td>
+                            <td>166</td>
+                            <td>190</td>
+                            <td>145</td>
+                            <td>48</td>
+                            <td>906</td>
+                            <td>652</td>
+                            <td>3 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-63-4-3</td>
+                            <td>225</td>
+                            <td>207</td>
+                            <td>238</td>
+                            <td>181</td>
+                            <td>60</td>
+                            <td>1 160</td>
+                            <td>652</td>
+                            <td>3 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-67-4-3</td>
+                            <td>240</td>
+                            <td>221</td>
+                            <td>254</td>
+                            <td>193</td>
+                            <td>64</td>
+                            <td>906</td>
+                            <td>906</td>
+                            <td>3 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-76-4-3</td>
+                            <td>270</td>
+                            <td>248</td>
+                            <td>286</td>
+                            <td>217</td>
+                            <td>72</td>
+                            <td>1 414</td>
+                            <td>652</td>
+                            <td>3 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-84-4-3</td>
+                            <td>300</td>
+                            <td>276</td>
+                            <td>317</td>
+                            <td>241</td>
+                            <td>80</td>
+                            <td>906</td>
+                            <td>906</td>
+                            <td>4 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-101-4-3</td>
+                            <td>360</td>
+                            <td>331</td>
+                            <td>381</td>
+                            <td>289</td>
+                            <td>96</td>
+                            <td>1 414</td>
+                            <td>906</td>
+                            <td>3 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-112-4-4</td>
+                            <td>400</td>
+                            <td>368</td>
+                            <td>423</td>
+                            <td>322</td>
+                            <td>106</td>
+                            <td>1 160</td>
+                            <td>906</td>
+                            <td>4 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-134-4-4</td>
+                            <td>480</td>
+                            <td>442</td>
+                            <td>508</td>
+                            <td>386</td>
+                            <td>127</td>
+                            <td>1 414</td>
+                            <td>906</td>
+                            <td>4 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-140-4-4</td>
+                            <td>500</td>
+                            <td>460</td>
+                            <td>529</td>
+                            <td>402</td>
+                            <td>133</td>
+                            <td>1 160</td>
+                            <td>1 160</td>
+                            <td>4 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-157-4-4</td>
+                            <td>560</td>
+                            <td>515</td>
+                            <td>592</td>
+                            <td>450</td>
+                            <td>149</td>
+                            <td>1 668</td>
+                            <td>906</td>
+                            <td>4 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-168-4-4</td>
+                            <td>600</td>
+                            <td>552</td>
+                            <td>635</td>
+                            <td>482</td>
+                            <td>159</td>
+                            <td>1 414</td>
+                            <td>1 160</td>
+                            <td>4 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-210-4-6</td>
+                            <td>750</td>
+                            <td>690</td>
+                            <td>794</td>
+                            <td>603</td>
+                            <td>199</td>
+                            <td>1 160</td>
+                            <td>1 160</td>
+                            <td>6 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-252-4-6</td>
+                            <td>900</td>
+                            <td>828</td>
+                            <td>952</td>
+                            <td>724</td>
+                            <td>239</td>
+                            <td>1 414</td>
+                            <td>1 160</td>
+                            <td>6 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-302-4-6</td>
+                            <td>1 080</td>
+                            <td>994</td>
+                            <td>1 143</td>
+                            <td>868</td>
+                            <td>287</td>
+                            <td>1 414</td>
+                            <td>1 414</td>
+                            <td>6 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-336-4-6</td>
+                            <td>1 200</td>
+                            <td>1 104</td>
+                            <td>1 270</td>
+                            <td>965</td>
+                            <td>318</td>
+                            <td>1 922</td>
+                            <td>1 160</td>
+                            <td>6 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-353-4-6</td>
+                            <td>1 260</td>
+                            <td>1 159</td>
+                            <td>1 333</td>
+                            <td>1 013</td>
+                            <td>334</td>
+                            <td>1 668</td>
+                            <td>1 414</td>
+                            <td>6 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-412-4-6</td>
+                            <td>1 470</td>
+                            <td>1 352</td>
+                            <td>1 555</td>
+                            <td>1 182</td>
+                            <td>390</td>
+                            <td>1 668</td>
+                            <td>1 668</td>
+                            <td>6 750</td>
+                        </tr>
+
+                        <tr>
+                            <td>ИА-470-4-6</td>
+                            <td>1 680</td>
+                            <td>1 546</td>
+                            <td>1 777</td>
+                            <td>1 351</td>
+                            <td>446</td>
+                            <td>1 922</td>
+                            <td>1 668</td>
+                            <td>6 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-538-4-6</td>
+                            <td>1 920</td>
+                            <td>1 766</td>
+                            <td>2 031</td>
+                            <td>1 544</td>
+                            <td>509</td>
+                            <td>1 922</td>
+                            <td>1 922</td>
+                            <td>6 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-605-4-6</td>
+                            <td>2 160</td>
+                            <td>1 987</td>
+                            <td>2 285</td>
+                            <td>1 737</td>
+                            <td>573</td>
+                            <td>2 176</td>
+                            <td>1 922</td>
+                            <td>6 750</td>
+                        </tr>
+                        <tr>
+                            <td>ИА-680-4-6</td>
+                            <td>2 430</td>
+                            <td>2 236</td>
+                            <td>2 571</td>
+                            <td>1 954</td>
+                            <td>645</td>
+                            <td>2 176</td>
+                            <td>2 176</td>
+                            <td>6 750</td>
+                        </tr>
+                        </tbody></table>
+
+                    <br><p>Номинальная производительность приведена для газификации при температуре окружающей среды 20°C, недорекуперации 10°C и непрерывной работе в течение 8 часов.
+                    Испарители производятся для установки на фундамент (отдельно стоящий испаритель) или с кронштейнами для крепления к криогенной ёмкости или несущей конструкции (навесной испаритель).
+                    Подсоединения - трубные фитинги или фланцы.</p>
+
+                    <p>Для комплектации Вашей криогенной системы приобретайте также: вентили, шаровые краны, клапаны обратные и предохранительные, поршневые и центробежные насосы, металлорукава, рампы, моноблоки.</p>
+                </div>
+
+                <div class="oprosniy-list">
+                    <div class="img"><img src="assets/images/oprosniy-list.png" width="100"></div>
+                    <div class="text">
+                        <span>Опросный лист</span>
+                        <br><p align="center"><a href="assets/opros/ispariteli.doc" target="_blank"><img src="images/word.png" style="position: relative; top: 2px;"> Скачать</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+[05-Aug-2018 09:52:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/anatolio/public_html/organaz/organizer.php on line 68
+[05-Aug-2018 13:55:03 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/anatolio/public_html/organaz/organizer.php on line 90
+[05-Aug-2018 16:27:15 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/anatolio/public_html/organaz/organizer.php on line 102
+[05-Aug-2018 16:28:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/anatolio/public_html/organaz/organizer.php on line 102
+[05-Aug-2018 16:30:11 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/anatolio/public_html/organaz/organizer.php on line 102
+[05-Aug-2018 16:30:26 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/anatolio/public_html/organaz/organizer.php on line 102
+[05-Aug-2018 17:34:51 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:35:16 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:35:19 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:35:19 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:35:20 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:35:20 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:35:21 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:36:12 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:37:22 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:53:56 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:54:09 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:54:20 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:54:21 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:54:29 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:55:43 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:55:52 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:55:59 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:56:42 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:57:48 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:57:48 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:57:50 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:57:50 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:57:51 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:57:51 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:57:52 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:57:52 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:59:32 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 17:59:32 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 18:10:46 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 18:10:46 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/anatolio/public_html/organaz/organizer.php:63) in /home/anatolio/public_html/organaz/organizer.php on line 82
+[05-Aug-2018 19:26:22 UTC] PHP Warning:  Illegal string offset 'w' in /home/anatolio/public_html/organaz/organizer.php on line 83
+[05-Aug-2018 19:26:54 UTC] PHP Warning:  Illegal string offset 's' in /home/anatolio/public_html/organaz/organizer.php on line 83
+[05-Aug-2018 20:46:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/anatolio/public_html/organaz/organizer.php:69) in /home/anatolio/public_html/organaz/organizer.php on line 108
+[05-Aug-2018 20:47:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/anatolio/public_html/organaz/organizer.php:69) in /home/anatolio/public_html/organaz/organizer.php on line 108
+[16-Sep-2018 15:34:35 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:34:35 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:34:35 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:45:02 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:45:02 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:45:02 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:48:38 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:48:38 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:48:38 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:52:35 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:52:35 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:52:35 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:52:42 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:52:42 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:52:42 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:52:46 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:52:46 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:52:46 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:52:52 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:52:53 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:52:53 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:53:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:53:04 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:53:04 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:53:05 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:53:05 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:53:05 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:53:06 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:53:06 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:53:06 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:53:06 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:53:06 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:53:06 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:53:07 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:53:07 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:53:07 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:53:08 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:53:08 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:53:08 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:53:09 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:53:09 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:53:09 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:53:09 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:53:09 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:53:09 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:53:20 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:53:20 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:53:20 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:53:23 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:53:23 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:53:23 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:53:24 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:53:24 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:53:24 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:53:26 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:53:26 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:53:26 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:54:33 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:54:33 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:54:33 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:55:36 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:55:36 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:55:36 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[16-Sep-2018 15:59:23 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[16-Sep-2018 15:59:23 UTC] PHP Notice:  Undefined offset: 16 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[16-Sep-2018 15:59:23 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103
+[26-Sep-2018 18:45:46 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/anatolio/public_html/organaz/db.php on line 9
+[26-Sep-2018 18:45:46 UTC] PHP Notice:  Undefined offset: 26 in /home/anatolio/public_html/organaz/organizer.php on line 94
+[26-Sep-2018 18:45:46 UTC] PHP Notice:  Undefined index: text in /home/anatolio/public_html/organaz/organizer.php on line 103

@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>Шаблон</title> 
+<style> 
+
+#text {
+padding: 15px;
+width: 300px;
+height: 400px;
+}
+
+</style> 
+
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="cookies.min.js"></script>
+<script src="jquery.cookie.js"></script>
+</head> 
+
+<body> 
+
+<form>
+<input class="text" id="1" type="text">
+<input class="text" id="2" type="text">
+<input id="3" type="checkbox">
+<input id="4" type="checkbox">
+<input id="5" type="radio">
+<input id="7" type="radio">
+<textarea class="text" id="8"></textarea>
+<textarea class="text" id="9"></textarea>
+
+<select id="10">
+<option>Москва</option>
+<option>Волгоград</option>
+<option>Ростов</option>
+</select >
+
+<select id="11">	
+<option>Оренбург</option>
+<option>Омск</option>
+<option>Саратов</option>
+</select>
+</form>
+
+<script> 
+
+$(document).ready(function(){ 
+
+var text = localStorage.getItem('text');
+var textValue = localStorage.getItem('textValue');
+var check = localStorage.getItem('check');
+var selectId = localStorage.getItem('selectId');
+var selectElem = localStorage.getItem('selectElem');
+
+var checkArr = JSON.parse(check);
+for (var i in checkArr){
+    $('#'+checkArr[i]).prop("checked", true);
+}
+
+var textArr = JSON.parse(text);
+var textValueArr = JSON.parse(textValue);
+if(textArr && textValueArr) {
+for(var i=0; i<text.length; i++){
+    $('#'+textArr[i]).val(textValueArr[i]);
+}
+}
+
+var selectIdArr = JSON.parse(selectId);
+var selectElemArr = JSON.parse(selectElem);
+if(selectIdArr && selectElemArr) {
+for(var i=0; i<selectIdArr.length; i++){
+$('#'+selectIdArr[i]).val(selectElemArr[i]);
+}
+}
+
+$(".text").on('change', function() {
+var text = [];
+var textValue = [];
+$(".text").each(function(){
+var $elem = $(this);
+if($elem)
+text.push($elem.attr("id"));
+textValue.push($elem.val());
+});
+var json1 = JSON.stringify(text);
+var json2 = JSON.stringify(textValue);
+localStorage.setItem('text', json1);
+localStorage.setItem('textValue', json2);
+});
+
+ $('input[type="radio"], input[type="checkbox"]').on('change', function() {
+var check = [];
+$("input:checked").each(function(){
+var $elem = $(this);
+if($elem.prop("checked"))
+check.push($elem.attr("id"));
+});
+var json = JSON.stringify(check);
+localStorage.setItem('check', json);
+});
+
+$("select").change( function() {
+var selectId = [];
+var selectElem = [];
+$( "select option:selected" ).each(function(){
+    var idSelect = $(this).parent().attr("id");
+var $elem = $(this);
+if($elem)
+selectId.push(idSelect);
+selectElem.push($elem.val());
+});
+var json1 = JSON.stringify(selectId);
+var json2 = JSON.stringify(selectElem);
+localStorage.setItem('selectId', json1);
+localStorage.setItem('selectElem', json2);
+});
+
+}); 
+
+</script> 
+
+</body> 
+</html>

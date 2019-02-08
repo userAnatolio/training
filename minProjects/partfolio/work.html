@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <title>Шаблон</title>
+    <style>
+
+		* {margin: 0; padding: 0;}
+	body {
+	background: #444444;
+	}
+	.clearfix {
+	    clear: both;
+	}
+	.center {
+	    width: 1000px;
+	    margin: 0 auto;
+	    }
+	    
+	#wrapper {
+	    margin: 0 auto;
+	    min-width: 800px;
+	    max-width: 1000px;
+	    background: #c1c1c1;
+	}
+	
+	a {text-decoration: none;}
+	li {
+	    list-style-type: none;
+	}
+	#net {background: black; height: 40px; text-align: right;}
+	#net img {
+	margin: 7px 0 0 15px;
+	}
+	#net a {
+
+	}
+	#net a:hover {
+	    box-shadow: 0px 0px 8px rgba(211, 236, 252, 0.7);
+	}
+	#mail {
+	color: white;
+	}
+	#logo { color: #a52a2a;
+	        font-size: 40px;
+			letter-spacing: -3px;
+			font-family: Arial;
+			}
+	
+	nav li {
+	width: 200px;
+	background: #444444;
+	margin: 0 0 10px 10px;
+	border-radius: 10px;
+	}
+	
+	nav a {
+	display: block;
+	color: white;
+	padding: 10px;
+	}
+	
+	nav a:hover {
+	color: #85d7ff;
+	background: #060810;
+	border-radius: 10px;
+	box-shadow: 0px 0px 8px rgba(211, 236, 252, 0.7);
+	-webkit-animation: link 0.5s linear alternate forwards;
+	}
+	
+	#logo {
+	margin: 20px 10px;
+	}
+	
+	#logo a {
+    color: #a52a2a;
+	}
+	
+	header {
+	    margin-bottom: 0;
+	}
+	
+	figure {
+	    text-align: center;
+	    margin-bottom: ;
+	}
+	
+	figure .center {
+	    background: black;
+	}
+	
+	#banner img {
+	    width: ;
+	    opacity:;
+	}
+	    
+	section {
+	    margin-top: ;
+	    height: ;
+	}
+	
+	footer {
+	    min-height: 250px;
+	    background: #444444;
+	    display: flex;
+        align-items: center;
+	}
+	
+	#footer {
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-align-items: center;
+	    align-items: center;
+	    -webkit-flex-direction: row;
+	    flex-direction: row;
+	    -webkit-justify-content: space-between;
+	    justify-content: space-between;
+	}
+	
+	.footer-block {
+	    height: 200px;
+	    width: 31.5%;
+	    background: #c1c1c1;
+	    border-radius: 5px;
+	}
+	
+	#copy {
+	    height: 50px;
+	    background: black;
+	}
+	
+	    @-webkit-keyframes link {
+        from {
+            width: 190px;
+        }
+        to {
+            width: 250px;
+        }
+    }
+	
+	@-webkit-keyframes anim {
+0% {
+-webkit-transform: rotateX(50deg) rotateY(90deg) rotateZ(-90deg);
+-webkit-transform-origin: center;
+}
+15% {
+-webkit-transform: rotateX(50deg) rotateY(0deg) rotateZ(-90deg);
+-webkit-transform-origin:  center;
+}
+30% {
+-webkit-transform: rotateX(50deg) rotateY(-90deg) rotateZ(-90deg);
+-webkit-transform-origin:  center;
+}
+50%{
+-webkit-transform: rotateX(0deg) rotateY(-180deg) rotateZ(-255deg);
+-webkit-transform-origin:  center;
+}
+75% {
+-webkit-transform: rotateX(180deg) rotateY(-180deg) rotateZ(-255deg);
+-webkit-transform-origin:  center;
+}
+99.5%, 100% {
+-webkit-transform: rotateX(360deg) rotateY(-180deg) rotateZ(-255deg);
+-webkit-transform-origin:  center;
+}
+}
+
+/* **********************меню*********************** */
+#portfolio {
+width: 1000px;
+height: 700px;
+margin-bottom: 20px;
+    padding: 5%;
+    
+}
+
+#portfolio li a {
+background-color: #c1c1c1;
+color: #a52a2a;
+display: block;
+font-family: Georgia, Times, serif;
+font-size: 25px;
+border-radius: 10px;
+}
+
+#portfolio li a:link, a:visited {
+text-decoration: none;
+font-family: Georgia, Times, serif;
+}
+
+#portfolio li a:hover{
+text-decoration: none;
+color: white;
+background-color:#444444;
+}
+
+#portfolio li {
+width: 20%;
+height: 200px;
+border: 1px solid black;
+text-align: center;
+list-style-type: none;
+float: left;
+margin: 5px;
+border-radius: 10px;
+}
+
+	</style>
+	
+</head>
+<body>
+    <div id="net">
+<div class="center">
+<a href="https://vk.com/public161733877" target="_blank"><img src="vk2.png" width="25px"></a>
+<a href="http://whatsap.me/pixel" target="_blank"><img src="whatsapp2.png" width="25px"></a>
+<a href="https://www.instagram.com/toly87/" target="_blank"><img src="instagram2.png" width="25px"></a>
+<a href="https://www.facebook.com/anatol.anatolio" target="_blank"><img src="facebook2.png" width="27px"></a>
+<a href="https://github.com/Anatolio87" target="_blank"><img src="github2.png" width="25px"></a>
+<a href="https://habrahabr.ru/users/tolik-programist/" target="_blank"><img src="habrahabr2.png" width="25px"></a>
+</div>
+</div>
+<div id="wrapper">
+<header>
+<div class="center">
+<div id="logo">
+<a href="#">Pixel.ru</a>
+</div>
+<div id="slogan"></div>
+<nav>
+<ul>
+<li><a href="my.html">Главная</a></li>
+<li><a href="biography.html">Обо мне</a></li>
+<li><a href="services.html">Услуги</a></li>
+<li><a href="work.html">Примеры работ</a></li>
+<li><a href="contacts.html">Контакты</a></li>
+</ul>
+</nav>
+<div id="logotip"><img src=""></div>
+</div>
+</header>
+
+<figure>
+
+</figure>
+
+<section>
+<div class="center">
+
+<div id="portfolio">
+
+<ul>
+<li><a href="http://anatolio87test.ru/" target="_blank">Мой первый сайт</a></li>
+<li><a href="http://anatolio87test.ru/text/maket1.html" target="_blank">Retro-Motors</a></li>
+<li><a href="#" target="_blank">####</a></li>
+<li><a href="#" target="_blank">####</a></li>
+<li><a href="#" target="_blank">####</a></li>
+<li><a href="#" target="_blank">####</a></li>
+<li><a href="#" target="_blank">####</a></li>
+<li><a href="#" target="_blank">####</a></li>
+<li><a href="#" target="_blank">####</a></li>
+</ul>
+</div>
+    </div>
+    </section>
+    <div class="clearfix"></div>
+<main>
+<div class="center">
+
+<aside>
+<div class="posted">
+</div>
+<div class="posted">
+</div>
+<div class="posted">
+</div>
+</aside>
+</div>
+</main>
+</div>
+<footer>
+<div class="center">
+    <div id="footer">
+    <div class="footer-block"></div>
+    <div class="footer-block"></div>
+    <div class="footer-block"></div>
+    </div>
+</div>
+</footer>
+<div id="copy"></div>
+</body>
+</html>

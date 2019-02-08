@@ -1,0 +1,68 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+
+}
+
+#coment{
+	text-align: center;
+}
+
+#contact{
+	margin: 0 auto;
+	width: 90%;
+	padding: 1%;
+}
+
+#buyer{
+	margin: 1%;
+	padding: 1%;
+}
+
+#seller{
+	padding: 1%;
+	margin: 1%;
+}
+
+#form_seller{
+    display: inline-block;
+	width: 55%;
+	position: relative;
+	bottom: 90px;
+	left: 3%;
+	padding: 10px;
+}
+
+#form_buyer{
+	text-align: center;
+	font-size: 30px;
+	display: inline-block;
+	width: 55%;
+	position: relative;
+	bottom: 90px;
+	padding: 10px;
+}
+
+.choice a{
+	text-decoration: none;
+	background: #0c1021;
+	color: #bab52b;
+	border-radius: 3px;
+	line-height: 25px;
+	padding: 2px;
+}
+.choice a:hover{
+	color: green;
+}
+
+#click{
+	width: 300px;
+	height: 30px;
+	margin: 10px 0;
+	color: white;
+	background: green;
+	cursor: pointer;
+}
