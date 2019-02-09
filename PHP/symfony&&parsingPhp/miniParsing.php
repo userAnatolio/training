@@ -99,29 +99,37 @@ var_dump($arrHref);
 echo "Анкоры: ";
 var_dump($a[2]); 
 
-// Получите все ссылки с классом www из #content. 
-
-// Получите все ссылки из пагинации .pag. 
-
-// Получите активную ссылку из пагинации .pag. 
-
-// Получите содержимое абзаца с классом .eee из #footer.
-
-*/
+9. Получите все ссылки с классом www из #content. 
 $str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/2/1.php');
-preg_match_all('#<a([^>]*class\s*=\s*.?["\']\s*www.*?["\'].*?)>(.*?)</a>#su', $str, $a);
-$count = 0;
-$arrHref = [];
-var_dump($a[1]);
-foreach($a[1] as $elem) {	
-preg_match('#.*?href\s*=.*?["\'](.*?)["\'].*?.*?#su', $elem, $href);
-$arrHref[$count] = $href[1];
-$count++;
-}
-echo "href: ";
-var_dump($arrHref);
-echo "Анкоры: ";
-var_dump($a[2]); 	
+preg_match('#<div.*?id="content".*?>(.*?)</div>#su', $str, $div);
+preg_match_all('#(<a[^>]*>.+?</a>)#su', $div[0], $res1);
+preg_match_all('#<a[^>]*class\s*=.*?www.*?>.+?</a>#su', $div[0], $res2);
+var_dump($res2);
+
+10. Получите все ссылки из пагинации .pag. 
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/2/1.php');
+preg_match('#<[^>]*class="pag".*?>(.*?)</div>#su', $str, $div);
+preg_match_all('#<a[^>]*>.+?</a>#su', $div[0], $res1);
+var_dump($res1);
+
+11. Получите активную ссылку из пагинации .pag. 
+
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/2/1.php');
+preg_match('#<[^>]*class="pag".*?>(.*?)</div>#su', $str, $div);
+preg_match_all('#<[^>]*active.*?>[^<]*(<a[^>]*(active)*.*?>[^<]</a>)#su', $div[0], $res1);
+var_dump($res1[1]);
+
+12. Получите содержимое абзаца с классом .eee из #footer.
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/2/1.php');
+preg_match('#<div[^>]*id\s*=\s*["\']footer["\'].*?>(.*?)</div>#su', $str, $div);
+preg_match_all('#<p[^>]*class\s*=.*?eee.*?>(.+?)</p>#su', $div[0], $p);
+echo $p[1][0];
+*/
+
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/2/1.php');
+preg_match('#<div[^>]*id\s*=\s*["\']footer["\'].*?>(.*?)</div>#su', $str, $div);
+preg_match_all('#<p[^>]*class\s*=.*?eee.*?>(.+?)</p>#su', $div[0], $p);
+echo $p[1][0];
 
 ?>
 
