@@ -1,2 +1,2 @@
 # training
-HTML CSS JavaScript jQuery PHP mySql C/C++/C#
+HTML CSS JavaScript jQuery nodeJS ReactJS PHP Yii 2 mySql C/C++/C#
