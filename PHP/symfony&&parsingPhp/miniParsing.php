@@ -71,7 +71,12 @@ $str = file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-
 preg_match_all('#<p[^>]*>(.*?)</p>#su', $str, $div);
 var_dump($div[1]);
 
-// Получите содержимое всех абзацев из #content. 
+6. Получите содержимое всех абзацев из #content. 
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/2/1.php');
+preg_match('#<div[^>]*id\s*=\s*["\']content["\'].*?>(.*?)</div>#su', $str, $div);
+preg_match_all('#<p[^>]*>(.*?)</p>#su', $div[0], $p);
+var_dump($div[0]);	
+var_dump($p[0]);
 
 // Получите все абзацы с классом www. 
 
@@ -86,10 +91,11 @@ var_dump($div[1]);
 // Получите содержимое абзаца с классом .eee из #footer.
 
 */
-
 $str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/2/1.php');
-preg_match_all('#<p[^>]*>(.*?)</p>#su', $str, $div);
-var_dump($div[1]);
+preg_match('#<div[^>]*id\s*=\s*["\']content["\'].*?>(.*?)</div>#su', $str, $div);
+preg_match_all('#<p[^>]*>(.*?)</p>#su', $div[0], $p);
+var_dump($div[0]);	
+var_dump($p[0]);
 
 ?>
 
