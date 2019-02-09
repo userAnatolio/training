@@ -124,12 +124,83 @@ $str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing
 preg_match('#<div[^>]*id\s*=\s*["\']footer["\'].*?>(.*?)</div>#su', $str, $div);
 preg_match_all('#<p[^>]*class\s*=.*?eee.*?>(.+?)</p>#su', $div[0], $p);
 echo $p[1][0];
+
+Часть 3
+Дана страница: перейдите по ссылке. 
+
+С помощью file_get_contents получите HTML код страницы по ссылке выше и для этой страницы с помощью регулярных выражений решите следующие задачи: 
+
+1. Получите массив ссылок из меню. 
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/3/1.php');
+preg_match('#<div[^>]*id\s*=\s*["\']menu["\'].*?>(.*?)</div>#su', $str, $menu);
+preg_match_all('#<a[^>]*>.+?</a>#su', $menu[0], $a);
+var_dump($a);
+
+2 Получите массив всех картинок. 
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/3/1.php');
+preg_match_all('#<img[^>]*>#su', $str, $image);
+var_dump($image);
+
+3. Получите содержимое контента. 
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/3/1.php');
+preg_match_all('#<div[^>]*id\s*=\s*["\']content["\'].*?>(.*)</div>[^<>]*<div.*?>#su', $str, $content);
+var_dump($content);
+
+4. Получите картинки контента. 
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/3/1.php');
+preg_match_all('#<div[^>]*id\s*=\s*["\']content["\'].*?>(.*)</div>[^<>]*?<div[^<>]*footer.*?>#su', $str, $content);
+preg_match_all('#<img[^>]*>#su', $str, $image);
+var_dump($image);
+
+5. Удалите скрипты из полученного контента. 
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/3/1.php');
+preg_match_all('#<div[^>]*id\s*=\s*["\']content["\'].*?>(.*)</div>[^<>]*?<div[^<>]*footer.*?>#su', $str, $content);
+$str = preg_replace('#<script[^>]*>.*?</script>#su', '', $content[1]);
+var_dump($str);
+
+6. Удалите картинки из полученного контента. 
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/3/1.php');
+preg_match_all('#<div[^>]*id\s*=\s*["\']content["\'].*?>(.*)</div>[^<>]*?<div[^<>]*footer.*?>#su', $str, $content);
+$str = preg_replace('#<img[^>]*>#su', '', $content[1]);
+var_dump($str);
+
+7. Удалите абзацы с классом "more" из полученного контента.
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/3/1.php');
+preg_match_all('#<div[^>]*id\s*=\s*["\']content["\'].*?>(.*)</div>[^<>]*?<div[^<>]*footer.*?>#su', $str, $content);
+$str = preg_replace('#<p[^>]*class\s*=[!-z]*["\']*more[!-z]*["\'].*?>.*?</p>#su', '!!!!!!', $content[1]);
+var_dump($content[1]);
+var_dump($str); 
+
+
+8. Теги h2 из контента сделайте просто текстом, а не ссылками. 
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/3/1.php');
+preg_match_all('#<div[^>]*id\s*=\s*["\']content["\'].*?>(.*)</div>[^<>]*?<div[^<>]*footer.*?>#su', $str, $content);
+$str = preg_replace('#(<h2[^>]*>)[^<]*<a[^>]*>(.*?)</a>.*?(</h2>)#su', '$1$2$3', $content[1]);
+var_dump($content[1]);
+var_dump($str);
+
+9. Удалите все атрибуты абзацев из полученного контента. 
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/3/1.php');
+preg_match_all('#<div[^>]*id\s*=\s*["\']content["\'].*?>(.*)</div>[^<>]*?<div[^<>]*footer.*?>#su', $str, $content);
+$str = preg_replace('#(<p)[^>]*(>.*?</p>)#su', '$1$2', $content[1]);
+var_dump($content[1]);
+var_dump($str);
+
+10. Удалите все теги span из полученного контента.
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/3/1.php');
+preg_match_all('#<div[^>]*id\s*=\s*["\']content["\'].*?>(.*)</div>[^<>]*?<div[^<>]*footer.*?>#su', $str, $content);
+$str = preg_replace('#<span[^>]*>(.*?)</span>#su', '$1', $content[1]);
+var_dump($content[1]);
+var_dump($str);
+
 */
 
-$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/2/1.php');
-preg_match('#<div[^>]*id\s*=\s*["\']footer["\'].*?>(.*?)</div>#su', $str, $div);
-preg_match_all('#<p[^>]*class\s*=.*?eee.*?>(.+?)</p>#su', $div[0], $p);
-echo $p[1][0];
+$str =  file_get_contents('http://code.mu/exercises/advanced/php/parsing/parsing-sajtov-regulyarnymi-vyrazeniyami-php/3/1.php');
+preg_match_all('#<div[^>]*id\s*=\s*["\']content["\'].*?>(.*)</div>[^<>]*?<div[^<>]*footer.*?>#su', $str, $content);
+$str = preg_replace('#<span[^>]*>(.*?)</span>#su', '$1', $content[1]);
+var_dump($content[1]);
+var_dump($str);
+
 
 ?>
 
