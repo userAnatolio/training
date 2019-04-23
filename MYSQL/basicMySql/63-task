@@ -1,0 +1,6 @@
+4. Выберите из таблицы workers записи с минимальной зарплатой.
+
+$query = "SELECT*FROM workers WHERE salary = (SELECT MIN(salary) FROM workers)";
+*********
+*********
+********* 14 сен 2018 в 4:06

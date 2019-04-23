@@ -1,0 +1,7 @@
+6. При выборке из таблицы workers прибавьте к дате 1 день, 2 часа
+
+$query = "SELECT *, date - INTERVAL '1-2' DAY_HOUR AS new_date FROM `workers`";
+$query = "SELECT *, DATE_ADD(date, INTERVAL '1-2' DAY_HOUR) AS new_date FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 21:02

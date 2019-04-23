@@ -1,0 +1,7 @@
+6. Добавьте в таблицу table1 поле status.
+
+$query = "ALTER TABLE table1 ADD status TEXT";
+$query = "ALTER TABLE table1 ADD COLUMN age INT";
+*********
+*********
+********* 14 сен 2018 в 6:23

@@ -1,0 +1,6 @@
+5. Выберите из таблицы workers записи с максимальной зарплатой.
+
+$query = "SELECT*FROM workers WHERE salary = (SELECT MAX(salary) FROM workers)";
+*********
+*********
+********* 14 сен 2018 в 4:12

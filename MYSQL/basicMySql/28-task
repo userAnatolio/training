@@ -1,0 +1,6 @@
+9. При выборке из таблицы workers создайте новое поле today, в котором будет номер текущего дня недели.
+
+$query = "SELECT *, DAY(date) AS day, MONTH(date) AS month, YEAR(date) AS year, DAYOFWEEK(date) AS День_недели FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 7:45

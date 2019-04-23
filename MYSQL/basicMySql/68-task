@@ -1,0 +1,5 @@
+9. Даны две таблицы: таблица category с полями id и name и таблица page с полями id, name и category_id. Достаньте одним запросом все страницы вместе с их категориями.
+"SELECT clients.client_id AS номер_клиента, clients.name AS имя_клиена, auto.marka FROM clients JOIN auto ON auto.client_id = clients.client_id
+*********
+*********
+********* 14 сен 2018 в 5:34

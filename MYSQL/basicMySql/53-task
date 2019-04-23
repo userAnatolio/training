@@ -1,0 +1,6 @@
+4. Даны две таблицы: таблица category и таблица sub_category с полями id и name. Достаньте одним запросом названия категорий и подкатегорий.
+
+$query = "SELECT id, name FROM workers UNION ALL SELECT id, name FROM opinion";
+*********
+*********
+********* 14 сен 2018 в 2:46

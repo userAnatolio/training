@@ -1,0 +1,8 @@
+2. Выберите из таблицы workers записи с login равным 'eee', 'bbb', 'zzz'.
+
+$query = "SELECT*FROM clients WHERE name IN('Марина', 'Иван')";
+$query = "SElECT*FROM Trip WHERE town_from IN('Rostov', 'Moscow')";
+$query = "SElECT*FROM Trip WHERE town_to IN('London', 'Singapore')";
+*********
+*********
+********* 10 сен 2018 в 2:08

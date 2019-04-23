@@ -1,0 +1,9 @@
+1. Выберите из таблицы workers уникальные возраста так, чтобы для каждого возраста было поле res, в котором будут лежать через дефис id записей с таким возрастом.
+
+$query = "SELECT GROUP_CONCAT(id) FROM workers GROUP BY age";
+
+$query = "SELECT GROUP_CONCAT(plane) FROM Trip GROUP BY town_from" ;
+$query = "SELECT GROUP_CONCAT(id) FROM workers GROUP BY age";
+*********
+*********
+********* 14 сен 2018 в 3:44

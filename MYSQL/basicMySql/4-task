@@ -1,0 +1,8 @@
+5. Выберите из таблицы workers записи c id от 3 до 10 и зарплатой от 300 до 500.
+
+$query = "SELECT*FROM Trip WHERE ID_comp BETWEEN 1 AND 2 AND plane='TU-134'";
+выбрал из прайса все цены от 2000 до 5000 руб.
+$query = "SELECT*FROM remont WHERE price BETWEEN 2000 AND 5000 " ;
+*********
+*********
+********* 12 сен 2018 в 2:30

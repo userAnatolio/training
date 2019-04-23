@@ -1,0 +1,8 @@
+0. При выборке из таблицы workers запишите год, месяц и день в отдельные поля с помощью EXTRACT.
+
+$query = "SELECT EXTRACT(YEAR FROM date) AS year, EXTRACT(MONTH FROM date) AS month, EXTRACT(DAY FROM date) AS day FROM `workers`";
+
+$query = "SELECT EXTRACT(DAY FROM time_out) AS day FROM Trip WHERE town_from='Moscow' ";
+*********
+*********
+********* 13 сен 2018 в 8:04

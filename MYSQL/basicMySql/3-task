@@ -1,0 +1,7 @@
+4. Выберите из таблицы workers записи c зарплатой от 100 до 1000.
+
+$query = "SELECT*FROM clients WHERE client_ID BETWEEN 1 AND 3";
+$query = "SELECT*FROM auto WHERE probeg BETWEEN 4000 AND 5000" ;
+*********
+*********
+********* 11 сен 2018 в 15:49

@@ -1,0 +1,7 @@
+1. При выборке из таблицы workers запишите день, месяц и год в отдельное поле с помощью DATE в формате 'год-месяц-день'.
+
+$query = "SELECT DATE(date) AS дата FROM `workers`";
+$query = "SELECT DATE(time_out) FROM Trip WHERE town_from='Moscow' ";
+*********
+*********
+********* 13 сен 2018 в 18:55

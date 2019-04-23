@@ -1,0 +1,13 @@
+9. Найдите в таблице workers минимальную зарплату.
+
+Выбрал машину в автосервисе с минимальным пробегом
+$query = "SELECT MIN(probeg) FROM auto" ;
+и наоборот
+$query = "SELECT MAX(probeg) FROM auto" ;
+только пускай она будет красного цвета
+$query = "SELECT MAX(probeg) AS пробег FROM auto WHERE color='красный' "
+ну или и то и другое
+$query = "SELECT MAX(probeg) AS max_пробег, MIN(probeg) AS min_пробег FROM auto " ;
+*********
+*********
+********* 12 сен 2018 в 3:28

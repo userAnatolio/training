@@ -1,0 +1,6 @@
+3. При выборке из таблицы workers получите из поля description символы со второго по десятый.
+
+$query = "SELECT id, SUBSTRING(description, 2, 10) AS text FROM workers";
+*********
+*********
+********* 14 сен 2018 в 1:16

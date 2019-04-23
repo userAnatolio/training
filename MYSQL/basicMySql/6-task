@@ -1,0 +1,7 @@
+7. Выберите из таблицы workers все записи так, чтобы туда попали только записи с разной зарплатой (без дублей).
+
+$query = "SELECT DISTINCT town_from AS Путкты_отправки FROM Trip";
+$query = "SELECT DISTINCT town_from AS Путкты_отправки, town_to AS путкты_прибытия FROM Trip WHERE town_to = 'Rostov'";
+*********
+*********
+********* 12 сен 2018 в 3:13

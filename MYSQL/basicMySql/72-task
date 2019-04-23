@@ -1,0 +1,22 @@
+3. Создайте в базе данных test1 таблицы table1 и table2 с полями id, login, salary, age, date.
+
+CREATE TABLE table1(
+id INT(1),
+login VARCHAR(255),
+salary INT(6),
+age INT(6),
+date DATE NOT NULL,
+primary key (id)
+)
+
+CREATE TABLE table2(
+id INT(1),
+login VARCHAR(255),
+salary INT(6),
+age INT(6),
+date DATE NOT NULL,
+primary key (id)
+)
+*********
+*********
+********* 14 сен 2018 в 6:08

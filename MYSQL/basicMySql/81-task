@@ -1,0 +1,19 @@
+1. Товар (название, цена, количество), категория товара. Запросы: (1) достать товары вместе с категориями, (2) достать товары из категории 'Овощи', (3) достать товары из категорий 'Овощи', 'Мясо', 'Морепродукты', (4) достать все категории (без товаров, только названия категорий), (5) достать все категории, в которых есть товары (без товаров, только названия категорий, без дублей).
+
+$query = "SELECT warehouse.category as 'категория товара', product.name as 'наименование', product.price as 'цена', product.number as 'колличество'
+FROM product LEFT JOIN warehouse ON product.category_id = warehouse.warehouse_id";
+*
+$query = "SELECT warehouse.category as 'категория товара', product.name as 'наименование', product.price as 'цена', product.number as 'колличество'
+FROM product LEFT JOIN warehouse ON warehouse.warehouse_id = product.category_id WHERE warehouse.category = 'produce'";
+*
+$query = "SELECT warehouse.category as 'категория товара', product.name as 'наименование', product.price as 'цена', product.number as 'колличество'
+FROM product LEFT JOIN warehouse ON warehouse.warehouse_id = product.category_id WHERE warehouse.category IN ('produce', 'meat', 'seafood')";
+*
+$query = "SELECT warehouse.category FROM warehouse";
+*
+$query = "SELECT DISTINCT warehouse.category FROM warehouse
+LEFT JOIN product ON warehouse.warehouse_id = product.category_id";
+*********
+*********
+*********
+********* вчера в 3:05

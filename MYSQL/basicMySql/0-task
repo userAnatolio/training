@@ -1,0 +1,8 @@
+1. Выберите из таблицы workers записи с id равным 1, 2, 3, 5, 14.
+
+$query = 'SELECT*FROM clients WHERE client_id IN(1,2,3)';
+$query = "SELECT*FROM Trip WHERE ID_comp IN(1,2,3)";
+$query = "SELECT*FROM Trip WHERE trip_no IN (1100, 1101, 1123)";
+*********
+*********
+********* 10 сен 2018 в 2:07

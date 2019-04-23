@@ -1,0 +1,6 @@
+8. При выборке из таблицы workers запишите день, месяц и год в отдельные поля.
+
+$query = "SELECT *, DAY(date) AS day, MONTH(date) AS month, YEAR(date) AS year FROM `workers`";
+*********
+*********
+********* 12 сен 2018 в 19:35

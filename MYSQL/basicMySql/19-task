@@ -1,0 +1,7 @@
+0. На NOW, CURRENT_DATE, CURRENT_TIME
+
+$query = "SELECT * FROM `workers` WHERE YEAR(date)=2016";
+$query = "SELECT * FROM Trip WHERE YEAR(time_out)=1900 and town_from='Moscow' ";
+*********
+*********
+********* 12 сен 2018 в 18:45

@@ -1,0 +1,7 @@
+2. При выборке из таблицы workers получите последние 5 символов поля description.
+
+$query = "SELECT id, RIGHT(description, 5) AS text FROM workers";
+$query = "SELECT id, SUBSTRING(description, -5) AS text FROM workers";
+*********
+*********
+********* 14 сен 2018 в 1:16

@@ -1,0 +1,7 @@
+9. При выборке из таблицы workers прибавьте к дате 1 день, 2 часа, 3 минуты, 5 секунд.
+
+$query = "SELECT *, date + INTERVAL '1-2-3-5' DAY_SECOND AS new_date FROM `workers`";
+$query = "SELECT *, DATE_ADD(date, INTERVAL '1-2-3-5' DAY_SECOND) AS new_date FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 21:30

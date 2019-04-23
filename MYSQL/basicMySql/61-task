@@ -1,0 +1,6 @@
+2. Выберите из таблицы workers все записи, зарплата в которых больше средней зарплаты.
+
+$query = "SELECT*FROM workers WHERE salary > (SELECT AVG(salary) FROM workers)";
+*********
+*********
+********* 14 сен 2018 в 4:01

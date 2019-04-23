@@ -1,0 +1,6 @@
+8. Переименуйте поле login на user_login.
+
+$query = "ALTER TABLE table1 CHANGE COLUMN login user_login int(10)";
+*********
+*********
+********* 14 сен 2018 в 6:34

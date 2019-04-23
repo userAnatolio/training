@@ -1,0 +1,7 @@
+6. При выборке из таблицы workers создайте новое поле res, в котором будет лежать сумма зарплаты и возраста.
+$query = "SELECT SUM(salary)+SUM(age) AS res FROM `workers`";
+
+$query = "SELECT CONCAT('Сумма зарплаты: ', SUM(salary), ' Сумма возрастов: ', SUM(age))AS res FROM `workers`";
+*********
+*********
+********* 14 сен 2018 в 0:22

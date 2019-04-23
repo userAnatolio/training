@@ -1,0 +1,8 @@
+3. Выберите из таблицы workers записи с id равным 1, 2, 3, 7, 9, и логином, равным 'user', 'admin', 'ivan' и зарплатой больше 300.
+
+$query = "SELECT*FROM clients WHERE name IN('Марина', 'Иван') AND client_id IN(1,2)";
+$query = "SELECT*FROM Trip WHERE town_from IN('Moscow', 'London') AND town_to IN('Singapore', 'Rostov')";
+$query = "SELECT*FROM auto WHERE marka IN('БМВ', 'Лада') AND color IN('красный','Серебристый')"
+*********
+*********
+********* 11 сен 2018 в 15:39

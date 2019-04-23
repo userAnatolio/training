@@ -1,0 +1,6 @@
+9. Смените типа поля salary с int на varchar(255).
+
+$query = "ALTER TABLE table1 CHANGE salary salary varchar(255)";
+*********
+*********
+********* 14 сен 2018 в 6:38

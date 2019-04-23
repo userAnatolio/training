@@ -1,0 +1,6 @@
+7. Удалите из таблицы table1 поле age.
+
+$query = "ALTER TABLE table1 DROP COLUMN age ";
+*********
+*********
+********* 14 сен 2018 в 6:32

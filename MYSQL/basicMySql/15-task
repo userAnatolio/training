@@ -1,0 +1,5 @@
+6. Выберите из таблицы workers все записи, у которых дата больше текущей.
+$query = "SELECT login FROM workers WHERE date>CURRENT_DATE()";
+*********
+*********
+********* 12 сен 2018 в 10:09

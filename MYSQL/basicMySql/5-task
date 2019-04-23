@@ -1,0 +1,11 @@
+6. Выберите из таблицы workers все записи так, чтобы вместо id было userId, вместо login – userLogin, вместо salary - userSalary.
+
+$query = "SELECT marka AS марка, client_id AS номер_клиента FROM auto" ;
+$query = "SELECT town_from AS откуда, town_to AS куда FROM Trip";
+$query = "SELECT name AS имя_отчество FROM Passenger";
+
+здесь просто вывел два раза под разными заголовками
+$query = "SELECT name AS Перевозчик, name AS компания FROM Company"
+*********
+*********
+********* 12 сен 2018 в 2:58

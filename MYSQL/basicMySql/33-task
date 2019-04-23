@@ -1,0 +1,7 @@
+4. При выборке из таблицы workers прибавьте к дате 1 день.
+
+$query = "SELECT *, date + INTERVAL 1 DAY AS new_date FROM `workers`";
+$query = "SELECT *, DATE_ADD(date, INTERVAL 1 DAY) AS new_date FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 20:57

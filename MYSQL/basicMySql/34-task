@@ -1,0 +1,7 @@
+5. При выборке из таблицы workers отнимите от даты 1 день.
+
+$query = "SELECT *, date - INTERVAL 1 DAY AS new_date FROM `workers`";
+$query = "SELECT *, DATE_SUB(date, INTERVAL 1 DAY) AS new_date FROM `workers`";
+*********
+*********
+********* 13 сен 2018 в 21:00

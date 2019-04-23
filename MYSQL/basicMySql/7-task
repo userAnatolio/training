@@ -1,0 +1,8 @@
+8. Получите SQL запросом все возрасты без дублирования.
+Колличество названий самолетов
+$query = "SELECT COUNT(DISTINCT plane) FROM Trip";
+Модели самолетов
+$query = "SELECT DISTINCT plane AS модель FROM Trip";
+*********
+*********
+********* 12 сен 2018 в 3:21
