@@ -1,0 +1,23 @@
+5. Повторите страницу по данному по образцу:
+
+<body>
+<script>
+function func1() {
+var elem = document.getElementById('test');
+elem.style.display = 'none';
+}
+function func2() {
+var elem = document.getElementById('test');
+elem.style.display = 'inline-block';
+}
+</script>
+
+<input type="text" value="ку-ку" id="test">
+<input type="submit" value="нажми на меня" onclick="func1()">
+<input type="submit" value="нажми на меня" onclick="func2()">
+
+</body>
+*********
+*********
+*********
+********* 21 апр 2018 в 22:30

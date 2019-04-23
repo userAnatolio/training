@@ -1,0 +1,16 @@
+5.
+
+<script>
+
+$('document').ready(function() {
+$('div').click(function() {
+$(this).effect('fold',{horizFirst: true}, 1000);
+
+});
+});
+
+</script>
+*********
+*********
+*********
+********* 31 июл 2018 в 15:25

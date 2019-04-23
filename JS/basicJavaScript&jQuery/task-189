@@ -1,0 +1,17 @@
+2. Повторите страницу по данному по образцу:
+
+<body>
+<script>
+function func() {
+document.getElementById('test').outerHTML = '<h3>Ку-ку! Я жирный!</h3>';
+}
+</script>
+<div>
+<p id="test">При нажатии на кнопку текст в абзаце будет заголовком h3.</p>
+<input type="submit" onclick="func()">
+</div>
+</body>
+*********
+*********
+*********
+********* 23 апр 2018 в 3:54

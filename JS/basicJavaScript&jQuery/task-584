@@ -1,0 +1,22 @@
+2. Найдите все абзацы <p> из #test, поставьте им в конец текст '!', затем исключите из найденных абзацы с классом .www и оставшимся поставьте красный цвет.
+<script>
+var arr = [];
+$('#test p').each( function() {
+$(this).append('!');
+if($(this).hasClass('www')) {
+$(this).remove();
+}
+else { $(this).css('color', 'red');}
+});
+
+</script>
+
+<script>
+
+$('#test p').append('!').filter('p.www').remove().end().css('color', 'red');
+
+</script>
+*********
+*********
+*********
+********* 17 июл 2018 в 16:51

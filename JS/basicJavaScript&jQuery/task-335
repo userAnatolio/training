@@ -1,0 +1,43 @@
+6. Дан инпут. Даны абзацы. Пусть в этот инпут записывается суммарное количество нажатий по этим абзацам.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<p>Мы посчитаем твои клики, жмякай на нас</p>
+<p>Мы посчитаем твои клики, жмякай на нас</p>
+<p>Мы посчитаем твои клики, жмякай на нас</p>
+<p>Мы посчитаем твои клики, жмякай на нас</p>
+
+<input id="test">
+
+
+<script>
+
+var test = document.getElementsByTagName('p');
+for(var i = 0; i < test.length; i++) {
+test[i].addEventListener('click', func);
+}
+var num = 0;
+
+function func() {
+num += 1;
+var test = document.getElementById('test');
+test.value = num;
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 мая 2018 в 14:59

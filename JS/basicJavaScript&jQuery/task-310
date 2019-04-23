@@ -1,0 +1,78 @@
+5. Дан селект со списком стран. Сделайте так, чтобы при выборе страны рядом появлялся еще и селект со списком городов из этой страны.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+#rus, #by, #ua {
+display: none;
+}
+</style>
+</head>
+
+<body>
+
+<select id="select" onclick="func()">
+<option>Россия</option>
+<option>Белоруссия</option>
+<option>Украина</option>
+</select>
+
+<br><br>
+
+<select id="rus">
+<option>Москва</option>
+<option>Волгоград</option>
+<option>Воронеж</option>
+</select>
+
+<select id="by">
+<option>Минск</option>
+<option>Витебск</option>
+<option>Полоцк</option>
+</select>
+
+<select id="ua">
+<option>Киев</option>
+<option>Львов</option>
+<option>Одесса</option>
+</select>
+
+<script>
+
+function func() {
+var select = document.getElementById('select');
+var rus = document.getElementById('rus');
+var by = document.getElementById('by');
+var ua = document.getElementById('ua');
+
+if(select.selectedIndex == 0) {
+rus.style.display = 'block';
+by.style.display = 'none';
+ua.style.display = 'none';
+}
+
+if(select.selectedIndex == 1) {
+rus.style.display = 'none';
+by.style.display = 'block';
+ua.style.display = 'none';
+}
+
+if(select.selectedIndex == 2) {
+rus.style.display = 'none';
+by.style.display = 'none';
+ua.style.display = 'block';
+}
+
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 9 мая 2018 в 22:28

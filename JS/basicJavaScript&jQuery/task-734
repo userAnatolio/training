@@ -1,0 +1,51 @@
+5. Реализуйте органайзер, хранящий данные в локальном хранилище.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+body {
+background: gray;
+}
+
+.center {
+width: 867px;
+margin: 0 auto;
+}
+
+textarea {
+width: 98%;
+resize: vertical;
+background: #262626;
+color: #eeeeee;
+border-radius: 5px;
+padding: 6px;
+min-height: 400px;
+}
+
+#button {
+width: 100%;
+background: #5d5d5d;
+color: #eeeeee;
+padding: 5px 0 5px 0;
+border-radius: 5px;
+border-color: #262626;
+font-size: 17px;
+font-weight: bold;
+cursor: pointer;
+}
+</style>
+<link rel="stylesheet" href="jquery/jquery-ui.min.css">
+<script src="jquery/jquery-1.7.js"></script>
+<script src="jquery/jquery-1.7.min.js"></script>
+<script src="jquery/jquery-ui.min.js"></script>
+</head>
+
+<body>
+*********
+*********
+*********
+********* 23 авг 2018 в 6:04

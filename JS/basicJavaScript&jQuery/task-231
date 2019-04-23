@@ -1,0 +1,31 @@
+2. Дан элемент #elem. Удалите у него класс www.
+
+<body id="elem">
+
+<div>
+<input type="submit" onclick="func()">
+<input type="submit" onclick="func2()">
+
+
+</div>
+
+<script>
+
+function func() {
+var elem = document.getElementById('elem');
+elem.classList.add('www');
+}
+
+function func2() {
+var elem = document.getElementById('elem');
+elem.classList.remove('www');
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 29 апр 2018 в 14:11

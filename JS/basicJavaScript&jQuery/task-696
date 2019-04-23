@@ -1,0 +1,10 @@
+9. С помощью test определите, что переданная строка заканчивается расширением txt, html или php.
+
+<script>
+var result = /(txt|html|php)$/.test('text.php');
+console.log(result);
+</script>
+*********
+*********
+*********
+********* 8 авг 2018 в 18:03

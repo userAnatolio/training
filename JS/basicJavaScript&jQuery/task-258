@@ -1,0 +1,32 @@
+0. Дан ol, а внутри него li. Сделайте так, чтобы по нажатию на любую li эта li удалялась.
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Пример веб-страницы</title>
+</head>
+<body>
+<h1>Заголовок</h1>
+<p>первый абзац</p>
+<p>Второй абзац.</p>
+<ol>
+<li>dfsdfsd</li>
+<li>sdfsfds</li>
+</ol>
+<script>
+var elems = document.getElementsByTagName('li');
+for(var i = 0; i < elems.length; i++) {
+elems[i].addEventListener('click', func);
+}
+function func() {
+this.parentElement.removeChild(this);
+}
+</script>
+</body>
+</html>
+*********
+*********
+*********
+********* 3 мая 2018 в 11:29

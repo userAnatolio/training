@@ -1,0 +1,35 @@
+5. Привяжите всем инпутам следующее событие - по потери фокуса каждый инпут выводит свое value в абзац с id="test".
+
+<body>
+
+<div>
+
+<input value="1">
+<input value="2">
+<input value="3">
+<input value="4">
+<input value="5">
+
+<p id="test"></p>
+
+</div>
+
+<script>
+var elems = document.getElementsByTagName('input');
+for (var i = 0; i < elems.length; i++) {
+elems[i].addEventListener('blur', func);
+}
+
+function func() {
+var text = document.getElementById('test');
+text.innerHTML = this.value;
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 29 апр 2018 в 10:13

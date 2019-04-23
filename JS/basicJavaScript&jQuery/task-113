@@ -1,0 +1,15 @@
+5. Проверьте, что строка заканчивается на .html.
+
+<script>
+var str = 'http//www.lada.ru/priora.html';
+if(str.substr(-5) == '.html') {
+alert('верно!');
+}
+else{
+alert('неверно');
+}
+</script>
+*********
+*********
+*********
+********* 11 апр 2018 в 19:42

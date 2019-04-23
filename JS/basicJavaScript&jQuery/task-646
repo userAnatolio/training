@@ -1,0 +1,12 @@
+1. Дана строка 'ahb acb aeb aeeb adcb axeb'. Напишите регулярку, которая найдет строки ahb, acb, aeb по шаблону: буква 'a', любой символ, буква 'b'.
+
+<script>
+var str = 'ahb acb aeb aeeb adcb axeb';
+
+alert(str.replace(/a.b/g, '!'));
+
+</script>
+*********
+*********
+*********
+********* 7 авг 2018 в 0:50

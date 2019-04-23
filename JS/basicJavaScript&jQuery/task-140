@@ -1,0 +1,24 @@
+4. Найдите все года от 1 до 2018, сумма цифр которых равна 13. Для этого используйте вспомогательную функцию getDigitsSum из предыдущей задачи.
+
+<script>
+function getDigitsSum(num) {
+var sum = 0;
+var str = String(num);
+str.split('');
+for(var i = 0; i < str.length; i++) {
+sum += Number(str[i]);
+}
+return sum;
+}
+
+arrYear = [];
+for(var i = 1; i <= 2018; i++) {
+if(getDigitsSum(i) == 13) {
+document.write(i + '<br>');
+}
+}
+</script>
+*********
+*********
+*********
+********* 16 апр 2018 в 2:26

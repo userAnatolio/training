@@ -1,0 +1,13 @@
+9. Выведите на экран количество часов, прошедшее между 1 марта 1988 года и текущим моментом с помощью Date.parse.
+
+<script>
+var date = new Date();
+var date1 = date.getTime();
+var date2 = Date.parse('1988-03-01');
+var result = (date1 - date2) / 1000 / 60 / 60;
+alert(result);
+</script>
+*********
+*********
+*********
+********* 28 апр 2018 в 7:49

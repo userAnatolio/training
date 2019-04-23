@@ -1,0 +1,12 @@
+4. Дана строка 'я учу javascript!'. Вырежите из нее слово 'учу' и слово 'javascript' тремя разными способами (через substr, substring, slice).
+
+<script>
+var str = 'я учу javascript!';
+document.write(str.substr(2,4) + '<br>' + str.substr(6,10) + '<br>');
+document.write(str.substring(2,5) + '<br>' + str.substring(6,16) + '<br>');
+document.write(str.slice(2,5) + '<br>' + str.slice(6,16));
+</script>
+*********
+*********
+*********
+********* 29 мар 2018 в 4:19

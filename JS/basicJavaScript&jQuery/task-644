@@ -1,0 +1,56 @@
+0. Повторите страницу по данному по образцу (модальное подтверждение):
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+<link rel="stylesheet" href="jquery/jquery-ui.min.css">
+<script src="jquery/jquery.min.js"></script>
+<script src="jquery/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+<script>
+$(document).ready(function(){
+$("#dialog").dialog({title: 'Простое диалоговое окно', autoOpen: false, modal: true,
+buttons:
+{
+
+
+'Ok' : function() {
+alert('Вы нажали кнопку Ok, теперь оно закроется');
+$('#dialog').dialog('close');
+},
+
+
+'Отмена': function() {
+alert('Вы нажали кнопку Отмена, теперь окно не закроется');
+},
+
+'Мне все равно': function() {
+alert('Вы нажали кнопку "Мне все равно", значит вам все равно');
+}
+
+}
+
+
+
+});
+$('#show').click(function(){$('#dialog').dialog("open")});
+
+});
+</script>
+<p id="show">Показать диалоговое окно</p>
+<div id="dialog">Содержимое диалогового окна</div>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 2 авг 2018 в 13:54

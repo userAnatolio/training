@@ -1,0 +1,12 @@
+5. Дана строка 'aa aba abba abbba abca abea'. Напишите регулярку, которая найдет строки aa, aba, abba, abbba по шаблону: буква 'a', буква 'b' любое количество раз (в том числе ниодного раза), буква 'a'.
+
+<script>
+var str = 'aa aba abba abbba abca abea';
+
+alert(str.replace(/ab*a/g, '!'));
+
+</script>
+*********
+*********
+*********
+********* 7 авг 2018 в 0:58

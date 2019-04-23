@@ -1,0 +1,16 @@
+7. Повторите страницу по данному по образцу:
+
+<body>
+<script>
+function func() {
+var elem = document.getElementById('test');
+elem.src = '2.jpg';
+}
+</script>
+<input type = "submit" onclick = "func()">
+<img src = "1.jpg" width = "200px" id = "test">
+</body>
+*********
+*********
+*********
+********* 19 апр 2018 в 0:01

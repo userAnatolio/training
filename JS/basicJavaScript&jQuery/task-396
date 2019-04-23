@@ -1,0 +1,21 @@
+5. Дан массив с числами. Проверьте то, что в нем есть отрицательные элементы.
+
+<script>
+
+var arr = [-1, 2, 4, 5, 6, 7];
+
+var result = arr.some(function(elem) {
+if(elem < 0) {
+return true;
+}
+else {
+return false;
+}
+});
+alert(result);
+
+</script>
+*********
+*********
+*********
+********* 8 июл 2018 в 4:37

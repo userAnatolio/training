@@ -1,0 +1,32 @@
+1. Дана форма с id="form". В ней даны инпуты, в них числа. Дана кнопка. По нажатию на эту кнопку получите форму по ее id, затем циклом переберите все инпуты в ней и найдите сумму чисел из этих инпутов.
+
+<body>
+
+<form id="form">
+<input value="1">
+<input value="2">
+<input value="3">
+<input value="4">
+</form>
+
+<input type="submit" onclick="func()">
+
+<script>
+
+function func() {
+var sum = 0;
+var form = document.getElementById('form');
+for(var i = 0; i < form.length; i++) {
+num = Number(form[i].value);
+sum = sum + num;
+}
+alert(sum);
+}
+
+</script>
+
+</body>
+*********
+*********
+*********
+********* 9 мая 2018 в 19:23

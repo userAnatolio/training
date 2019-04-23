@@ -1,0 +1,51 @@
+5. Дана форма с инпутами. Пользователь вводит какие-то данные и закрывает страницу (не факт, что он заполнил всю форму). Сделайте так, чтобы при следующем заходе на страницу введенные им ранее данные стояли на своих местах.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+textarea {
+width: 500px;
+height: 400px;
+margin: 30px 0;
+}
+
+</style>
+<script src="jquery.js"></script>
+<script src="cookies.min.js"></script>
+</head>
+
+<body onload="fullForm()">
+
+<form>
+<input id="name" placeholder="Введите имя">
+<textarea id="text" placeholder="Введите текст"></textarea>
+</form>
+
+<script>
+
+$('#name').on('change', function() {
+cookies({ name: $(this).val()}, {expires: 100 * 24 * 3600});
+});
+
+$('#text').on('change', function() {
+cookies({ text: $(this).val()}, {expires: 100 * 24 * 3600 });
+});
+
+function fullForm() {
+
+$("#name").val(cookies('name'));
+$("#text").val(cookies('text'));
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 19 авг 2018 в 1:10

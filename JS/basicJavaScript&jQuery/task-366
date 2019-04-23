@@ -1,0 +1,64 @@
+6. Реализуйте калькулятор валют. Есть два селекта - селект с исходной валюты, селект с той валютой, в которую мы хотим перевести деньги, инпут, в который вводится сумма для обмена. Курсы валют храните в массиве. Сделайте так, чтобы в селектах нельзя было выбрать две одинаковых валюты.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+Купить:
+
+<select id="buy">
+<option value="rur">Рубль</option>
+<option value="uah">Гривна</option>
+<option value="usd">Доллар</option>
+</select>
+
+за:
+
+<select id="sell">
+<option value="rur">Рубль</option>
+<option value="uah">Гривна</option>
+<option value="usd">Доллар</option>
+</select>
+
+Купить сумму:
+<input type="text" id="num">
+<p>Стоимость: <b id="sum"></b></p>
+
+<script>
+
+var buy = document.getElementById('buy');
+var sell = document.getElementById('sell');
+var num = document.getElementById('num');
+var result = document.getElementById('result');
+
+var obj = {'rur': 1, 'uah': 2, 'usd': 55};
+var result = 0;
+
+num.addEventListener('change', exchange);
+
+function exchange() {
+var selectBuy = buy[buy.selectedIndex].value;
+var selectSell = sell[sell.selectedIndex].value;
+if(obj[selectBuy] != obj[selectSell]) {
+result = obj[selectBuy] / obj[selectSell] * num.value;
+}
+else { alert('Надо выбрать другую валюту!'); num.value = 0;}
+sum.innerHTML = ' ' + result;
+}
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 27 мая 2018 в 18:31

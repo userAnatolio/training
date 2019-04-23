@@ -1,0 +1,12 @@
+1. Дана строка 'aa aba abba abbba abbbba abbbbba'. Напишите регулярку, которая найдет строки abba, abbba, abbbba и только их.
+
+<script>
+var str = 'aa aba abba abbba abbbba abbbbba';
+
+alert(str.replace(/ab{2,4}a/g, '!'));
+
+</script>
+*********
+*********
+*********
+********* 7 авг 2018 в 11:41

@@ -1,0 +1,13 @@
+4. С помощью replace замените все повторяющиеся пробелы на один.
+
+<script>
+
+var str = 'f df dfd f fff f';
+var result = str.replace(/\s+/g, ' ');
+alert(result);
+
+</script>
+*********
+*********
+*********
+********* 8 авг 2018 в 20:20

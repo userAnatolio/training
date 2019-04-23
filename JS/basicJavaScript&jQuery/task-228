@@ -1,0 +1,36 @@
+8. Даны инпуты. Сделайте так, чтобы все инпуты по потери фокуса проверяли свое содержимое на правильное количество символов. Сколько символов должно быть в инпуте, указывается в атрибуте data-length. Если вбито правильное количество, то граница инпута становится зеленой, если неправильное - красной.
+
+<body>
+
+<div>
+
+<input data-length="3" placeholder="можно ввести не больше 3 символов">
+<input data-length="4" placeholder="можно ввести не больше 4 символов">
+<input data-length="5" placeholder="можно ввести не больше 5 символов">
+
+</div>
+
+<script>
+
+var elems = document.getElementsByTagName('input');
+for (var i = 0; i < elems.length; i++) {
+elems[i].addEventListener('blur', func);
+}
+
+function func() {
+if(this.value.length <= this.getAttribute('data-length')) {
+this.style.borderColor = 'green';
+}
+else {
+this.style.borderColor = 'red';
+}
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 29 апр 2018 в 10:45

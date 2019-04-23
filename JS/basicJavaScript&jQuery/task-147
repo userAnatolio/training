@@ -1,0 +1,19 @@
+4. Дана строка, например, '123456'. Сделайте из нее '214365'.
+
+<script>
+var str = '123456';
+function func(str) {
+var split = str.split('');
+var result = [];
+for(var i = 1; i < split.length; i=i+2) {
+result.push(split[i] + split[i-1]);
+}
+str = result.join('');
+return alert(str);
+}
+func(str);
+</script>
+*********
+*********
+*********
+********* 17 апр 2018 в 4:03

@@ -1,0 +1,25 @@
+1. Создайте отсчет от 0 до бесконечности:
+
+<body>
+
+<script>
+function onTimer() {
+setInterval(timer,1000);
+}
+function timer() {
+var elem = document.getElementById('clock');
+elem.innerHTML = Number(elem.innerHTML) + 1;
+}
+</script>
+
+<div>
+<p id="clock">0</p>
+<input type="submit" id="day" value="запуск" onclick="onTimer()">
+
+</div>
+
+</body>
+*********
+*********
+*********
+********* 28 апр 2018 в 14:13

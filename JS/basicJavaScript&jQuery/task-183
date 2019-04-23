@@ -1,0 +1,22 @@
+1. Повторите страницу по данному по образцу:
+
+<body>
+<script>
+function func() {
+var elem1 = document.getElementById('test1');
+var elem2 = document.getElementById('test2');
+var value1 = elem1.value;
+var value2 = elem2.value;
+elem1.value = value2;
+elem2.value = value1;
+}
+</script>
+<input type="text" value="привет" id="test1">
+<input type="text" value="пока" id="test2">
+<input type="submit" value="нажми на меня" onclick="func()">
+
+</body>
+*********
+*********
+*********
+********* 22 апр 2018 в 0:14

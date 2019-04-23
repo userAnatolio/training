@@ -1,0 +1,47 @@
+1. Даны инпуты. Сделайте так, чтобы каждый инпут хранил историю своих изменений. Каждый инпут свою. Изменением считается событие onchange. История должна хранится в замыкании. Над каждым инпутом должны быть стрелочки назад и вперед, с помощью которых можно передвигаться по истории.
+
+<script>
+
+var func = function(input) {
+var arr = [];
+var text = '';
+return function() {
+arr.push(this.value);
+console.log(arr);
+var elem2 = this.previousElementSibling;
+var elem1 = this.previousElementSibling.previousElementSibling;
+elem1.addEventListener('click', (function() {
+for(var i = 0; i < arr.length; i++) {
+if(arr[i] == input.value && i > 0) {
+text = arr[i - 1];
+break;
+}
+}
+input.value = text;
+}));
+
+elem2.addEventListener('click', (function() {
+for(var i = 0; i < arr.length; i++) {
+if(arr[i] == input.value && i < arr.length -1) {
+text = arr[i + 1];
+break;
+}
+}
+input.value = text;
+}));
+}
+}
+
+var input = document.getElementsByTagName('input');
+for(var i = 0; i < input.length; i++) {
+input[i].addEventListener('change', func(input[i]));
+}
+
+</script>
+
+
+каша получется, еще вернусь к этой теме
+*********
+*********
+*********
+********* 8 июл 2018 в 4:36

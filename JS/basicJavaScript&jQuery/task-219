@@ -1,0 +1,45 @@
+7. Создайте карусель:
+
+<body onload="start()">
+
+<script>
+
+function start() {
+setInterval(slider, 1000);
+}
+
+function slider() {
+var elem1 = document.getElementById('text1');
+var elem2 = document.getElementById('text2');
+var elem3 = document.getElementById('text3');
+var elem4 = document.getElementById('text4');
+var elem5 = document.getElementById('text5');
+var elem6 = document.getElementById('text6');
+var img = elem1.src;
+
+elem1.src = elem2.src;
+elem2.src = elem3.src;
+elem3.src = elem4.src;
+elem4.src = elem5.src;
+elem5.src = elem6.src;
+elem6.src = img;
+}
+
+</script>
+
+<div>
+
+<img src="1.png" id="text1">
+<img src="2.png" id="text2">
+<img src="3.png" id="text3">
+<img src="4.png" id="text4">
+<img src="5.png" id="text5">
+<img src="6.png" id="text6">
+
+</div>
+
+</body>
+*********
+*********
+*********
+********* 29 апр 2018 в 3:31

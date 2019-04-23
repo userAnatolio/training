@@ -1,0 +1,27 @@
+3. Дан селект. Дан инпут. По изменению селекта выведите текст выбранного пункта в инпут.
+
+<body>
+
+<select id="select" onclick="func()">
+<option>Москва</option>
+<option>Волгоград</option>
+<option>Брянск</option>
+</select>
+
+<input value="" id="text">
+
+<script>
+
+function func() {
+var select = document.getElementById('select');
+var text = document.getElementById('text');
+text.value = select.value;
+}
+
+</script>
+
+</body>
+*********
+*********
+*********
+********* 9 мая 2018 в 21:32

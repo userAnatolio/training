@@ -1,0 +1,31 @@
+3. Привяжите всем ссылкам событие - по наведению на ссылку в конец ее текста дописывается ее href в круглых скобках.
+
+<body>
+
+<div>
+
+<a href="#" id="" title="титлы">ссылка1</a>
+<a href="#" id="" title="титлы">ссылка2</a>
+<a href="#" id="" title="титлы">ссылка3</a>
+<a href="#" id="" title="титлы">ссылка4</a>
+
+</div>
+
+<script>
+var elems = document.getElementsByTagName('a');
+for (var i = 0; i < elems.length; i++) {
+elems[i].addEventListener('mouseover', func);
+}
+
+function func() {
+this.innerHTML = this.innerHTML + '(' + this.getAttribute('href') + ')';
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 29 апр 2018 в 9:05

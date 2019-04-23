@@ -1,0 +1,58 @@
+7. При заходе на страницу появляется счетчик обратного отсчета. Когда он доходит до нуля, на странице пишется - 'отсчет закончен'. При обновлении страницы счетчик не должен начинать идти заново.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+#time {
+font-size: 40px;
+}
+
+</style>
+
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="cookies.min.js"></script>
+<script src="jquery.cookie.js"></script>
+</head>
+
+<body onload="onloadTime()">
+
+<p id="time"><p>
+
+<script>
+
+function onloadTime() {
+window.idInt = setInterval(function() {
+var num = $.cookie('time');
+if(!num) {
+num = 20;
+}
+num--;
+if(num == 0) {
+clearInterval(window.idInt);
+$('#time').html('Отсчет закончен!');
+}
+else {
+addCookie(num)
+
+$('#time').html(num);
+}
+}, 1000);
+
+function addCookie(num) {
+$.cookie('time', num, { expires: 7 });
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 19 авг 2018 в 4:57

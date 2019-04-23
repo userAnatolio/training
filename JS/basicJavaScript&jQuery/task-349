@@ -1,0 +1,38 @@
+0. Дан чекбокс. Дан инпут. Сделайте так, что если чекбокс отмечен - инпут видимый, если не отмечен - не видимый.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<input id="test">
+<input type="checkbox" id="elem" onchange="func()">
+
+<script>
+
+var test = document.getElementById('test');
+var elem = document.getElementById('elem');
+
+function func() {
+if(elem.checked == false) {
+test.style.display = 'none';
+}
+else {
+test.style.display = 'inline';
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 18 мая 2018 в 0:46

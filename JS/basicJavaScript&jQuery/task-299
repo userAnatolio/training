@@ -1,0 +1,38 @@
+1. Дан ul с несколькими li. По нажатию на любую li на экран должен вывестись ее текст. Решить не через делегирование, а обычным способом - задача разминочная.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<ul id="ul">
+<li>Лишка1</li>
+<li>Лишка2</li>
+<li>Лишка3</li>
+</ul>
+
+<script>
+
+var li = document.querySelectorAll('#ul li');
+for(var i = 0; i < li.length; i++) {
+li[i].addEventListener('click', addSign);
+}
+
+function addSign() {
+alert( this.innerHTML);
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 7 мая 2018 в 21:05

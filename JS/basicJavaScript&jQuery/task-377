@@ -1,0 +1,52 @@
+8. Сделайте игру. Суть - дана таблица с числами, распаложенными в случайном порядке в ячейках таблицы. Числа идут по порядку от 1 до N. Все числа разного размера и цвета. Играющему необходимо по порядку кликать по числам - сначала 1, потом 2 и так далее до N. Когда он кликает на правильную ячейку - она активируется и делает красный фон (предыдущие правильные ячейки не снимают выделение). Должен тикать таймер, на игру дается M секунд. Если не успел найти все числа по порядку - проиграл.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+.center {
+width: 600px;
+margin: 0 auto;
+}
+
+#frame {
+
+}
+
+td {
+border: 1px solid black;
+width: 50px;
+height: 50px;
+text-align: center;
+font-weight: bold;
+}
+
+table {
+margin: 7px auto;
+border: 1px solid black;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="center">
+
+<button onclick="start()" id="click">Начать</button>
+
+<p id="text">Начиная с "1" нажимайте на числа до тех пор, пока не дойдете до последнего</p><br>
+
+<div id="frame">
+<table id="tableGame"></table>
+</div>
+<br><br>
+<button onclick="restart()" id="click2">Начать сначала</button>
+
+</div>
+*********
+*********
+*********
+********* 25 июн 2018 в 6:42

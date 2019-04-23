@@ -1,0 +1,28 @@
+9. Дан элемент. Сделайте так, чтобы по нажатию по нему этот элемент удалялся.
+
+<body>
+
+<ol id="parent">
+<li id="elem" onclick="func()"></li>
+<li></li>
+<li></li>
+</ol>
+
+</div>
+
+<script>
+
+function func() {
+var parent = document.getElementById('parent');
+var elem = document.getElementById('elem');
+parent.removeChild(elem);
+
+}
+
+</script>
+
+</body>
+*********
+*********
+*********
+********* 30 апр 2018 в 8:39

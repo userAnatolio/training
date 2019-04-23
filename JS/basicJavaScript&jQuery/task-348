@@ -1,0 +1,49 @@
+9. Спросите у пользователя какие языки (html, css, js, php) он знает с помощью чекбоксов. Выбранные языки должны выводится в абзац ниже через запятую.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<h3>Какой язык тебе больше нравиться?</h3>
+
+<input type="checkbox" value="html">html<br>
+<input type="checkbox" value="css">css<br>
+<input type="checkbox" value="js">js<br>
+<input type="checkbox" value="php">php<br><br>
+
+<p id="text"><b>Ответ:</b></p>
+
+<script>
+var elem = document.getElementsByTagName('input');
+var p = document.getElementById('text');
+
+for(var i = 0; i < elem.length; i++) {
+elem[i].addEventListener('change', func);
+}
+
+var arr = [];
+var str = '';
+
+function func() {
+if(this.checked) {
+arr.push(this.value);
+str = arr.join(', ');
+p.innerHTML = 'Ответ: ' + str;
+}
+
+}
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 18 мая 2018 в 0:22

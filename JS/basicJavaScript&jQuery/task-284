@@ -1,0 +1,15 @@
+2. Дан элемент #elem. По клику на него увеличьте его ширину и высоту в 2 раза.
+
+<script>
+function func() {
+var elem = document.getElementById('elem');
+var width = elem.offsetWidth;
+var height = elem.offsetHeight;
+elem.style.height = height * 2 + 'px';
+elem.style.width = width * 2 + 'px';
+}
+</script>
+*********
+*********
+*********
+********* 4 мая 2018 в 23:37

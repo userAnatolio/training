@@ -1,0 +1,26 @@
+5. Дан элемент #elem. Вставьте перед ним span с текстом '!!!'.
+
+<body>
+
+<div id="elem">
+
+
+</div>
+
+<input type="submit" onclick="func()">
+
+<script>
+
+function func() {
+var elem = document.getElementById('elem');
+elem.insertAdjacentHTML('beforeBegin', '<span>Новый текст</span>');
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 30 апр 2018 в 5:45

@@ -1,0 +1,80 @@
+6. Дана таблица с колонками 'имя', 'фамилия', 'удалить'. Сделайте под ней 2 инпута и кнопку. Если ввести в эти инпуты имя и фамилию и нажать на кнопку - в таблицу должен добавиться новый ряд. В каждом ряду должна быть кнопочка 'удалить' (третий столбец), по нажатию на которую этот ряд удалится.
+
+Также сделайте так, чтобы можно было поредактировать любую ячейку с именем и фамилией - по клику на ячейку в ней должен появиться инпут с текстом этой ячейки, этот текст можно поменять, нажать Enter - и инпут исчезнет, а информация в ячейке обновится.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+td {
+width: 100px;
+height: 40px;
+border: 1px solid;
+text-align: center;
+}
+</style>
+</head>
+<body>
+
+<table id="table">
+<tr>
+<td>Имя</td>
+<td>Фамилия</td>
+<td>Действие</td>
+</tr>
+</table>
+
+<br>
+
+<input id="text1" placeholder="введите имя" value="">
+<input id="text2" placeholder="введите фамилию" value="">
+<input type="submit" id="elem">
+
+<script>
+var table = document.getElementById('table');
+var text1 = document.getElementById('text1');
+var text2 = document.getElementById('text2');
+var elem = document.getElementById('elem');
+
+elem.addEventListener('click', func1);
+
+function func1() {
+var tr = document.createElement('tr');
+var td1 = document.createElement('td');
+var td2 = document.createElement('td');
+var td3 = document.createElement('td');
+td1.innerHTML = text1.value;
+td2.innerHTML = text2.value;
+td3.innerHTML = '<input type="submit" value="удалить" onclick="del()">';
+table.appendChild(tr);
+tr.appendChild(td1);
+tr.appendChild(td2);
+tr.appendChild(td3);
+text1.value = "";
+text2.value = "";
+td1.addEventListener('click', addValue);
+td2.addEventListener('click', addValue);
+
+}
+
+function del(event) {
+table.removeChild(this.event.target.closest('tr'));
+}
+
+function addValue() {
+var value = prompt('введите значение');
+if(value.length > 0) {
+event.target.closest('td').innerHTML = value;
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 8 мая 2018 в 15:31

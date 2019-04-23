@@ -1,0 +1,85 @@
+2. Дан текстареа. В него можно ввести данные, затем поредактировать их, затем еще поредактировать. Пусть текстареа хранит историю своих изменений (даже после перезагрузки страницы). Сверху над текстареа должны появится стрелочки, с помощью которых можно перемещаться по истории.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+#text {
+padding: 15px;
+width: 300px;
+height: 400px;
+
+}
+
+</style>
+
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="cookies.min.js"></script>
+<script src="jquery.cookie.js"></script>
+</head>
+
+<body>
+
+<button id="left">«</button><textarea id="text"></textarea><button id="right">»</button>
+
+
+<script>
+
+$(document).ready(function(){
+var arr=[];
+if(localStorage['history']) {
+var json2 = localStorage.getItem('history');
+var arr = JSON.parse(json2);
+}
+var num = arr.length;
+var key = num;
+
+
+$('#text').on('change', function() {
+arr.push($('#text').val());
+newArr();
+});
+
+function newArr() {
+var json1 = JSON.stringify(arr);
+localStorage.setItem('history', json1);
+}
+
+
+
+$('#left').on('click', function() {
+key--;
+if(key >= 0) {
+$('#right').prop('disabled', false);
+$('#text').val(arr[key]);
+}
+if(key == 0) {
+$('#left').prop('disabled', true);
+}
+});
+
+$('#right').on('click', function() {
+key++;
+if(key < arr.length) {
+$('#left').prop('disabled', false);
+$('#text').val(arr[key]);
+}
+if(key >= arr.length) {
+$('#right').prop('disabled', true);
+}
+});
+
+});
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 20 авг 2018 в 12:24

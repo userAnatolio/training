@@ -1,0 +1,35 @@
+6. Для всех инпутов сделайте так, чтобы они выводили свой value алертом при нажатии на любой из них, но только по первому нажатию. Повторное нажатие на инпут не должно вызывать реакции.
+
+<body>
+
+<div>
+
+<input value="1">
+<input value="2">
+<input value="3">
+<input value="4">
+<input value="5">
+
+<p id="test"></p>
+
+</div>
+
+<script>
+var elems = document.getElementsByTagName('input');
+for (var i = 0; i < elems.length; i++) {
+elems[i].addEventListener('click', func);
+}
+
+function func() {
+alert(this.value);
+this.removeEventListener('click', func);
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 29 апр 2018 в 10:16

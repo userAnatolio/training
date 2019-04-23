@@ -1,0 +1,13 @@
+1. Дана кнопка. По нажатию на эту кнопку выведите высоту окна браузера.
+
+<script>
+function func() {
+var elem = document.documentElement;
+var height1 = window.innerHeight;
+var height2 = elem.clientHeight;
+alert(height2);
+}
+*********
+*********
+*********
+********* 5 мая 2018 в 12:59

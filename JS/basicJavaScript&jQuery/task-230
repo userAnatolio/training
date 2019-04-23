@@ -1,0 +1,25 @@
+1. Дан элемент #elem. Добавьте ему класс www.
+
+<body id="elem">
+
+<div>
+<input type="submit" onclick="func()">
+
+
+</div>
+
+<script>
+
+function func() {
+var elem = document.getElementById('elem');
+elem.classList.add('www');
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 29 апр 2018 в 14:11

@@ -1,0 +1,11 @@
+5. С помощью test определите, что переданная строка является доменом. Примеры доменов: site.ru, site.com, my-site.com.
+
+<script>
+var str = 'mymail@mail.ru, my.mail@mail.ru, my-mail@mail.ru, my_mail@mail.ru, mail@mail.com, mail@mail.by, mail@yandex.ru';
+var result = /(^\w[a-z0-9-._]{1,20}\w\.[a-z]{2,3})$/.test('site.ru');
+console.log(result);
+</script>
+*********
+*********
+*********
+********* 8 авг 2018 в 17:43

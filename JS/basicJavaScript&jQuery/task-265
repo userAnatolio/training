@@ -1,0 +1,21 @@
+2. Дан элемент #elem с границами. По нажатию на кнопку выведите толщину его левой границы.
+
+<body>
+
+<div id="elem"></div>
+
+<input type="submit" onclick="func()">
+
+<script>
+
+function func() {
+var elem = document.getElementById('elem');
+alert(elem.clientLeft);
+}
+</script>
+
+</body>
+*********
+*********
+*********
+********* 3 мая 2018 в 15:15

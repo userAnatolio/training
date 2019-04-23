@@ -1,0 +1,16 @@
+0.
+
+<script>
+
+$('document').ready(function() {
+$('div').click(function() {
+$(this).effect('shake',{direction: 'down', times: 8, distance: 50}, 2000);
+
+});
+});
+
+</script>
+*********
+*********
+*********
+********* 31 июл 2018 в 15:41

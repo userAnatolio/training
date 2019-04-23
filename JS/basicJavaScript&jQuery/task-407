@@ -1,0 +1,22 @@
+6. Дан массив с числами. Оставьте в нем только положительные числа. Затем извлеките квадратный корень и этих чисел.
+
+<script>
+
+var arr = [6, -2, -1, -2, -3, -2, -6, 4];
+newArr = [];
+
+var newArr = arr.filter(function(elem) {
+if(elem >= 0) {
+return elem;
+}
+});
+newArr = newArr.map(function(elem) {
+return elem * elem;
+});
+console.log(newArr);
+
+</script>
+*********
+*********
+*********
+********* 8 июл 2018 в 4:40

@@ -1,0 +1,32 @@
+3. Дан элемент #elem с границами. По нажатию на кнопку выведите его полную ширину с учетом границы и padding.
+
+<style>
+#elem {
+width: 200px;
+height: 200px;
+padding: 30px;
+border: 20px solid #BCBCBC;
+overflow: auto;
+}
+</style>
+</head>
+<body>
+
+<div id="elem"></div>
+
+<input type="submit" onclick="func()">
+
+<script>
+
+function func() {
+var elem = document.getElementById('elem');
+alert(elem.offsetWidth);
+}
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 3 мая 2018 в 15:19

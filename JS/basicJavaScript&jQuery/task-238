@@ -1,0 +1,14 @@
+9. Дан элемент #elem. По клику на него выведите название его тега в нижнем регистре.
+
+<script>
+
+function func() {
+var elem = document.getElementById('elem');
+alert(elem.tagName.toLowerCase());
+}
+
+</script>
+*********
+*********
+*********
+********* 29 апр 2018 в 17:02

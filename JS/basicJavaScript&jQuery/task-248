@@ -1,0 +1,30 @@
+1. Дан элемент #elem. Найдите всех потомков этого элемента и добавьте им в конец текст '!'.
+
+<body>
+
+<div id="elem">
+<p>абзац</p>
+<p>абзац</p>
+
+</div>
+
+<input type="submit" onclick="func()">
+
+<script>
+
+function func() {
+var elem = document.getElementById('elem');
+var elem1 = elem.children;
+for(var i = 0; i < elem1.length; i++) {
+elem1[i].innerHTML = elem1[i].innerHTML + '!!!';
+}
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 30 апр 2018 в 7:10

@@ -1,0 +1,12 @@
+2. Дана строка 'aba aca aea abba adca abea'. Напишите регулярку, которая найдет строки abba adca abea по шаблону: буква 'a', 2 любых символа, буква 'a'.
+
+<script>
+var str = 'aba aca aea abba adca abea';
+
+alert(str.replace(/a..a/g, '!'));
+
+</script>
+*********
+*********
+*********
+********* 7 авг 2018 в 0:52

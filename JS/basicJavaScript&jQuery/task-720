@@ -1,0 +1,23 @@
+2. Установите куку с вашем именем и вашим возрастом. Выведите на экран содержимое этих двух кук.
+
+<script>
+
+document.cookie = "name=Иван";
+document.cookie = "age=30";
+
+function getCookie(name) {
+var matches = document.cookie.match(new RegExp(
+"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+));
+return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+alert(getCookie('name'));
+alert(getCookie('age'));
+
+
+</script>
+*********
+*********
+*********
+********* 15 авг 2018 в 1:42

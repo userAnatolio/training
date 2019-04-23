@@ -1,0 +1,24 @@
+4. Привяжите всем инпутам событие - по потери фокуса каждый инпут выводит свое value в абзац с id="test".
+
+<body>
+
+<input>
+<input>
+<input>
+<input>
+
+<p id="test"></p>
+
+<script>
+
+$('input').on('blur', function func() {
+$('#test').html($(this).val());
+});
+
+</script>
+
+</body>
+*********
+*********
+*********
+********* 15 июл 2018 в 15:55

@@ -1,0 +1,61 @@
+6. Реализуйте чеклист. Должен быть инпут с добавлением задачи, а над ним - список с задачами. Возле каждой задачи чекбос. Если нажать на чекбокс - задача становится выполненной, перечеркивается и становится серого цвета, чекбокс при этом пропадает. Справа от любой задачи должен быть крестик для удаления этой задачи.
+
+Задачу также можно поредактировать, если сделать двойной клик по ней - в этом случае вместо пункта списка появляется инпут с текстом задачи, можно поредактировать текст задачи, нажать Enter и задача изменится. Инпут при этом исчезнет.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+#wrapping {
+border: 1px solid;
+width: 320px;
+margin: 0 auto;
+}
+
+#parentDiv {
+width: 320px;
+margin: 0 auto;
+}
+
+#parentDiv div {
+width: 320px;
+border: 1px solid;
+margin: 10px 0;
+padding: 10px 0;
+}
+
+#text {
+border: 1px solid black;
+display: block;
+margin: 0 auto;
+width: 300px;
+margin-top: 5px;
+margin-bottom: 5px;
+padding: 5px;
+}
+
+button {
+width: 20px;
+float: right;
+color: red;
+border-radius: 5px;
+background: white;
+margin-right: 10px;
+font-weight: bold;
+cursor: pointer;
+}
+
+
+
+
+
+</style>
+
+</head>
+*********
+*********
+*********
+********* 10 июн 2018 в 18:00

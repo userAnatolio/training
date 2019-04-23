@@ -1,0 +1,21 @@
+0. Дан массив с числами. Посчитайте количество отрицательных чисел в этом массиве.
+
+<script>
+
+var arr = [-2, 5, 1, -5, -1, 1, 3, 4, -1];
+
+var resultArr = arr.filter(function(elem) {
+if(elem < 0) {
+return true;
+}
+else {
+return false;
+}
+});
+console.log(resultArr.length);
+
+</script>
+*********
+*********
+*********
+********* 8 июл 2018 в 4:38

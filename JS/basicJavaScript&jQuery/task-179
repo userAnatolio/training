@@ -1,0 +1,27 @@
+7. Повторите страницу по данному по образцу:
+
+<body>
+<script>
+function func1() {
+var elem1 = document.getElementById('test1');
+var elem2 = document.getElementById('test2');
+elem1.value = 'теперь на меня нельзя нажать';
+elem1.disabled = true;
+elem2.style.display = 'inline-block';
+}
+function func2() {
+var elem1 = document.getElementById('test1');
+var elem2 = document.getElementById('test2');
+elem1.value = 'теперь на меня можно нажать';
+elem1.disabled = false;
+elem2.style.display = 'none';
+}
+</script>
+
+<input type="submit" value="нажми на меня" onclick="func1()" id="test1">
+<input type="submit" value="нажми на меня, чтобы разблокировать" onclick="func2()" id="test2" style="display: none">
+</body>
+*********
+*********
+*********
+********* 21 апр 2018 в 22:53

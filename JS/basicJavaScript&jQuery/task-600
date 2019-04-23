@@ -1,0 +1,16 @@
+8. Сделайте так, чтобы все отмеченные чекбоксы сменили свое состояние на неотмеченное и наоборот.
+
+<script>
+$(':checkbox').each( function(index, elem) {
+if(elem.checked) {
+elem.checked = false;
+}
+else {
+$(this).attr('checked', true);
+}
+});
+</script>
+*********
+*********
+*********
+********* 21 июл 2018 в 1:00

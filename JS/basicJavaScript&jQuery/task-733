@@ -1,0 +1,51 @@
+4. Реализуйте записную книгу, хранящую данные в локальном хранилище.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+* { margin: 0; padding: 0; }
+
+#center {
+width: 500px;
+margin: 0 auto;
+text-align: center;
+}
+
+.header, h1{
+color: #337ab7;
+}
+
+.text {
+font-size: 18px;
+text-align: justify;
+padding-bottom: 20px;
+}
+
+input {
+width: 97%;
+padding: 1%;
+margin-bottom: 5px;
+}
+
+textarea {
+width: 95%;
+padding: 2%;
+margin-bottom: 5px;
+}
+
+</style>
+<script src="jquery/jquery.min.js"></script>
+<script src="jquery/jquery-ui.min.js"></script>
+<script src="cookies.min.js"></script>
+<script src="jquery.cookie.js"></script>
+</head>
+
+<body>
+*********
+*********
+*********
+********* 23 авг 2018 в 3:19

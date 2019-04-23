@@ -1,0 +1,12 @@
+0. Дан объект {js:['jQuery', 'Angular'], php: 'hello', css: 'world'}. Выведите с его помощью слово 'jQuery'.
+
+<script>
+
+var obj = {js:['jQuery', 'Angular'], php: 'hello', css: 'world'};
+alert(obj.js[0]);
+
+</script>
+*********
+*********
+*********
+********* 23 мар 2018 в 7:31

@@ -1,0 +1,44 @@
+0. Даны картинки. По первому нажатию на любую картинку увеличьте ее в 2 раза. По второму нажатию - уменьшите обратно.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<img src="1.png">
+<img src="2.png">
+<img src="3.png">
+
+
+
+<script>
+var img = document.getElementsByTagName('img');
+for(var i = 0; i < img.length; i++) {
+img[i].addEventListener('click', func);
+}
+
+function func() {
+this.height = this.height * 2;
+this.removeEventListener('click', func);
+this.addEventListener('click', func2);
+}
+
+function func2() {
+this.height = this.height / 2;
+this.removeEventListener('click', func2);
+this.addEventListener('click', func);
+}
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 мая 2018 в 11:46

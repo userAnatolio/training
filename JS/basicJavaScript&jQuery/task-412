@@ -1,0 +1,12 @@
+5. Дан объект {name: 'Петр', 'surname': 'Петров', 'age': '20 лет'}. Запишите соответствующие значения в переменные name, surname и age.
+
+<script>
+let objElem = {name: 'Петр', surname: 'Петров', age: '20 лет'};
+let { name, surname, age } = objElem;
+alert(name);
+
+</script>
+*********
+*********
+*********
+********* 8 июл 2018 в 4:41

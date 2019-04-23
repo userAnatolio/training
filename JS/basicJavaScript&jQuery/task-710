@@ -1,0 +1,15 @@
+6. Дана строка '23 + 35 ='. Числа могут быть любыми. Выведите на экран результат операции в виде '23 + 35 = 58'.
+
+<script>
+
+var result = '23 + 35 ='.replace(/(\d+)\s\+\s(\d+)\s=/g, function(match, match1, match2) {
+var sum = Number(match1) + Number(match2);
+return match + sum;
+});
+alert(result);
+
+</script>
+*********
+*********
+*********
+********* 9 авг 2018 в 0:58

@@ -1,0 +1,47 @@
+9. Дан ряд ссылок. Сделайте так, чтобы по нажатию на ссылку она становилась с красным фоном. По нажатию на другую ссылку выделение первой ссылки снимается и выделяется та, на которую мы нажали. В абзац ниже пишите текст активной ссылки.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+<a href="#">Текст ссылки 1</a>
+<a href="#">Текст ссылки 2</a>
+<a href="#">Текст ссылки 3</a>
+<a href="#">Текст ссылки 4</a>
+<p></p>
+
+<script>
+
+var p = document.querySelector('p');
+var link = document.querySelectorAll('a');
+for (var i = 0; i < link.length; i++) {
+link[i].addEventListener('click', func);
+}
+
+function func() {
+for(var j = 0; j < link.length; j++) {
+link[j].style.background = '';
+link[j].style.color = '';
+}
+this.style.background = 'red';
+this.style.color = 'white';
+p.innerHTML = this.innerHTML;
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 27 мая 2018 в 19:33

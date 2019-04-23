@@ -1,0 +1,14 @@
+7. Дана страница с горизонтальной и вертикальной полосами прокрутки. По нажатию на кнопку прокрутите ее в точку 300px слева, 500px сверху.
+
+<input type="submit" onclick="func()">
+
+<script>
+var elem = document.getElementById('elem');
+function func() {
+window.scrollTo(300, 500);
+}
+</script>
+*********
+*********
+*********
+********* 4 мая 2018 в 22:39

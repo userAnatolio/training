@@ -1,0 +1,26 @@
+5. Дана кнопка. Сделайте так, чтобы по нажатию на эту кнопку, скрывался родитель этой кнопки.
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Пример веб-страницы</title>
+</head>
+<body>
+<div style="background-color: red; width: 200px; height: 300px;">
+<input type="submit" id = "clon" onclick="func()">
+</div>
+<script>
+function func() {
+var clon = document.getElementById('clon');
+clon.parentElement.style.display = 'none';
+}
+
+</script>
+</body>
+</html>
+*********
+*********
+*********
+********* 3 мая 2018 в 11:32

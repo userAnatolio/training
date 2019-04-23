@@ -1,0 +1,16 @@
+8. Работа с эффектами
+
+<script>
+
+$('document').ready(function() {
+$('div').click(function() {
+$(this).effect('drop', {direction: 'right'}, 1000);
+
+});
+});
+
+</script>
+*********
+*********
+*********
+********* 31 июл 2018 в 14:53

@@ -1,0 +1,31 @@
+1. Дан ol. Вставьте ему в конец li с текстом 'пункт'.
+
+<body>
+
+<div>
+
+<ol id="ol" onclick="func()">
+<li>Каждый</li>
+<li>охотник</li>
+<li>желает</li>
+</ol>
+
+</div>
+
+<script>
+
+function func() {
+var elem = document.getElementById('ol');
+var li = document.createElement('li');
+li.innerHTML = 'ПУНКТ';
+elem.appendChild(li);
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 29 апр 2018 в 20:15
