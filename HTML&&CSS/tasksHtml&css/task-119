@@ -1,0 +1,18 @@
+7. Повторите страницу по данному по образцу:
+
+<style>
+#img1 {filter: grayscale(100%);}
+#img2 {filter: sepia(100%);}
+#img3 {filter: saturate(50%);}
+#img4 {filter: hue-rotate(90deg);}
+#img5 {filter: invert(100%);}
+#img6 {filter: opacity(50%);}
+#img7 {filter: brightness(70%);}
+#img8 {filter: contrast(50%);}
+#img9 {filter: blur(1px);}
+#img10 {filter: drop-shadow(16px 16px 20px black);}
+</style>
+*********
+*********
+*********
+********* 22 фев 2018 в 2:38

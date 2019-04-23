@@ -1,0 +1,32 @@
+9. Повторите страницу по данному по образцу (при наведении на зеленый блок, все красный блоки плавно увеличат свою ширину):
+
+<style>
+* {
+margin: 0; padding: 0;
+}
+.block {
+border: 1px solid green;
+margin: 10px;
+}
+ul {
+width: 90%;
+margin: 0 auto;
+list-style-type: none;
+}
+li {
+border: 1px solid red;
+width: 30%;
+height: 30px;
+margin: 40px 0;
+
+transition: width 1s;
+}
+
+.block:hover li {
+width: 100%
+}
+</style>
+*********
+*********
+*********
+********* 3 мар 2018 в 17:59

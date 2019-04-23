@@ -1,0 +1,61 @@
+7. Повторите страницу по данному по образцу.
+
+<style>
+#wrapper {
+margin: 200px auto;
+width: 200px;
+position: relative;
+-webkit-animation: anim 10s linear infinite;
+-webkit-transform-style: preserve-3d;
+}
+
+#wrapper > div {
+width: 200px;
+height: 300px;
+position: absolute;
+border: 1px solid black;
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+line-height: 300px;
+}
+
+#div1 {
+background: orange;
+-webkit-transform: translateZ(-300px) rotateY(180deg);;
+}
+#div2 {
+background: red;
+-webkit-transform: translateX(-300px) rotateY(-90deg);
+}
+#div3 {
+background: green;
+-webkit-transform: translateX(300px)rotateY(90deg);
+}
+#div4 {
+background: blue;
+-webkit-transform: translateZ(300px);
+}
+
+@keyframes anim {
+from {
+transform: rotateY(0deg);
+}
+to {
+transform: rotateY(360deg);
+}
+}
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="div1">HTML</div>
+<div id="div2">CSS</div>
+<div id="div3">PHP</div>
+<div id="div4">JavaScript</div>
+</div>
+*********
+*********
+*********
+********* 10 мар 2018 в 5:43

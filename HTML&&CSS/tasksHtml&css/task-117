@@ -1,0 +1,17 @@
+5. Повторите попытку по данному образцу:
+<style>
+div {margin: 0 auto 50px auto;}
+#div1 {border-style: solid; border-width: 26px; background: green; width:400px; height: 400px; border-image: url(border.png) 26 repeat;}
+#div1:hover {border-image: url(border.png) 26 round;}
+#div2 {border-style: solid; border-width: 26px; background: green; width:400px; height: 400px; border-image: url(border.png) 26;}
+#div3 {border-style: solid; border-width: 26px; background: green; width:400px; height: 400px; border-image: url(border.png) 26 repeat stretch;}
+#div4 {border-style: solid; border-width: 26px; background: green; width:400px; height: 400px; border-image: linear-gradient(to bottom, red, blue) 30;}
+#div5 {border-style: solid; border-width: 26px; background: green; width:400px; height: 400px; border-image: url(border.png) 26 repeat;}
+#div5:hover {border-image: url(border.png)26/1/1 repeat;}
+#div6 {width:400px; height: 400px; border-image: url(border2.png) 25% 30% 10% 20% stretch; border-style: solid; border-width: 50px;}
+#div6:hover{border-image: url(border2.png) fill 25% 30% 10% 20% stretch;
+</style>
+*********
+*********
+*********
+********* 22 фев 2018 в 0:59

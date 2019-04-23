@@ -1,0 +1,44 @@
+6. Повторите страницу по данному по образцу.
+
+<style>
+
+ul {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+padding: 0;
+margin: 0;
+align-items: center;
+}
+
+li {
+list-style-type: none;
+text-align: center;
+border: 1px solid blue;
+}
+
+.test {
+margin: 0 auto;
+border: 1px solid blue;
+background-color: #2696e8;
+width: 700px;
+}
+
+a {
+display: block;
+padding: 10px;
+color: white;
+text-decoration: none;
+}
+
+li:hover {
+background-color: white;
+}
+
+li:hover a{
+color: #2696e8;
+}
+*********
+*********
+*********
+********* 1 фев 2018 в 17:50

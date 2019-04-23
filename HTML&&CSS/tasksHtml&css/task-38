@@ -1,0 +1,25 @@
+1. Повторите страницу по данному по образцу:
+
+<style>
+
+.test1 {
+width: 200px;
+height: 200px;
+border: 1px solid red;
+margin: 30px;
+}
+
+.test2 {
+width: 250px;
+border: 1px solid green;
+text-align: justify;
+padding: 20px;
+box-sizing: border-box;
+margin: 30px;
+}
+
+</style>
+*********
+*********
+*********
+********* 26 янв 2018 в 21:38

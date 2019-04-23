@@ -1,0 +1,72 @@
+2. Повторите страницу по данному по образцу.
+
+<style>
+
+.wrapper {
+width: 800px;
+margin: 10px auto;
+}
+
+.header {
+height: 200px;
+outline: 1px solid;
+}
+
+.content {
+width: 600px;
+height: 500px;
+outline: 1px solid;
+float: right;
+}
+
+.footer {
+height: 200px;
+outline: 1px solid;
+}
+
+.left {
+width: 200px;
+height:500px;
+float: left;
+outline: 1px solid;
+}
+
+.clearfix {
+clear: both;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="header">
+header
+</div>
+
+<div class="left">
+sidebar
+</div>
+
+<div class="content">
+content
+</div>
+
+<div class="clearfix">
+</div>
+
+<div class="footer">
+footer
+</div>
+
+</div>
+
+</body>
+*********
+*********
+*********
+********* 10 фев 2018 в 17:05

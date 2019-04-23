@@ -1,0 +1,10 @@
+0. Повторите страницу по данному по образцу (пустая li имеет маркер и границу):
+
+<style>
+li {border: 1px solid red; width: 200px; padding: 5px; margin-bottom: 10px;}
+li:empty {border: 1px solid blue;}
+</style>
+*********
+*********
+*********
+********* 24 фев 2018 в 7:32

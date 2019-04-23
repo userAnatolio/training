@@ -1,0 +1,25 @@
+9. Повторите страницу по данному по образцу (наведите мышкой на пункт меню):
+
+<style>
+
+li {
+display: inline-block;
+list-style-type: none;
+border: 1px solid blue;
+}
+li:hover, li.active {
+transform: rotate(20deg);
+}
+
+li a {
+display: block;
+color: blue;
+text-decoration: none;
+padding: 10px;
+}
+
+</style>
+*********
+*********
+*********
+********* 4 мар 2018 в 20:52

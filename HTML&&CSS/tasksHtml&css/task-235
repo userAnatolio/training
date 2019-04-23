@@ -1,0 +1,18 @@
+4. Повторите страницу по данному по образцу:
+
+<style>
+#wrapper {
+margin: 100px auto;
+width: 300px;
+}
+
+.block {
+text-align: justify;
+transform: skewX(5deg);
+}
+
+</style>
+*********
+*********
+*********
+********* 4 мар 2018 в 20:36

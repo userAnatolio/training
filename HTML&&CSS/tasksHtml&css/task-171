@@ -1,0 +1,8 @@
+3. Повторите страницу по данному по образцу (выделите текст и повторите цвет и фон выделения):
+
+div {margin: 0 auto; width: 70%; text-align: justify;}
+p::selection { background: green; color: white; font-weight: bold;}
+*********
+*********
+*********
+********* 23 фев 2018 в 21:46

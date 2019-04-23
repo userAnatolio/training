@@ -1,0 +1,21 @@
+6. Повторите страницу по данному по образцу (здесь движение реализовано через 3 ключевые точки: 0%, 50%, 100%):
+<style>
+.block {
+border: 1px solid red;
+height: 50px;
+width: 50px;
+}
+@keyframes anim {
+0%{margin-left: 0;}
+50%{margin-left: 50%;}
+100%{margin-left: 0;}
+}
+
+.block {
+animation: anim 3s infinite;
+}
+</style>
+*********
+*********
+*********
+********* 4 мар 2018 в 12:03

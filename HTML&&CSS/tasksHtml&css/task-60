@@ -1,0 +1,73 @@
+1. Менюшка
+Повторите страницу по данному по образцу.
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
+
+<style>
+
+ul {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color: #2696e8;
+height: 40px;
+text-align: center;
+border: 1px solid blue;
+padding: 0;
+margin: 0;
+}
+
+li {
+list-style-type: none;
+margin: 0;
+}
+
+.test {
+padding: 0;
+margin: 0 auto;
+width: 700px;
+}
+
+a {
+display: block;
+padding: 11px;
+margin: 0;
+}
+
+a:link, a:visited {
+text-decoration: none;
+color: white;
+}
+
+a:hover {
+background-color: white;
+color: #2696e8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class = "test">
+<ul>
+
+<li><a href = "">Главная</a></li>
+<li><a href = "">О Компании</a></li>
+<li><a href = "">Информация</a></li>
+<li><a href = "">О нас</a></li>
+
+</ul>
+</div>
+</body>
+
+</html>
+*********
+*********
+*********
+********* 1 фев 2018 в 15:59

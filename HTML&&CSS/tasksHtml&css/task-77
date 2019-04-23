@@ -1,0 +1,51 @@
+0. Повторите страницу по данному по образцу:
+
+<style>
+
+#red {
+border: 1px solid;
+height: 100px;
+width: 100px;
+position: absolute;
+top: 50px;
+left: 50px;
+background-color: red;
+border-radius: 50px;
+}
+
+#yellow {
+border: 1px solid;
+height: 100px;
+width: 100px;
+position: absolute;
+top: 160px;
+left: 50px;
+background-color: yellow;
+border-radius: 50px;
+}
+
+#green {
+border: 1px solid;
+height: 100px;
+width: 100px;
+position: absolute;
+top:270px;
+left: 50px;
+background-color: green;
+border-radius: 50px;
+}
+
+#white {
+border: 1px solid;
+height: 430px;
+width: 200px;
+position: relative;
+margin: 0 auto;
+background-color: #fff;
+}
+
+</style>
+*********
+*********
+*********
+********* 6 фев 2018 в 1:17

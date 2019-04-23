@@ -1,0 +1,12 @@
+4. Повторите страницу по данному по образцу:
+<style>
+#text1 {padding: 5px; margin-bottom: 20px; border: 1px solid red; text-align: justify; width: 100px; height: 100px; overflow: hidden;}
+#text2 {padding: 5px; margin-bottom: 20px; border: 1px solid red; text-align: justify; width: 100px; height: 100px; overflow-y: scroll;}
+#text3 {padding: 5px; margin-bottom: 20px; border: 1px solid red; text-align: justify; width: 300px; overflow: scroll;}
+#text4 {padding: 5px; margin-bottom: 20px; border: 1px solid red; text-align: justify; width: 300px; white-space: nowrap; overflow: show;}
+#text5 {padding: 5px; margin-bottom: 20px; border: 1px solid red; text-align: justify; width: 300px; white-space: nowrap; overflow: auto;}
+</style>
+*********
+*********
+*********
+********* 20 фев 2018 в 21:16

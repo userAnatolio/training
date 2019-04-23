@@ -1,0 +1,9 @@
+3. Повторите страницу по данному по образцу (наведите мышкой на список):
+
+li {border: 1px solid blue; padding: 5px; width: 200px; margin-bottom: 20px; list-style-type: none;}
+li:hover {background: green;}
+li:hover ~ li:nth-child(odd) {background: red;}
+*********
+*********
+*********
+********* 23 фев 2018 в 21:30

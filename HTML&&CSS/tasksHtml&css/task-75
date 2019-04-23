@@ -1,0 +1,26 @@
+8. Повторите страницу по данному по образцу:
+На relative
+В следующих задачах основной блок стоит по центру с помощью margin: auto, а остальные позиционируются относительно него с помощью свойства position.
+
+<style>
+
+#red {
+border: 1px solid red;
+height: 100px;
+width: 100px;
+position: absolute;
+top: 100px;
+left: 100px;
+}
+
+#green {
+border: 1px solid green;
+height: 400px;
+width: 500px;
+position: relative;
+margin: 0 auto;
+}
+*********
+*********
+*********
+********* 6 фев 2018 в 0:32

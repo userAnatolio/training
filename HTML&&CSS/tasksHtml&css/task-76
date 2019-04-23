@@ -1,0 +1,35 @@
+9. Повторите страницу по данному по образцу:
+
+<style>
+
+#white1 {
+height: 100px;
+width: 100px;
+position: absolute;
+top: 50px;
+left: 50px;
+background-color: white;
+}
+
+#white2 {
+height: 100px;
+width: 100px;
+position: absolute;
+right: 50px;
+bottom: 50px;
+background-color: white;
+}
+
+#green {
+height: 400px;
+width: 500px;
+position: relative;
+margin: 0 auto;
+background-color: #4dee99;
+}
+
+</style>
+*********
+*********
+*********
+********* 6 фев 2018 в 0:43

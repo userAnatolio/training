@@ -1,0 +1,14 @@
+2. Повторите страницу по данному по образцу:
+
+div {
+width: 70%; margin: 0 auto; text-align: justify; -o-hyphens: auto;
+-moz-hyphens: auto; -webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; padding: 10px;
+}
+p {-o-columns: 2; -moz-columns: 2; -webkit-columns: 2; -ms-columns: 2; columns: 2;
+-o-column-gap: 100px; -moz-column-gap: 100px; -webkit-column-gap: 100px; -ms-column-gap: 100px; column-gap: 100px;
+-o-column-rule: 1px solid black; -moz-column-rule: 1px solid black; -ms-column-rule: 1px solid black;
+-webkit-column-rule: 1px solid black; column-rule: 1px solid black; }
+*********
+*********
+*********
+********* 21 фев 2018 в 21:46

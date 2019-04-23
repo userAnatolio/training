@@ -1,0 +1,42 @@
+3. Повторите страницу по данному по образцу:
+
+<style>
+
+#test a:link, a:visited {
+text-decoration: none;
+color: white;
+background-color: #444444;
+}
+
+#test a:hover {
+text-decoration: none;
+color: black;
+font-weight: bold;
+background-color: white;
+}
+
+#test a {
+display: block;
+padding-left: 5px;
+}
+
+#test {
+width: 200px;
+font-family: Arial;
+font-size: 14px;
+
+}
+
+#test li {
+border: 1px solid #444444;
+margin-bottom: 5px;
+list-style-type: none;
+line-height: 30px;
+}
+
+
+</style>
+*********
+*********
+*********
+********* 27 янв 2018 в 16:04

@@ -1,0 +1,114 @@
+5. Повторите страницу по данному по образцу:
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
+
+<style>
+
+#ul1 {
+list-style-type: square;
+}
+
+#ul2 {
+list-style-type: circle;
+}
+
+#ul3 {
+list-style-type: disc;
+}
+
+#ul4 {
+list-style-type: none;
+}
+
+#ul5 {
+list-style-image: url("image.gif");
+}
+
+#ol6 {
+list-style-type: ;
+}
+
+#ol7 {
+list-style-type: lower-greek;
+}
+
+#ol8 {
+list-style-type: upper-alpha;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<ul id = "ul1">
+<li>Красный</li>
+<li>Желтый</li>
+<li>Зеленый</li>
+<li>Синий</li>
+</ul>
+
+<ul id = "ul2">
+<li>Красный</li>
+<li>Желтый</li>
+<li>Зеленый</li>
+<li>Синий</li>
+</ul>
+
+<ul id = "ul3">
+<li>Красный</li>
+<li>Желтый</li>
+<li>Зеленый</li>
+<li>Синий</li>
+</ul>
+
+<ul id = "ul4">
+<li>Красный</li>
+<li>Желтый</li>
+<li>Зеленый</li>
+<li>Синий</li>
+</ul>
+
+<ul id = "ul5">
+<li>Красный</li>
+<li>Желтый</li>
+<li>Зеленый</li>
+<li>Синий</li>
+</ul>
+
+<ol id = "ol6">
+<li>Красный</li>
+<li>Желтый</li>
+<li>Зеленый</li>
+<li>Синий</li>
+</ol>
+
+<ol id = "ol7">
+<li>Красный</li>
+<li>Желтый</li>
+<li>Зеленый</li>
+<li>Синий</li>
+</ol>
+
+<ol id = "ol8">
+<li>Красный</li>
+<li>Желтый</li>
+<li>Зеленый</li>
+<li>Синий</li>
+</ol>
+
+
+
+</div>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 27 янв 2018 в 13:35

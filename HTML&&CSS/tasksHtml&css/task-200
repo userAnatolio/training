@@ -1,0 +1,29 @@
+7. Повторите страницу по данному по образцу.
+
+<style>
+html {
+font-size: 30px;
+}
+@media screen and (min-width: 800px) {
+.text {
+font-size: 1.5rem;
+}
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+.text {
+font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 400px) {
+.text {
+font-size: 0.5rem;
+}
+}
+
+</style>
+*********
+*********
+*********
+********* 2 мар 2018 в 21:47

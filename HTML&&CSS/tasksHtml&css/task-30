@@ -1,0 +1,16 @@
+1. Повторите страницу по данному по образцу:
+
+.div{
+
+width: 200px;
+height: 250px;
+border-width: 1px;
+border-style: dotted;
+border-radius: 10px 20px 30px 40px;
+border-color: green;
+
+}
+*********
+*********
+*********
+********* 22 янв 2018 в 22:58

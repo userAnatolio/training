@@ -1,0 +1,129 @@
+8. Повторите страницу по данному по образцу.
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
+
+<style>
+
+.li a:link, .li a:visited {
+text-decoration: none;
+color: white;
+font-family: Arial;
+font-size: 13px;
+font-weight: bold;
+}
+
+.li a:hover, .block a.active {
+color: #fc9d00;
+background-color: white;
+font-family: Arial;
+}
+
+li {
+display: inline-block;
+}
+
+a {
+padding: 17px;
+display: block;
+}
+
+h1,h2 {
+text-align: center;
+margin: 0px;
+color: #9b6100;
+}
+
+.block {
+width: 900px;
+margin: 0px auto 20px auto;
+border: 1px solid #fc9d00;
+margin-top: -8px;
+}
+
+.block p {
+text-indent: 50px;
+font-size: 17px;
+text-align: justify;
+margin: 10px 10px 5px 10px;
+line-height: 35px;
+color: #cc8000;
+}
+
+.li {
+background-color: #fc9d00;
+margin: 0px;
+padding: 0px;
+}
+
+ul {
+margin: 0px 0px 20px 0px;
+padding: 0px
+}
+
+.footer {
+text-align: center;
+margin-bottom: 50px;
+}
+
+.footer a:link, .footer a:visited {
+text-decoration: none;
+color: #9b6100;
+font: 13px Arial;
+font-weight: bold;
+display: inline;
+}
+
+.footer a:hover {
+text-decoration: underline;
+color: black;
+font: 13px Arial;
+font-weight: bold;
+display: inline;
+}
+
+p a:link, p a:visited {
+display: inline;
+color: #cc8000;
+padding: 0px;
+font-weight: bold;
+text-decoration: underline;
+}
+
+p a:hover {
+color: black;
+text-decoration: none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class = "block">
+
+<div class = "li">
+<ul>
+<li><a href = "" class = "active">Главная</a></li>
+<li><a href = "">Новости</a></li>
+<li><a href = "">Контакты</a></li>
+<li><a href = "">О компании</a></li>
+<li><a href = "">Как добраться</a></li>
+</ul>
+</div>
+
+<h1>Vestibulum ante ipsum</h1>
+<p>Vestibulum ante ipsum primis <a href = "">in faucibus orci luctus</a> et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu fermentum diam, vitae faucibus ligula. Nam nec risus sed nisi porttitor ullamcorper iaculis ac nulla. Sed condimentum nisi in tincidunt adipiscing. Mauris vehicula mollis consequat. Vivamus non accumsan tortor. Aliquam dictum justo et augue viverra, vel interdum lorem pharetra.</p>
+<p>Nullam id faucibus ante. <a href = "">Proin tristique lorem</a> tristique dolor porttitor, eget adipiscing leo gravida. Proin erat erat, laoreet sit amet tincidunt ac, iaculis nec libero. In placerat odio ac dapibus faucibus. Praesent ut est in ligula facilisis congue eget ac ante. Phasellus at felis vitae est molestie ultricies.</p>
+<h2>Vestibulum ante</h2>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <a href = "">Pellentesque</a> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu fermentum diam, vitae faucibus ligula. Nam nec risus sed nisi porttitor ullamcorper iaculis ac nulla. Sed condimentum nisi in tincidunt adipiscing. Mauris vehicula mollis consequat. Vivamus non accumsan tortor. Aliquam dictum justo et augue viverra, vel interdum lorem pharetra.</p>
+<p>Duis vel dapibus nulla. <a href = "">Sed scelerisque</a> porttitor rhoncus. Nunc eleifend eget nulla sed malesuada. Vestibulum vestibulum ullamcorper lacus, ut ullamcorper tortor convallis quis. Mauris id eleifend nisi
+*********
+*********
+*********
+********* 29 янв 2018 в 10:59

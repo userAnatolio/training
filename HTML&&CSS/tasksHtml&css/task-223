@@ -1,0 +1,23 @@
+3. Повторите страницу по данному по образцу:
+
+<style>
+.block {
+border: 1px solid red;
+height: 200px;
+width: 200px;
+}
+@keyframes anim {
+from {background: white;}
+to {background: red;}
+}
+.block {
+animation-name: anim;
+animation-duration: 3s;
+animation-timing-function: ease;
+animation-iteration-count: 1;
+}
+</style>
+*********
+*********
+*********
+********* 4 мар 2018 в 11:50

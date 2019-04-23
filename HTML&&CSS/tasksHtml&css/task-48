@@ -1,0 +1,64 @@
+6. Повторите страницу по данному по образцу (li поставьте в ряд с помощью inline-block):
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
+
+<style>
+
+#test a:link, #test a:visited {
+text-decoration: none;
+color: blue;
+}
+
+#test a:hover, #test a.clearfix {
+text-decoration: none;
+color: white;
+background-color: #484848;
+}
+
+#test {
+font-family: Arial;
+font-size: 14px;
+}
+
+#test a {
+display: block;
+padding:0px 5px;
+}
+
+#test li {
+display: inline-block;
+border: 1px solid black;
+margin-right: 5px;
+line-height: 25px;
+}
+
+.clearfix {
+clear: both;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id = "test">
+<ul>
+<li><a href = "">Главная</a></li>
+<li><a href = "" class = "clearfix">Новости</a></li>
+<li><a href = "">Контакты</a></li>
+<li><a href = "">О компании</a></li>
+<li><a href = "">Как добраться</a></li>
+</ul>
+</div>
+<p>жили были дед и бабка, и была у них внучка, а у внучки были дед и бабка...</p>
+</body>
+</html>
+*********
+*********
+*********
+********* 27 янв 2018 в 21:05

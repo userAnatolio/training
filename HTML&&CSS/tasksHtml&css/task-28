@@ -1,0 +1,16 @@
+9. Повторите страницу по данному по образцу:
+
+.div{
+
+width: 300px;
+height: 200px;
+border-width: 1px;
+border-style: solid;
+border-radius: 20px;
+border-color: blue green red black;
+
+}
+*********
+*********
+*********
+********* 22 янв 2018 в 22:48

@@ -1,0 +1,9 @@
+3. Повторите страницу по данному по образцу:
+<style>
+#text1 {text-align: justify; margin-bottom: 50px; width: 400px; text-align-last: right;}
+#text2 {text-align: justify; margin-bottom: 50px; width: 400px; text-align-last: center;}
+</style>
+*********
+*********
+*********
+********* 20 фев 2018 в 20:27

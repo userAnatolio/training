@@ -1,0 +1,70 @@
+1. Повторите страницу по данному по образцу (наведите мышкой на каждый из блоков):
+
+<style>
+#wrapper {
+margin: 0 auto;
+width: 200px;
+}
+#wrapper div {
+margin-bottom: 10px;
+}
+.block1 {
+border: 1px solid red;
+width: 100px;
+height: 100px;
+}
+.block1:hover {
+transform: rotate(45deg);
+}
+.block2 {
+border: 1px solid red;
+width: 100px;
+height: 100px;
+transform:
+}
+.block2:hover {
+transform: scale(2,2);
+}
+.block3 {
+border: 1px solid red;
+width: 100px;
+height: 100px;
+transform:
+}
+.block3:hover {
+transform: skewX(45deg);
+}
+.block4 {
+border: 1px solid red;
+width: 100px;
+height: 100px;
+transform:
+}
+.block4:hover {
+transform: translateX(20px);
+}
+.block5 {
+border: 1px solid red;
+width: 100px;
+height: 100px;
+transform:
+}
+.block5:hover {
+transform: translate(-20px, -20px);
+}
+</style>
+
+</head>
+
+<body>
+<div id="wrapper">
+<div class="block1"></div>
+<div class="block2"></div>
+<div class="block3"></div>
+<div class="block4"></div>
+<div class="block5"></div>
+</div>
+*********
+*********
+*********
+********* 4 мар 2018 в 20:06

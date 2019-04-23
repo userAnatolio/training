@@ -1,0 +1,13 @@
+0. Повторите страницу по данному по образцу (в середине нумерация начинается с начала):
+
+<style>
+div {margin: 0 auto; width: 70%; text-align: justify; }
+p { hyphens: auto;}
+#num {counter-reset: test;} /* абзац 1 */
+#reset{counter-reset: test; font-weight: bold;} /* абзац 2 */
+p::before { counter-increment: test; content: "Абзац №" counter(test) ".";}
+</style>
+*********
+*********
+*********
+********* 24 фев 2018 в 6:43

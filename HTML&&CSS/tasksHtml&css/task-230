@@ -1,0 +1,38 @@
+1. Повторите страницу по данному по образцу (наведите мышь на красный блок - элемент под ним элемент начнет двигаться, уберите - перестанет):
+
+<style>
+
+.div {
+border: 1px solid red;
+width: 200px;
+height: 30px;
+margin-bottom: 20px;
+text-align: center;
+line-height: 30px;
+}
+
+.block {
+border: 1px solid red;
+height: 30px;
+width: 50%;
+}
+
+@keyframes anim {
+from {width: 50%;}
+to {width: 10%;}
+}
+
+.block {
+animation: anim 1s linear infinite alternate;
+animation-play-state: paused;
+}
+
+.div:hover + .block {
+animation-play-state: running;
+}
+
+</style>
+*********
+*********
+*********
+********* 4 мар 2018 в 13:24

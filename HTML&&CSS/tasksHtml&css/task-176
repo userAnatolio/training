@@ -1,0 +1,11 @@
+8. овторите страницу по данному по образцу (в начале каждого абзаца вставлена автоматическая нумерация "Абзац №число. "):
+
+<style>
+div {margin: 0 auto; width: 70%; text-align: justify; counter-reset: test;}
+p { hyphens: auto;}
+p::before {counter-increment: test; content: "Абзац №" counter(test) ".";}
+</style>
+*********
+*********
+*********
+********* 24 фев 2018 в 6:22

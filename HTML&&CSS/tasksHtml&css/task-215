@@ -1,0 +1,26 @@
+4. Повторите страницу по данному по образцу:
+<style>
+.block1 {
+border: 1px solid red;
+height: 50px;
+margin-bottom: 30px;
+width: 30%;
+
+transition: all 2s steps(5, start);
+}
+.block2 {
+border: 1px solid red;
+height: 50px;
+width: 30%;
+
+transition: all 2s steps(5, end);
+}
+
+#wrapper:hover div {
+width: 100%;
+}
+</style>
+*********
+*********
+*********
+********* 3 мар 2018 в 20:27

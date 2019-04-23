@@ -1,0 +1,16 @@
+7. Функция .selection() должна компилироваться в кроссбраузерный вариант псевдоэлемента selection.
+
+=selection($code)
+&::-webkit-selection
+color: #{$code}
+&::-moz-selection
+color: #{$code}
+&::selection
+color: #{$code}
+
+input
++selection(red)
+*********
+*********
+*********
+********* 11 мар 2018 в 23:55

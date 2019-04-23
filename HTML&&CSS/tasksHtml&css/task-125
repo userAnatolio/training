@@ -1,0 +1,21 @@
+6. Повторите страницу по данному по образцу:
+
+<form>
+<fieldset>
+<legend>Выберите кнопочку</legend>
+<input type="radio" name="name1"><input type="radio" name="name1"> <input type="radio" name="name1">
+<input type="text" placeholder="Ваше имя">
+</fieldset>
+<br><br>
+<fieldset>
+<legend>Выберите еще кнопочку</legend>
+<input type="radio" name="name2"><input type="radio" name="name2"> <input type="radio" name="name2">
+<input type="radio" name="name2" disabled> <input type="radio" name="name2" disabled>
+</fieldset>
+<br><br>
+<input type="submit" value="Отправить на сервер">
+</form>
+*********
+*********
+*********
+********* 23 фев 2018 в 1:18

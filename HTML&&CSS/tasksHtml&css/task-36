@@ -1,0 +1,17 @@
+4. Повторите страницу по данному по образцу.
+
+body {
+background-image: url("fon.jpg");
+background-repeat: repeat-y;
+background-position: right top;
+}
+
+div,p {
+width: 400px;
+text-align: justify;
+font-weight: bold;
+}
+*********
+*********
+*********
+********* 23 янв 2018 в 21:44

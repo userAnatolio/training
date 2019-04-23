@@ -1,0 +1,35 @@
+6. Повторите страницу по данному по образцу.
+
+<style>
+body {
+font-size: 30px;
+}
+@media screen and (min-width: 800px) {
+.text {
+font-size: 1.5em;
+}
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+.text {
+font-size: 1em;
+}
+}
+
+@media screen and (max-width: 400px) {
+.text {
+font-size: 0.5em;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="text">Текст будет разного размера в зависимости от размера экрана. Точки: 480px, 800px.</div>
+</body>
+*********
+*********
+*********
+********* 2 мар 2018 в 21:03

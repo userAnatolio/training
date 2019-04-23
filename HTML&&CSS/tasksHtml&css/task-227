@@ -1,0 +1,24 @@
+8. Повторите страницу по данному по образцу:
+
+<style>
+#wrapper {border: 1px solid red; width: 50%;}
+
+.block {
+height: 30px;
+width: 0;
+background: red;
+}
+
+@keyframes anim {
+from {width: 0;}
+to {width: 100%;}
+}
+
+.block {
+animation: anim 5s forwards;
+}
+</style>
+*********
+*********
+*********
+********* 4 мар 2018 в 12:16

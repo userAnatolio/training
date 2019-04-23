@@ -1,0 +1,29 @@
+8. Повторите страницу по данному по образцу (радиальный градиент):
+
+<style>
+.square {width: 200px; height: 200px; margin-bottom: 20px; border: 1px solid;}
+.long {width: 400px; height: 200px; margin-bottom: 20px; border: 1px solid;}
+#div1 {background: radial-gradient(white, #088abc);}
+#div2 {background: radial-gradient(at top, white, #088abc);}
+#div3 {background: radial-gradient(circle, white, #088abc);}
+#div4 {background: radial-gradient(ellipse, white, #088abc);}
+#div5 {background: radial-gradient(circle closest-side, white, #088abc);}
+#div6 {background: radial-gradient(circle closest-corner at 40px 40px, white, #088abc);}
+#div7 {background: radial-gradient(circle closest-side, black 10px, white 30px, white 40px, green 50px);}
+#div8 {background: radial-gradient(circle closest-side, green 30px, white 30px, white 50px, green 50px);}
+</style>
+</head>
+<body>
+<div id="div1" class="square"></div>
+<div id="div2" class="square"></div>
+<div id="div3" class="long"></div>
+<div id="div4" class="long"></div>
+<div id="div5" class="long"></div>
+<div id="div6" class="long"></div>
+<div id="div7" class="long"></div>
+<div id="div8" class="long"></div>
+</body>
+*********
+*********
+*********
+********* 21 фев 2018 в 20:28

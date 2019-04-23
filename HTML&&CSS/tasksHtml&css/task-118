@@ -1,0 +1,15 @@
+6. Повторите попытку по данному образцу:
+<style>
+div {margin: 0 auto 50px auto; border: 10px dotted black; width: 300px;
+height: 300px; padding: 30px; text-align: justify; font-size: 20px; font-weight: bold;}
+#div1 {color: black; background: url("fon1.jpg") no-repeat; background-clip: padding-box; }
+#div2 { color: black; background: url("fon1.jpg") no-repeat; background-clip: content-box;}
+#div3 { color: black; background: url("fon1.jpg") no-repeat; background-clip: border-box; }
+#div4 { color: white; background: blue; background-clip: padding-box;}
+#div5 { color: white; background: blue; background-clip: content-box; }
+#div6 { color: white; background: blue; background-clip: border-box;}
+</style>
+*********
+*********
+*********
+********* 22 фев 2018 в 1:10

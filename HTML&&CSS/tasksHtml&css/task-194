@@ -1,0 +1,20 @@
+1. Повторите страницу по данному по образцу.
+
+<style>
+
+@media screen and (min-width: 800px) {
+p {color: blue;}
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+p {color: green;}
+}
+
+@media screen and (max-width: 480px) {
+p {color: red;}
+}
+</style>
+*********
+*********
+*********
+********* 2 мар 2018 в 19:20

@@ -1,0 +1,23 @@
+8. Повторите страницу по данному по образцу:
+<style>
+#block1 {width: 200px; height: 200px; border: 1px solid; margin: 0 auto 100px auto; cursor: pointer;}
+#block2 {width: 200px; height: 200px; border: 1px solid; margin: 0 auto 100px auto; cursor: progress;}
+#block3 {width: 200px; height: 200px; border: 1px solid; margin: 0 auto 100px auto; cursor: wait;}
+#block4 {width: 200px; height: 200px; border: 1px solid; margin: 0 auto 100px auto; cursor: move;}
+#block5 {width: 200px; height: 200px; border: 1px solid; margin: 0 auto 100px auto; cursor: not-allowed;}
+#block6 {width: 200px; height: 200px; border: 1px solid; margin: 0 auto 100px auto; cursor: url("arrow.cur"), auto;}
+</style>
+</head>
+<body>
+<div id="block1">Наведи на меня мышь.</div>
+<div id="block2">Наведи на меня мышь.</div>
+<div id="block3">Наведи на меня мышь.</div>
+<div id="block4">Наведи на меня мышь.</div>
+<div id="block5">Курсор "not-allowed" (нет на htmlbook)</div>
+<div id="block6">Свой курсор.</div>
+
+</body>
+*********
+*********
+*********
+********* 21 фев 2018 в 2:25

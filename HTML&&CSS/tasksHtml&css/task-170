@@ -1,0 +1,8 @@
+2. Повторите страницу по данному по образцу:
+
+div {margin: 0 auto; width: 70%; text-align: justify;}
+p::first-line { color: red; font-style: italic;}
+*********
+*********
+*********
+********* 23 фев 2018 в 21:36

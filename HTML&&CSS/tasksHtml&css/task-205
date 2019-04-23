@@ -1,0 +1,22 @@
+4. Повторите страницу по данному по образцу (наведите мышкой на блок):
+
+<style>
+.block {
+border: 1px solid red;
+width: 40%;
+height: 50px;
+color: red;
+font-size: 14px;
+
+transition: all 2s;
+}
+
+.block:hover {
+width: 100%;
+font-size: 30px;
+}
+</style>
+*********
+*********
+*********
+********* 3 мар 2018 в 10:26

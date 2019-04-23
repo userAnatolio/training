@@ -1,0 +1,24 @@
+4. Сделайте селектор, который выберет все ссылки из class=eee с классом www. Цвета состояний выберите самостоятельно.
+
+<style>
+
+.eee a:link.www, a:visited.www{
+color: green;
+text-decoration: none;
+}
+
+.eee a:hover.www{
+color: blue;
+text-decoration: underline;
+}
+
+.eee a:active.www{
+color: red;
+text-decoration: none;
+}
+
+</style>
+*********
+*********
+*********
+********* 22 янв 2018 в 21:17

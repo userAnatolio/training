@@ -1,0 +1,47 @@
+1. Повторите страницу по данному по образцу:
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
+
+<style>
+
+#test a:link, a:visited {
+text-decoration: none;
+color: blue;
+}
+
+#test a:hover {
+text-decoration: underline;
+color: red;
+}
+
+#test {
+font-family: Arial;
+font-size: 14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id = "test">
+
+<li><a href = "">Главная</a></li>
+<li><a href = "">Новости</a></li>
+<li><a href = "">Контакты</a></li>
+<li><a href = "">О компании</a></li>
+<li><a href = "">Как добраться</a></li>
+
+</div>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 27 янв 2018 в 14:11

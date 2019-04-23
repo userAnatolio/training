@@ -1,0 +1,99 @@
+3. Повторите страницу по данному по образцу.
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
+
+<style>
+
+#block a:link, #block a:visited {
+text-decoration: none;
+color: #e7458d;
+}
+#block a:hover {
+text-decoration: underline;
+color: black;
+}
+
+#block {
+width: 700px;
+margin: 0px auto;
+border: 1px solid;
+padding: 0px 15px;
+text-align: justify;
+}
+
+#block h1{
+margin: 0px;
+}
+
+#block h2{
+text-align: center;
+}
+
+#block p {
+margin: 10px 0px;
+padding: 0px;
+font-size: 13px;
+line-height: 26px;
+font-family: Arial;
+text-indent: 50px;
+}
+
+#block p.more{
+text-align: right;
+padding-right: 30px;
+font-weight: bold;
+}
+
+#block p a:link, #block p a:visited {
+text-decoration: none;
+color: green;
+font-weight: bold;
+}
+
+#block p a:hover {
+text-decoration: underline;
+color: red;
+}
+
+#block .more a:link, #block .more a:visited {
+color: #e7458d;
+text-decoration: none;
+}
+
+#block .more a:hover {
+border-radius: 5px;
+background-color: #e7458d;
+padding: 5px;
+color: white;
+text-decoration: none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id = "block">
+<h1 style = "text-align: center;">Шаблон сайта</h1>
+
+<h2><a href = "">Integer odio risus</a></h2>
+<p>Lorem ipsum dolor <a href = "">sit amet</a>, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.</p>
+<p>Cras ut nunc metus. Nullam id faucibus ante. Proin tristique lorem tristique dolor porttitor, eget adipiscing leo gravida. Proin erat erat, laoreet sit amet tincidunt ac, iaculis nec libero. In placerat odio ac dapibus faucibus. Praesent ut est in ligula facilisis congue eget ac ante. Phasellus at felis vitae est molestie ultricies.</p>
+
+<p class = "more">
+<a href = "">Подробнее...</a>
+</p>
+
+<h2><a href = "">Nullam id faucibus ante!</a></h2>
+<p>Integer odio risus, imperdiet vitae orci non, <a href = "">pulvinar suscipit dui</a>. Proin condimentum luctus nulla, ut bibendum mi convallis nec. Vestibulum at venenatis nulla. Vivamus ligula justo, commodo eget quam a, aliquam semper dolor. Donec dapibus nunc hendrerit turpis porta auctor. Maecenas in hendrerit felis. Quisque id ligula a dui rhoncus sodales ac eu nulla. Vestibulum ac dignissim nulla. Fusce sollicitudin nisl massa, quis viverra metus condimentum non. Fusce quis viverra enim, id viverra libero. In accumsan justo enim, fringilla egestas ipsum suscipit at. Etiam sed quam mi. Vestibulum ultricies nisi luctus convallis malesuada.</p>
+<p>Cras ut nunc metus. Nullam id faucibus ante. Proin tristique lorem tristique dolor porttitor, eget adipiscing leo gravida. Proin erat erat, laoreet sit amet tincidunt ac, iaculis nec libero. In placerat odio ac dapibus faucibus. Praesent ut est in ligula facilisis congue eget ac ante. Phasellus at felis vitae est molestie ultricies.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href = "">Donec vitae ipsum a magna</a> tempor venenatis. Maecenas in diam laoreet, vulputate diam ac, tristique metus. Donec id neque turpis. Praesent est arcu, hendrerit ac augue vitae, suscipit varius leo. Praesent malesuada nec dolor et vestibulum. Quisque co
+*********
+*********
+*********
+********* 28 янв 2018 в 21:04

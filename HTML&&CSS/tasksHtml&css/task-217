@@ -1,0 +1,22 @@
+6. Повторите страницу по данному по образцу (наведите мышкой на блок):
+
+<style>
+#wrapper{
+border: 1px solid red;
+}
+.block1 {
+height: 50px;
+width: 0;
+background: red;
+
+transition: all 3s;
+}
+
+#wrapper:hover div {
+width: 100%;
+}
+</style>
+*********
+*********
+*********
+********* 3 мар 2018 в 20:35

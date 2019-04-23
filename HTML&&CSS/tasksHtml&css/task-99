@@ -1,0 +1,22 @@
+7. Повторите страницу по данному по образцу:
+
+<style>
+#block1 {width: 200px; height: 200px; border: 1px solid; margin: 0 auto 100px auto; box-shadow: 20px 30px grey;}
+#block2 {width: 200px; height: 200px; border: 1px solid; margin: 0 auto 100px auto; box-shadow: 20px 30px 5px grey;}
+#block3 {width: 200px; height: 200px; border: 1px solid; margin: 0 auto 100px auto; box-shadow: 20px 30px 5px grey, -20px -30px 5px grey;}
+#block4 {width: 200px; height: 200px; border: 1px solid; margin: 0 auto 100px auto; box-shadow: inset 5px 5px 10px grey;}
+#block5 {width: 200px; height: 200px; border: 1px solid; margin: 0 auto 100px auto; box-shadow: inset -5px -5px 10px blue, inset 5px 5px 10px red;}
+</style>
+</head>
+<body>
+<div id="block1">Блок с тенью.</div>
+<div id="block2">Блок с тенью + размытие.</div>
+<div id="block3">Блок с двумя тенями.</div>
+<div id="block4">Внутренняя тень.</div>
+<div id="block5">Две внутренние тени.</div>
+
+</body>
+*********
+*********
+*********
+********* 20 фев 2018 в 23:46

@@ -1,0 +1,36 @@
+1. Повторите страницу по данному по образцу: —>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>Мой сайт</title>
+</head>
+<body>
+
+<table cellspacing = "0" border = "1px">
+
+<tr align = "center">
+<td colspan = "2">ячейка1</td>
+<td>ячейка3</td>
+</tr>
+
+<tr align = "center">
+<td rowspan = "2">ячейка4</td>
+<td>ячейка5</td>
+<td>ячейка6</td>
+</tr>
+
+<tr align = "center">
+<td>ячейка8</td>
+<td>ячейка9</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 18 янв 2018 в 18:57

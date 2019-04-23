@@ -1,0 +1,37 @@
+2. Повторите страницу по данному по образцу:
+
+<style>
+
+#red {
+border: 1px solid red;
+height: 50px;
+width: 50px;
+position: absolute;
+top: 30px;
+left: 30px;
+}
+
+#blue {
+border: 1px solid blue;
+height: 50px;
+width: 50px;
+position: absolute;
+top: 30px;
+left: 100px;
+}
+
+#green {
+border: 1px solid green;
+height: 50px;
+width: 50px;
+position: absolute;
+top: 30px;
+left: 170px;
+}
+
+
+</style>
+*********
+*********
+*********
+********* 5 фев 2018 в 23:40

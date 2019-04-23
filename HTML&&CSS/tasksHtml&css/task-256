@@ -1,0 +1,19 @@
+8. Функция .keyframes() должна компилироваться в кроссбраузерный вариант команды keyframes.
+
+.keyframes(@name,@code) {
+@-webkit-keyframes @name {@code();}
+@-moz-keyframes @name {@code();}
+@-o-keyframes @name {@code();}
+@keyframes @name {@code();}
+}
+
+.keyframes(
+anim, {
+from {width: 100px;}
+to {width: 200px;}
+}
+);
+*********
+*********
+*********
+********* 11 мар 2018 в 19:10

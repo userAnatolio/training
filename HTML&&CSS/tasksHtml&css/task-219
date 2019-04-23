@@ -1,0 +1,21 @@
+8. Повторите страницу по данному по образцу:
+
+<style>
+.block1 {
+height: 50px;
+width: 100px;
+border: 1px solid;
+margin: 500px auto;
+box-shadow: -100px 100px black, 100px -100px black;
+
+transition: box-shadow 2s;
+}
+
+#wrapper:hover div {
+box-shadow: 100px 100px black, 100px 100px black;
+}
+</style>
+*********
+*********
+*********
+********* 4 мар 2018 в 11:21

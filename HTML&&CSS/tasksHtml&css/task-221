@@ -1,0 +1,23 @@
+2. Повторите страницу по данному по образцу (движение будет бесконечным):
+
+<style>
+.block {
+border: 1px solid red;
+height: 50px;
+width: 50px;
+}
+@keyframes anim {
+from {margin-left: 2px;}
+to {margin-left: 400px;}
+}
+.block {
+animation-name: anim;
+animation-duration: 3s;
+animation-timing-function: ease;
+animation-iteration-count: infinite;
+}
+</style>
+*********
+*********
+*********
+********* 4 мар 2018 в 11:39

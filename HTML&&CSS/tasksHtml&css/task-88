@@ -1,0 +1,103 @@
+8. Повторите страницу по данному по образцу.
+
+<style>
+
+.wrapper {
+width: 1000px;
+margin: 10px auto;
+outline: 1px solid;
+}
+
+.header {
+height: 200px;
+border: 1px solid;
+margin-bottom: 20px;
+}
+
+.content {
+height: 500px;
+outline: 1px solid;
+background-color: blue;
+margin: 0 240px;
+}
+
+.footer {
+height: 200px;
+outline: 1px solid;
+margin-top: 20px;
+}
+
+.left {
+width: 200px;
+float: left;
+margin: 0 20px;
+}
+
+.left div {
+outline: 1px solid;
+height: 200px;
+width: 200px;
+margin-bottom: 20px;
+}
+
+.right {
+width: 200px;
+height:500px;
+float: right;
+outline: 1px solid;
+}
+
+.clearfix {
+clear: both;
+}
+
+.menu {
+height: 30px;
+width: 500px;
+border: 1px solid;
+margin: 85px 250px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="header">
+<div class="menu">
+</div>
+</div>
+
+<div class="left">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+</div>
+
+<div class="right">
+right
+</div>
+
+<div class="content">
+content
+</div>
+
+<div class="clearfix">
+</div>
+
+<div class="footer">
+footer
+</div>
+
+</div>
+
+</body>
+*********
+*********
+*********
+********* 10 фев 2018 в 21:24

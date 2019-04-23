@@ -1,0 +1,17 @@
+9. Повторите страницу по данному по образцу (незаблокированный инпут светится зеленой тенью, а заблокированный - красной):
+
+<style>
+input:enabled {border: 1px solid green; box-shadow: 0 0 3px green;}
+input:disabled {border: 1px solid red; box-shadow: 0 0 3px red;}
+</style>
+</head>
+<body>
+<form>
+<input value="Hello!" id="test1">
+<input value="Hello!" id="test2" disabled>
+</form>
+</body>
+*********
+*********
+*********
+********* 24 фев 2018 в 7:28

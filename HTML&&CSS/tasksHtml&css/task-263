@@ -1,0 +1,16 @@
+6. Функция .placeholder() должна компилироваться в кроссбраузерный вариант псевдоэлемента placeholder.
+
+=placeholder($code)
+&::-webkit-placeholder
+color: #{$code}
+&::-moz-placeholder
+color: #{$code}
+&::placeholder
+color: #{$code}
+
+input
++placeholder(red)
+*********
+*********
+*********
+********* 11 мар 2018 в 23:27

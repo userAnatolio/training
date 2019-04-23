@@ -1,0 +1,102 @@
+7. Повторите страницу по данному по образцу:
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
+
+<style>
+
+#li1 {
+background: url("super.jpg") no-repeat top center;
+}
+
+#li1:hover {
+background: url("super1.jpg") no-repeat top center;
+}
+
+#li2 {
+background: url("super.jpg") no-repeat top center;
+}
+
+#li2:hover {
+background: url("super1.jpg") no-repeat top center;
+}
+
+#li3 {
+background: url("super.jpg") no-repeat top center;
+}
+
+#li3:hover {
+background: url("super1.jpg") no-repeat top center;
+}
+
+#li4 {
+background: url("super.jpg") no-repeat top center;
+}
+
+#li4:hover {
+background: url("super1.jpg") no-repeat top center;
+}
+
+#li5 {
+background: url("super.jpg") no-repeat top center;
+}
+
+#li5:hover {
+background: url("super1.jpg") no-repeat top center;
+}
+
+#test a:link, #test a:visited {
+text-decoration: none;
+color: gray;
+}
+
+#test a:hover{
+text-decoration: none;
+color: #ff6400;
+}
+
+#test {
+font-family: Arial;
+font-size: 12px;
+}
+
+#test a {
+text-align: center;
+display: block;
+padding-top: 30px;
+}
+
+#test li {
+display: inline-block;
+margin-right: 10px;
+}
+
+.clearfix {
+clear: both;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id = "test">
+<ul>
+<li><a href = "" id = "li1">Авиабилеты</a></li>
+<li><a href = "" id = "li2">Чартеры</a></li>
+<li><a href = "" id = "li3">ж/д билеты</a></li>
+<li><a href = "" id = "li4">Гостиницы</a></li>
+<li><a href = "" id = "li5">Туризм</a></li>
+</ul>
+</div>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 27 янв 2018 в 21:07

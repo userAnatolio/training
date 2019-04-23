@@ -1,0 +1,27 @@
+9. Повторите страницу по данному по образцу.
+
+<style>
+
+.test {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 900px;
+border: 1px solid blue;
+margin: 0 auto;
+flex-wrap: wrap;
+}
+
+.test div {
+width: 200px;
+height: 200px;
+border: 1px solid blue;
+margin-bottom: 30px;
+padding: 0;
+}
+
+</style>
+*********
+*********
+*********
+********* 1 фев 2018 в 23:22

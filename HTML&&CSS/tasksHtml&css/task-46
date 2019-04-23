@@ -1,0 +1,41 @@
+4. Повторите страницу по данному по образцу:
+
+<style>
+
+#test a:link, a:visited {
+text-decoration: none;
+color: white;
+background-color: blue;
+}
+
+#test a:hover, #test a.active {
+text-decoration: none;
+color: black;
+font-weight: bold;
+background: white url("plane.jpg");
+background-repeat: no-repeat;
+background-position: 90% center;
+}
+
+#test a {
+display: block;
+padding-left: 5px;
+}
+
+#test {
+width: 200px;
+font-family: Arial;
+font-size: 14px;
+
+}
+
+#test li {
+border: 1px solid blue;
+margin-bottom: 5px;
+list-style-type: none;
+line-height: 30px;
+}
+*********
+*********
+*********
+********* 27 янв 2018 в 17:57

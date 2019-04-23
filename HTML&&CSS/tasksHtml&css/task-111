@@ -1,0 +1,34 @@
+9. Повторите страницу по данному по образцу (повторяющийся градиент):
+
+<style>
+#div1 {margin-bottom: 20px; border: 1px solid black; width: 400px; height: 100px;
+background: repeating-linear-gradient(to right, black 0, black 5px, white 5px, white 10px);}
+
+#div2 {margin-bottom: 20px; border: 1px solid black; width: 400px; height: 100px;
+background: repeating-linear-gradient(to bottom, black 0, black 5px, white 5px, white 10px);}
+
+#div3 {margin-bottom: 20px; border: 1px solid black; width: 400px; height: 100px;
+background: repeating-linear-gradient(to bottom, black 0px, black 1px, white 1px, white 5px);}
+
+#div4 {margin-bottom: 20px; border: 1px solid black; width: 400px; height: 30px;
+background: repeating-linear-gradient(45deg, red 0px, red 3px, white 3px, white 8px);}
+
+#div5 {margin-bottom: 20px; border: 1px solid black; width: 400px; height: 400px;
+background: repeating-radial-gradient(circle at center, black 0, black 4px, white 4px, white 8px);}
+
+#div6 {margin-bottom: 20px; border: 1px solid black; width: 400px; height: 100px;
+background: repeating-linear-gradient(135deg, black 0px, black 1px, white 1px, white 6px);}
+</style>
+</head>
+<body>
+<div id="div1" class="square"></div>
+<div id="div2" class="square"></div>
+<div id="div3" class="long"></div>
+<div id="div4" class="long"></div>
+<div id="div5" class="long"></div>
+<div id="div6" class="long"></div>
+</body>
+*********
+*********
+*********
+********* 21 фев 2018 в 21:10

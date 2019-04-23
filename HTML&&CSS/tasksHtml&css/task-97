@@ -1,0 +1,16 @@
+5. Повторите страницу по данному по образцу:
+
+<style>
+* {margin: 0; padding: 0;}
+body {background: url(fon1.jpg) no-repeat -200px -200px;}
+
+#block1 {width: 150px; height: 150px; border: 30px solid rgba(255, 255, 255, 0.5);
+color: white; position: absolute; top: 30px; left: 30px; padding: 10px;}
+
+#block2 {width: 150px; height: 150px; border: 30px solid white; color: white;
+position: absolute; top: 30px; left: 300px; opacity: 0.5; padding: 10px;}
+</style>
+*********
+*********
+*********
+********* 20 фев 2018 в 22:25
