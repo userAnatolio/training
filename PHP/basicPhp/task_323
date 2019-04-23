@@ -1,0 +1,15 @@
+********
+*********
+********* 22 июл 2018 в 12:20
+22. Напишите свой аналог функции strlen<?php
+$str = 'happy';
+echo count(str_split($str, 1));
+?>
+
+<?php
+$str = 'happy';
+function func($str) {
+return count(str_split($str, 1));
+}
+echo func($str);
+?>

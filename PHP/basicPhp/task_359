@@ -1,0 +1,53 @@
+********
+*********
+********* 29 июл 2018 в 5:57
+16. Дан массив с вопросами и правильными ответами. Реализуйте тест: выведите на экран все вопросы, под каждым инпут. Пользователь читает вопрос, пишет свой ответ в инпут. Когда вопросы заканчиваются - он жмет на кнопку, страница обновляется и вместо инпутов под вопросами появляется сообщение вида: 'ваш ответ: ... верно!' или 'ваш ответ: ... неверно! Правильный ответ: ...'. Правильно отвеченные вопросы должны гореть зеленым цветом, а неправильно - красным.
+
+<h2>Пройди тест</h2>
+
+<?php
+$answerArr = ['Столица Китая'=>'Пекин', 'Столица России'=>'Москва', 'Столица Украины'=>'Киев'];
+?>
+<form action="" method="GET">
+<?php
+echo '<p>Столица Китая?</p>';
+if(empty($_GET['answer1'])) {
+echo '<input type="hidden" name="number1" value="Столица Китая">
+<input placeholder="ответ" name="answer1">';
+}
+if(!empty($_GET['answer1'])) {
+echo testQuestion($_GET['answer1'], $answerArr, $_GET['number1']);
+}
+
+echo '<p>Столица России?</p>';
+if(empty($_GET['answer2'])) {
+echo '<input type="hidden" name="number2" value="Столица России">
+<input placeholder="ответ" name="answer2">';
+}
+if(!empty($_GET['answer2'])) {
+echo testQuestion($_GET['answer2'], $answerArr, $_GET['number2']);
+}
+
+echo '<p>Столица Украины?</p>';
+if(empty($_GET['answer3'])) {
+echo '<input type="hidden" name="number3" value="Столица Украины">
+<input placeholder="ответ" name="answer3">';
+}
+if(!empty($_GET['answer3'])) {
+echo testQuestion($_GET['answer3'], $answerArr, $_GET['number3']);
+}
+?>
+<br><br><input type="submit" value="проверить"></form>
+
+<?php
+function testQuestion($name, $arr, $numQuest) {
+if($name == $arr[$numQuest]){
+$str = '<span class="green">Ваш ответ: '.$name.' верный!</span>';
+}
+if($name != $arr[$numQuest]){
+$str = '<span class="red">Ваш ответ: '.$name. ' неверный!</span>';
+}
+return $str;
+}
+
+?>

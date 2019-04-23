@@ -1,0 +1,34 @@
+********
+*********
+********* 4 авг 2018 в 14:24
+<form action="" method="GET">
+<table>
+<tr><th>id</th><th>name</th><th>age</th><th>salary</th><th>Удаление</th><th>Редактировать</th></tr>
+<?php echo func($result); ?>
+</table><br><br>
+<input type="submit" value="удалить отмечанных">
+</form>
+
+<?php
+
+$arrCheckbox=$_GET['checkbox'];
+
+if(!empty($arrCheckbox)){
+for($i=0; $i<count($arrCheckbox); $i++) {
+$query_2 = "DELETE FROM workers WHERE id=$arrCheckbox[$i]";
+mysql_query($query_2);
+}
+}
+?>
+
+<br>
+<h2>Добавить нового сотрудника</h2>
+<form>
+<input name="nameUser" placeholder="Имя">
+<input name="ageUser" placeholder="Возраст">
+<input name="salaryUser" placeholder="Зарплата">
+<input type="submit" value="Сохранить">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+********
+*********
+********* 8 июл 2018 в 4:25
+<?php
+$arr = ['3'=>'a', '1'=>'c', '2'=>'e', '4'=>'b'];
+rsort($arr);
+var_dump($arr);
+
+?>
+
+<?php
+$arr = ['3'=>'a', '1'=>'c', '2'=>'e', '4'=>'b'];
+asort($arr);
+var_dump($arr);
+
+?>
+
+<?php
+$arr = ['3'=>'a', '1'=>'c', '2'=>'e', '4'=>'b'];
+arsort($arr);
+var_dump($arr);
+
+?>
+
+<?php
+$arr = ['3'=>'a', '1'=>'c', '2'=>'e', '4'=>'b'];
+ksort($arr);
+var_dump($arr);
+
+?>
+
+<?php
+$arr = ['3'=>'a', '1'=>'c', '2'=>'e', '4'=>'b'];
+krsort($arr);
+var_dump($arr);
+
+?>
+
+<?php
+$arr = ['3'=>'a', '1'=>'c', '2'=>'e', '4'=>'b'];
+natsort($arr);
+var_dump($arr);
+
+?>

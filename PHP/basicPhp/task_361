@@ -1,0 +1,68 @@
+********
+*********
+********* 29 июл 2018 в 9:44
+18. Модифицируем предыдущую задачу: пусть теперь на один вопрос может быть несколько правильных ответов. Пользователь должен отметить один или несколько чекбоксов.
+
+<h2>Пройди тест</h2>
+
+<?php
+$city = ['Пекин', 'Москва', 'Киев'];
+$city = ['груша', 'банан', 'яблоко'];
+?>
+<form action="" method="GET">
+<?php
+echo '<p>Отметьте только города столицы</p>';
+if(empty($_GET['answer1'])) {
+echo '<i>Пекин</i><input type="checkbox" name="answer1[]" value="Пекин">
+<i>Москва</i><input type="checkbox" name="answer1[]" value="Москва">
+<i>Киев</i><input type="checkbox" name="answer1[]" value="Киев">
+<i>Санкт-Питербург</i><input type="checkbox" name="answer1[] " value="Cанкт-Питербург" >
+<i>Волгоград</i><input type="checkbox" name="answer1[]" value="Волгоград">';
+}
+if(!empty($_GET['answer1'])) {
+echo testQuestion($_GET['answer1'], $city);
+}
+
+echo '<br><br>';
+
+echo '<p>Отметьте только фрукты</p>';
+if(empty($_GET['answer2'])) {
+echo '<i>Груша</i><input type="checkbox" name="answer2[]" value="груша">
+<i>Яблоко</i><input type="checkbox" name="answer2[]" value="яблоко">
+<i>Банан</i><input type="checkbox" name="answer2[]" value="банан">
+<i>Огурец</i><input type="checkbox" name="answer2[] " value="огурец" >
+<i>Помидор</i><input type="checkbox" name="answer2[]" value="помидор">';
+}
+if(!empty($_GET['answer2'])) {
+echo testQuestion($_GET['answer2'], $city);
+}
+
+?>
+
+<br><br><input type="submit" value="проверить"></form>
+
+<?php
+function testQuestion($name, $arr) {
+$num1 = count($name);
+$num2 = count($arr);
+$flag = true;
+if($num1 == $num2) {
+foreach($name as $elem) {
+if(array_search($elem, $arr) === false) {
+$flag = false;
+
+}
+
+}
+if($flag === true) {
+$str = '<p class="green">Ваш ответ верный</p>';
+}
+else {
+$str = '<p class="red">Ваш ответ неверный</p>';
+}
+}
+else $str = '<p class="red">Ваш ответ неверный</p>';
+return $str;
+}
+
+?>

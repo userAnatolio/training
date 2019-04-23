@@ -1,0 +1,40 @@
+********
+*********
+********* 1 сен 2018 в 12:53
+<?php require_once('db.php'); ?>
+<?php
+
+if(!empty($_REQUEST['loginUser']) and !empty($_REQUEST['passwordUser1']) and !empty($_REQUEST['passwordUser2']) and !empty($_REQUEST['codStr']) and !empty($_REQUEST['nameUser']) and !empty($_REQUEST['surnameUser']) and !empty($_REQUEST['mailUser'])) {
+
+if($_REQUEST['passwordUser1'] == $_REQUEST['passwordUser2']) {
+$newDate = date('d.m.Y', time());
+$loginUser = $_REQUEST['loginUser'];
+$passwordUser = md5($_REQUEST['passwordUser1']);
+$codStr = $_REQUEST['codStr'];
+$nameUser = $_REQUEST['nameUser'];
+$surnameUser = $_REQUEST['surnameUser'];
+$mailUser = $_REQUEST['mailUser'];
+$dateOpen = $newDate;
+if( mb_strlen($_REQUEST['passwordUser2'], '8bit') < 6) {
+echo 'длина пароля минимум 6 символов';
+echo '<br>';
+$chars="qazxswedcvfrtgbnhyujmkiolp1234567890QAZXSWEDCVFRTGBNHYUJMKIOLP";
+$max=10;
+$size=mb_strlen($chars)-1;
+$newPassword=null;
+while($max--)
+$newPassword.=$chars[rand(0,$size)];
+echo 'Попробуйте этот пароль: '.$newPassword;
+?>
+<form action="" method="POST">
+<input name="loginUser" placeholder="введите логин">
+<input name="nameUser" placeholder="введите имя">
+<input name="surnameUser" placeholder="введите фамилию">
+<input name="mailUser" placeholder="введите электронный адрес">
+<input type="password" name="passwordUser1" placeholder="введите пароль">
+<input type="password" name="passwordUser2" placeholder="введите пароль">
+<input name="codStr" placeholder="введите кодовое слово">
+<input type="submit" name="clickUser">
+</form>
+<?php
+}

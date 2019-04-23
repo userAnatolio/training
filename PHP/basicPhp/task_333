@@ -1,0 +1,16 @@
+********
+*********
+********* 22 июл 2018 в 15:01
+32. Сделайте функцию, противоположную функции array_unique. Ваша функция должна оставлять дубли и удалять элементы, не имеющие дублей.
+
+<?php
+$arr = [2,2,3,3,3,4,4,5];
+$testArr = array_count_values($arr);
+$newArr = [];
+foreach($arr as $key=>$elem) {
+if($testArr[$elem] > 1) {
+array_push($newArr, $elem);
+}
+}
+var_dump($newArr);
+?>

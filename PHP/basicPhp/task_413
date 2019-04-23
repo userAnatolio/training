@@ -1,0 +1,11 @@
+********
+*********
+********* 3 авг 2018 в 21:26
+7. В таблице workers подсчитайте всех работников c зарплатой 300$.
+
+<?php
+$query = "SELECT COUNT(*) as count FROM workers WHERE salary=300";
+$getResult = mysql_query($query);
+for($result = []; $str = mysql_fetch_assoc($getResult); $result[]=$str);
+var_dump($result);
+?>

@@ -1,0 +1,38 @@
+********
+*********
+********* 29 июл 2018 в 17:42
+24. Даны 2 инпута и кнопка. В инпуты вводятся числа. По нажатию на кнопку выведите список общих делителей этих двух чисел.
+
+<form action="" method="GET">
+<input name="number1">
+<input name="number2">
+
+<input type="submit" name="go" value="Нажми на кнопку, получишь результат">
+</form>
+
+<?php
+
+$num1 = $_GET['number1'];
+$num2 = $_GET['number2'];
+
+if(!empty($_GET['number1']) and !empty($_GET['number1'])) {
+echo testSimpleNum($num1, $num2);
+}
+
+function testSimpleNum($num1, $num2) {
+$arr1 = getDividerNum($num1);
+$arr2 = getDividerNum($num2);
+$arr3 = array_intersect($arr1, $arr2);
+return $arr3;
+}
+
+function getDividerNum($num){
+$resultArr = [];
+for($i=1; $i<=$num; $i++){
+if($num % $i ==0) {
+array_push($resultArr, $i);
+}
+}
+return $resultArr;
+}
+?>

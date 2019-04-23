@@ -1,0 +1,51 @@
+********
+*********
+********* 9 сен 2018 в 0:09
+10. Создайте класс Session - оболочку над сессиями. Он должен иметь следующие методы: создать переменную сессии, получить переменную, удалить переменную сессии, проверить наличие переменной сессии.
+
+Сессия должна стартовать (session_start) в методе __construct.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон PHP</title>
+<style>
+
+</style>
+</head>
+<body>
+
+
+<script>
+
+</script>
+
+<?php
+
+class Session {
+
+private function addSession($name, $val) {
+session_start();
+$_SESSION[$name] = $val;
+}
+public function getSession($name) {
+return $_SESSION[$name];
+}
+public function deleteSession($name) {
+unset($_SESSION[$name]);
+}
+
+public function __construct($name, $val) {
+$this -> addSession($name, $val);
+}
+
+}
+$session = new session('test', 'test');
+
+echo $session ->getSession('test');
+
+?>
+
+</body>
+</html>

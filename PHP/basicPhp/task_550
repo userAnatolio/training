@@ -1,0 +1,60 @@
+********
+*********
+********* 30 авг 2018 в 6:44
+3. Сделайте функцию user, с помощью которой можно получить доступ ко всей информации о пользователе. Информация берется из сессии. Примеры работы: user('id') – вернет id пользователя, user('login') - вернет логин и т.д.
+
+4. Сделайте функцию isAuth, которая проверяет, авторизован ли пользователь. Если да - вернет true, если нет - false.
+
+5. Сделайте аналогичную функцию isNotAuth, которая проверят, НЕ авторизован ли пользователь.
+
+<?php
+session_start();
+
+function user($val) {
+session_start();
+echo $_SESSION[$val];
+}
+
+function isAuth($val) {
+if($val) {
+return true;
+}
+}
+
+function notAuth($val) {
+if(!$val) {
+return true;
+}
+}
+
+if(!empty($_POST['click'])) {
+user($_POST['val']);
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>test2</title>
+<style>
+
+</style>
+</head>
+<body>
+<?php
+if(isAuth($_SESSION['start'])) {
+?>
+<form action="" method="POST">
+<input name="val" placeholder="введите имя запроса">
+<input type="submit" value="получить значение" name="click">
+</form>
+
+<?php
+}
+if(notAuth($_SESSION['start'])) {
+echo 'вам нужно авторизоваться!';
+}
+?>
+</body>
+</html>

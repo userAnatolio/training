@@ -1,0 +1,37 @@
+********
+*********
+********* 29 июл 2018 в 13:24
+21. Даны 3 инпута. В них вводятся числа. Проверьте, что эти числа являются тройкой Пифагора: квадрат самого большого числа должен быть равен сумме квадратов двух остальных.
+
+<form action="" method="GET">
+<input name="number1">
+<input name="number2">
+<input name="number3">
+<input type="submit" name="go" value="Нажми на кнопку, получишь результат">
+</form>
+
+<?php
+
+$a = $_GET['number1'];
+$b = $_GET['number2'];
+$c = $_GET['number3'];
+
+if(!empty($_GET['number1']) and !empty($_GET['number2']) and !empty($_GET['number3'])) {
+echo getTrio($a, $b, $c);
+}
+
+function getTrio($a, $b, $c) {
+$arr[0] = $a;
+$arr[1] = $b;
+$arr[2] = $c;
+sort($arr);
+if(pow($arr[2],2) == pow($arr[0],2) + pow($arr[1],2)) {
+$str = 'Это тройка Пифагора';
+}
+else {
+$str = 'Это не тройка Пифагора';
+}
+return $str;
+}
+
+?>

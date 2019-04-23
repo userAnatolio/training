@@ -1,0 +1,59 @@
+********
+*********
+********* 29 июл 2018 в 6:11
+17. Модифицируем предыдущую задачу: пусть теперь тест показывает варианты ответов и радиокнопочки. Пользователь должен выбрать один и вариантов.
+
+<h2>Пройди тест</h2>
+
+<?php
+$answerArr = ['Столица Китая'=>'Пекин', 'Столица России'=>'Москва', 'Столица Украины'=>'Киев'];
+?>
+<form action="" method="GET">
+<?php
+echo '<p>Столица Китая?</p>';
+if(empty($_GET['answer1'])) {
+echo '<input type="hidden" name="number1" value="Столица Китая">
+<i>Пекин</i><input type="checkbox" name="answer1" value="Пекин">
+<i>Москва</i><input type="checkbox" name="answer1" value="Москва">
+<i>Киев</i><input type="checkbox" name="answer1" value="Киев">';
+}
+if(!empty($_GET['answer1'])) {
+echo testQuestion($_GET['answer1'], $answerArr, $_GET['number1']);
+}
+
+echo '<p>Столица России?</p>';
+if(empty($_GET['answer2'])) {
+echo '<input type="hidden" name="number2" value="Столица России">
+<i>Пекин</i><input type="checkbox" name="answer2" value="Пекин">
+<i>Москва</i><input type="checkbox" name="answer2" value="Москва">
+<i>Киев</i><input type="checkbox" name="answer2" value="Киев">';
+}
+if(!empty($_GET['answer2'])) {
+echo testQuestion($_GET['answer2'], $answerArr, $_GET['number2']);
+}
+
+echo '<p>Столица Украины?</p>';
+if(empty($_GET['answer3'])) {
+echo '<input type="hidden" name="number3" value="Столица Украины">
+<i>Пекин</i><input type="checkbox" name="answer3" value="Пекин">
+<i>Москва</i><input type="checkbox" name="answer3" value="Москва">
+<i>Киев</i><input type="checkbox" name="answer3" value="Киев">';
+}
+if(!empty($_GET['answer3'])) {
+echo testQuestion($_GET['answer3'], $answerArr, $_GET['number3']);
+}
+?>
+<br><br><input type="submit" value="проверить"></form>
+
+<?php
+function testQuestion($name, $arr, $numQuest) {
+if($name == $arr[$numQuest]){
+$str = '<span class="green">Ваш ответ: '.$name.' верный!</span>';
+}
+if($name != $arr[$numQuest]){
+$str = '<span class="red">Ваш ответ: '.$name. ' неверный!</span>';
+}
+return $str;
+}
+
+?>

@@ -1,0 +1,30 @@
+********
+*********
+********* 21 июл 2018 в 20:49
+3. Найдите все счастливые билеты. Счастливый билет - это билет, в котором сумма первых трех цифр его номера равна сумме вторых трех цифр его номера.
+
+<?php
+
+function getDigitsSum($num) {
+return array_sum(str_split($num, 1));
+}
+
+function testTicket($str) {
+$num1 = getDigitsSum(substr($str, 0, 3));
+$num2 = getDigitsSum(substr($str, 3, 3));
+return $num1 == $num2;
+}
+
+function happyTicket() {
+if(testTicket($ticket)) {
+echo "Сегодня твой день!";
+}
+else {
+echo "Бывает))";
+}
+}
+
+$ticket = '123411333';
+happyTicket($ticket)
+
+?>

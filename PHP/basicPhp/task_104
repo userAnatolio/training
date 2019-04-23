@@ -1,0 +1,10 @@
+********
+*********
+********* 8 июл 2018 в 4:11
+6. Дана строка 'LONDON'. Сделайте из нее строку 'London'.
+
+<?php
+$str = 'london is the capital of great britain';
+echo ucfirst(strtolower('LONDON'));
+
+?>

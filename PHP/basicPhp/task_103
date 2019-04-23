@@ -1,0 +1,10 @@
+********
+*********
+********* 8 июл 2018 в 4:11
+5. Дана строка 'london is the capital of great britain'. Сделайте из нее строку 'London Is The Capital Of Great Britain'.
+
+<?php
+$str = 'london is the capital of great britain';
+echo ucwords($str);
+
+?>

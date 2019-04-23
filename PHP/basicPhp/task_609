@@ -1,0 +1,27 @@
+********
+*********
+********* 9 сен 2018 в 16:06
+16. Выведите на экран название всех файлов с расширением txt из папки 'test'.
+
+<?php header( 'Content-Type: text/html; charset=utf-8' ); ?>
+
+<?php
+$newArr = [];
+$file = scandir('test');
+foreach($file as $elem) {
+if(is_file('test/'.$elem) and preg_match('#.txt$#',$elem)) {
+array_push($newArr, $elem);
+}
+}
+foreach($newArr as $elem) {
+echo file_get_contents('test/'.$elem);
+}
+
+?>
+
+Пусть в корне вашего сайта лежит файл test.txt. Удалите его...
+
+Гавно вопрос...
+
+unlink('userStyle.css');
+unlink('mir.php')

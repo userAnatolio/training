@@ -1,0 +1,36 @@
+********
+*********
+********* 28 июл 2018 в 12:33
+13. Дан текстареа и кнопка. В текстареа через пробел вводятся слова. По нажатию на кнопку выведите слова в таком виде: сначала заголовок 'слова на букву а' и под ним все слова, которые начинаются на 'а', потом заголовок 'слова на букву б' и все слова на 'б' и так далее. Буквы должны идти в алфавитном порядке. Брать следует только те буквы, на которые начинаются наши слова. То есть: если нет слов, к примеру, на букву 'в' - такого заголовка тоже не будет.
+<?php
+
+$text = $_GET['text'];
+$word = explode(' ', $text);
+for($i=0; $i<count($word); $i++){
+$word[$i] = strtolower($word[$i]);
+}
+$word = array_unique($word);
+sort($word);
+
+$charsArr = [];
+
+foreach($word as $elem) {
+array_push($charsArr, strtoupper(substr($elem, 0, 1)));
+}
+
+$charsArr = array_unique($charsArr);
+
+if(!empty($_GET['text'])) {
+
+foreach($charsArr as $elem) {
+echo $elem.'<br>';
+for($i=0; $i<count($word); $i++) {
+if(strtoupper(substr($word[$i], 0, 1)) == $elem) {
+echo $word[$i].'<br>';
+}
+}
+echo '<br>';
+}
+
+}
+?>

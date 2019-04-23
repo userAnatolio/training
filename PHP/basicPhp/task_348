@@ -1,0 +1,17 @@
+********
+*********
+********* 24 июл 2018 в 2:02
+11. Дан текстареа и кнопка. В текстареа вводится текст. По нажатию на кнопку нужно посчитать процентное содержание каждого символа в тексте.
+
+<form action="" method="GET">
+<textarea name="text"></textarea>
+<input type="submit" name="button">
+</form>
+
+<?php
+$text = $_GET['text'];
+
+foreach(count_chars($text, 1) as $key=>$elem) {
+echo 'символ: '. chr($key).': '.$elem.'<br>';
+}
+?>

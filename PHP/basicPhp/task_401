@@ -1,0 +1,10 @@
+********
+*********
+********* 3 авг 2018 в 19:29
+25. Всем, у кого зарплата 500$ сделайте ее 700$.
+
+<?php
+$query = "UPDATE workers SET salary=700 WHERE salary=500";
+mysql_query($query);
+
+?>

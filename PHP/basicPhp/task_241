@@ -1,0 +1,31 @@
+********
+*********
+********* 16 июл 2018 в 2:11
+20. Сделайте форму с одним полем ввода, в которое пользователь вводит год. Найдите все пятницы 13-е в этом году. Результат выведите в виде массива дат.
+
+<form action="" method="GET">
+<input placeholder="2018" name="year">
+<input type="submit" name="button">
+</form>
+
+<?php
+
+$arr = [];
+
+if(!empty($_GET['year'])) {
+
+
+
+for($i = 1; $i <= 12; $i++) {
+
+$moment = mktime(0, 0, 0, $i, 13, $_GET['year']);
+
+if(date('w', $moment) == 5) {
+array_push($arr, date('d.m.Y', $moment));
+
+}
+}
+
+}
+var_dump($arr);
+?>

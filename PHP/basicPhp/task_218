@@ -1,0 +1,26 @@
+********
+*********
+********* 15 июл 2018 в 0:09
+4. Спросите у пользователя логин и пароль (в браузере должен быть звездочками). Сравните их с логином $login и паролем $pass, хранящихся в файле. Если все верно - выведите 'Доступ разрешен!', в противном случае - 'Доступ запрещен!'. Сделайте так, чтобы скрипт обрезал концевые пробелы в строках, которые ввел пользователь.
+
+<?php
+if(empty($_POST['userName']) and empty($_POST['password'])) {
+?>
+<form action="" method="POST" >
+<input type="text" placeholder="login" name="userName"><br>
+<input type="password" placeholder="пароль" name="password"><br>
+<input type="submit">
+</form>
+<?php
+}
+$name = trim(strip_tags($_POST['userName']));
+$password = trim(strip_tags($_POST['password']));
+$nameUser = 'Мучачо';
+$passwordUser = '4444';
+if(!empty($_POST['userName']) and !empty($_POST['password'])) {
+if($name == $nameUser and $password == $passwordUser) {
+echo 'Инициализация выполнена';
+}
+else { echo 'неправильные имя или пароль';}
+}
+?>

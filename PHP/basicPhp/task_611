@@ -1,0 +1,25 @@
+********
+*********
+********* 9 сен 2018 в 16:42
+18. Выведите на экран имена всех папок из папки 'test' и их подпапок (может быть любой уровень вложенности).
+
+<?php
+
+function show_dir($dir) {
+$arrDir = [];
+$dirAll = scandir($dir);
+foreach($dirAll as $elem) {
+if(!is_file($dir.'/'.$elem)) {
+array_push($arrDir, $elem);
+}
+}
+return $arrDir;
+}
+var_dump(show_dir('test'));
+?>
+
+Проверьте, лежит ли в корне вашего сайта файл test.txt...
+Ой, ну надо так надо..
+
+var_dump(file_exists('new.txt'));
+var_dump(file_exists('test2.txt'));

@@ -1,0 +1,13 @@
+********
+*********
+********* 14 июл 2018 в 23:15
+1. Спросите имя пользователя с помощью формы. Результат запишите в переменую $name. Выведите на экран фразу 'Привет, %Имя%'.
+
+<form action="" method="GET" >
+<input type="text" placeholder="Введите имя" name="userName">
+<input type="submit">
+</form>
+<?php
+$name = $_GET['userName'];
+echo $name;
+?>

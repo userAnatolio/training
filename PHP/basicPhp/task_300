@@ -1,0 +1,32 @@
+********
+*********
+********* 22 июл 2018 в 5:31
+10. Напишите функцию, которая создает чекбокс и сохраняет его значение после отправки.
+
+<form action='' method="GET">
+<?php echo checkbox('test');?>
+<input type="submit" value="отправить">
+</form>
+
+<?php
+
+function checkbox($name) {
+if(isset($_GET['test']) and $_GET['test'] == 1) {
+$check = 'checked';
+}
+else {
+$check = '';
+}
+return '<input type="hidden" name="'.$name.'" value="0"><input type="checkbox" name="'.$name.'" value="1"'.$check.'><br>';
+}
+
+if(isset($_GET['test'])) {
+if($_GET['test'] == 1) {
+echo 'спасибо за ответ, ваше мнение очень важно для нас!';
+}
+if($_GET['test'] == 0) {
+echo 'Вы не ответили';
+}
+}
+
+?>

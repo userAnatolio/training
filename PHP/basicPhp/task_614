@@ -1,0 +1,52 @@
+********
+*********
+********* 9 сен 2018 в 19:53
+28. Дан файл test.txt. В нем на каждой строке написано какое-то число. С помощью функции file найдите сумму этих чисел и выведете ее на экран.
+<?php
+
+$arr = file('test1.txt');
+$sum = 0;
+foreach($arr as $elem) {
+$sum += $elem;
+}
+echo $sum;
+
+file_put_contents('test1.txt', $sum, FILE_APPEND);
+?>
+
+29. Дан файл test.txt. В нем на каждой строке написано какое-то число. С помощью функции file найдите сумму этих чисел и запишите эту сумму обратно в конец файла, с новой строки.
+
+<?php
+
+$arr = file('test1.txt');
+$sum = 0;
+foreach($arr as $elem) {
+$sum += $elem;
+}
+
+$str = file_get_contents('test1.txt');
+file_put_contents('test1.txt', $str . PHP_EOL . $sum);
+
+?>
+
+30. Создайте в корне вашего сайта папку с названием dir.
+
+mkdir('dir');
+
+31 Дан массив со строками. Создайте в корне вашего сайта папки, названиями которых служат элементы этого массива
+
+$arr = ['folder1', 'folder2'];
+foreach ( $arr as $elem) {
+mkdir($elem);
+}
+
+32. Создайте в корне вашего сайта папку с названием test. Затем создайте в этой папке 3 файла: 1.txt, 2.txt, 3.txt.
+
+<?php
+
+mkdir('test');
+file_put_contents('test/1.txt', '');
+file_put_contents('test/2.txt', '');
+file_put_contents('test/3.txt', '');
+
+?>

@@ -1,0 +1,30 @@
+********
+*********
+********* 29 июл 2018 в 13:36
+22. Дан инпут и кнопка. В инпут вводится число. По нажатию на кнопку выведите список делителей этого числа.
+
+<form action="" method="GET">
+<input name="number">
+
+<input type="submit" name="go" value="Нажми на кнопку, получишь результат">
+</form>
+
+<?php
+
+$num = $_GET['number'];
+
+if(!empty($_GET['number'])) {
+var_dump( getDivider($num));
+}
+
+function getDivider($num) {
+$arr = [];
+for($i=1; $i<=$num; $i++){
+if($num % $i == 0){
+array_push($arr, $i);
+}
+}
+return $arr;
+}
+
+?>

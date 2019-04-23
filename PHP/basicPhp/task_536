@@ -1,0 +1,50 @@
+********
+*********
+********* 26 авг 2018 в 10:40
+9. Спросите дату рождения пользователя. При следующем заходе на сайт напишите сколько дней осталось до его дня рождения. Если сегодня день рождения пользователя - поздравьте его!
+
+<?php require_once('db.php'); ?>
+<?php
+if(!empty($_GET['birth'])) {
+$arrBirth = explode('.', $_GET['birth']);
+$year = date('Y', time());
+$time = mktime(0, 0, 0, $arrBirth[1], $arrBirth[0], $year);
+
+setcookie('timer', $time, time() + 3600);
+$result = $_COOKIE['timer'];
+if($result < time()) {
+$timer = mktime(0, 0, 0, $arrBirth[1], $arrBirth[0], $year + 1) - time();
+}
+if($result > time()) {
+$timer = $result - time();
+}
+if(floor($result/60/60/24) == floor(time()/60/60/24)){
+echo 'С днем рождения!';
+}
+else {
+echo 'До вашего дня рождения, осталось: '. floor($timer/60/60/24) .' дней';
+}
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>test1</title>
+<style>
+
+</style>
+</head>
+<body>
+<?php if(empty($_COOKIE['timer'])) { ?>
+<form action="" method="GET">
+<input type="text" name="birth" placeholder="dd.mm.yyyy">
+<input type="submit">
+</form>
+<?php } ?>
+
+</body>
+</html>

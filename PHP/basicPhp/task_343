@@ -1,0 +1,40 @@
+********
+*********
+********* 23 июл 2018 в 3:44
+7. Дан инпут и кнопка. В этот инпут вводится дата рождения в формате '31.12'. По нажатию на кнопку выведите знак зодиака пользователя.
+
+<form action="" method="GET">
+<input placeholder="введите д.р.в формате 22.07.2018" name="year" >
+<input type="submit" name="button">
+</form>
+
+<?php
+
+function getSign($month, $day) {
+$value = '';
+if ($month==1 && $day>=20 || $month==2 && $day<=18) $value="Водолей";
+else if ($month==2 && $day>=19 || $month==3 && $day<=20) $value="Рыбы";
+else if ($month==3 && $day>=21 || $month==4 && $day<=19) $value="Овен";
+else if ($month==4 && $day>=20 || $month==5 && $day<=20) $value="Телец";
+else if ($month==5 && $day>=21 || $month==6 && $day<=21) $value="Близнецы";
+else if ($month==6 && $day>=22 || $month==7 && $day<=22) $value="Рак";
+else if ($month==7 && $day>=23 || $month==8 && $day<=22) $value="Лев";
+else if ($month==8 && $day>=23 || $month==9 && $day<=22) $value="Дева";
+else if ($month==9 && $day>=23 || $month==10 && $day<=22) $value="Весы";
+else if ($month==10 && $day>=23 || $month==11 && $day<=21) $value="Скорпион";
+else if ($month==11 && $day>=22 || $month==12 && $day<=21) $value="Стрелец";
+else if ($month==12 && $day>=22 || $month==1 && $day<=19) $value="Козерог";
+return $value;
+}
+if(!empty($_GET['year'])) {
+$arr = explode('.', $_GET['year']);
+$month = date('m', mktime(0,0,0, $arr[1], $arr[0], $arr[2]));
+$day = date('d', mktime(0,0,0, $arr[1], $arr[0], $arr[2]));
+echo getSign($month, $day);
+}
+
+if(empty($_GET['year'])) {
+echo 'вы не указали дату рождения';
+}
+
+?>
