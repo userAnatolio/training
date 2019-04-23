@@ -1,0 +1,54 @@
+3. Дан абзац и две кнопки. Сделайте так, чтобы по нажатию на первую кнопку в абзаце начал тикать таймер от 1 до бесконечности, а по нажатию на вторую таймер останавливался.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<p>0</p>
+<button id="startTimer">Запустить</button>
+<button id="stopTimer">Остановить</button>
+
+<script>
+
+var num = 0;
+
+var startTimer = document.getElementById('startTimer');
+var p = document.querySelector('p');
+startTimer.addEventListener('click', start);
+
+function start() {
+stopTimer = setInterval(timer, 1000);
+}
+
+$('#stopTimer').on('click', function() {
+clearInterval(stopTimer);
+startTimer.disabled = false;
+});
+
+function timer() {
+num++;
+p.innerHTML = num;
+startTimer.disabled = true;
+}
+
+
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 июл 2018 в 19:18

@@ -1,0 +1,17 @@
+5. Модифицируйте предыдущую задачу так, чтобы можно было поредактировать содержимое инпута - и содержимое абзаца также поменялось.
+
+<script>
+
+var p = document.querySelector('p');
+var input = document.querySelector('input');
+input.value = p.innerHTML;
+input.addEventListener('keyup', func);
+
+function func() {
+p.innerHTML = input.value;
+}
+
+</script>
+*********
+*********
+********* 15 июл 2018 в 1:05

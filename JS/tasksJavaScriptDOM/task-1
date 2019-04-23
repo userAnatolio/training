@@ -1,0 +1,50 @@
+2. Дана строка. Сделайте заглавным первый символ каждого слова этой строки. Для этого сделайте вспомогательную функцию ucfirst, которая будет получать строку, делать первый символ этой строки заглавным и возвращать обратно строку с заглавной первой буквой.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<p class="str">Сделайте заглавным первый символ каждого слова этой строки.</p>
+<input type="submit" onclick="ucfirst()" value="Cделать">
+
+<script>
+
+function getStr(str) {
+var str = $('p.str').html();
+return str;
+}
+
+function toUpperFirst(str) {
+var arr = str.split(' ');
+for(var i = 0; i < arr.length; i++) {
+arr[i] = arr[i].substr(0, 1).toUpperCase() + arr[i].substr(1);
+}
+return arr.join(' ');
+}
+
+function newString(str) {
+return toUpperFirst(getStr(str));
+}
+
+function ucfirst() {
+$('p.str').html(newString());
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+********* 9 июл 2018 в 20:59

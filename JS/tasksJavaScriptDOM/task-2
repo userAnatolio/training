@@ -1,0 +1,44 @@
+3. Дана строка вида 'var_text_hello'. Сделайте из него текст 'varTextHello'.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<p class="str">var_text_hello.</p>
+<input type="submit" onclick="ucfirst(str)" value="Cделать">
+
+<script>
+
+var str = $('p.str').html();
+
+
+function toUpperFirst(str) {
+var arr = str.split('_');
+for(var i = 1; i < arr.length - 1; i++) {
+arr[i] = arr[i].substr(0, 1).toUpperCase() + arr[i].substr(1);
+}
+return arr.join('');
+}
+
+function ucfirst(str) {
+$('p.str').html(toUpperFirst(str));
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+********* 9 июл 2018 в 22:50

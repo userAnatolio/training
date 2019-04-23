@@ -1,0 +1,29 @@
+5. С помощью функцию isSimple из предыдущей задачи выведите на экран все простые числа из промежутка от 1 до 100.
+
+<script>
+
+function isSimple(num) {
+var flag = true;
+for(var i = 2; i < num; i++) {
+if(num % i == 0) {
+flag = false;
+}
+}
+return flag;
+}
+
+
+function getSimple(num) {
+for(var i = 1; i <= num; i++) {
+if(isSimple(i)) {
+document.write(i + '<br>');
+}
+}
+}
+
+getSimple(100);
+
+</script>
+*********
+*********
+********* 10 июл 2018 в 0:23

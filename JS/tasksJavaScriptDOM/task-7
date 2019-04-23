@@ -1,0 +1,25 @@
+8. Сделайте функцию getIntersect, которая параметром принимает два массива и возвращает массив элементов, которые есть в обоих массивах.
+
+<script>
+
+arr1 = [1, 2, 4, 5, 6, 7, 8];
+arr2 = [-1, 0, 4, 5, 6, 7, 9, 10];
+
+function getIntersect(arr1, arr2) {
+var arrResult = [];
+for(var i = 0; i < arr1.length; i++) {
+for(var j = 0; j < arr2.length; j++) {
+if(arr2[j] == arr1[i]) {
+arrResult.push(arr1[i]);
+}
+}
+}
+return arrResult;
+}
+
+console.log(getIntersect(arr1, arr2));
+
+</script>
+*********
+*********
+********* 10 июл 2018 в 0:57

@@ -1,0 +1,24 @@
+2. Модифицируйте предыдущую задачу так, чтобы по клику на li ей в конец добавлялся '!'.
+
+<script>
+
+var arr = ['Вишня', 'Яблоко', 'Банан', 'Груша'];
+
+function func() {
+var ul = document.createElement('ul');
+document.documentElement.appendChild(ul);
+for(var i = 0; i < arr.length; i++) {
+var li = document.createElement('li');
+ul.appendChild(li);
+li.innerHTML = arr[i];
+li.addEventListener('click', addSymbol);
+}
+}
+
+function addSymbol() {
+this.innerHTML += '!';
+}
+</script>
+*********
+*********
+********* 14 июл 2018 в 22:37

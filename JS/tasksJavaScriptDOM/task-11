@@ -1,0 +1,21 @@
+4. Дан абзац и инпут. Сделайте так, чтобы по заходу на страницу текст абзаца отображался в инпуте.
+
+<body>
+
+<p>Я абзац</p>
+
+<input>
+
+
+<script>
+
+var p = document.querySelector('p');
+var input = document.querySelector('input');
+input.value = p.innerHTML;
+
+</script>
+
+</body>
+*********
+*********
+********* 14 июл 2018 в 22:59

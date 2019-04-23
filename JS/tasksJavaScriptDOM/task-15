@@ -1,0 +1,50 @@
+8. Дан массив [[1, 2, 3], [4, 5, 6], [7, 8, 9]]. Выведите его элементы в виде таблицы table размером 3 на 3.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+td {
+border: 1px solid blue;
+width: 100px;
+height: 30px;
+text-align: center;
+}
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<input type="submit" value="создать таблицу" onclick="func(arr)">
+
+<script>
+
+var arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+function func(arr) {
+var table = document.createElement('table');
+document.documentElement.appendChild(table);
+for(var i = 0; i < arr.length; i++) {
+var tr = document.createElement('tr');
+table.appendChild(tr);
+for(var j = 0; j < arr[i].length; j++) {
+var td = document.createElement('td');
+td.innerHTML = arr[i][j];
+tr.appendChild(td);
+}
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 июл 2018 в 2:39

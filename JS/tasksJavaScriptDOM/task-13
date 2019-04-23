@@ -1,0 +1,28 @@
+6. Дан абзац с текстом. Сделайте так, чтобы по клику на этот абзац рядом с ним появлялся инпут, с помощью которого можно будет поредактировать текст нашего абзаца. По потери фокуса инпут должен исчезнуть, а содержимое абзаца поменяться.
+
+<body>
+
+<p>Я спелая вишня, покурить на балкон вышла</p>
+
+<script>
+
+var text = document.querySelector('p');
+text.addEventListener('click', func);
+
+function func() {
+var input = document.createElement('input');
+input.addEventListener('change', addText);
+document.documentElement.appendChild(input);
+this.removeEventListener('click', func);
+}
+
+function addText() {
+text.innerHTML = this.value;
+}
+
+</script>
+
+</body>
+*********
+*********
+********* 15 июл 2018 в 1:22

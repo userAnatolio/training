@@ -1,0 +1,32 @@
+7. Модифицируйте предыдущую задачу так, чтобы инпут появлялся вместо абзаца, а не рядом с ним.
+
+<body>
+
+<div id="wrap">
+<p>А я свежий огурец, оторви меня от ботвы и тебе конец</p>
+</div>
+
+<script>
+
+var text = document.querySelector('p');
+text.addEventListener('click', func);
+var wrap = document.getElementById('wrap');
+
+function func() {
+var input = document.createElement('input');
+input.addEventListener('change', addText);
+text.innerHTML = '';
+wrap.appendChild(input);
+this.removeEventListener('click', func);
+}
+
+function addText() {
+text.innerHTML = this.value;
+}
+
+</script>
+
+</body>
+*********
+*********
+********* 15 июл 2018 в 2:03

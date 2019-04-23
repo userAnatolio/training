@@ -1,0 +1,19 @@
+1. Дан следующий массив с работниками:
+
+<script>
+
+var products = [
+{name: 'Коля', age: 30},
+{name: 'Вася', age: 31},
+{name: 'Петя', age: 32},
+];
+
+for(var i = 0; i < products.length; i++) {
+document.write(products[i].name + ', возраст: ' + products[i].age + '<br>');
+}
+
+</script>
+*********
+*********
+*********
+********* 15 июл 2018 в 17:45

@@ -1,0 +1,46 @@
+2. Дан абзац и кнопка. Сделайте так, чтобы по нажатию на кнопку в абзаце начал тикать таймер от 1 до бесконечности. Чтобы предотвратить повторное нажатие на кнопку она должна переходить в состояние disabled.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<p>0</p>
+<button>Жми</button>
+
+<script>
+
+var num = 0;
+
+var button = document.querySelector('button');
+var p = document.querySelector('p');
+button.addEventListener('click', start);
+
+function start() {
+window.setInterval(timer, 1000);
+}
+
+function timer() {
+num++;
+p.innerHTML = num;
+button.disabled = true;
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 июл 2018 в 19:09

@@ -1,0 +1,38 @@
+1. В следующем видео я показываю, как используя комбинации функций решить задачу на дружественные числа: ссылка на видео. Посмотрите это видео, закройте его и повторите это решение самостоятельно. Затем решите все задачи ниже, используя приведенный подход.
+
+<script>
+
+
+
+function getDividers(num) {
+arr = [];
+for(var i = 1; i < num; i++) {
+if(num % i == 0) {
+arr.push(i);
+}
+}
+return arr;
+}
+
+function getSum(arr) {
+var sum = 0;
+for(var i = 0; i < arr.length; i++) {
+sum += arr[i];
+}
+return sum;
+}
+
+function getSumDividers(num) {
+return getSum(getDividers(num));
+}
+
+function friendNum(num1, num2) {
+return getSumDividers(num1) == num2 && getSumDividers(num2) == num1;
+}
+
+alert(friendNum(220, 284));
+
+</script>
+*********
+*********
+********* 9 июл 2018 в 20:14

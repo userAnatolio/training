@@ -1,0 +1,54 @@
+0. Выведите на экран таблицу table размером 5 на 5 так, чтобы в ее ячейках последовательно стояли числа от 1 до 25.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+td {
+border: 1px solid blue;
+width: 100px;
+height: 30px;
+text-align: center;
+}
+
+</style>
+
+<script src="jquery.js"></script>
+
+</head>
+
+<body>
+
+<input type="submit" value="создать таблицу" onclick="func(arr)">
+
+<script>
+
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+function func(arr) {
+var table = document.createElement('table');
+document.documentElement.appendChild(table);
+for(var k = 0; k < 5; k++) {
+var tr = document.createElement('tr');
+table.appendChild(tr);
+for(var j = 0; j < 5; j++) {
+var td = document.createElement('td');
+tr.appendChild(td);
+}
+}
+var cols = document.getElementsByTagName('td');
+for(var i = 0; i < 25; i++) {
+cols[i].innerHTML = i+1;
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 июл 2018 в 17:37
