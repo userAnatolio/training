@@ -1,17 +1,118 @@
-5. Повторите попытку по данному образцу:
+
+Макет 2
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
+
 <style>
-div {margin: 0 auto 50px auto;}
-#div1 {border-style: solid; border-width: 26px; background: green; width:400px; height: 400px; border-image: url(border.png) 26 repeat;}
-#div1:hover {border-image: url(border.png) 26 round;}
-#div2 {border-style: solid; border-width: 26px; background: green; width:400px; height: 400px; border-image: url(border.png) 26;}
-#div3 {border-style: solid; border-width: 26px; background: green; width:400px; height: 400px; border-image: url(border.png) 26 repeat stretch;}
-#div4 {border-style: solid; border-width: 26px; background: green; width:400px; height: 400px; border-image: linear-gradient(to bottom, red, blue) 30;}
-#div5 {border-style: solid; border-width: 26px; background: green; width:400px; height: 400px; border-image: url(border.png) 26 repeat;}
-#div5:hover {border-image: url(border.png)26/1/1 repeat;}
-#div6 {width:400px; height: 400px; border-image: url(border2.png) 25% 30% 10% 20% stretch; border-style: solid; border-width: 50px;}
-#div6:hover{border-image: url(border2.png) fill 25% 30% 10% 20% stretch;
+
+body, p, h1, h2, h3, h4 {
+padding: 0;
+margin: 0;
+}
+
+p, h1, h2, h3 {
+margin-bottom: 10px;
+}
+
+.left p{
+font-size: 13px;
+text-align: justify;
+}
+
+.wrapper {
+width: 870px;
+margin: 0 auto;
+}
+
+.header {
+height: 200px;
+background: url('bg.jpg') no-repeat;
+color: white;
+position: relative;
+margin-bottom: 20px;
+}
+
+.siteName {
+position: absolute;
+top: 30px;
+left: 210px;
+font-size: 25px;
+font-weight: bold;
+}
+
+.slogan {
+position: absolute;
+top: 60px;
+left: 230px;
+}
+
+.left {
+min-height: 500px;
+width: 200px;
+float: left;
+margin-left: 20px;
+}
+
+.content {
+margin: 0 20px 0 240px ;
+text-align: justify;
+}
+
+.clearfix {
+clear: both;
+}
+
+.footer {
+height: 100px;
+position: relative;
+}
+
+.bottom {
+position: absolute;
+font-size: 12px;
+top: 80px;
+left: 430px;
+}
+
 </style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="header">
+<div class="siteName">www.doski.com</div>
+<div class= "slogan">Доски с нами - в удовольствие! До 1-го января - скидка 40% на каждую доску!</div>
+</div>
+<div class="left">
+<h4>Катайтесь с нами</h4>
+<p>Sed consequat lobortis tellus quis fringilla. Aenean eleifend sapien quis tellus rhoncus.</p>
+
+<p>Pellentesque pellentesque sem ac justo tristique pellentesque. Vestibulum semper pulvinar rutrum. Maecenas odio urna, porta sed</p>
+<p><img src="1.jpg" width="100%"></p>
+<h4>Нет ничего проще!</h4>
+<p>Sed consequat lobortis tellus quis fringilla. Aenean eleifend sapien quis tellus rhoncus.</p>
+
+<p>Pellentesque pellentesque sem ac justo tristique pellentesque. Vestibulum semper pulvinar rutrum. Maecenas odio urna, porta sed</p>
+<p><img src="2.jpg" width="100%"></p>
+
+</div>
+<div class="content">
+<h2>Катание на досках по воде!</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse urna ante, egestas ac nibh sit amet, vehicula posuere quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium consequat volutpat. Integer ultricies ligula eget arcu volutpat vehicula. Sed et congue nisi, ac cursus ex. Duis tempus arcu magna, quis auctor odio congue in. Duis nunc leo, tempor nec dignissim sed, euismod vel nibh.</p>
+
+<p>Sed consequat lobortis tellus quis fringilla. Aenean eleifend sapien quis tellus rhoncus, et elementum justo pulvinar. Vestibulum gravida metus non turpis congue dignissim. Cras vitae urna nibh. Morbi consectetur ex vel cursus bibendum. Nunc dignissim massa non lacus commodo fringilla. Sed id ipsum ac diam fermentum condimentum feugiat a nunc. Nulla tincidunt vel ante non venenatis. Vestibulum fermentum velit et auctor sodales. Sed sagittis metus eget justo lobortis lobortis. Nulla dictum condimentum ipsum, a interdum nibh rutrum a. Nulla sed justo mi. Suspendisse sit amet feugiat magna.</p>
+
+<h3>Приезжайте к нам!</h3>
+<p><img src="1.jpg" width="100%"></p>
+<p>Nulla eros justo, vulputate ac eros in, semper pharetra ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque venenatis pellentesque lacus, eget commodo velit. Vivamus porta lobortis elit, fringilla imperdiet leo placerat id. Sed volutpat et tortor id ultricies. Integer efficitur mi id dui porta eleifend. Aliquam aliquet condimentum eros eu euismod. Interdum et males
 *********
 *********
 *********
-********* 22 фев 2018 в 0:59
+********* 11 фев 2018 в 5:38

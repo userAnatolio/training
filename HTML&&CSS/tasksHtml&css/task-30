@@ -1,16 +1,19 @@
-1. Повторите страницу по данному по образцу:
 
-.div{
+2. Сделайте селектор, который выберет все ссылки с классом www, состояния link и visited сделайте подчеркнутыми и голубыми, а состояние hover - неподчеркнутым.
 
-width: 200px;
-height: 250px;
-border-width: 1px;
-border-style: dotted;
-border-radius: 10px 20px 30px 40px;
-border-color: green;
+<style>
 
+a:link, a:visited.www{
+color: red;
+text-decoration: underline;
 }
+
+a:hover.www{
+text-decoration: none;
+}
+
+</style>
 *********
 *********
 *********
-********* 22 янв 2018 в 22:58
+********* 22 янв 2018 в 20:59

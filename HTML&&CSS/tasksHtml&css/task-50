@@ -1,61 +1,24 @@
-8. Повторите страницу по данному по образцу:
 
-<!DOCTYPE html>
-<html>
-<head>
+5. Повторите страницу по данному по образцу.
 
-<title></title>
+body {
+background-image: url("fon.jpg");
+background-repeat: repeat-y;
+background-position: right top;
+}
 
-<style>
-
-#test a:link, #test a:visited {
-text-decoration: none;
+div,p {
+width: 500px;
+text-align: justify;
 color: white;
+font-size: 18px;
 }
 
-#test a:hover{
-text-decoration: none;
+div h1 {
 color: white;
-background-color: #e93301;
+text-align: center;
 }
-
-#test {
-font-family: Arial;
-font-size: 13px;
-background-color: #fc9d00;
-
-}
-
-#test a {
-display: block;
-padding: 10px;
-}
-
-#test li {
-display: inline-block;
-margin-right: 5px;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div id = "test">
-<ul>
-<li><a href = "">HOME</a></li>
-<li><a href = "">BLOG</a></li>
-<li><a href = "">PHOTOS</a></li>
-<li><a href = "">ABOUT</a></li>
-<li><a href = "">LINKS</a></li>
-<li><a href = "">CONTACT</a></li>
-</ul>
-</div>
-
-</body>
-</html>
 *********
 *********
 *********
-********* 27 янв 2018 в 23:23
+********* 26 янв 2018 в 14:13

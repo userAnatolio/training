@@ -1,13 +1,30 @@
-4. Функция .h(число) должна компилироваться в height: число. Пример: .h(200px) скомпилируется в height: 200px.
 
-.h(@num){
-height: @num;
+11. Повторите страницу по данному по образцу (наведите мышкой на один из красных блоков):
+
+<style>
+* {
+margin: 0; padding: 0;
 }
 
-div {
-.h(200px);
+ul {
+width: 90%;
+margin: 0 auto;
+list-style-type: none;
 }
+li {
+border: 1px solid red;
+width: 30%;
+height: 30px;
+margin: 30px 0;
+
+transition: width 1s;
+}
+
+li:hover ~ li {
+width: 50%
+}
+</style>
 *********
 *********
 *********
-********* 11 мар 2018 в 19:09
+********* 3 мар 2018 в 18:04

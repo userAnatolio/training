@@ -1,63 +1,23 @@
-1. Повторите страницу по данному по образцу:
+
+Задачи на работу с плавными переходами transition на CSS
+1. Повторите страницу по данному по образцу (наведите мышкой на блок):
+
 <style>
-#wrapper {
-border: 4px solid black;
-width: 100px;
-margin: 0 auto;
-}
-#wrapper div {
-width: 100px;
+.block {
+border: 1px solid red;
+width: 200px;
+background: white;
 height: 100px;
--webkit-transform-style: preserve-3d;
-transform-style: preserve-3d;
--webkit-backface-visibility: visible;
-backface-visibility: visible;
--webkit-animation: anim 5s infinite linear;
-animation: anim 5s infinite linear;
--webkit-box-sizing: border-box;
-box-sizing: border-box;
-border: 4px solid red;
+
+
+transition: background 2s;
 }
-@-webkit-keyframes anim {
-0% {
--webkit-transform: rotateY(0deg) scale(1);
-}
-25% {
--webkit-transform: rotateY(180deg) scale(0);
-}
-50% {
--webkit-transform: rotateY(360deg) scale(1);
-}
-75% {
--webkit-transform: rotateY(0deg) scale(1);
-}
-100% {
--webkit-transform: rotateY(0deg) scale(1);
-}
-}
-@keyframes anim {
-0% {
--webkit-transform: rotateY(0deg) scale(1);
-}
-25% {
--webkit-transform: rotateY(180deg) scale(0);
-}
-50% {
--webkit-transform: rotateY(360deg) scale(1);
-}
-100% {
--webkit-transform: rotateY(0deg) scale(1);
-}
+.block:hover {
+background: red;
+color: white;
 }
 </style>
-</head>
-<body>
-<div id="wrapper">
-<div id="rotate">
-Привет!
-</div>
-</div>
 *********
 *********
 *********
-********* 9 мар 2018 в 23:08
+********* 3 мар 2018 в 10:12

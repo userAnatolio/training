@@ -1,21 +1,28 @@
-1. Повторите страницу по данному по образцу (наведите мышкой на блок):
+
+Практика по селекторам
+39. Повторите страницу по данному по образцу (наведите мышкой на список):
 
 <style>
-.block {
-border: 1px solid red;
-width: 200px;
-background: white;
-height: 100px;
-
-
-transition: background 2s;
-}
-.block:hover {
-background: red;
-color: white;
-}
+li {border: 1px solid blue; padding: 5px; width: 200px; margin-bottom: 20px; list-style-type: none;}
+li:hover {background: green;}
+li:hover + li {background: red;}
 </style>
+</head>
+<body>
+<ul>
+<li>пунтк li</li>
+<li>пунтк li</li>
+<li>пунтк li</li>
+<li>пунтк li</li>
+<li>пунтк li</li>
+<li>пунтк li</li>
+<li>пунтк li</li>
+<li>пунтк li</li>
+<li>пунтк li</li>
+<li>пунтк li</li>
+</ul>
+</body>
 *********
 *********
 *********
-********* 3 мар 2018 в 10:12
+********* 23 фев 2018 в 8:11

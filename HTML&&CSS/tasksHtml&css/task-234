@@ -1,22 +1,22 @@
-3. Повторите страницу по данному по образцу (наведите мышкой на блок):
+
+Работа с медиазапросами
+1. Повторите страницу по данному по образцу.
 
 <style>
-#wrapper {
-margin: 100px auto;
-width: 200px;
+
+@media screen and (min-width: 800px) {
+p {color: blue;}
 }
 
-.block {
-border: 1px solid red;
-width: 100px;
-height: 100px;
+@media screen and (min-width: 480px) and (max-width: 800px) {
+p {color: green;}
 }
-.block:hover {
-transform: rotate(45deg) scale(2, 3);
-border-radius: 100px;
+
+@media screen and (max-width: 480px) {
+p {color: red;}
 }
 </style>
 *********
 *********
 *********
-********* 4 мар 2018 в 20:21
+********* 2 мар 2018 в 19:20

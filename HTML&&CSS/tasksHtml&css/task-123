@@ -1,38 +1,81 @@
-4. Повторите страницу по данному по образцу:
 
-<form>
-<select>
-<option>Минск</option>
-<option>Москва</option>
-<option>Киев</option>
-<option selected>Нью Йорк</option>
-<option>Варшава</option>
-<option>Рига</option>
-<option>Рим</option>
-</select>
+Макет 6
 
-<select size="3">
-<option>Минск</option>
-<option>Москва</option>
-<option>Киев</option>
-<option selected>Нью Йорк</option>
-<option >Варшава</option>
-<option >Рига</option>
-<option >Рим</option>
-</select>
+<style>
 
-<select multiple=name="city[]" size="5">
-<option>Минск</option>
-<option>Москва</option>
-<option>Киев</option>
-<option selected>Нью Йорк</option>
-<option>Варшава</option>
-<option>Рига</option>
-<option>Рим</option>
-</select>
-<input type="submit" value="Отправить на сервер">
-</form>
+body, h1, p, ol, li { margin: 0; padding: 0; }
+
+
+#header { background-color: #008040; text-align: center; color: white;
+font-family: Arial; padding: 5px;}
+#header h1 {font-size: 36px; margin-bottom: 5px;}
+#header p {font-size: 22px; margin-bottom: 5px;}
+
+.center {width: 840px; margin: 0 auto;}
+
+#content1 {text-align: justify; font-family: Arial;}
+#content1 h1 {margin: 30px 0 10px 0; font-size: 28px;}
+#content1 ol { color: red; font-weight: bold; list-style-type: decimal;}
+#content1 li { list-style-position: inside; margin-bottom: 10px;}
+#content1 li span {margin-bottom: 5px; font-weight: normal; color: black;}
+
+h1 { text-align: center; }
+
+#header1 { background-color: #c60304; text-align: center;
+margin-top: 30px; color: white; font-family: Arial;}
+#header1 h1 {padding: 10px; font-size: 28px;}
+#header1 p {padding-bottom: 15px;}
+
+#content2 { text-align: justify; font-family: Arial; margin-bottom: 30px;}
+#content2 h1 {margin-bottom: 10px; font-size: 28px;}
+#content2 h1 {margin: 30px 0 10px 0; font-size: 28px;}
+#content2 p {margin-bottom: 10px;}
+#img { background-color: #ff8040; text-align: center;
+color: white; padding: 20px 0;}
+img {border: 1px solid black;}
+#img h1 {font-family: Arial; font-size: 28px; margin-bottom: 10px;}
+
+#footer { text-align: center; background-color: #912F00;
+padding: 200px 0 5px 0; color: white; font-size: 14px; font-family: Arial; }
+
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header">
+<div class="center">
+<h1>Любые виды ремонтных работ</h1>
+<p>Выезд специалиста, замер и смета работ бесплатно</p>
+
+<p>Бесплатный дизайн проект</p>
+
+<p>Гарантия 3 года</p>
+</div>
+</div>
+
+<div id="content1" class="center">
+<h1>Наши услуги</h1>
+<ol>
+<li><span>Pellentesque pellentesque sem ac justo tristique pellentesque. Vestibulum semper pulvinar rutrum. Maecenas odio urna, porta sed lectus eget, fringilla posuere odio. Maecenas pulvinar sed massa vitae tincidunt.</span></li>
+<li><span>Praesent ullamcorper est ac lorem aliquet, sed tempus lacus iaculis. Pellentesque a odio pharetra, sagittis enim sit amet, euismod leo. Nullam egestas, nisi eget blandit dignissim, augue dui accumsan est, at tincidunt ipsum metus quis justo. Aenean sed mauris ornare, faucibus tortor in, iaculis magna. Duis eros lectus, auctor eu mi sit amet, ornare scelerisque elit.</span></li>
+<li><span>Integer a sollicitudin quam. Sed laoreet finibus velit ut rhoncus. Nunc euismod neque at ligula venenatis vestibulum. Nulla facilisi. Nunc aliquet, erat sed ullamcorper malesuada, sapien magna tempor augue, at malesuada felis enim at quam. Curabitur ornare tincidunt nisi id cursus.</span></li>
+<li><span>Nunc finibus non massa in vestibulum. Etiam euismod metus ut euismod sagittis. Donec tincidunt neque a dolor posuere egestas. Proin sed dolor dui. In urna tellus, pretium in eleifend eget, pellentesque et enim. Etiam pulvinar velit nec libero iaculis, vitae consectetur elit pellentesque.</span></li>
+</ol>
+</div>
+
+<div id="header1">
+<div class="center">
+<h1>Наши контакты</h1>
+<p>Телефоны: +375 29 817 68 92 МТС, +375 31 335 29 38 Velcom</p>
+</div>
+</div>
+
+<div id="content2" class="center">
+<h1>Наша компания</h1>
+<p>Pellentesque pellentesque sem ac justo tristique pellentesque. Vestibulum semper pulvinar rutrum. Maecenas odio urna, porta sed lectus eget, fringilla posuere odio. Maecenas pulvinar
 *********
 *********
 *********
-********* 23 фев 2018 в 0:50
+********* 15 фев 2018 в 7:18

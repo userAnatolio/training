@@ -1,7 +1,20 @@
-4. Сделайте селектор, который выберет все абзацы <p> с классом test и одновременно все элементы с классом hello.
 
-p.test, .hello {color: red;}
+На white-space, tab-size
+
+<style>
+p {white-space: pre; border: 1px solid red;}
+</style>
+</head>
+<body>
+<p>
+
+Lorem ipsum dolor sit amet,
+
+
+consectetur adipiscing elit. </p>
+</body>
+</html>
 *********
 *********
 *********
-********* 23 фев 2018 в 5:50
+********* 21 фев 2018 в 2:58

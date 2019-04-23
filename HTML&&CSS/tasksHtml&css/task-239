@@ -1,30 +1,37 @@
-1. Повторите страницу по данному по образцу (наведите мышкой на пункт меню):
+
+Работа с em
+6. Повторите страницу по данному по образцу.
 
 <style>
-
-#wrapper {
-transform: rotate(-7deg);
+body {
+font-size: 30px;
+}
+@media screen and (min-width: 800px) {
+.text {
+font-size: 1.5em;
+}
 }
 
-li {
-display: inline-block;
-list-style-type: none;
-border: 1px solid blue;
-transition: 1s;
+@media screen and (min-width: 400px) and (max-width: 800px) {
+.text {
+font-size: 1em;
 }
-li:hover {
-transform: rotate(-375deg);
 }
 
-li a {
-display: block;
-color: blue;
-text-decoration: none;
-padding: 10px;
+@media screen and (max-width: 400px) {
+.text {
+font-size: 0.5em;
+}
 }
 
 </style>
+
+</head>
+
+<body>
+<div class="text">Текст будет разного размера в зависимости от размера экрана. Точки: 480px, 800px.</div>
+</body>
 *********
 *********
 *********
-********* 4 мар 2018 в 22:00
+********* 2 мар 2018 в 21:03

@@ -1,7 +1,23 @@
-8. Сделайте селектор, который выберет все абзацы <p> с классом, который начинается на 'top-'.
 
-p="top"{color: red;}
+На resize
+7. Повторите страницу по данному по образцу:
+
+<style>
+textarea {margin-bottom: 20px; width: 200px; height: 100px;}
+#text1 {resize: both; max-width: 400px; max-height: 300px;}
+#text2 {resize: none;}
+#text3 {resize: horizontal;}
+#text4 {resize: vertical;}
+</style>
+</head>
+<body>
+<form>
+<textarea id="text1">Ограничена ширина и высота</textarea><br>
+<textarea id="text2"></textarea><br>
+<textarea id="text3"></textarea><br>
+<textarea id="text4"></textarea>
+</body>
 *********
 *********
 *********
-********* 23 фев 2018 в 8:06
+********* 23 фев 2018 в 5:02

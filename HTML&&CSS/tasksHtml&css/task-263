@@ -1,16 +1,25 @@
-6. Функция .placeholder() должна компилироваться в кроссбраузерный вариант псевдоэлемента placeholder.
 
-=placeholder($code)
-&::-webkit-placeholder
-color: #{$code}
-&::-moz-placeholder
-color: #{$code}
-&::placeholder
-color: #{$code}
+Смена фона
+3. Повторите страницу по данному по образцу:
 
-input
-+placeholder(red)
+<style>
+.block {
+border: 1px solid red;
+height: 200px;
+width: 200px;
+}
+@keyframes anim {
+from {background: white;}
+to {background: red;}
+}
+.block {
+animation-name: anim;
+animation-duration: 3s;
+animation-timing-function: ease;
+animation-iteration-count: 1;
+}
+</style>
 *********
 *********
 *********
-********* 11 мар 2018 в 23:27
+********* 4 мар 2018 в 11:50

@@ -1,13 +1,8 @@
-1. Повторите страницу по данному по образцу (в середине нумерация имеет разрыв):
 
-<style>
-div {margin: 0 auto; width: 70%; text-align: justify; }
-p { hyphens: auto;}
-#num {counter-reset: test;} /* абзац 1 */
-#reset{counter-reset: test 17; font-weight: bold;} /* абзац 2 */
-p::before { counter-increment: test; content: "Абзац №" counter(test) ".";}
-</style>
+16. Сделайте селектор, который выберет все абзацы <p> с классом test из элементов с классом hello.
+
+.hello p.test {color: red;}
 *********
 *********
 *********
-********* 24 фев 2018 в 6:49
+********* 23 фев 2018 в 5:53

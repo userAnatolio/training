@@ -1,11 +1,7 @@
-0. Повторите страницу по данному по образцу (наведите мышкой на список):
 
-<style>
-li {border: 1px solid blue; padding: 5px; width: 200px; margin-bottom: 20px; list-style-type: none;}
-li:hover {background: green;}
-li:hover + li + li {background: red;}
-</style>
+2. Сделайте селектор, который выберет все абзацы <p> внутри дивов <div>.
+div p { color: red;}
 *********
 *********
 *********
-********* 23 фев 2018 в 8:13
+********* 23 фев 2018 в 5:06

@@ -1,14 +1,16 @@
-2. Повторите страницу по данному по образцу:
 
-.div{
+3. Сделайте селектор, который выберет все ссылки из id=test с классом www. Цвета состояний выберите самостоятельно.
 
-width: 150px;
-height: 150px;
-border-radius: 80px;
-border: 1px solid red;
+#test a:link.www, #test a:visited.www{
+color: green;
+text-decoration: none;
+}
 
+#test a:hover.www{
+color: blue;
+text-decoration: underline;
 }
 *********
 *********
 *********
-********* 22 янв 2018 в 23:42
+********* 22 янв 2018 в 21:09

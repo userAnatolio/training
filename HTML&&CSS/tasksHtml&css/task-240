@@ -1,52 +1,31 @@
-2. Спутник земли
+
+Работа с rem
+7. Повторите страницу по данному по образцу.
 
 <style>
-
-#ball{
-width: 30px;
-height: 30px;
-border-radius: 15px;
-border: 1px solid red;
-position: absolute;
-top: -30px;
-left: -30px;
-
-animation: anim2 3s linear infinite;
--webkit-animation: anim2 3s linear infinite;
+html {
+font-size: 30px;
+}
+@media screen and (min-width: 800px) {
+.text {
+font-size: 1.5rem;
+}
 }
 
-
-#wrapper {
-margin: 150px auto;
-height: 200px;
-width: 200px;
-border: 1px solid red;
-border-radius: 100px;
+@media screen and (min-width: 400px) and (max-width: 800px) {
+.text {
+font-size: 1rem;
+}
 }
 
-#rotate {
-width: 200px;
-height: 200px;
-position: relative;
-
-animation: anim1 8s linear infinite;
--webkit-animation: anim1 8s linear infinite;
+@media screen and (max-width: 400px) {
+.text {
+font-size: 0.5rem;
 }
-
-@keyframes anim1 {
-0% {transform: rotate(0deg);}
-100% {transform: rotate(360deg);}
-}
-
-@keyframes anim2 {
-0% {background: white;}
-50% {background: red;}
-60% {background: white;}
-100% {background: white;}
 }
 
 </style>
 *********
 *********
 *********
-********* 6 мар 2018 в 20:06
+********* 2 мар 2018 в 21:47

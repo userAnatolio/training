@@ -1,15 +1,9 @@
-2. Повторите страницу по данному по образцу (наведите мышкой на список):
 
-<style>
-li {border: 1px solid blue; padding: 5px; width: 200px; margin-bottom: 20px; list-style-type: none;}
-li:hover {background: green;}
-li:hover ~ li {background: red;}
-li + li:last-child {background: none;}
-li:last-child:hover {background: green;}
-</style>
+Группировка селекторов
+4. Сделайте селектор, который выберет абзацы <p> и <h2> одновременно.
 
-абра кадабра
+p, h2 { color: red;}
 *********
 *********
 *********
-********* 23 фев 2018 в 8:37
+********* 23 фев 2018 в 5:08

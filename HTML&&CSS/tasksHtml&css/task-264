@@ -1,16 +1,34 @@
-7. Функция .selection() должна компилироваться в кроссбраузерный вариант псевдоэлемента selection.
 
-=selection($code)
-&::-webkit-selection
-color: #{$code}
-&::-moz-selection
-color: #{$code}
-&::selection
-color: #{$code}
+Движение по квадрату и смена фона
+5. Повторите страницу по данному по образцу:
 
-input
-+selection(red)
+<style>
+.block {
+border: 1px solid red;
+height: 100px;
+width: 100px;
+}
+@keyframes anim1 {
+0%{margin-left:0px; margin-top: 0px}
+25%{margin-left:500px; margin-top: 0px}
+50%{margin-left:500px; margin-top: 200px}
+75%{margin-left:0px; margin-top: 200px}
+100%{margin-left:0px; margin-top: 0px}
+}
+
+@keyframes anim2 {
+25% {background: red;}
+50% {background: white;}
+75% {background: red;}
+100% {background: white;}
+}
+
+.block {
+animation: anim1 7s linear infinite, anim2 3s linear infinite;
+-webkit-animation: anim1 5s liner infinite, anim2 2s liner infinite;
+}
+</style>
 *********
 *********
 *********
-********* 11 мар 2018 в 23:55
+********* 4 мар 2018 в 12:00

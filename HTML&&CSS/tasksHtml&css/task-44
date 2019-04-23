@@ -1,40 +1,8 @@
-2. Повторите страницу по данному по образцу:
 
-<style>
-
-#test a:link, a:visited {
-text-decoration: none;
-color: blue;
-}
-
-#test a:hover {
-text-decoration: none;
-color: blue;
-font-weight: bold;
-}
-
-#test a {
-height: 100%;
-display: block;
-}
-
-#test {
-width: 200px;
-font-family: Arial;
-font-size: 14px;
-}
-
-#test li {
-height: 25px;
-padding: 5px;
-border: 1px solid blue;
-margin-bottom: 5px;
-list-style-type: none;
-}
-
-
-</style>
+Толя, +
+1
 *********
 *********
+Ответить
 *********
-********* 27 янв 2018 в 14:51
+********* 23 янв 2018 в 20:52

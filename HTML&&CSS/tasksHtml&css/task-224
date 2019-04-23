@@ -1,32 +1,20 @@
-5. Повторите страницу по данному по образцу:
+
+На checked
+18. Повторите страницу по данному по образцу (красным цветом горит тот тег label, который находится после отмеченного чекбокса или радио):
 
 <style>
-.block {
-border: 1px solid red;
-height: 100px;
-width: 100px;
-}
-@keyframes anim1 {
-0%{margin-left:0px; margin-top: 0px}
-25%{margin-left:500px; margin-top: 0px}
-50%{margin-left:500px; margin-top: 200px}
-75%{margin-left:0px; margin-top: 200px}
-100%{margin-left:0px; margin-top: 0px}
-}
-
-@keyframes anim2 {
-25% {background: red;}
-50% {background: white;}
-75% {background: red;}
-100% {background: white;}
-}
-
-.block {
-animation: anim1 7s linear infinite, anim2 3s linear infinite;
--webkit-animation: anim1 5s liner infinite, anim2 2s liner infinite;
-}
+input:checked+label {color: red;}
 </style>
+</head>
+<body>
+<form>
+<input type="checkbox" id="checked1"><label for="checked1">Первый чекбокс </label><br><br>
+<input type="checkbox" id="checked2"><label for="checked2">Второй чекбокс</label><br><br>
+<input type="radio" name="aaa" id="radio3"><label for="radio3">Радио</label>
+<input type="radio" name="aaa" id="radio4"><label for="radio4">Радио</label>
+</form>
+</body>
 *********
 *********
 *********
-********* 4 мар 2018 в 12:00
+********* 24 фев 2018 в 7:21

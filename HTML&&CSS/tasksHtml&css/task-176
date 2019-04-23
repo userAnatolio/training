@@ -1,11 +1,8 @@
-8. овторите страницу по данному по образцу (в начале каждого абзаца вставлена автоматическая нумерация "Абзац №число. "):
 
-<style>
-div {margin: 0 auto; width: 70%; text-align: justify; counter-reset: test;}
-p { hyphens: auto;}
-p::before {counter-increment: test; content: "Абзац №" counter(test) ".";}
-</style>
+13. Сделайте селектор, который выберет все абзацы <p> с классом test и одновременно все <h2> с классом hello.
+
+p.test, h2.hello {color: red;}
 *********
 *********
 *********
-********* 24 фев 2018 в 6:22
+********* 23 фев 2018 в 5:44

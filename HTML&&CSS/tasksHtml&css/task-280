@@ -1,0 +1,31 @@
+
+11. Повторите страницу по данному по образцу (наведите мышкой на пункт меню):
+
+<style>
+
+#wrapper {
+transform: rotate(-7deg);
+}
+
+li {
+display: inline-block;
+list-style-type: none;
+border: 1px solid blue;
+transition: 1s;
+}
+li:hover {
+transform: rotate(-375deg);
+}
+
+li a {
+display: block;
+color: blue;
+text-decoration: none;
+padding: 10px;
+}
+
+</style>
+*********
+*********
+*********
+********* 4 мар 2018 в 22:00

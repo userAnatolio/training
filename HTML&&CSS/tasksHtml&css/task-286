@@ -1,0 +1,79 @@
+
+Куб
+3. Повторите страницу по данному по образцу:
+
+<style>
+#wrapper {
+position: relative;
+width: 100px;
+height: 100px;
+margin: 300px auto;
+-webkit-transform-style: preserve-3d;
+animation: anim 6s infinite linear;
+}
+
+#wrapper > div {
+width: 100px;
+height: 100px;
+color: white;
+-webkit-backface-visibility: visible;
+position: absolute;
+}
+
+.cap {
+background: #008080;
+transform: translateZ(-100px);
+}
+.center {
+background: yellow;
+}
+.left {
+background: red;
+left: -100px;
+transform: rotateY(-90deg);
+transform-origin: right;
+}
+.right {
+background: #ff8902;
+right: -100px;
+transform: rotateY(90deg);
+transform-origin: left;
+}
+.bottom {
+background: black;
+bottom: -100px;
+transform: rotateX(-90deg);
+transform-origin: top;
+}
+.top {
+background: #008000;
+top: -100px;
+transform: rotateX(90deg);
+transform-origin: bottom;
+}
+
+@keyframes anim {
+0% {
+transform: rotateX(0deg) rotateY(0deg);
+}
+50% {
+transform: rotateX(180deg) rotateY(180deg);
+}
+100%{
+transform: rotateX(-180deg) rotateY(0deg);
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div class="center">1</div>
+<div class="left">2</div>
+<div class="right">3</div>
+<div class="bottom">4</div>
+<div class="top">5</div>
+<div class="cap">6</div>
+</div>
+*********
+*********
+*********
+********* 10 мар 2018 в 0:47

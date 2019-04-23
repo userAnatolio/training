@@ -1,62 +1,7 @@
-3. Повторите страницу по данному образцу:
 
-<style>
-
-* {margin: 0; padding: 0;}
-
-.clearfix {
-clear: both;
-}
-
-#wrapper {
-width: 80%;
-margin: 0 auto;
-}
-
-.block {
-background: green;
-height: 300px;
-color: white;
-margin-bottom: 10px;
-}
-
-@media screen and (min-width: 800px) {
-.block {
-width: 22.75%;
-float: left;
-margin-right: 3%;
-}
-.block:last-child {margin-right: 0;}
-}
-
-
-@media screen and (min-width: 400px) and (max-width: 800px) {
-.block {
-width: 49%;
-margin-right: 2%;
-float: left;
-}
-.block:nth-child(2n) {
-margin-right: 0;
-}
-}
-
-</style>
-
-</head>
-
-<body>
-<div id="wrapper">
-<div>
-<div class="block">Блок1</div>
-<div class="block">Блок2</div>
-<div class="block">Блок3</div>
-<div class="block">Блок4</div>
-</div>
-<div class="clearfix"></div>
-</div>
-</body>
+33. Сделайте селектор, который выберет все абзацы <p> с атрибутом title.
+p[title]{color: red;}
 *********
 *********
 *********
-********* 2 мар 2018 в 20:25
+********* 23 фев 2018 в 7:27

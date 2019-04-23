@@ -1,7 +1,38 @@
-6. Сделайте селектор, который выберет все абзацы <p> с классом test из элементов с классом hello.
 
-.hello p.test {color: red;}
+12. Повторите страницу по данному по образцу:
+
+<style>
+div p {margin-bottom: 30px; margin-bottom: 30px; border: 1px solid; width: 200px;}
+#text1 {white-space: nowrap; }
+#text2 {white-space: pre; }
+#text3 {white-space: pre-wrap; }
+#text4 {white-space: pre-line; }
+#text5 {white-space: normal; }
+</style>
+</head>
+<body>
+<div>
+<p id="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p id="text2">
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit.
+
+</p>
+<p id="text3">
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit.
+</p>
+<p id="text4">
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit.
+</p>
+<p id="text5">
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit.
+</p>
+</div>
+</body>
 *********
 *********
 *********
-********* 23 фев 2018 в 5:53
+********* 21 фев 2018 в 15:27

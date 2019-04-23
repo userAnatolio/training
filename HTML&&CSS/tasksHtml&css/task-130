@@ -1,7 +1,33 @@
-4. Сделайте селектор, который выберет абзацы <p> и <h2> одновременно.
 
-p, h2 { color: red;}
+На работу с таблицами
+2. Повторите страницу по данному по образцу:
+
+<style>
+table, td {empty-cells: hide; border: 1px solid black;}
+table {border-spacing: 10px 5px;}
+td {background-color: green; color: white; padding: 5px;}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td>ячейка1</td>
+<td></td>
+<td>ячейка3</td>
+</tr>
+<tr>
+<td>ячейка4</td>
+<td>ячейка5</td>
+<td>ячейка6</td>
+</tr>
+<tr>
+<td></td>
+<td>ячейка8</td>
+<td></td>
+</tr>
+
+</table>
 *********
 *********
 *********
-********* 23 фев 2018 в 5:08
+********* 20 фев 2018 в 19:52

@@ -1,35 +1,25 @@
-3. Повторите страницу по данному по образцу:
 
-a:link, a:visited.test1{
-text-decoration: none;
-color: blue;
-}
+4. Сделайте селектор, который выберет все ссылки из class=eee с классом www. Цвета состояний выберите самостоятельно.
 
-a:hover.test1{
+<style>
+
+.eee a:link.www, a:visited.www{
 color: green;
-text-decoration: underline;
-}
-
-
-a:link, a:visited.test2{
-text-decoration: underline;
-color: red;
-}
-
-a:hover.test2{
-color: blue;
-text-decoration: line-through;
-}
-a:link, a:visited.test3{
-color: black;
 text-decoration: none;
 }
 
-a:hover.test3{
-color: red;
-text-decoration: overline;
+.eee a:hover.www{
+color: blue;
+text-decoration: underline;
 }
+
+.eee a:active.www{
+color: red;
+text-decoration: none;
+}
+
+</style>
 *********
 *********
 *********
-********* 23 янв 2018 в 13:52
+********* 22 янв 2018 в 21:17

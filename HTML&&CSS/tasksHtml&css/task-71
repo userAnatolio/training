@@ -1,37 +1,106 @@
-2. Повторите страницу по данному по образцу:
+
+4. Повторите страницу по данному по образцу.
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
 
 <style>
 
-#red {
-border: 1px solid red;
-height: 50px;
-width: 50px;
-position: absolute;
-top: 30px;
-left: 30px;
+.li a:link, .li a:visited {
+text-decoration: none;
+color: white;
+font-family: Arial;
+font-size: 13px;
+font-weight: bold;
 }
 
-#blue {
-border: 1px solid blue;
-height: 50px;
-width: 50px;
-position: absolute;
-top: 30px;
-left: 100px;
+.li a:hover {
+color: black;
+background-color: white;
+font-family: Arial;
 }
 
-#green {
-border: 1px solid green;
-height: 50px;
-width: 50px;
-position: absolute;
-top: 30px;
-left: 170px;
+li {
+display: inline-block;
+
 }
 
+a {
+padding: 8px 10px 8px 5px;
+display: block;
+}
+
+h1 {
+text-align: center;
+margin: 0px;
+}
+
+.block {
+width: 700px;
+margin: 50px auto;
+border: 1px solid;
+}
+
+p {
+font-size: 18px;
+text-align: justify;
+margin: 10px 10px 0px 10px;
+}
+
+.li {
+background-color: #484848;
+margin: 0px;
+padding: 0px;
+}
+
+ul {
+margin: 0px 0px 20px 0px;
+padding: 0px
+}
+
+p a:link, p a:visited {
+color: blue;
+text-decoration: none;
+font-weight: bold;
+display: inline;
+}
+
+p a:hover {
+color: green;
+text-decoration: underline;
+font-weight: bold;
+display: inline;
+}
 
 </style>
+
+</head>
+
+<body>
+
+<div class = "block">
+<div class = "li">
+<ul>
+<li><a href = "">Главная</a></li>
+<li><a href = "">Новости</a></li>
+<li><a href = "">Контакты</a></li>
+<li><a href = "">О компании</a></li>
+<li><a href = "">Как добраться</a></li>
+</ul>
+</div>
+
+<h1>Proin tristique lorem</h1>
+<p>Lorem ipsum dolor <a href = "">sit amet</a>, consectetur adipiscing elit. Nulla pharetra risus erat, eu imperdiet felis suscipit at. Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, facilisis lorem sit amet, porta ante. Nulla eget diam in erat hendrerit gravida.</p>
+<p>Cras ut nunc metus. Nullam id faucibus ante. <a href = "">Proin tristique lorem</a> tristique dolor porttitor, eget adipiscing leo gravida. Proin erat erat, laoreet sit amet tincidunt ac, iaculis nec libero. In placerat odio ac dapibus faucibus. Praesent ut est in ligula facilisis congue eget ac ante. Phasellus at felis vitae est molestie ultricies.</p>
+
+</div>
+
+</body>
+</html>
 *********
 *********
 *********
-********* 5 фев 2018 в 23:40
+********* 28 янв 2018 в 23:29

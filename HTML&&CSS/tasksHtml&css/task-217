@@ -1,22 +1,14 @@
-6. Повторите страницу по данному по образцу (наведите мышкой на блок):
+
+11. Повторите страницу по данному по образцу (в середине нумерация имеет разрыв):
 
 <style>
-#wrapper{
-border: 1px solid red;
-}
-.block1 {
-height: 50px;
-width: 0;
-background: red;
-
-transition: all 3s;
-}
-
-#wrapper:hover div {
-width: 100%;
-}
+div {margin: 0 auto; width: 70%; text-align: justify; }
+p { hyphens: auto;}
+#num {counter-reset: test;} /* абзац 1 */
+#reset{counter-reset: test 17; font-weight: bold;} /* абзац 2 */
+p::before { counter-increment: test; content: "Абзац №" counter(test) ".";}
 </style>
 *********
 *********
 *********
-********* 3 мар 2018 в 20:35
+********* 24 фев 2018 в 6:49

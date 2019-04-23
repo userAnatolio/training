@@ -1,21 +1,88 @@
-6. Повторите страницу по данному по образцу:
 
-<form>
-<fieldset>
-<legend>Выберите кнопочку</legend>
-<input type="radio" name="name1"><input type="radio" name="name1"> <input type="radio" name="name1">
-<input type="text" placeholder="Ваше имя">
-</fieldset>
-<br><br>
-<fieldset>
-<legend>Выберите еще кнопочку</legend>
-<input type="radio" name="name2"><input type="radio" name="name2"> <input type="radio" name="name2">
-<input type="radio" name="name2" disabled> <input type="radio" name="name2" disabled>
-</fieldset>
-<br><br>
-<input type="submit" value="Отправить на сервер">
-</form>
+17. Урок из архива
+
+2-й макет готов
+
+<style>
+* {margin: 0; padding: 0;}
+body {background-color: #ebebeb; font-size: 14px;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; color: #444444;}
+main a {color: #f0a30b;}
+.right {float: right;}
+.left {float: left;}
+#wrapper {margin: 40px auto; width: 960px; background-color: white;}
+header h1 {font-size: 54px; font-weight: normal; font-family: Georgia, Times, serif;
+letter-spacing: -3px; line-height: 120px; padding-left: 30px;}
+header a {text-decoration: none; color: black;}
+#slogan {color: #999999; font: 20px/120px Georgia, Times;
+padding-right: 30px; letter-spacing: -1px;}
+nav li {display: inline-block;}
+.clearfix {clear: both;}
+#sidebar {float: left; width: 280px; margin-left: 30px;}
+#content {float: right; width: 570px; margin-right: 30px; text-align: justify;}
+footer {text-align: center; padding: 40px 0; border-top: 1px solid #ebebeb;}
+footer a {color: #f0a30b;}
+nav {background-color: #ea9b23; text-align: center; font-size: 18px; margin-bottom: 60px;}
+nav a {text-decoration: none; color: #F7DAAF; display: block; line-height: 84px;}
+nav li {width: 16%;}
+nav a:hover, a.active {color: #F9E6C8;}
+img {margin-bottom: 60px;}
+#content h1 {font-size: 42px; font-weight: normal; font-family: Georgia, Times, serif;
+letter-spacing: -2px; margin-bottom: 10px;}
+#sidebar h1 {font-size: 26px; font-weight: normal; font-family: Georgia, Times, serif;
+letter-spacing: -2px; margin-bottom: 15px;}
+main h1 a {color: black; text-decoration: none; }
+main a:hover, footer a:hover {text-decoration: none;}
+#sidebar ul {list-style-type: none;}
+#sidebar ul li {border-bottom: 1px solid #E9E9E9;
+background: url("li.gif") no-repeat left;
+line-height: 40px; padding-left: 20px;}
+#sidebar p {text-align: left; padding-right: 10px;}
+#content p {margin-bottom: 30px; }
+main p {line-height: 28px;}
+#sidebar div {margin-bottom: 50px;}
+p.more {text-align: right; margin-right: 30px;}
+.more a {border: 1px solid #E9E9E9; padding: 5px 10px;}
+.more a:link, .more a:visited {text-decoration: none; }
+.more a:hover {background-color: #FCF3E6;}
+.more {padding-bottom: 40px;}
+
+</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+<header>
+<h1 class="left"><a href="#">hovering</a></h1>
+<div id="slogan" class="right">template designed by webtemplateocean.com</div>
+</header>
+<div class="clearfix"></div>
+<main>
+<nav>
+<ul>
+<li><a href="#" class="active">home</a></li>
+<li><a href="#">about</a></li>
+<li><a href="#">products</a></li>
+<li><a href="#">gallery</a></li>
+<li><a href="#">help</a></li>
+<li><a href="#">contact</a></li>
+</ul>
+</nav>
+<figure>
+<img src="img.jpg" width="100%" height="400px">
+</figure>
+<section id="sidebar">
+<div id="1" class="block">
+<h1>Quisque luctus</h1>
+<ul>
+<li><a href="#">Integer non enim nec tellus</a></li>
+<li><a href="#">Lobortis tempus vel nec lorem</a></li>
+<li><a href="#">Cum sociis natoque penatibus</a></li>
+<li><a href="#">Etiam convallis enim tincidunt</a></li>
+<li><a href="#">Aenean rutrum tortor a purus</a></li>
+<li><a href="#">Integer n
 *********
 *********
 *********
-********* 23 фев 2018 в 1:18
+********* 19 фев 2018 в 6:41

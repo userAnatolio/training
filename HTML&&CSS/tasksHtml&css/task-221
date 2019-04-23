@@ -1,23 +1,10 @@
-2. Повторите страницу по данному по образцу (движение будет бесконечным):
+
+15. Повторите страницу по данному по образцу (каждая третья li покрашена в красный цвет):
 
 <style>
-.block {
-border: 1px solid red;
-height: 50px;
-width: 50px;
-}
-@keyframes anim {
-from {margin-left: 2px;}
-to {margin-left: 400px;}
-}
-.block {
-animation-name: anim;
-animation-duration: 3s;
-animation-timing-function: ease;
-animation-iteration-count: infinite;
-}
+li:nth-child(3n) {color: red;}
 </style>
 *********
 *********
 *********
-********* 4 мар 2018 в 11:39
+********* 24 фев 2018 в 7:01

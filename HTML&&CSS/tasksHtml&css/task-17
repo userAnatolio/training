@@ -1,72 +1,76 @@
-4. Повторите страницу по данному по образцу:
--->
+
+<!— Закрепление
+4. Повторите страницу по данному по образцу: —>
 
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset = "utf-8">
 <title>Мой сайт</title>
-<style>
-
-h1{
-color: red;
-text-align: center;
-}
-
-h2{
-color: green;
-}
-
-p{
-text-align: justify;
-}
-
-ul{
-font-style: italic;
-color: #924763;
-}
-ol{
-color: red;
-}
-
-b{
-color: red;
-font-size: 22px;
-}
-
-i{
-color: blue;
-}
-
-</style>
 </head>
 <body>
 
-<h1>Что нужно знать, чтобы делать сайты</h1>
-<ol>
-<li><b>HTML</b></li>
-<li><i>CSS</i></li>
-<li>PHP</li>
-<li>SQL</li>
-<li>JavaScript</li>
-<li>jQuery</li>
-<li>Flash</li>
-<li>SEO</li>
-</ol>
-<h2>PHP и JavaScript</h2>
-<p>Языки программирования <b style = "font-family: sans-serif;">PHP</b> и <b style = "font-family: sans-serif;">JavaScript</b> позволяют сделать сайт динамичным, то есть реагирующим на действия пользователя. Например, можно сделать красивую выпадающую менюшку или слайдер</p>
+<table cellspacing = "0" border = "1px" width = "400px" height = "250px>
 
-<h2>Виды скриптов</h2>
+<tr align = "center">
+<th rowspan = "2">номер</th>
+<th colspan = "2">Теги</th>
+</tr>
 
-<p>Для этого пишутся скрипты (англ. <i>script</i> - «сценарий») - программы, позволяющие реагировать на действия пользователя. Скрипты бывают двух видов:</p>
-<ul>
-<li>те, которые выполняются на сервере, а результат их выполнения приходит в браузер к пользователю уже в готовом виде. Это скрипты, написанные на языке <b>PHP</b>. На нем пишутся <b>CMS-ки</b> – системы управления контентом.</li>
-<li>те, которые выполняются прямо в браузере пользователя. Это скрипты, написанные на языке JavaScript. Они чаще всего используются для, того чтобы сделать страницу более удобной и красивой.</li>
-</ul>
+<tr align = "center">
+<th>тег</th>
+<th>значение</th>
+</tr>
+
+<tr align = "center">
+<td>1</td>
+<td>p</td>
+<td rowspan = "4">для текста</td>
+</tr>
+
+<tr align = "center">
+<td>2</td>
+<td>a</td>
+</tr>
+
+<tr align = "center">
+<td>3</td>
+<td>b</td>
+</tr>
+
+<tr align = "center">
+<td>4</td>
+<td>i</td>
+</tr>
+
+<tr align = "center">
+<td>5</td>
+<td>table</td>
+<td>таблица</td>
+</tr>
+
+<tr align = "center">
+<td>6</td>
+<td>tr</td>
+<td>ряд таблицы</td>
+</tr>
+
+<tr align = "center">
+<td>7</td>
+<td>td</td>
+<td rowspan = "2">ячейки таблицы</td>
+</tr>
+
+<tr align = "center">
+<td>8</td>
+<td>th</td>
+</tr>
+
+</table>
 
 </body>
 </html>
 *********
 *********
 *********
-********* 21 янв 2018 в 16:25
+********* 19 янв 2018 в 21:30

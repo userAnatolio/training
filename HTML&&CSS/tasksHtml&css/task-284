@@ -1,0 +1,29 @@
+
+Задачи на работу с 3d трансформациями на CSS
+Простые трансформации
+1. Повторите страницу по данному по образцу:
+<style>
+.rotate {
+height: 200px;
+width: 200px;
+border: 1px solid red;
+margin: 0 auto;
+
+backface-visibility: visible;
+transform-style: preserve-3d;
+animation: anim 10s infinite linear;
+}
+
+@keyframes anim {
+from {
+transform: rotateY(0deg);
+}
+to{
+transform: rotateY(360deg);
+}
+}
+</style>
+*********
+*********
+*********
+********* 9 мар 2018 в 23:07

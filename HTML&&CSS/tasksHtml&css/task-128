@@ -1,6 +1,18 @@
-2. Сделайте селектор, который выберет все абзацы <p> внутри дивов <div>.
-div p { color: red;}
+
+Задачи на работу с продвинутыми свойствами CSS
+На letter-spacing, word-spacing, font-variant, text-transform
+Для решения задач данного блока вам понадобятся следующие CSS свойства: letter-spacing, word-spacing, font-variant, text-transform.
+1. Повторите страницу по данному по образцу:
+
+<style>
+#text1 {letter-spacing: 4px; border: 1px solid red; margin: 20px 5px; padding: 5px;}
+#text2 {letter-spacing: -1px; border: 1px solid red; margin: 20px 5px; padding: 5px; text-align: justify;}
+#text3 {word-spacing: 10px; border: 1px solid red; margin: 20px 5px; padding: 5px;}
+#text4 {word-spacing: -3px; letter-spacing: -1px; border: 1px solid red; margin: 20px 5px; padding: 5px; text-align: justify; font-size: 16px;}
+#text5 {font-variant: small-caps; border: 1px solid red; margin: 20px 5px; padding: 5px; text-align: justify;}
+#text6 {text-transform: uppercase; border: 1px solid red; margin: 20px 5px; padding: 5px; text-align: justify;}
+</style>
 *********
 *********
 *********
-********* 23 фев 2018 в 5:06
+********* 20 фев 2018 в 15:45

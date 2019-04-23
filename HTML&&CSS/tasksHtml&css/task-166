@@ -1,11 +1,7 @@
-1. Повторите страницу по данному по образцу (наведите мышкой на список):
 
-<style>
-li {border: 1px solid blue; padding: 5px; width: 200px; margin-bottom: 20px; list-style-type: none;}
-li:hover {background: green;}
-li:hover ~ li {background: red;}
-</style>
+3. Сделайте селектор, который выберет все <h2> внутри дивов <div>.
+div h2 { color: red;}
 *********
 *********
 *********
-********* 23 фев 2018 в 8:29
+********* 23 фев 2018 в 5:06

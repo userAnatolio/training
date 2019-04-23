@@ -1,9 +1,56 @@
-5. Повторите страницу по данному по образцу (в этой задаче в тексте расставлены переносы слов по слогам, работает не во всех браузерах):
+
+Задачи на схемы создания многоколоночных макетов
+Макет без сайдбаров
+1. Повторите страницу по данному по образцу.
+
 <style>
-p {text-align: justify; -o-hyphens: auto; -ms-hyphens: auto; -moz-hyphens: auto; -webkit-hyphens: auto; hyphens: auto;}
-div {margin: 0 auto; width: 950px}
+
+.wrapper {
+width: 900px;
+margin: 10px auto;
+}
+
+.header {
+height: 200px;
+border: 1px solid;
+}
+
+.content {
+height: 400px;
+border: 1px solid;
+}
+
+.footer {
+height: 200px;
+border: 1px solid;
+}
+
+
+
 </style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="header">
+header
+</div>
+
+<div class="content">
+Контент
+</div>
+
+<div class="footer">
+подвал
+</div>
+
+</div>
+
+</body>
 *********
 *********
 *********
-********* 21 фев 2018 в 17:33
+********* 10 фев 2018 в 16:47

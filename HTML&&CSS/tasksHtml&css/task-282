@@ -1,0 +1,12 @@
+
+Толя,
+animation: anim2 3s linear infinite;
+-webkit-animation: anim2 3s linear infinite;
+
+без префикса пишется в самом конце
+1
+*********
+*********
+Ответить
+*********
+********* 6 мар 2018 в 20:06

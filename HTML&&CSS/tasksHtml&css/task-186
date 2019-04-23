@@ -1,18 +1,8 @@
-8. Повторите страницу по данному по образцу (красным цветом горит тот тег label, который находится после отмеченного чекбокса или радио):
 
-<style>
-input:checked+label {color: red;}
-</style>
-</head>
-<body>
-<form>
-<input type="checkbox" id="checked1"><label for="checked1">Первый чекбокс </label><br><br>
-<input type="checkbox" id="checked2"><label for="checked2">Второй чекбокс</label><br><br>
-<input type="radio" name="aaa" id="radio3"><label for="radio3">Радио</label>
-<input type="radio" name="aaa" id="radio4"><label for="radio4">Радио</label>
-</form>
-</body>
+23. Сделайте селектор, который выберет все <li>, которые лежат непосредственно внутри <ul>.
+
+ul > li {color: red;}
 *********
 *********
 *********
-********* 24 фев 2018 в 7:21
+********* 23 фев 2018 в 6:38

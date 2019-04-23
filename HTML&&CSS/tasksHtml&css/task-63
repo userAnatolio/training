@@ -1,4 +1,5 @@
-4. Повторите страницу по данному по образцу.
+
+6. Повторите страницу по данному по образцу (li поставьте в ряд с помощью inline-block):
 
 <!DOCTYPE html>
 <html>
@@ -8,40 +9,36 @@
 
 <style>
 
-ul {
-display: flex;
-flex-direction: row;
-justify-content: center;
-padding: 0;
-margin: 0;
-}
-
-li {
-list-style-type: none;
-text-align: center;
-border: 1px solid blue;
-}
-
-.test {
-margin: 0 auto;
-border: 1px solid blue;
-background-color: #2696e8;
-width: 700px;
-}
-
-a {
-display: block;
-padding: 10px;
-color: white;
+#test a:link, #test a:visited {
 text-decoration: none;
+color: blue;
 }
 
-li:hover {
-background-color: white;
+#test a:hover, #test a.clearfix {
+text-decoration: none;
+color: white;
+background-color: #484848;
 }
 
-li:hover a{
-color: #2696e8;
+#test {
+font-family: Arial;
+font-size: 14px;
+}
+
+#test a {
+display: block;
+padding:0px 5px;
+}
+
+#test li {
+display: inline-block;
+border: 1px solid black;
+margin-right: 5px;
+line-height: 25px;
+}
+
+.clearfix {
+clear: both;
 }
 
 </style>
@@ -50,20 +47,19 @@ color: #2696e8;
 
 <body>
 
-<div class = "test">
+<div id = "test">
 <ul>
-
 <li><a href = "">Главная</a></li>
-<li><a href = "">О Компании</a></li>
-<li><a href = "">Информация<br> о том,<br> как к нам<br> доехать</a></li>
-<li><a href = "">О нас</a></li>
-
+<li><a href = "" class = "clearfix">Новости</a></li>
+<li><a href = "">Контакты</a></li>
+<li><a href = "">О компании</a></li>
+<li><a href = "">Как добраться</a></li>
 </ul>
 </div>
+<p>жили были дед и бабка, и была у них внучка, а у внучки были дед и бабка...</p>
 </body>
-
 </html>
 *********
 *********
 *********
-********* 1 фев 2018 в 16:55
+********* 27 янв 2018 в 21:05

@@ -1,124 +1,22 @@
-6. Повторите страницу по данному по образцу.
+
+5. Повторите страницу по данному по образцу (наведите мышкой на блок):
 
 <style>
-#block {
-margin: 300px auto;
-width: 800px;
-}
-
-#wrapper {
-float: right;
-position: relative;
-width: 400px;
-height: 300px;
--webkit-transform-style: preserve-3d;
-transform-style: preserve-3d;
--webkit-transform-origin: left;
-transform-origin: left;
--webkit-animation: anim 18s infinite linear;
-animation: anim 18s infinite linear;
-}
-
-.baner {
-float: left;
-width: 400px;
-height: 300px;
-color: white;
--webkit-backface-visibility: visible;
-position: absolute;
-transform-origin: left;
-}
-
-.baner > div {
-text-align: center;
--webkit-box-sizing: border-box;
-padding: 50px;
-font-size: 30px;
-float: right;
-width: 200px;
-height: 100%;
-border: 1px solid black;
-}
+.block {
+border: 1px solid red;
+width: 40%;
+height: 50px;
 
 
-
-.baner1 {
--webkit-transform: rotateY(60deg);
-}
-.baner2 {
--webkit-transform: rotateY(120deg);
-}
-.baner3 {
--webkit-transform: rotateY(180deg);
-}
-.baner4 {
--webkit-transform: rotateY(240deg);
-}
-.baner5 {
--webkit-transform: rotateY(300deg);
-}
-.baner6 {
--webkit-transform: rotateY(360deg);
+transition: all 2s;
 }
 
-.baner1 > div {
-background: red;
--webkit-animation: animBlocks 18s infinite step-end 10s;
-}
-.baner2 > div {
-background: green;
--webkit-animation: animBlocks 18s infinite step-end 7s;
-}
-.baner3 > div {
-background: black;
--webkit-animation: animBlocks 18s infinite step-end 4s;
-}
-.baner4 > div {
-background: blue;
--webkit-animation: animBlocks 18s infinite step-end 1s;
-}
-.baner5 > div {
-background: yellow;
--webkit-animation: animBlocks 18s infinite step-end 16s;
-}
-.baner6 > div {
-background: orange;
--webkit-animation: animBlocks 18s infinite step-end 13s;
-}
-
-@-webkit-keyframes anim {
-from {
-transform: rotateY(0deg);
-}
-to {
-transform: rotateY(360deg);
-}
-}
-
-@-webkit-keyframes animBlocks {
-0%, 100% {
--webkit-transform: rotateY(0deg);
-transform: rotateY(0deg);
-}
-50% {
--webkit-transform: rotateY(180deg);
-transform: rotateY(180deg);
-}
+.block:hover {
+width: 80%;
+margin-left: 10%;
 }
 </style>
-</head>
-<body>
-<div id="block">
-<div id="wrapper">
-<div class="baner1 baner"><div>порка</div></div>
-<div class="baner2 baner"><div>госпожа</div></div>
-<div class="baner3 baner"><div>рабыня</div></div>
-<div class="baner4 baner"><div>лёгкая доминация</div></div>
-<div class="baner5 baner"><div>стриптиз</div></div>
-<div class="baner6 baner"><div>бондаж</div></div>
-</div>
-</div>
 *********
 *********
 *********
-********* 10 мар 2018 в 4:47
+********* 3 мар 2018 в 10:29

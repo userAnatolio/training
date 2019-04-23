@@ -1,20 +1,14 @@
-5. Повторите страницу по данному по образцу:
+
+10. Повторите страницу по данному по образцу (в середине нумерация начинается с начала):
+
 <style>
-.block1 {
-border: 1px solid red;
-height: 50px;
-margin-bottom: 30px;
-width: 30%;
-
-transition: all 3s cubic-bezier(.56,-0.58,0,1.05);
-;
-}
-
-#wrapper:hover div {
-width: 100%;
-}
+div {margin: 0 auto; width: 70%; text-align: justify; }
+p { hyphens: auto;}
+#num {counter-reset: test;} /* абзац 1 */
+#reset{counter-reset: test; font-weight: bold;} /* абзац 2 */
+p::before { counter-increment: test; content: "Абзац №" counter(test) ".";}
 </style>
 *********
 *********
 *********
-********* 3 мар 2018 в 20:32
+********* 24 фев 2018 в 6:43

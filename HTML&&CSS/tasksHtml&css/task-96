@@ -1,12 +1,38 @@
-4. Повторите страницу по данному по образцу:
+
+На z-index
+Решите следующие задачи с помощью свойства z-index.
+5. Повторите страницу по данному по образцу:
+
 <style>
-#text1 {padding: 5px; margin-bottom: 20px; border: 1px solid red; text-align: justify; width: 100px; height: 100px; overflow: hidden;}
-#text2 {padding: 5px; margin-bottom: 20px; border: 1px solid red; text-align: justify; width: 100px; height: 100px; overflow-y: scroll;}
-#text3 {padding: 5px; margin-bottom: 20px; border: 1px solid red; text-align: justify; width: 300px; overflow: scroll;}
-#text4 {padding: 5px; margin-bottom: 20px; border: 1px solid red; text-align: justify; width: 300px; white-space: nowrap; overflow: show;}
-#text5 {padding: 5px; margin-bottom: 20px; border: 1px solid red; text-align: justify; width: 300px; white-space: nowrap; overflow: auto;}
-</style>
+
+#red {
+height: 50px;
+width: 50px;
+position: absolute;
+top: 30px;
+left: 30px;
+background-color: #ff8888;
+}
+
+#blue {
+height: 50px;
+width: 50px;
+position: absolute;
+top: 60px;
+left: 60px;
+background-color: #7e89eb;
+z-index: 1;
+}
+
+#green {
+height: 50px;
+width: 50px;
+position: absolute;
+top: 90px;
+left: 90px;
+background-color: #4dee99
+}
 *********
 *********
 *********
-********* 20 фев 2018 в 21:16
+********* 5 фев 2018 в 23:52

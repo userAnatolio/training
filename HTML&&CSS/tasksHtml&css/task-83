@@ -1,40 +1,54 @@
+
+Меняем порядок через CSS
 2. Повторите страницу по данному по образцу.
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
 
 <style>
 
-.wrapper {
-width: 800px;
-margin: 10px auto;
+ul {
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+background-color: #2696e8;
+height: 40px;
+text-align: center;
+border: 1px solid blue;
+padding: 0;
+margin: 0;
 }
 
-.header {
-height: 200px;
-outline: 1px solid;
+li {
+list-style-type: none;
+margin: 0;
 }
 
-.content {
-width: 600px;
-height: 500px;
-outline: 1px solid;
-float: right;
+.test {
+padding: 0;
+margin: 0 auto;
+width: 700px;
 }
 
-.footer {
-height: 200px;
-outline: 1px solid;
+a {
+display: block;
+padding: 11px;
+margin: 0;
 }
 
-.left {
-width: 200px;
-height:500px;
-float: left;
-outline: 1px solid;
+
+a:link, a:visited {
+text-decoration: none;
+color: white;
 }
 
-.clearfix {
-clear: both;
+a:hover {
+background-color: white;
+color: #2696e8;
 }
-
 
 </style>
 
@@ -42,31 +56,20 @@ clear: both;
 
 <body>
 
-<div class="wrapper">
+<div class = "test">
+<ul>
 
-<div class="header">
-header
+<li><a href = "">Главная</a></li>
+<li><a href = "">О Компании</a></li>
+<li><a href = "">Информация</a></li>
+<li><a href = "">О нас</a></li>
+
+</ul>
 </div>
-
-<div class="left">
-sidebar
-</div>
-
-<div class="content">
-content
-</div>
-
-<div class="clearfix">
-</div>
-
-<div class="footer">
-footer
-</div>
-
-</div>
-
 </body>
+
+</html>
 *********
 *********
 *********
-********* 10 фев 2018 в 17:05
+********* 1 фев 2018 в 16:02

@@ -1,19 +1,22 @@
-8. Функция .keyframes() должна компилироваться в кроссбраузерный вариант команды keyframes.
 
-.keyframes(@name,@code) {
-@-webkit-keyframes @name {@code();}
-@-moz-keyframes @name {@code();}
-@-o-keyframes @name {@code();}
-@keyframes @name {@code();}
+Кривые Безье
+15. Повторите страницу по данному по образцу:
+<style>
+.block1 {
+border: 1px solid red;
+height: 50px;
+margin-bottom: 30px;
+width: 30%;
+
+transition: all 3s cubic-bezier(.56,-0.58,0,1.05);
+;
 }
 
-.keyframes(
-anim, {
-from {width: 100px;}
-to {width: 200px;}
+#wrapper:hover div {
+width: 100%;
 }
-);
+</style>
 *********
 *********
 *********
-********* 11 мар 2018 в 19:10
+********* 3 мар 2018 в 20:32

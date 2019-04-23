@@ -1,73 +1,38 @@
-3. Повторите страницу по данному по образцу.
 
-<!DOCTYPE html>
-<html>
-<head>
-
-<title></title>
+5. Повторите страницу по данному по образцу (li поставьте в ряд с помощью float):
 
 <style>
 
-ul {
-display: flex;
-flex-direction: row;
-justify-content: center;
-background-color: #2696e8;
-height: 40px;
-text-align: center;
-border: 1px solid blue;
-padding: 0;
-margin: 0;
-}
-
-li {
-list-style-type: none;
-margin: 0;
-}
-
-.test {
-padding: 0;
-margin: 0 auto;
-width: 700px;
-}
-
-a {
-display: block;
-padding: 11px;
-margin: 0;
-}
-
-
-a:link, a:visited {
+#test a:link, #test a:visited {
 text-decoration: none;
-color: white;
+color: blue;
 }
 
-a:hover {
-background-color: white;
-color: #2696e8;
+#test a:hover {
+text-decoration: none;
+color: red;
+}
+
+#test {
+font-family: Arial;
+font-size: 14px;
+}
+
+#test a {
+display: block;
+padding:0px 5px;
+}
+
+#test li {
+float: left;
+list-style-type: none;
+border: 1px solid black;
+margin-right: 5px;
+line-height: 25px;
 }
 
 </style>
-
-</head>
-
-<body>
-
-<div class = "test">
-<ul>
-
-<li><a href = "">Главная</a></li>
-<li><a href = "">О Компании</a></li>
-<li><a href = "">Информация</a></li>
-<li><a href = "">О нас</a></li>
-
-</ul>
-</div>
-</body>
-
-</html>
 *********
 *********
 *********
-********* 1 фев 2018 в 16:51
+********* 27 янв 2018 в 19:59

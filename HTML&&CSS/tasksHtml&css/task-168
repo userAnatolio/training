@@ -1,9 +1,8 @@
-3. Повторите страницу по данному по образцу (наведите мышкой на список):
 
-li {border: 1px solid blue; padding: 5px; width: 200px; margin-bottom: 20px; list-style-type: none;}
-li:hover {background: green;}
-li:hover ~ li:nth-child(odd) {background: red;}
+5. Сделайте селектор, который выберет все <h2> внутри дивов <div> и одновременно все абзацы <p>.
+
+div h2, p { color: red;}
 *********
 *********
 *********
-********* 23 фев 2018 в 21:30
+********* 23 фев 2018 в 5:09

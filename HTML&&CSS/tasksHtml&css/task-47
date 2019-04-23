@@ -1,37 +1,16 @@
-5. Повторите страницу по данному по образцу (li поставьте в ряд с помощью float):
 
-<style>
+2. Повторите страницу по данному по образцу.
 
-#test a:link, #test a:visited {
-text-decoration: none;
-color: blue;
+body {
+background-image: url("fon.jpg");
 }
 
-#test a:hover {
-text-decoration: none;
-color: red;
+div,p {
+width: 400px;
+text-align: justify;
+font-weight: bold;
 }
-
-#test {
-font-family: Arial;
-font-size: 14px;
-}
-
-#test a {
-display: block;
-padding:0px 5px;
-}
-
-#test li {
-float: left;
-list-style-type: none;
-border: 1px solid black;
-margin-right: 5px;
-line-height: 25px;
-}
-
-</style>
 *********
 *********
 *********
-********* 27 янв 2018 в 19:59
+********* 23 янв 2018 в 21:19

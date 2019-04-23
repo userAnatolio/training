@@ -1,7 +1,40 @@
-5. Сделайте селектор, который выберет все ссылки <a> с атрибутом href, значение которого начинается на 'http://'.
 
-a[href ^= "http://"] {color: red;}
+На select
+4. Повторите страницу по данному по образцу:
+
+<form>
+<select>
+<option>Минск</option>
+<option>Москва</option>
+<option>Киев</option>
+<option selected>Нью Йорк</option>
+<option>Варшава</option>
+<option>Рига</option>
+<option>Рим</option>
+</select>
+
+<select size="3">
+<option>Минск</option>
+<option>Москва</option>
+<option>Киев</option>
+<option selected>Нью Йорк</option>
+<option >Варшава</option>
+<option >Рига</option>
+<option >Рим</option>
+</select>
+
+<select multiple=name="city[]" size="5">
+<option>Минск</option>
+<option>Москва</option>
+<option>Киев</option>
+<option selected>Нью Йорк</option>
+<option>Варшава</option>
+<option>Рига</option>
+<option>Рим</option>
+</select>
+<input type="submit" value="Отправить на сервер">
+</form>
 *********
 *********
 *********
-********* 23 фев 2018 в 7:42
+********* 23 фев 2018 в 0:50

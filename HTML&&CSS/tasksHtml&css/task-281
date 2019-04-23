@@ -1,0 +1,53 @@
+
+12. Спутник земли
+
+<style>
+
+#ball{
+width: 30px;
+height: 30px;
+border-radius: 15px;
+border: 1px solid red;
+position: absolute;
+top: -30px;
+left: -30px;
+
+animation: anim2 3s linear infinite;
+-webkit-animation: anim2 3s linear infinite;
+}
+
+
+#wrapper {
+margin: 150px auto;
+height: 200px;
+width: 200px;
+border: 1px solid red;
+border-radius: 100px;
+}
+
+#rotate {
+width: 200px;
+height: 200px;
+position: relative;
+
+animation: anim1 8s linear infinite;
+-webkit-animation: anim1 8s linear infinite;
+}
+
+@keyframes anim1 {
+0% {transform: rotate(0deg);}
+100% {transform: rotate(360deg);}
+}
+
+@keyframes anim2 {
+0% {background: white;}
+50% {background: red;}
+60% {background: white;}
+100% {background: white;}
+}
+
+</style>
+*********
+*********
+*********
+********* 6 мар 2018 в 20:06

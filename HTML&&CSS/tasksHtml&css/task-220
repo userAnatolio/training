@@ -1,22 +1,11 @@
-1. Повторите страницу по данному по образцу (движение повторится 3 раза):
+
+14. Повторите страницу по данному по образцу (четные li покрашены в зеленый цвет, нечетные - в красный):
 
 <style>
-.block {
-border: 1px solid red;
-height: 50px;
-width: 50px;
-}
-@keyframes anim {
-from {margin-left: 2px;}
-to {margin-left: 400px;}
-}
-.block {
-animation-name: anim;
-animation-duration: 3s;
-animation-timing-function: ease;
-}
+li:nth-child(odd) {color: red;}
+li:nth-child(even) {color: green;}
 </style>
 *********
 *********
 *********
-********* 4 мар 2018 в 11:28
+********* 24 фев 2018 в 6:57

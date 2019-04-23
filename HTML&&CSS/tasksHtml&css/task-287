@@ -1,0 +1,110 @@
+
+Слайдшоу
+4. Повторите страницу по данному по образцу.
+
+<style>
+#block {
+margin: 300px auto;
+width: 800px;
+}
+
+#wrapper {
+float: right;
+position: relative;
+width: 400px;
+height: 300px;
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+-webkit-transform-origin: left;
+transform-origin: left;
+-webkit-animation: anim 10s infinite linear;
+animation: anim 10s infinite linear;
+}
+
+.baner {
+float: left;
+width: 400px;
+height: 300px;
+color: white;
+-webkit-backface-visibility: visible;
+position: absolute;
+transform-origin: left;
+}
+
+.baner > div {
+text-align: center;
+-webkit-box-sizing: border-box;
+padding: 50px;
+font-size: 30px;
+float: right;
+width: 200px;
+height: 100%;
+border: 1px solid black;
+}
+
+
+
+.baner1 {
+-webkit-transform: rotateY(60deg);
+}
+.baner2 {
+-webkit-transform: rotateY(120deg);
+}
+.baner3 {
+-webkit-transform: rotateY(180deg);
+}
+.baner4 {
+-webkit-transform: rotateY(240deg);
+}
+.baner5 {
+-webkit-transform: rotateY(300deg);
+}
+.baner6 {
+-webkit-transform: rotateY(360deg);
+}
+
+.baner1 > div {
+background: red;
+}
+.baner2 > div {
+background: green;
+}
+.baner3 > div {
+background: black;
+}
+.baner4 > div {
+background: blue;
+}
+.baner5 > div {
+background: yellow;
+}
+.baner6 > div {
+background: orange;
+}
+
+@-webkit-keyframes anim {
+from {
+transform: rotateY(0deg);
+}
+to {
+transform: rotateY(-360deg);
+}
+}
+
+</style>
+</head>
+<body>
+<div id="block">
+<div id="wrapper">
+<div class="baner1 baner"><div>шашлык</div></div>
+<div class="baner2 baner"><div>лаваш</div></div>
+<div class="baner3 baner"><div>люля-ке-баб</div></div>
+<div class="baner4 baner"><div>самса</div></div>
+<div class="baner5 baner"><div>чебурек</div></div>
+<div class="baner6 baner"><div>беляш</div></div>
+</div>
+</div>
+*********
+*********
+*********
+********* 10 мар 2018 в 2:58

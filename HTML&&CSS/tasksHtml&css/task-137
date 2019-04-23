@@ -1,7 +1,24 @@
-1. Сделайте селектор, который выберет все абзацы <p> с классом test.
 
-p.test {color: red;}
+9. Повторите страницу по данному по образцу:
+<title>Retro-Motors</title>
+<style>
+#text1 {text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color: red;}
+#text2 {text-decoration-line: underline; text-decoration-style: dotted; text-decoration-color: red;}
+#text3 {text-decoration-line: underline; text-decoration-style: dashed; text-decoration-color: red;}
+#text4 {text-decoration-line: underline; text-decoration-style: double; text-decoration-color: red;}
+
+</style>
+</head>
+<body>
+
+<div id="text1">Это текст с text-decoration.</div>
+<div id="text2">Это текст с text-decoration.</div>
+<div id="text3">Это текст с text-decoration.</div>
+<div id="text4">Это текст с text-decoration.</div>
+
+
+</body>
 *********
 *********
 *********
-********* 23 фев 2018 в 5:24
+********* 21 фев 2018 в 2:25

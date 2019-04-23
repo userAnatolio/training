@@ -1,9 +1,10 @@
-0. Сделайте селектор, который выберет все абзацы <p>, которые имеют одновременно 2 класса: test и hello.
 
-p[class="test hello"], p[class="hello test"] {color: red;}
+На user-select
+16. Повторите страницу по данному по образцу (в этой задаче текст нельзя выделить мышкой):
 
-p.test.hello {color: red;}
+p {text-align: justify; -o-hyphens: auto; -ms-hyphens: auto; -moz-hyphens: auto; -webkit-hyphens: auto; hyphens: auto; user-select: none;}
+div {margin: 0 auto; width: 950px}
 *********
 *********
 *********
-********* 23 фев 2018 в 6:26
+********* 21 фев 2018 в 18:31

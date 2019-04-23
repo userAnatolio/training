@@ -1,0 +1,28 @@
+
+5. Увеличение по наведению
+
+<style>
+#wrapper {
+margin: 100px auto;
+width: 300px;
+}
+
+img {
+margin-bottom: 20px;
+width: 200px;
+transition: 1s;
+}
+
+img:hover {
+transform: scale(2);
+}
+img {
+height: 100%;
+width: 100%;
+}
+
+</style>
+*********
+*********
+*********
+********* 4 мар 2018 в 20:37

@@ -1,7 +1,33 @@
-4. Сделайте селектор, который выберет все абзацы <p> с атрибутом title, который равен 'привет'.
 
-p[title="привет"]{color: red;}
+На checkbox и radio
+3. Повторите страницу по данному по образцу:
+
+<style>
+label {border: 1px solid red;}
+div {border: 1px solid black; padding: 30px;}
+</style>
+</head>
+<body>
+<form>
+<input type="checkbox" id="text1">
+<label for="text1">Это метка для чекбокса: нажмите на меня - чекбокс сменит галочку!</label><br><br>
+<input type="checkbox" id="text2" checked>
+<label for="text2">Я отмечен по умолчанию!</label><br><br>
+<input type="checkbox" id="text3" checked disabled>
+<label for="text3">Я disabled!</label><br><br>
+</form>
+
+<div>
+<p>Это группа радиокнопок - только одна из них может быть отмечена!</p>
+<form>
+<input type="radio" id="text4" name="name">
+<label for="text4">Это метка для радио</label><br><br>
+<input type="radio" id="text5" name="name">
+<label for="text5">Это метка для радио</label>
+</form>
+</div>
+</body>
 *********
 *********
 *********
-********* 23 фев 2018 в 7:30
+********* 23 фев 2018 в 0:25

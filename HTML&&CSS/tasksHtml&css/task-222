@@ -1,26 +1,10 @@
-4. Движение по квадрату
+
+16. Повторите страницу по данному по образцу (всегда выбрана предпоследняя li, независимо от их количества):
 
 <style>
-.block {
-border: 1px solid red;
-height: 200px;
-width: 200px;
-}
-@keyframes anim {
-25% {margin-left: 50%; margin-top: 0;}
-50% {margin-left: 50%; margin-top: 50%;}
-75% {margin-left: 0%; margin-top: 50%;}
-100% {margin-left: 0%; margin-top: 0%;}
-
-}
-.block {
-animation-name: anim;
-animation-duration: 5s;
-animation-timing-function: liner;
-animation-iteration-count: 1;
-}
+li:nth-last-child(2) {color: red;}
 </style>
 *********
 *********
 *********
-********* 4 мар 2018 в 11:41
+********* 24 фев 2018 в 7:03

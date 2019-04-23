@@ -1,13 +1,24 @@
-9. Классы от .f1 до .f100 должны компилироваться в font-size от 1px до 100px. Пример: .f10 скомпилируется в font-size: 10px.
 
-.generate-f(100);
-.generate-f(@n, @i: 1) when (@i =< @n){
-.f@{i}{
-font-size: (@i * 1px);
+Индикатор
+16. Повторите страницу по данному по образцу (наведите мышкой на блок):
+
+<style>
+#wrapper{
+border: 1px solid red;
 }
-.generate-f(@n, (@i + 1));
+.block1 {
+height: 50px;
+width: 0;
+background: red;
+
+transition: all 3s;
 }
+
+#wrapper:hover div {
+width: 100%;
+}
+</style>
 *********
 *********
 *********
-********* 11 мар 2018 в 22:49
+********* 3 мар 2018 в 20:35

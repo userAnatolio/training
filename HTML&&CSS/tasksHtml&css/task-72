@@ -1,35 +1,113 @@
-5. Повторите страницу по данному по образцу:
+
+5. Повторите страницу по данному по образцу.
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
 
 <style>
 
-#red {
-height: 50px;
-width: 50px;
-position: absolute;
-top: 30px;
-left: 30px;
-background-color: #ff8888;
+.li a:link, .li a:visited {
+text-decoration: none;
+color: white;
+font-family: Arial;
+font-size: 13px;
+font-weight: bold;
 }
 
-#blue {
-height: 50px;
-width: 50px;
-position: absolute;
-top: 60px;
-left: 60px;
-background-color: #7e89eb;
-z-index: 1;
+.li a:hover, .block a.active {
+color: black;
+background-color: white;
+font-family: Arial;
 }
 
-#green {
-height: 50px;
-width: 50px;
-position: absolute;
-top: 90px;
-left: 90px;
-background-color: #4dee99
+li {
+display: inline-block;
+
 }
+
+a {
+padding: 8px 10px 8px 5px;
+display: block;
+}
+
+h1 {
+text-align: center;
+margin: 0px;
+}
+
+.block {
+width: 700px;
+margin: 50px auto 0px auto ;
+border: 1px solid;
+}
+
+p {
+font-size: 17px;
+text-align: justify;
+margin: 10px 10px 5px 10px;
+line-height: 20px;
+}
+
+.li {
+background-color: #484848;
+margin: 0px;
+padding: 0px;
+}
+
+ul {
+margin: 0px 0px 20px 0px;
+padding: 0px
+}
+
+p a:link, p a:visited {
+color: black;
+text-decoration: underline;
+font-weight: bold;
+display: inline;
+}
+
+p a:hover {
+color: black;
+text-decoration: none;
+font-weight: bold;
+display: inline;
+}
+
+.footer {
+text-align: center;
+margin-top: 20px;
+font: 13px Arial;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class = "block">
+<div class = "li">
+<ul>
+<li><a href = "" class = "active">Главная</a></li>
+<li><a href = "">Новости</a></li>
+<li><a href = "">Контакты</a></li>
+<li><a href = "">О компании</a></li>
+<li><a href = "">Как добраться</a></li>
+</ul>
+</div>
+
+<h1>Vestibulum ante ipsum</h1>
+<p>Vestibulum ante ipsum primis <a href = "">in faucibus orci luctus</a> et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu fermentum diam, vitae faucibus ligula. Nam nec risus sed nisi porttitor ullamcorper iaculis ac nulla. Sed condimentum nisi in tincidunt adipiscing. Mauris vehicula mollis consequat. Vivamus non accumsan tortor. Aliquam dictum justo et augue viverra, vel interdum lorem pharetra.</p>
+<p>Nullam id faucibus ante. <a href = "">Proin tristique lorem</a> tristique dolor porttitor, eget adipiscing leo gravida. Proin erat erat, laoreet sit amet tincidunt ac, iaculis nec libero. In placerat odio ac dapibus faucibus. Praesent ut est in ligula facilisis congue eget ac ante. Phasellus at felis vitae est molestie ultricies.</p>
+
+</div>
+<div class = "footer">Aenean eu auctor diam, et euismod nulla. Nulla lacinia ultricies accumsan © site.ru</div>
+</body>
+</html>
 *********
 *********
 *********
-********* 5 фев 2018 в 23:52
+********* 29 янв 2018 в 0:12

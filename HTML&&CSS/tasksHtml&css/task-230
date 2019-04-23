@@ -1,38 +1,20 @@
-1. Повторите страницу по данному по образцу (наведите мышь на красный блок - элемент под ним элемент начнет двигаться, уберите - перестанет):
+
+На lang
+24. Повторите страницу по данному по образцу:
 
 <style>
-
-.div {
-border: 1px solid red;
-width: 200px;
-height: 30px;
-margin-bottom: 20px;
-text-align: center;
-line-height: 30px;
-}
-
-.block {
-border: 1px solid red;
-height: 30px;
-width: 50%;
-}
-
-@keyframes anim {
-from {width: 50%;}
-to {width: 10%;}
-}
-
-.block {
-animation: anim 1s linear infinite alternate;
-animation-play-state: paused;
-}
-
-.div:hover + .block {
-animation-play-state: running;
-}
-
+p {font-size: 1.5em;}
+q:lang(de) {quotes: "\201E" "\201C";}
+q:lang(en) {quotes: "\201C" "\201D";}
+q:lang(fr) {quotes: "\00AB" "\00BB";}
 </style>
+</head>
+<body>
+<p>Цитата на французском языке: <q lang="fr">Ce que femme veut, Dieu le veut</q>.</p>
+<p>Цитата на немецком: <q lang="de">Der Mensch, versuche die Gotter nicht</q>.</p>
+<p>Цитата на английском: <q lang="en">То be or not to be</q>.</p>
+</body>
 *********
 *********
 *********
-********* 4 мар 2018 в 13:24
+********* 24 фев 2018 в 7:51

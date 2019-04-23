@@ -1,44 +1,103 @@
-5. Повторите страницу по данному по образцу.
+
+7. Повторите страницу по данному по образцу:
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
 
 <style>
 
-ul {
-display: flex;
-flex-direction: row;
-justify-content: center;
-padding: 0;
-margin: 0;
-align-items: center;
+#li1 {
+background: url("super.jpg") no-repeat top center;
 }
 
-li {
-list-style-type: none;
-text-align: center;
-border: 1px solid blue;
+#li1:hover {
+background: url("super1.jpg") no-repeat top center;
 }
 
-.test {
-margin: 0 auto;
-border: 1px solid blue;
-background-color: #2696e8;
-width: 700px;
+#li2 {
+background: url("super.jpg") no-repeat top center;
 }
 
-a {
-display: block;
-padding: 10px;
-color: white;
+#li2:hover {
+background: url("super1.jpg") no-repeat top center;
+}
+
+#li3 {
+background: url("super.jpg") no-repeat top center;
+}
+
+#li3:hover {
+background: url("super1.jpg") no-repeat top center;
+}
+
+#li4 {
+background: url("super.jpg") no-repeat top center;
+}
+
+#li4:hover {
+background: url("super1.jpg") no-repeat top center;
+}
+
+#li5 {
+background: url("super.jpg") no-repeat top center;
+}
+
+#li5:hover {
+background: url("super1.jpg") no-repeat top center;
+}
+
+#test a:link, #test a:visited {
 text-decoration: none;
+color: gray;
 }
 
-li:hover {
-background-color: white;
+#test a:hover{
+text-decoration: none;
+color: #ff6400;
 }
 
-li:hover a{
-color: #2696e8;
+#test {
+font-family: Arial;
+font-size: 12px;
 }
+
+#test a {
+text-align: center;
+display: block;
+padding-top: 30px;
+}
+
+#test li {
+display: inline-block;
+margin-right: 10px;
+}
+
+.clearfix {
+clear: both;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id = "test">
+<ul>
+<li><a href = "" id = "li1">Авиабилеты</a></li>
+<li><a href = "" id = "li2">Чартеры</a></li>
+<li><a href = "" id = "li3">ж/д билеты</a></li>
+<li><a href = "" id = "li4">Гостиницы</a></li>
+<li><a href = "" id = "li5">Туризм</a></li>
+</ul>
+</div>
+
+</body>
+</html>
 *********
 *********
 *********
-********* 1 фев 2018 в 17:45
+********* 27 янв 2018 в 21:07

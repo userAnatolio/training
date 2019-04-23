@@ -1,7 +1,34 @@
-7. Сделайте селектор, который выберет все абзацы <p> с классом test из дивов <div> с классом hello.
 
-div.hello p.test {color: red;}
+13. Повторите страницу по данному по образцу (везде стоит white-space: pre, вам нужно поставить правильный размер табуляции с помощью tab-size):
+
+<style>
+div {margin-bottom: 30px; border: 1px solid black; white-space: pre; width: 400px;}
+#div1 {-webkit-tab-size: 8; -o-tab-size: 8; -moz-tab-size: 8; tab-size: 8;}
+#div2 {-webkit-tab-size: 0; -o-tab-size: 0; -moz-tab-size: 0; tab-size: 0;}
+#div3 {-webkit-tab-size: 16; -o-tab-size: 16; -moz-tab-size: 16; tab-size: 16;}
+</style>
+</head>
+<body>
+<div id="div1">
+Lorem ipsum dolor sit amet,
+
+
+consectetur adipiscing elit.
+</div>
+<div id="div2">
+Lorem ipsum dolor sit amet,
+
+
+consectetur adipiscing elit.
+</div>
+<div id="div3">
+Lorem ipsum dolor sit amet,
+
+
+consectetur adipiscing elit.
+</div>
+</body>
 *********
 *********
 *********
-********* 23 фев 2018 в 5:54
+********* 21 фев 2018 в 15:45

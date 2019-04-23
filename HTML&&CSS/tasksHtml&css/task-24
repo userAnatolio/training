@@ -1,24 +1,74 @@
-4. Сделайте селектор, который выберет все ссылки из class=eee с классом www. Цвета состояний выберите самостоятельно.
 
+<!—
+34. Повторите страницу по данному по образцу:
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>Мой сайт</title>
 <style>
 
-.eee a:link.www, a:visited.www{
-color: green;
-text-decoration: none;
-}
-
-.eee a:hover.www{
-color: blue;
-text-decoration: underline;
-}
-
-.eee a:active.www{
+h1{
 color: red;
-text-decoration: none;
+text-align: center;
+}
+
+h2{
+color: green;
+}
+
+p{
+text-align: justify;
+}
+
+ul{
+font-style: italic;
+color: #924763;
+}
+ol{
+color: red;
+}
+
+b{
+color: red;
+font-size: 22px;
+}
+
+i{
+color: blue;
 }
 
 </style>
+</head>
+<body>
+
+<h1>Что нужно знать, чтобы делать сайты</h1>
+<ol>
+<li><b>HTML</b></li>
+<li><i>CSS</i></li>
+<li>PHP</li>
+<li>SQL</li>
+<li>JavaScript</li>
+<li>jQuery</li>
+<li>Flash</li>
+<li>SEO</li>
+</ol>
+<h2>PHP и JavaScript</h2>
+<p>Языки программирования <b style = "font-family: sans-serif;">PHP</b> и <b style = "font-family: sans-serif;">JavaScript</b> позволяют сделать сайт динамичным, то есть реагирующим на действия пользователя. Например, можно сделать красивую выпадающую менюшку или слайдер</p>
+
+<h2>Виды скриптов</h2>
+
+<p>Для этого пишутся скрипты (англ. <i>script</i> - «сценарий») - программы, позволяющие реагировать на действия пользователя. Скрипты бывают двух видов:</p>
+<ul>
+<li>те, которые выполняются на сервере, а результат их выполнения приходит в браузер к пользователю уже в готовом виде. Это скрипты, написанные на языке <b>PHP</b>. На нем пишутся <b>CMS-ки</b> – системы управления контентом.</li>
+<li>те, которые выполняются прямо в браузере пользователя. Это скрипты, написанные на языке JavaScript. Они чаще всего используются для, того чтобы сделать страницу более удобной и красивой.</li>
+</ul>
+
+</body>
+</html>
 *********
 *********
 *********
-********* 22 янв 2018 в 21:17
+********* 21 янв 2018 в 16:25

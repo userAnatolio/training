@@ -1,7 +1,17 @@
-2. Сделайте селектор, который выберет все элементы с атрибутом title.
 
-[title]{color: red;}
+Задачи на работу с HTML формами
+На input и textarea
+1. Повторите страницу по данному по образцу:
+<form>
+<input type="text" placeholder="Плейсхолдер"><br>
+<input type="text" value="value"><br>
+<input type="text" placeholder="disabled" disabled><br>
+<input type="password" value="llll"><br>
+<textarea placeholder="введите текст"></textarea><br>
+<input type="submit" value="кнопка через тег input"><br>
+<button>кнопка через тег button</button>
+</form>
 *********
 *********
 *********
-********* 23 фев 2018 в 7:25
+********* 22 фев 2018 в 23:09

@@ -1,0 +1,71 @@
+
+Ось вращения
+2. Повторите страницу по данному по образцу (наведите мышкой на каждый из блоков):
+
+<style>
+#wrapper {
+margin: 0 auto;
+width: 200px;
+}
+#wrapper div {
+margin-bottom: 10px;
+}
+.block1 {
+border: 1px solid red;
+width: 100px;
+height: 100px;
+}
+.block1:hover {
+transform: rotate(45deg);
+transform-origin: right bottom;
+}
+.block2 {
+border: 1px solid red;
+width: 100px;
+height: 100px;
+}
+.block2:hover {
+transform: rotate(45deg);
+transform-origin: left bottom;
+}
+.block3 {
+border: 1px solid red;
+width: 100px;
+height: 100px;
+}
+.block3:hover {
+transform: rotate(45deg);
+transform-origin: center center;
+}
+.block4 {
+border: 1px solid red;
+width: 100px;
+height: 100px;
+}
+.block4:hover {
+transform: rotate(-45deg);
+transform-origin: right top;
+}
+.block5 {
+border: 1px solid red;
+width: 100px;
+height: 100px;
+}
+.block5:hover {
+transform: scale(2);
+transform-origin: right bottom;
+}
+.block6 {
+border: 1px solid red;
+width: 100px;
+height: 100px;
+}
+.block6:hover {
+transform: skewX(45deg);
+transform-origin: right bottom;
+}
+</style>
+*********
+*********
+*********
+********* 4 мар 2018 в 20:15

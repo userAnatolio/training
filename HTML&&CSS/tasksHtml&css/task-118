@@ -1,15 +1,141 @@
-6. Повторите попытку по данному образцу:
+
+Макет 3
+
 <style>
-div {margin: 0 auto 50px auto; border: 10px dotted black; width: 300px;
-height: 300px; padding: 30px; text-align: justify; font-size: 20px; font-weight: bold;}
-#div1 {color: black; background: url("fon1.jpg") no-repeat; background-clip: padding-box; }
-#div2 { color: black; background: url("fon1.jpg") no-repeat; background-clip: content-box;}
-#div3 { color: black; background: url("fon1.jpg") no-repeat; background-clip: border-box; }
-#div4 { color: white; background: blue; background-clip: padding-box;}
-#div5 { color: white; background: blue; background-clip: content-box; }
-#div6 { color: white; background: blue; background-clip: border-box;}
+body {
+background-color: #ebebeb;
+}
+.wrapper {
+width: 900px;
+margin: 0 auto;
+background-color: white;
+}
+
+ul, h1, h2, h3, h4, p {
+margin: 0;
+padding: 0;
+margin-bottom: 10px;
+}
+
+.header, .footer{
+background-color: #f8aa03;
+color: white;
+margin: 20px 0;
+}
+
+ul {
+margin-left: 20px;
+}
+
+li {
+display: inline-block;
+margin-right: 30px;
+}
+
+a {
+font-size: 20px;
+line-height: 50px;
+}
+
+a:link, a:visited {
+text-decoration: none;
+color: white;
+}
+
+a:hover, a.active {
+text-decoration: underline;
+}
+
+.content {
+width: 600px;
+margin-left: 20px;
+min-height: 300px;
+float: left;
+text-align: justify;
+}
+
+.right {
+float: right;
+width: 240px;
+min-height: 300px;
+margin-right: 20px;
+font-size: 13px;
+text-align: justify;
+}
+
+.clearfix {
+clear: both;
+}
+
+.footer {
+text-align: center;
+padding: 30px 0;
+font-size: 12px;
+}
+
+th {background-color: #EBEBEB;} td {text-align: center;}
+
+
 </style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="header">
+
+<ul>
+<li><a href="#" class="active">Главная</a></li>
+<li><a href="#">О компании</a></li>
+<li><a href="#">Продукты</a></li>
+<li><a href="#">Информация</a></li>
+<li><a href="#">Как доехать</a></li>
+</ul>
+
+</div>
+<div class="content">
+<h3>Продажа мёда населению</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse urna ante, egestas ac nibh sit amet, vehicula posuere quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium consequat volutpat. Integer ultricies ligula eget arcu volutpat vehicula. Sed et congue nisi, ac cursus ex. Duis tempus arcu magna, quis auctor odio congue in. Duis nunc leo, tempor nec dignissim sed, euismod vel nibh.</p>
+<p><img src="pchela1.jpg" width="100%"></p>
+<p>Sed consequat lobortis tellus quis fringilla. Aenean eleifend sapien quis tellus rhoncus, et elementum justo pulvinar. Vestibulum gravida metus non turpis congue dignissim. Cras vitae urna nibh. Morbi consectetur ex vel cursus bibendum. Nunc dignissim massa non lacus commodo fringilla. Sed id ipsum ac diam fermentum condimentum feugiat a nunc. Nulla tincidunt vel ante non venenatis. Vestibulum fermentum velit et auctor sodales. Sed sagittis metus eget justo lobortis lobortis. Nulla dictum condimentum ipsum, a interdum nibh rutrum a. Nulla sed justo mi. Suspendisse sit amet feugiat magna.</p><br>
+<h3>Стоимость нашего мёда</h3>
+<table border="1px" width="100%" >
+<tr>
+<th>Вид</th>
+<th>Цена</th>
+<th>Наличие</th>
+</tr>
+
+<tr>
+<td>Липовый</td>
+<td>20$ за литр</td>
+<td>10 тонн</td>
+</tr>
+
+<tr>
+<td>Сосновый</td>
+<td>30$ за литр</td>
+<td>7 тонн</td>
+</tr>
+
+<tr>
+<td>Клеверный</td>
+<td>40$ за литр</td>
+<td>5 тонн</td>
+</tr>
+
+<tr>
+<td>Одуванчиковый</td>
+<td>50$ за литр</td>
+<td>1 тонна</td>
+</tr>
+</table><br>
+
+<h3>Мёд - лучшее лекарство!</h3>
+<p>Nulla eros justo, vulputate ac eros in, semper pharetra ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque venenatis
 *********
 *********
 *********
-********* 22 фев 2018 в 1:10
+********* 12 фев 2018 в 0:19

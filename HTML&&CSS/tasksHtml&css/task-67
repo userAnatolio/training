@@ -1,45 +1,124 @@
-8. Повторите страницу по данному по образцу.
 
+9. Повторите страницу по данному по образцу:
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
 <style>
 
-ul {
-display: flex;
-flex-direction: row;
-justify-content: center;
-flex-wrap: wrap;
-padding: 0;
-margin: 0;
-}
-
-li {
-list-style-type: none;
-text-align: center;
-}
-
-.test {
-margin: 0 auto;
-border: 1px solid blue;
-background-color: #2696e8;
-width: 700px;
-}
-
-a {
-display: block;
-padding: 10px;
-color: white;
+#test a:link, #test a:visited {
 text-decoration: none;
+color: black;
 }
 
-li:hover {
-background-color: white;
+#test a:hover {
+text-decoration: underline;
+color: black;
 }
 
-li:hover a{
-color: #2696e8;
+#test a {
+line-height: 1;
+}
+
+#test a.active {
+color: red;
+}
+
+.active.a {
+color: red;
+}
+
+#test {
+font-family: Arial;
+font-size: 12px;
+text-align: center;
+width: 150px;
+margin: 20px 5px;
+}
+
+#test th {
+border-bottom: 1px solid black;
+}
+
+#test table {
+width: 100%;
+height: 100%;
+}
+
+#test a.day:link, #test a.day:visited {
+color: #9aa2c1;
 }
 
 </style>
+
+</head>
+
+<body>
+<div id = "test">
+<table cellspacing = "0">
+<tr>
+<th><a href = "">Пн</a></th>
+<th><a href = "">Вт</a></th>
+<th><a href = "">Ср</a></th>
+<th><a href = "">Чт</a></th>
+<th><a href = "">Пт</a></th>
+<th><a href = "" class = "day">Сб</a></th>
+<th><a href = "" class = "day">Вс</a></th>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href = "" class = "day">1</a></td>
+<td><a href = "" class = "day">2</a></td>
+</tr>
+
+<tr>
+<td><a href = "">3</a></td>
+<td><a href = "">4</a></td>
+<td><a href = "">5</a></td>
+<td><a href = "">6</a></td>
+<td><a href = "" class = "active">7</a></td>
+<td><a href = "" class = "day">8</a></td>
+<td><a href = "" class = "day">9</a></td>
+</tr>
+
+<tr>
+<td><a href = "">10</a></td>
+<td><a href = "">11</a></td>
+<td><a href = "">12</a></td>
+<td><a href = "">13</a></td>
+<td><a href = "">14</a></td>
+<td><a href = "" class = "day">15</a></td>
+<td><a href = "" class = "day">16</a></td>
+</tr>
+
+<tr>
+<td><a href = "">17</a></td>
+<td><a href = "">18</a></td>
+<td><a href = "">19</a></td>
+<td><a href = "">20</a></td>
+<td><a href = "">21</a></td>
+<td><a href = "" class = "day">22</a></td>
+<td><a href = "" class = "day">23</a></td>
+</tr>
+
+<tr>
+<td><a href = "">24</a></td>
+<td><a href = "">25</a></td>
+<td><a href = "">26</a></td>
+<td><a href = "">27</a></td>
+<td><a href = "">28</a></td>
+<td><a href = "" class = "day">29</a></td>
+<td><a href = "" class = "day">30</a></td>
+</tr>
+
+<tr>
+<td><a href = "">31</a></td&g
 *********
 *********
 *********
-********* 1 фев 2018 в 23:15
+********* 28 янв 2018 в 17:59

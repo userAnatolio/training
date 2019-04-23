@@ -1,0 +1,24 @@
+
+Эллипс
+3. Повторите страницу по данному по образцу (наведите мышкой на блок):
+
+<style>
+#wrapper {
+margin: 100px auto;
+width: 200px;
+}
+
+.block {
+border: 1px solid red;
+width: 100px;
+height: 100px;
+}
+.block:hover {
+transform: rotate(45deg) scale(2, 3);
+border-radius: 100px;
+}
+</style>
+*********
+*********
+*********
+********* 4 мар 2018 в 20:21

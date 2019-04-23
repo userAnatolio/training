@@ -1,11 +1,8 @@
-9. Повторите страницу по данному по образцу (нумерация начинается с 8-ми):
 
-<style>
-div {margin: 0 auto; width: 70%; text-align: justify; counter-reset: test 7;}
-p { hyphens: auto;}
-p::before {counter-increment: test; content: "Абзац №" counter(test) ".";}
-</style>
+14. Сделайте селектор, который выберет все абзацы <p> с классом test и одновременно все элементы с классом hello.
+
+p.test, .hello {color: red;}
 *********
 *********
 *********
-********* 24 фев 2018 в 6:39
+********* 23 фев 2018 в 5:50

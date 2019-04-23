@@ -1,24 +1,142 @@
-4. Повторите страницу по данному по образцу:
 
+Практика по многоколоночным макетам сайтов
+Макет 1
 <style>
-@font-face {
-font-family: Lombardina;
-src: url(LombardinaInitialOne.ttf);
-}
-div {
-width: 70%;
+
+.wrapper {
+width: 1000px;
 margin: 0 auto;
-text-align: justify;
--webkit-hyphens: auto;
--moz-hyphens: auto;
--ms-hyphens: auto;
-hyphens: auto;
-padding: 10px;
-font-family: Lombardina;
-font-size: 33px;
+border: 1px solid;
 }
+
+.header {
+height: 200px;
+outline: 1px solid;
+position: relative;
+}
+
+
+.content {
+margin: 0 200px;
+border: 1px solid;
+text-align: justify;
+padding: 20px;
+}
+
+.left {
+width: 200px;
+float: left;
+}
+
+.right {
+width: 200px;
+float: right;
+}
+
+.footer {
+height: 200px;
+outline: 1px solid;
+text-align: center;
+font-weight: bold;
+position: relative;
+}
+
+.bottom {
+position: absolute;
+top: 180px;
+left: 350px;
+}
+
+.clearfix {
+clear: both;
+}
+
+.menu {
+outline: 1px solid;
+position: absolute;
+top: 40px;
+left: 290px;
+}
+
+ul {
+margin: 0;
+padding: 0;
+}
+
+li{
+display: inline-block;
+}
+
+#name {
+position: absolute;
+top: 10px;
+left: 290px;
+font-weight: bold;
+font-size: 18px;
+}
+
+.menu a {
+display: block;
+padding: 7px;
+}
+
+.menu a:link, .menu a:visited {
+text-decoration: none;
+color: blue;
+}
+.menu a:hover, .menu a.active {
+text-decoration: underline;
+color: red;
+}
+
+
 </style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="header">
+<div id="img"><img src="lime.jpg"></div>
+<div id="name">www.site.com</div>
+<div class="menu">
+<ul>
+<li><a href="#">Главная</a></li>
+<li><a href="#" class="active">О компании</a></li>
+<li><a href="#">Цены</a></li>
+<li><a href="#">Контакты</a></li>
+<li><a href="#">Статьи</a></li>
+<li><a href="#">Форум</a></li>
+<li><a href="#">Новости</a></li>
+</ul>
+</div>
+</div>
+
+<div class="left">
+left
+</div>
+
+<div class="right">
+right
+</div>
+
+<div class="content">
+
+<h1>О компании</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse urna ante, egestas ac nibh sit amet, vehicula posuere quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium consequat volutpat. Integer ultricies ligula eget arcu volutpat vehicula. Sed et congue nisi, ac cursus ex. Duis tempus arcu magna, quis auctor odio congue in. Duis nunc leo, tempor nec dignissim sed, euismod vel nibh.</p>
+</div>
+<div class="clearfix"></div>
+
+<div class="footer">
+<div class="bottom">www.site.com - продажа всего самого лучшего!</div>
+</div>
+
+</div>
+
+</body>
 *********
 *********
 *********
-********* 21 фев 2018 в 23:53
+********* 11 фев 2018 в 3:07

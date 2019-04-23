@@ -1,36 +1,88 @@
-0. Повторите страницу по данному по образцу.
+
+2. Повторите страницу по данному по образцу.
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
 
 <style>
 
-ul {
-display: flex;
-flex-direction: column;
-width: 400px;
-border: 1px solid blue;
-margin: 0 auto;
-padding: 0;
-}
-
-.test li {
-border: 1px solid blue;
-list-style-type: none;
-}
-
-a {
-display: block;
-background-color: #2696e8;
+#block a:link, #block a:visited{
 text-decoration: none;
-padding: 10px;
-color: white;
+color: blue;
+}
+#block a:hover {
+text-decoration: underline;
+color: blue;
 }
 
-a:hover {
-background-color: white;
-color: #2696e8;
+#block {
+width: 700px;
+margin: 0px auto;
+}
+
+#block h2{
+margin: 0px;
+}
+
+#block div{
+border: 1px solid black;
+padding: 20px;
+text-align: justify;
+margin-bottom: 20px;
+}
+
+#block p {
+margin: 10px 0px;
+padding: 0px;
+font-size: 13px;
+line-height: 28px;
+font-family: Arial;
+}
+
+p.more{
+text-align: right;
+margin: 20px;
+}
+
+#block img {
+border: 1px solid black;
+float: left;
+margin: 9px 10px 0px 0px;
 }
 
 </style>
+
+</head>
+
+<body>
+
+<div id = "block">
+
+<div>
+<h2>Новости</h2>
+<p><img src = "1.png">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin ultrices dictum. Nullam non diam vestibulum, interdum nibh quis, sollicitudin sem. Vivamus sit amet sagittis massa. Cras aliquet lacus at interdum blandit. Quisque quis tellus nunc. Cras at nisi laoreet, suscipit nibh quis, pellentesque diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam a bibendum orci. Sed fermentum consequat mauris adipiscing condimentum. Phasellus id convallis nunc. Nullam vel mollis purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras nec neque vel risus accumsan sollicitudin quis ut velit. Fusce et libero hendrerit, accumsan enim non, dictum eros. Proin sem justo, porta id magna quis, consequat scelerisque urna.</p>
+
+<p class = "more">
+<a href = "">подробнее...</a>
+</p>
+</div>
+
+<div>
+<h2>О компании</h2>
+<p><img src = "1.png">Sed non ante vitae nunc lacinia tristique nec quis nisl. Integer a fringilla elit, vitae accumsan massa. Fusce ac tempor est. In ultricies mi sit amet nunc posuere eleifend. Cras vulputate hendrerit sodales. Mauris lectus magna, feugiat vitae sagittis id, suscipit ac dui. Sed a orci a ipsum iaculis gravida. Integer nec fringilla turpis. Sed dapibus turpis rutrum lacus mattis egestas. Aliquam viverra libero vitae mi pellentesque lobortis. Donec varius elit in aliquam consectetur. Sed fermentum consequat mauris adipiscing condimentum. Phasellus id convallis nunc. Nullam vel mollis purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras nec neque vel risus accumsan sollicitudin quis ut velit. Fusce et libero hendrerit, accumsan enim non, dictum eros. Proin sem justo, porta id magna quis, consequat scelerisque urna.</p>
+
+<p class = "more">
+<a href = "">подробнее...</a>
+</p>
+</div>
+
+<div>
+<h2>Интересное</h2>
+<p><img src = "1.png">Mauris et metus vitae lectus interdum auctor non sit amet odio. Morbi laoreet feugiat dapibus. Nulla ultricies sollicitudin est id blandit. Fusce justo nisl, tristique id fringilla ut, consectetur eu purus. Curabitur facilisis ipsum augue, vel varius turpis malesuada eget. Pellentesque et ante vestibulum, semper lorem quis, bibendum urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean hendrerit tortor a cursus fermentum. Nunc suscipit sem laoreet interdum ullamcorper. Fusce volutpat orci ut ante aliquam, vitae cursus nulla dignissim. Fusce dignissim suscipit suscipit. Etiam a bibendum orci. Sed fermentum consequat mauris adipiscing condimentum. Phasellus id convallis nunc. Nullam vel mollis purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
 *********
 *********
 *********
-********* 5 фев 2018 в 23:30
+********* 28 янв 2018 в 19:55

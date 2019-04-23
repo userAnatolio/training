@@ -1,20 +1,12 @@
-3. Повторите страницу по данному по образцу (наведите мышкой на блок):
+
+41. Повторите страницу по данному по образцу (наведите мышкой на список):
 
 <style>
-.block {
-border: 1px solid red;
-width: 40%;
-height: 50px;
-color: red;
-
-transition: width 2s;
-}
-
-.block:hover {
-width: 100%;
-}
+li {border: 1px solid blue; padding: 5px; width: 200px; margin-bottom: 20px; list-style-type: none;}
+li:hover {background: green;}
+li:hover ~ li {background: red;}
 </style>
 *********
 *********
 *********
-********* 3 мар 2018 в 10:22
+********* 23 фев 2018 в 8:29

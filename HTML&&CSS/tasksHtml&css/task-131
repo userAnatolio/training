@@ -1,7 +1,12 @@
-5. Сделайте селектор, который выберет все <h2> внутри дивов <div> и одновременно все абзацы <p>.
 
-div h2, p { color: red;}
+На text-align-last
+Для решения задач данного блока вам понадобятся следующие CSS свойства: text-align-last.
+3. Повторите страницу по данному по образцу:
+<style>
+#text1 {text-align: justify; margin-bottom: 50px; width: 400px; text-align-last: right;}
+#text2 {text-align: justify; margin-bottom: 50px; width: 400px; text-align-last: center;}
+</style>
 *********
 *********
 *********
-********* 23 фев 2018 в 5:09
+********* 20 фев 2018 в 20:27

@@ -1,23 +1,10 @@
-6. Повторите страницу по данному по образцу (наведите мышкой на блок):
 
-<style>
-.block {
-width: 30%;
-height: 50px;
-border: 1px solid red;
-text-align: center;
-line-height: 50px;
-text-indent: 2000px;
-white-space: nowrap;
+На first-line
+2. Повторите страницу по данному по образцу:
 
-transition: text-indent 1s linear;
-}
-
-.block:hover {
-text-indent: 0;
-}
-</style>
+div {margin: 0 auto; width: 70%; text-align: justify;}
+p::first-line { color: red; font-style: italic;}
 *********
 *********
 *********
-********* 3 мар 2018 в 17:33
+********* 23 фев 2018 в 21:36
