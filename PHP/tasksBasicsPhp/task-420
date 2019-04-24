@@ -1,0 +1,45 @@
+
+1. Дана таблица с работниками. Реализуйте ее вывод на экран в следующем виде:
+
+<?php require_once('db.php'); ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test</title>
+<style>
+td, th {
+border: 1px solid black;
+width: 100px;
+height: 30px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+
+<?php
+$query = "SELECT * FROM workers WHERE id > 0";
+$getResult = mysql_query($query);
+for($result = []; $str = mysql_fetch_assoc($getResult); $result[]=$str);
+
+function func($result) {
+$str = '';
+for($i=0; $i<count($result); $i++) {
+$str .= '<tr><td>'.$result[$i][id].'</td><td>'.$result[$i][name].'</td><td>'.$result[$i][age].'</td><td>'.$result[$i][salary].'</td></tr>';
+}
+return $str;
+}
+?>
+
+<table>
+<tr><th>id</th><th>name</th><th>age</th><th>salary</th></tr>
+<?php echo func($result); ?>
+</table>
+
+</body>
+</html>
+Нравится
+*********
+*********
+********* 3 авг 2018 в 23:50

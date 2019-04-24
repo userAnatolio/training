@@ -1,0 +1,32 @@
+
+23. Дан инпут и кнопка. В инпут вводится число. По нажатию на кнопку разложите число на простые множители.
+
+<form action="" method="GET">
+<input name="number">
+
+<input type="submit" name="go" value="Результат">
+</form>
+
+<?php
+
+$num = $_GET['number'];
+
+if(!empty($_GET['number'])) {
+var_dump( func($num));
+}
+
+function func($num) {
+for($i =2; $i <= $num; $i++){
+while($num % $i ==0){
+$arr[] = $i;
+$num /=$i;
+}
+}
+return $arr;
+}
+
+?>
+Нравится
+*********
+*********
+********* 29 июл 2018 в 17:42

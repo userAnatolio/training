@@ -1,0 +1,22 @@
+
+Страница test5
+
+<?php
+if(!empty($_GET['answer3'])) {
+session_start();
+$_SESSION['answer3'] = $_GET['answer3'];
+}
+
+
+echo '<h1 style="color: green">Ваши ответы</h1>';
+echo 'Столица России: '.$_SESSION['answer1'];
+echo '<br>';
+echo 'Столица Китая: '.$_SESSION['answer2'];
+echo '<br>';
+echo 'Столица Украины: '.$_SESSION['answer3'];
+
+?>
+Нравится
+*********
+*********
+********* 26 авг 2018 в 3:11

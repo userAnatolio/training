@@ -1,0 +1,37 @@
+
+3. Спросите у пользователя email с помощью формы. Затем сделайте так, чтобы в другой форме (поля: имя, фамилия, пароль, email) при ее открытии поле email было автоматически заполнено.
+
+<?php require_once('db.php'); ?>
+<?php
+
+if(!empty($_GET['email'])) {
+session_start();
+$_SESSION['email'] = $_GET['email'];
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>test1</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<form action="" method="GET">
+<input type="text" name="email" placeholder="введите почту">
+<input type="submit">
+</form>
+
+
+</body>
+</html>
+Нравится
+*********
+*********
+********* 25 авг 2018 в 20:51

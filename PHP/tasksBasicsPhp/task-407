@@ -1,0 +1,13 @@
+
+2. Из таблицы workers достаньте записи со вторую, 3 штуки.
+
+<?php
+$query = "SELECT * FROM workers WHERE id > 0 LIMIT 2,3 ";
+$getResult = mysql_query($query);
+for($result = []; $str = mysql_fetch_assoc($getResult); $result[]=$str);
+var_dump($result);
+?>
+Нравится
+*********
+*********
+********* 3 авг 2018 в 21:06

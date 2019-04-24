@@ -1,0 +1,29 @@
+
+5. Спросите у пользователя его возраст с помощью select. Варианты ответа сделайте такими: менее 20 лет, 20-25, 26-30, более 30.
+
+<p>Сколько вам лет?</p>
+<form action="" method="GET">
+<input placeholder="Имя" name="nameUser"><br>
+<select name="age[]">
+<option value="20"><p>20</p></option>
+<option value="20-25"><p>20-25</p></option>
+<option value="26-30"><p>26-30</p></option>
+<option value="Более 30"><p>Более 30</p></option>
+</select>
+<input type="submit" name="button">
+</form>
+
+<?php
+
+if(isset($_GET['age'])) {
+echo 'Вам: '.implode(', ', $_GET['age']);
+}
+if(empty($_GET['age'])) {
+echo 'Вы не ответили';
+}
+
+?>
+Нравится
+*********
+*********
+********* 22 июл 2018 в 3:26

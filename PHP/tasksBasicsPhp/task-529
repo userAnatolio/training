@@ -1,0 +1,19 @@
+
+1. Сделайте две страницы: index.php и test.php. При заходе на index.php спросите с помощью формы страну пользователя, запишите ее в куки с именем country. При заходе на test.php выведите страну пользователя.
+
+<?php
+require_once('db.php');
+$country = $_GET['country'];
+setcookie("country", $country);
+?>
+
+2 страница
+
+<?php
+require_once('db.php');
+echo $_COOKIE['country'];
+?>
+Нравится
+*********
+*********
+********* 26 авг 2018 в 3:50

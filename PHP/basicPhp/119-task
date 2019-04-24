@@ -1,9 +1,0 @@
-********
-*********
-********* 8 июл 2018 в 4:15
-24. Дана строка 'aaa aaa aaa aaa aaa'. Определите позицию второго пробела.
-
-<?php
-$num = strpos('aaa aaa aaa aaa aaa', ' ');
-echo strpos('aaa aaa aaa aaa aaa', ' ', $num + 1);
-?>

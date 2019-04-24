@@ -1,0 +1,31 @@
+
+Сравнение дат
+15. Сделайте форму, которая спрашивает две даты в формате '2025-12-31'. Первую дату запишите в переменную $date1, а вторую в $date2. Сравните, какая из введенных дат больше. Выведите ее на экран.
+
+<form action="" method="GET">
+<input placeholder="дата в формате 2000-12-31" name="year1">
+<input placeholder="дата в формате 2000-12-31" name="year2">
+<input type="submit" name="button">
+</form>
+
+<?php
+$arr1 = explode('-', $_GET['year1']);
+$arr2 = explode('-', $_GET['year2']);
+$arr1 = array_reverse($arr1);
+$arr2 = array_reverse($arr2);
+
+if(!empty($_GET['year1']) and !empty($_GET['year2'])) {
+$date1 = mktime(0, 0, 0, $arr1[1], $arr1[0], $arr1[2]);
+$date2 = mktime(0, 0, 0, $arr2[1], $arr2[0], $arr2[2]);
+if($date1 > $date2) {
+echo date('d.m.Y', $date1) . ' больше';
+}
+else {
+echo date('d.m.Y', $date2) . ' больше';
+}
+}
+?>
+Нравится
+*********
+*********
+********* 16 июл 2018 в 1:01

@@ -1,0 +1,50 @@
+
+7. Реализуйте тест по принципу 'одна страница сайта - одна задача'. Запомните результаты ответов пользователя в сессию.
+
+Страница test1
+
+<?php
+require_once('db.php');
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>test1</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<form action="" method="GET">
+<input type="submit" value="Начать тест" name="click">
+
+</form>
+<?php
+if(empty($_SESSION['answer1']) and !empty($_GET['click'])){
+require_once('test1.php');
+}
+
+if(empty($_SESSION['answer2']) and !empty($_GET['click1'])){
+require_once('test2.php');
+}
+
+if(empty($_SESSION['answer3']) and !empty($_GET['click2'])){
+require_once('test3.php');
+}
+
+if(!empty($_GET['click3'])) {
+require_once('test5.php');
+}
+
+?>
+
+</body>
+</html>
+Нравится
+*********
+*********
+********* 26 авг 2018 в 3:08

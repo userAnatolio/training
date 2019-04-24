@@ -1,0 +1,33 @@
+
+17. Найдите все файлы из папки 'test' и вставьте в начало каждого файла полный путь к нему (текст файла должен остаться в нем и начинаться с новой строки после пути).
+
+<?php header( 'Content-Type: text/html; charset=utf-8' ); ?>
+
+<?php
+$newArr = [];
+$file = scandir('test');
+foreach($file as $elem) {
+if(is_file('test/'.$elem)) {
+array_push($newArr, $elem);
+}
+}
+foreach($newArr as $elem) {
+$val = file_get_contents('test/'.$elem);
+echo file_put_contents('test/'.$elem, 'путь: '. realpath('test/'.$elem).PHP_EOL.$val);
+}
+
+?>
+
+Пусть в корне вашего сайта лежат файлы 1.txt, 2.txt и 3.txt. Вручную сделайте массив с именами этих файлов. Переберите его циклом и удалите все эти файлы...
+
+Сказано, сделано...
+
+<?php
+$arr = ['f1.txt', 'f2.txt', 'f3.txt'];
+foreach($arr as $elem) {
+unlink($elem);
+}
+Нравится
+*********
+*********
+********* 9 сен 2018 в 16:42

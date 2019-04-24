@@ -1,0 +1,12 @@
+
+18. С помощью preg_replace замените в строке домены вида http://site.ru, http://site.com на <a href="http://site.ru">site.ru</a>.
+
+<?php
+
+echo preg_replace('#(https?://[a-z-.]+\.[a-z]{2,3})#', '<i><a href="$1">site.ru</a></i>', 'https://vk.com');
+
+?>
+Нравится
+*********
+*********
+********* 11 авг 2018 в 23:10

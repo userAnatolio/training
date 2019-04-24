@@ -1,0 +1,51 @@
+
+27. Даны 3 селекта и кнопка. Первый селект - это дни от 1 до 31, второй селект - это месяцы от января до декабря, а третий - это годы от 1990 до 2025. С помощью этих селектов можно выбрать дату. По нажатию на кнопку выведите на экран день недели, соответствующий этой дате, например, 'воскресенье'.
+
+<form action="" method="GET">
+<select name="day"><?php selectDay();?></select>
+<select name="month"><?php selectMonth();?></select>
+<select name="year"><?php selectYear();?></select>
+<input type="submit" name="go" value="Нажми на кнопку">
+</form>
+
+<?php
+
+$num1 = $_GET['day'];
+$num2 = $_GET['month'];
+$num3 = $_GET['year'];
+
+if(!empty($num1) and !empty($num2) and !empty($num3)) {
+$str = $num1.' '.$num2.' '.$num3;
+echo getWeek($str);
+}
+
+function getWeek($str) {
+$day= date('w', strtotime($str));
+$week = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+echo $week[$day];
+}
+
+function selectDay() {
+for($i=1; $i<=31; $i++){
+echo '<option>'.$i.'</option>';
+}
+}
+
+function selectMonth() {
+$months = array (1 => 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November' , 'December');
+for($i=1; $i<=count($months); $i++){
+echo '<option>'.$months[$i].'</option>';
+}
+}
+
+function selectYear() {
+for($i=1; $i<=2020; $i++){
+echo '<option>'.$i.'</option>';
+}
+}
+
+?>
+Нравится
+*********
+*********
+********* 30 июл 2018 в 2:48

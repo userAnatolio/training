@@ -1,0 +1,29 @@
+
+6. Спросите у пользователя с помощью мультиселекта, какие из языков он знает: html, css, php, javascript. Выведите на экран те языки, которые знает пользователь.
+
+<p>Выделите те языки, которые вы знаете и нажмите кнопку отправить</p>
+<form action="" method="GET">
+<input placeholder="Имя" name="nameUser"><br>
+<select name="age[]" multiple>
+<option value="html"><p>html</p></option>
+<option value="css"><p>css</p></option>
+<option value="js"><p>js</p></option>
+<option value="php"><p>php</p></option>
+</select>
+<input type="submit" name="button">
+</form>
+
+<?php
+
+if(isset($_GET['age'])) {
+echo 'Вы знаете: '.implode(', ', $_GET['age']);
+}
+if(empty($_GET['age'])) {
+echo 'Вы не ответили';
+}
+
+?>
+Нравится
+*********
+*********
+********* 22 июл 2018 в 4:12

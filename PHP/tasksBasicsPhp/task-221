@@ -1,0 +1,23 @@
+
+6. Спросите у пользователя имя, а также попросите его ввести сообщение (textarea). Сделайте так, чтобы после отправки формы значения его полей не пропадали.
+
+<form action="" method="GET" >
+<input type="text" placeholder="login" name="userName" value="<?php if(isset($_GET['userName'])) {echo $_GET['userName'];} ?>"><br>
+<textarea name="text" placeholder="введите сообщение"><?php if(isset($_GET['text'])) {echo $_GET['text'];} ?></textarea>
+<input type="submit">
+</form>
+
+<?php
+$name = trim(strip_tags($_GET['userName']));
+$text = trim(strip_tags($_GET['text']));
+
+if(!empty($_GET['userName']) and !empty($_GET['text'])) {
+echo 'Ваше имя : '.$name . '<br>';
+echo 'Ваше собщение : '.$text;
+}
+
+?>
+Нравится
+*********
+*********
+********* 15 июл 2018 в 19:20

@@ -1,0 +1,22 @@
+
+Страница test4
+
+<?php
+if(!empty($_GET['answer2'])) {
+session_start();
+$_SESSION['answer2'] = $_GET['answer2'];
+}
+
+?>
+
+<h1>Столица Украины</h1>
+<form action="" method="GET">
+<input type="radio" name="answer3" value="Киев"><p>Киев</p>
+<input type="radio" name="answer3" value="Львов"><p>Львов</p>
+<input type="radio" name="answer3" value="Одесса"><p>Одесса</p>
+<input type="submit" value="показать результаты" name="click3">
+</form>
+Нравится
+*********
+*********
+********* 26 авг 2018 в 3:08

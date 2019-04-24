@@ -1,0 +1,31 @@
+
+19. Напишите скрипт, который будет считать факториал числа. Само число вводится в инпут и после нажатия на кнопку пользователь должен увидеть результат.
+
+<form action="" method="GET">
+<input name="number">
+<input type="submit" name="go" value="Нажми на кнопку, получишь результат и твоя мечта осуществится">
+</form>
+
+<?php
+
+$number = $_GET['number'];
+
+if(!empty($_GET['number']) and !empty($_GET['go'])) {
+
+echo factorial($number);
+
+}
+
+function factorial($num) {
+$result = 1;
+for($i = 1; $i <= $num; $i++) {
+$result *= $i;
+}
+return '<h2>Факториал числа '.$num.'='.$result.'</h2>';
+}
+
+?>
+Нравится
+*********
+*********
+********* 29 июл 2018 в 12:50

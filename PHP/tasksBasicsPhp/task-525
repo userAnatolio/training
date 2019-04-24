@@ -1,0 +1,22 @@
+
+Страница test3
+
+<?php
+require_once('db.php');
+if(!empty($_GET['answer1'])) {
+session_start();
+$_SESSION['answer1'] = $_GET['answer1'];
+}
+?>
+
+<h1>Столица Китая</h1>
+<form action="" method="GET">
+<input type="radio" name="answer2" value="Пекин"><p>Пекин</p>
+<input type="radio" name="answer2" value="Тайланд"><p>Тайланд</p>
+<input type="radio" name="answer2" value="Банкок"><p>Банкок</p>
+<input type="submit" name="click2">
+</form>
+Нравится
+*********
+*********
+********* 26 авг 2018 в 3:08

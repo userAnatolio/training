@@ -1,0 +1,68 @@
+
+2. Считайте данные из файла 'test.txt' и выведите их на экран.
+
+<?php
+$current = file_get_contents('text.php');
+echo $current;
+?>
+
+Пусть в корне вашего сайта лежит файл test.txt. Запишите в него текст '12345'.
+
+<?php
+$str = "Привет как дела? А?";
+$status = file_put_contents('test.txt', $str);
+echo $status;
+
+?>
+
+если добавить флаг FILE_APPEND то новые данные будут добавляться к уже существующей строке, а не перезаписываться
+
+<?php
+$str = "Привет как дела? А?";
+//$status = file_put_contents('test.txt', $str, FILE_APPEND);
+$status = file_get_contents('test.txt');
+echo $status;
+
+?>
+
+<?php
+error_reporting(E_ALL);
+?>
+
+<?php
+$str = "Твои батоны, они же булки...";
+$file = fopen('test1.txt', 'w');
+fwrite($file, $str);
+fclose($file);
+//$result = file_get_contents('test1.txt');
+//var_dump( $result);
+?>
+
+проверяю файл возможность записи
+<?php
+if(is_writable('test3.txt')) {
+echo 'файл доступен для записи';
+}
+?>
+
+Прочитать файл, еще один вариант, замудренный..
+<?php
+$file = 'test3.txt';
+$test = fopen($file, 'r');
+$text = fread($test, filesize($file));
+fclose($test);
+var_dump($text);
+?>
+
+вот так можно получить содержимое файла без тегов
+
+<?php
+$str = file_get_contents('https://people.com/');
+//file_put_contents('test3.txt', $str);
+$result = strip_tags($str);
+echo $result;
+?>
+Нравится
+*********
+*********
+********* 9 сен 2018 в 12:45

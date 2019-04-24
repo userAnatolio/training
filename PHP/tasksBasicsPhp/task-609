@@ -1,0 +1,24 @@
+
+15. В папке 'test' есть файлы и подпапки. Выведите на экран содержимое всех файлов, которые лежат непосредственно в папке 'test'.
+
+<?php
+$newArr = [];
+$file = scandir('test');
+foreach($file as $elem) {
+if(is_file('test/'.$elem)) {
+array_push($newArr, $elem);
+}
+}
+foreach($newArr as $elem) {
+echo file_get_contents('test/'.$elem);
+}
+
+?>
+
+Пусть в корне вашего сайта лежит файл test.txt. Пусть также в корне вашего сайта лежит папка dir. Скопируйте файл test.txt в папку dir. Копию файла также назовите test.txt.
+
+copy('new_file.txt', 'folder/new_copy.txt');
+Нравится
+*********
+*********
+********* 9 сен 2018 в 16:06

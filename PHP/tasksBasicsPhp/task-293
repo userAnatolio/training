@@ -1,0 +1,28 @@
+
+2. Спросите у пользователя, какие из языков он знает: html, css, php, javascript. Выведите на экран те языки, которые знает пользователь.
+
+<p>Какие языки ты знаешь?</p>
+<form action="" method="GET">
+<input placeholder="Имя" name="nameUser"><br>
+<input type="checkbox" name="lang[]" value="php"><p>php</p>
+<input type="checkbox" name="lang[]"value="js"><p>js</p>
+<input type="checkbox" name="lang[]" value="html"><p>html</p>
+<input type="checkbox" name="lang[]" value="css"><p>css</p>
+<input type="checkbox" name="lang[]" value="c++"><p>c++</p>
+<input type="submit" name="button">
+</form>
+
+<?php
+
+if(isset($_GET['lang'])) {
+echo 'Ты знаешь: '.implode(', ', $_GET['lang']);
+}
+if(empty($_GET['lang'])) {
+echo 'ты слабое звено';
+}
+
+?>
+Нравится
+*********
+*********
+********* 22 июл 2018 в 2:38

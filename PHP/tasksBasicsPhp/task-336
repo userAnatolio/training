@@ -1,0 +1,17 @@
+
+34. Дан массив со строками. Запишите в новый массив только те строки, которые начинаются с 'http://'.
+
+<?php
+$newArr = [];
+$arr = ['yandex.ru', 'mail.ru', 'http://www.GigPorno.xxx', 'http://www.yandex.ru', 'www.test.com'];
+for($i=0; $i<count($arr); $i++) {
+if(substr($arr[$i], 0,7) == 'http://') {
+array_push($newArr, $arr[$i]);
+}
+}
+var_dump($newArr);
+?>
+Нравится
+*********
+*********
+********* 22 июл 2018 в 15:29

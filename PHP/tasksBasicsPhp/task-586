@@ -1,0 +1,74 @@
+
+11. Реализуйте класс Flash, который будет использовать внутри себя класс Session из предыдущей задачи (именно использовать, а не наследовать).
+
+Этот класс будет использоваться для сохранения сообщений в сессию и вывода их из сессии. Зачем это нужно: такой класс часто используется для форм. Например на одной странице пользователь отправляет форму, мы сохраняем в сессию сообщение об успешной отправке, редиректим пользователя на другую страницу и там показываем сообщение из сессии.
+
+Класс должен иметь да метода - setMessage, который сохраняет сообщение в сессию и getMessage, который получает сообщение из сессии.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон PHP</title>
+<style>
+
+</style>
+</head>
+<body>
+
+
+<script>
+
+</script>
+
+<?php
+
+class Session {
+
+public function addSession($name, $val) {
+session_start();
+$_SESSION[$name] = $val;
+}
+public function getSession($name) {
+return $_SESSION[$name];
+}
+public function deleteSession($name) {
+unset($_SESSION[$name]);
+}
+
+public function __construct($name1, $val1) {
+$this -> addSession($name, $val);
+}
+
+}
+
+class Flash {
+
+private $session;
+
+public function __construct() {
+$this -> session = new Session;
+}
+
+public function setMessage($name, $val) {
+$this -> session -> addSession($name, $val);
+}
+
+public function getMessage($name) {
+return $this -> session -> getSession($name);
+}
+
+}
+
+$flash = new Flash;
+$flash -> setMessage('test', 'test1');
+echo $flash -> getMessage('test');
+
+?>
+
+</body>
+</html>
+Нравится
+*********
+*********
+********* 9 сен 2018 в 1:47

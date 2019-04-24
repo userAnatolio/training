@@ -1,0 +1,55 @@
+
+5. Сделайте на сайте 5 картинок с товарами. Реализуйте корзину. Под каждой картинкой должна быть ссылка 'Положить в корзину'. По нажатию на эту ссылку этот товар должен занестись в корзину (сессия), также должна увеличиться общая сумма, которую должен заплатить пользователь (сумма также должна быть указана под картинками с товарами).
+
+<?php
+require_once('db.php');
+session_start();
+
+if(!empty($_GET['fruit'])){
+$fruit = $_GET['fruit'];
+$sum = $_GET['sum'];
+if(!$_SESSION[$fruit]) {
+$_SESSION['result'] = $_SESSION['result'] + $sum;
+}
+if(empty($_SESSION[$fruit])) {
+$_SESSION[$fruit] = $sum;
+}
+}
+if(!empty($_SESSION)) {
+$result = count($_SESSION) - 1;
+echo 'товаров в корзине: '.$result.'<br>';
+echo 'на общую сумму: '.$_SESSION['result'].' рублей';
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>test1</title>
+<style>
+#wrap {
+min-width: 900px;
+margin: 0 auto;
+text-align: center;
+}
+.div {
+display: inline-block;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+<h1>Наш асортимент</h1>
+<div class="div"><img src="aplle.jpg"><p><a href="test1.php?fruit=aplle&sum=50">В корзину </a></p><p>50р.</p></div>
+
+<div class="div"><img src="pear.jpg"><p><a href="test1.php?fruit=pear&sum=100">В корзину</a></p><p>100р.</p></div>
+
+<div class="div"><img src="quince.jpg"><p><a href="test1.php?fruit=quince&sum=150">В корзину</a></p><p>150р.</p></div>
+</div>
+</body>
+</html>
+Нравится
+*********
+*********
+********* 26 авг 2018 в 8:55

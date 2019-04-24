@@ -1,0 +1,14 @@
+
+Страница test2
+
+<h1>Столица России</h1>
+<form action="" method="GET">
+<input type="radio" name="answer1" value="Москва"><p>Москва</p>
+<input type="radio" name="answer1" value="Санкт-Питербург"><p>Санкт-Питербург</p>
+<input type="radio" name="answer1" value="Екатеринбург"><p>Екатеринбург</p>
+<input type="submit" name="click1">
+</form>
+Нравится
+*********
+*********
+********* 26 авг 2018 в 3:08

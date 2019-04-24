@@ -1,0 +1,27 @@
+
+24. Работнику с id=4 поставьте возраст 35 лет.
+
+<?php require_once('db.php'); ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<?php
+$query = "UPDATE workers SET age=35 WHERE id=4";
+mysql_query($query);
+
+?>
+
+</body>
+</html>
+Нравится
+*********
+*********
+********* 3 авг 2018 в 19:29

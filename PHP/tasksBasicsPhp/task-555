@@ -1,0 +1,50 @@
+
+else {
+$query1 = "SELECT login FROM `user` WHERE login='".$loginUser."'";
+$testLogin = mysql_query($query1) or die(mysql_error());
+$userTest = mysql_fetch_assoc($testLogin);
+
+if($userTest['login'] != $loginUser){
+$query2 = "INSERT INTO `user`(`login`, `password`, `codStr`, `name`, `surname`, `mail`, `dateOpen`) VALUES ('".$loginUser."', '".$passwordUser."', '".$codStr."', '".$nameUser."', '".$surnameUser."', '".$mailUser."', '".$dateOpen."')";
+mysql_query($query2) or die(mysql_error());
+echo 'регистрация прошла успешно!';
+}
+else {
+echo 'такой логин уже существует';
+?>
+<form action="" method="POST">
+<input name="loginUser" placeholder="введите логин">
+<input name="nameUser" placeholder="введите имя">
+<input name="surnameUser" placeholder="введите фамилию">
+<input name="mailUser" placeholder="введите электронный адрес">
+<input type="password" name="passwordUser1" placeholder="введите пароль">
+<input type="password" name="passwordUser2" placeholder="введите пароль">
+<input name="codStr" placeholder="введите кодовое слово">
+<input type="submit" name="clickUser">
+</form>
+<?php
+}
+}
+}
+else {
+echo 'пароли не совпадают';
+?>
+<form action="" method="POST">
+<input name="loginUser" placeholder="введите логин">
+<input name="nameUser" placeholder="введите имя">
+<input name="surnameUser" placeholder="введите фамилию">
+<input name="mailUser" placeholder="введите электронный адрес">
+<input type="password" name="passwordUser1" placeholder="введите пароль">
+<input type="password" name="passwordUser2" placeholder="введите пароль">
+<input name="codStr" placeholder="введите кодовое слово">
+<input type="submit" name="clickUser">
+</form>
+<?php
+}
+
+
+}
+Нравится
+*********
+*********
+********* 1 сен 2018 в 15:56

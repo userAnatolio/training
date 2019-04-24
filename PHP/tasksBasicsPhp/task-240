@@ -1,0 +1,35 @@
+
+Прибавление и отнимание дат
+18. В переменной $date лежит дата в формате '2025-12-31'. Прибавьте к этой дате 2 дня, 1 месяц и 3 дня, 1 год. Отнимите от этой даты 3 дня.
+
+<?php
+$date = '2025-12-31';
+$date = date_create($date);
+$date = date_modify($date, '2 day');
+echo date_format($date, 'd.m.Y');
+?>
+
+<?php
+$date = '2025-12-31';
+$date = date_create($date);
+$date = date_modify($date, '3 days 1 month');
+echo date_format($date, 'd.m.Y');
+?>
+
+<?php
+$date = '2025-12-31';
+$date = date_create($date);
+$date = date_modify($date, '3 days 1 year');
+echo date_format($date, 'd.m.Y');
+?>
+
+<?php
+$date = '2025-12-31';
+$date = date_create($date);
+$date = date_modify($date, '-3 days');
+echo date_format($date, 'd.m.Y');
+?>
+Нравится
+*********
+*********
+********* 16 июл 2018 в 1:23
