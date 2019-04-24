@@ -1,0 +1,27 @@
+
+7. Дан элемент #elem. Сделайте его красного цвета, размером 30px, добавьте ему границу. Решите задачу с помощью свойства cssText.
+
+<body>
+
+<div>
+<input type="submit" onclick="func()">
+
+<h1 id="elem">Я заголовок</h1>
+
+</div>
+
+<script>
+
+function func() {
+var elem = document.getElementById('elem');
+elem.style.cssText = 'color: red; font-size: 30px; border: 3px solid black';
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 29 апр 2018 в 16:56

@@ -1,0 +1,40 @@
+
+32. Дан абзац. Сделайте так, чтобы каждую секунду он менял свой цвет с красного на зеленый и наоборот.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body onload="start()">
+
+<p id="text" style="font-size: 30px; font-weight: bold;">Светофор</p>
+
+<script>
+
+function start() {
+window.setInterval(func, 1000);
+}
+
+function func() {
+var p = document.getElementById('text');
+if(p.style.color == 'red') {
+p.style.color = 'green';
+}
+else {
+p.style.color = 'red';
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 16 мая 2018 в 19:54

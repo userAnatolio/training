@@ -1,0 +1,15 @@
+
+Задачи на test и match
+3. С помощью метода test определите, что переданная строка является емэйлом. Примеры емэйлов для тестирования mymail@mail.ru, my.mail@mail.ru, my-mail@mail.ru, my_mail@mail.ru, mail@mail.com, mail@mail.by, mail@yandex.ru.
+
+<script>
+
+var result = /^\w[a-z.-_]+\w@[a-z]+\.[a-z]{2,3}$/.test('my.mail@mail.ru');
+
+alert(result);
+
+</script>
+*********
+*********
+*********
+********* 7 авг 2018 в 20:39

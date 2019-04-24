@@ -1,0 +1,30 @@
+
+4. Дан селект. Дан инпут. Дана кнопка. Сделайте так, чтобы в инпут можно было ввести число, нажать на кнопку и в селекте становился выбранным пункт с этим номером.
+
+<body>
+
+<select id="select">
+<option>Москва</option>
+<option>Волгоград</option>
+<option>Брянск</option>
+</select>
+
+<input value="" id="text">
+
+<input type="submit" onclick="func()">
+
+<script>
+
+function func() {
+var select = document.getElementById('select');
+var text = document.getElementById('text');
+select.selectedIndex = text.value;
+}
+
+</script>
+
+</body>
+*********
+*********
+*********
+********* 9 мая 2018 в 22:28

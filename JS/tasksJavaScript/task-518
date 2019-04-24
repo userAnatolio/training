@@ -1,0 +1,37 @@
+
+<script>
+
+var yes = 0;
+var no = 0;
+var none = 0;
+var statistic = 0;
+
+var question = document.getElementsByClassName('question');
+
+function func() {
+for(var i = 0; i < question.length; i++) {
+for(var j = 0; j < question[i].children.length; j++) {
+if(question[i].children[j].children[0].checked == true) {
+if(question[i].children[j].children[0].value == 1) {
+yes++;
+}
+else {
+no++;
+}
+}
+
+}
+}
+none = question.length - (yes + no);
+statistic = Math.round(yes/(question.length/100));
+alert('Правильных ответов: ' + yes + ' (' + statistic + '%)\n' + 'неправильных ответов: ' + no + '\n' + 'без ответа: ' + none);
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 2 июн 2018 в 16:36

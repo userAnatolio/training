@@ -1,0 +1,14 @@
+
+11.Выведите на экран количество секунд, которое осталось до конца дня.
+
+<script>
+var date = new Date();
+var date1 = date.getTime();
+var date2 = Date.parse('2018-04-29T00:00:00');
+var result = (date2 - date1) / 1000;
+alert(result);
+</script>
+*********
+*********
+*********
+********* 28 апр 2018 в 10:03

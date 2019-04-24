@@ -1,0 +1,65 @@
+
+<div id="center">
+<h1 style="margin-bottom: 20px; font-size: 50px">Моя записная книга<h2>
+
+<div id="wrap"></div>
+
+<form>
+<input id="textName" placeholder="Введите название">
+<textarea id="text" placeholder="Введите текст"></textarea>
+<input type="submit" value="Сохранить" id="click">
+</form>
+
+</div>
+<script>
+
+$(document).ready(function(){
+
+var text = localStorage.getItem('text');
+var textName = localStorage.getItem('textName');
+
+var textArr = [];
+var textNameArr = [];
+if(text && textName) {
+var textArr = JSON.parse(text);
+var textNameArr = JSON.parse(textName);
+}
+if(textArr && textNameArr) {
+for(var i=0; i<textArr.length; i++){
+$('#wrap').before('<h2 class="header">'+ textNameArr[i] +'</h2>');
+$('#wrap').before('<p class="text">'+ textArr[i] +'</p>');
+}
+}
+
+
+
+$("#click").on('click', function() {
+
+$("#text").each(function(){
+var $elem = $(this);
+if($elem)
+textArr.push($elem.val());
+});
+$("#textName").each(function(){
+var $elem = $(this);
+if($elem)
+textNameArr.push($elem.val());
+});
+var json1 = JSON.stringify(textArr);
+var json2 = JSON.stringify(textNameArr);
+localStorage.setItem('text', json1);
+localStorage.setItem('textName', json2);
+});
+
+});
+
+
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 23 авг 2018 в 6:04

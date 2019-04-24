@@ -1,0 +1,13 @@
+
+49. Найдите все теги <div> и удвойте им высоту.
+
+<script>
+$('div').each( function() {
+var height = $(this).height();
+$(this).height(height*2);
+});
+</script>
+*********
+*********
+*********
+********* 20 июл 2018 в 23:02

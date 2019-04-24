@@ -1,0 +1,75 @@
+
+Урок
+3. Реализуйте тест с вопросами. В каждом вопросе есть 5 вариантов ответов (один из них правильный) - это будет 5 радио кнопочек. После того, как человек ответит на все вопросы - покажите ему результат - на какие вопросы он ответил верно, не верно, не дал ответ. Покажите также процент правильно отвеченных вопросов.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+#wrapping {
+border: 1px solid;
+width: 900px;
+}
+
+input:checked {
+color: red;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapping">
+
+<ul>
+
+<li>
+<p>Столица Китая?</p>
+<ol class="question">
+<li><input type="radio" name="radio1">Горшки</li>
+<li><input type="radio" name="radio1">Токио</li>
+<li><input type="radio" name="radio1">Пулкино</li>
+<li><input type="radio" name="radio1" value='1'>Пекин</li>
+<li><input type="radio" name="radio1">Тайланд</li>
+</ol>
+</li>
+
+<li>
+<p>Столица Италии?</p>
+<ol class="question">
+<li><input type="radio" name="radio2" value='1'>Рим</li>
+<li><input type="radio" name="radio2">Бутово</li>
+<li><input type="radio" name="radio2">Лохмандия</li>
+<li><input type="radio" name="radio2">Голивуд</li>
+<li><input type="radio" name="radio2">Грим</li>
+</ol>
+</li>
+
+<li>
+<p>Столица Испании?</p>
+<ol class="question">
+<li><input type="radio" name="radio3">Гуково</li>
+<li><input type="radio" name="radio3">Харьков</li>
+<li><input type="radio" name="radio3" value='1'>Мадрид</li>
+<li><input type="radio" name="radio3">Барселона</li>
+<li><input type="radio" name="radio3">Банкок</li>
+</ol>
+</li>
+
+<ul>
+
+<br>
+
+<input type="submit" value="Проверить" onclick="func()">
+
+</div>
+*********
+*********
+*********
+********* 2 июн 2018 в 1:18

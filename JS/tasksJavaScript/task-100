@@ -1,0 +1,9 @@
+
+2. <script>
+var str = 'JS';
+alert(str.toLowerCase());
+</script>
+*********
+*********
+*********
+********* 29 мар 2018 в 3:04

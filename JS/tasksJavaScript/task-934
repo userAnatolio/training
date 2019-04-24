@@ -1,0 +1,86 @@
+
+<div class="center">
+<div id="tabs">
+<ul>
+<li><a href="#tabs-1">Понедельник</a></li>
+<li><a href="#tabs-2">Вторник</a></li>
+<li><a href="#tabs-3">Среда</a></li>
+<li><a href="#tabs-4">Четверг</a></li>
+<li><a href="#tabs-5">Пятница</a></li>
+<li><a href="#tabs-6">Суббота</a></li>
+<li><a href="#tabs-7">Воскресение</a></li>
+</ul>
+<div id="tabs-1">
+<textarea id="text1" class="text" placeholder="Новая заметка"></textarea>
+</div>
+<div id="tabs-2">
+<textarea id="text2" class="text" placeholder="Новая заметка"></textarea>
+</div>
+<div id="tabs-3">
+<textarea id="text3" class="text" placeholder="Новая заметка"></textarea>
+</div>
+<div id="tabs-4">
+<textarea id="text4" class="text" placeholder="Новая заметка"></textarea>
+</div>
+<div id="tabs-5">
+<textarea id="text5" class="text" placeholder="Новая заметка"></textarea>
+</div>
+<div id="tabs-6">
+<textarea id="text6" class="text" placeholder="Новая заметка"></textarea>
+</div>
+<div id="tabs-7">
+<textarea id="text7" class="text" placeholder="Новая заметка"></textarea>
+</div>
+</div>
+<input type="submit" id="button" value="Сохранить">
+</div>
+
+
+<script>
+$(document).ready(function(){
+$('#tabs').tabs();
+
+
+var idText = localStorage.getItem('textId');
+var valueText = localStorage.getItem('textValue');
+
+
+
+var textIdArr = JSON.parse(idText);
+var textValueArr = JSON.parse(valueText);
+if(textIdArr && textValueArr) {
+for(var i=0; i<textIdArr.length; i++){
+$('#'+textIdArr[i]).val(textValueArr[i]);
+}
+}
+
+
+
+$("#button").on('click', function() {
+var textId = [];
+var textValue = [];
+$(".text").each(function(){
+var $elem = $(this);
+if($elem)
+textId.push($elem.attr("id"));
+textValue.push($elem.val());
+});
+var json1 = JSON.stringify(textId);
+var json2 = JSON.stringify(textValue);
+localStorage.setItem('textId', json1);
+localStorage.setItem('textValue', json2);
+});
+
+
+
+});
+</script>
+</script>
+
+
+</body>
+</html>
+*********
+*********
+*********
+********* 23 авг 2018 в 6:05

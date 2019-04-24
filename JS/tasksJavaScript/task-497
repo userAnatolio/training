@@ -1,0 +1,95 @@
+
+50. Дана таблица с числами. По нажатию на кнопку в последний ряд таблицы в каждую ячейку запишите сумму чисел в столбце таблицы, расположенном над определенной ячейкой.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+td {
+border: 1px solid black;
+width: 100px;
+height: 40px;
+text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<table id="parent">
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+</table>
+<br>
+<input type="submit" onclick="func()">
+
+<script>
+
+var tr = document.querySelectorAll('tr');
+var parent = document.getElementById('parent');
+var arr = [];
+var num = 0;
+var key = 0;
+
+
+function func() {
+
+for(var i = 0; i < tr[0].children.length; i++) {
+
+for(var j = 0; j < tr.length; j++) {
+
+
+arr.push( Number( tr[j].children[i].innerHTML ));
+num += Number(arr.shift());
+
+}
+
+tr[tr.length-1].children[i].innerHTML = '<b>' + num + '</b>';;
+num = 0;
+
+}
+
+
+console.log(arr);
+
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 20 мая 2018 в 22:22

@@ -1,0 +1,43 @@
+
+2. Создайте отсчет с кнопкой остановки:
+
+<body>
+
+<script>
+
+function onTimer() {
+timerId = setInterval(timer,1000);
+var start = document.getElementById('elem1');
+var stop = document.getElementById('elem2');
+start.disabled = true;
+stop.disabled = false;
+}
+
+function stopTimer() {
+clearInterval(timerId);
+var start = document.getElementById('elem1');
+var stop = document.getElementById('elem2');
+start.disabled = false;
+stop.disabled = true;
+}
+
+function timer() {
+var elem = document.getElementById('clock');
+elem.innerHTML = Number(elem.innerHTML) + 1;
+}
+
+</script>
+
+<div>
+
+<p id="clock">0</p>
+<input type="submit" id="elem1" value="запуск" onclick="onTimer()">
+<input type="submit" id="elem2" value="стоп" onclick="stopTimer()">
+
+</div>
+
+</body>
+*********
+*********
+*********
+********* 28 апр 2018 в 17:30

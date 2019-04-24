@@ -1,0 +1,16 @@
+
+Задачи на replace
+
+13. С помощью replace замените в строке домены вида http://site.ru, http://site.com на <a href="http://site.ru">site.ru</a>.
+
+<script>
+
+var str = 'http://site.ru';
+var result = str.replace(/^(http:\/\/.+\.[a-z]{2,3})$/g, 'href="$1">site.ru</a>');
+alert(result);
+
+</script>
+*********
+*********
+*********
+********* 8 авг 2018 в 20:13

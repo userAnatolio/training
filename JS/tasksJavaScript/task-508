@@ -1,0 +1,53 @@
+
+57. Реализуйте генератор таблиц, ширина и высота таблиц задается в двух инпутах (например, таблица 5 на 10 ячеек).
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+td {
+border: 1px solid black;
+width: 200px;
+height: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<input id="row" placeholder="рядов">
+<input id="col" placeholder="ячеек">
+<input type="submit" onclick="func()" value="Сгенерировать таблицу"><br><br>
+<div></div>
+
+<script>
+
+var row = document.getElementById('row');
+var col = document.getElementById('col');
+var div = document.querySelector('div');
+
+function func() {
+var table = document.createElement('table');
+div.appendChild(table);
+for(var i = 1; i <= row.value; i++) {
+var tr = document.createElement('tr');
+table.appendChild(tr);
+for(var j = 1; j <= col.value; j++) {
+var td = document.createElement('td');
+tr.appendChild(td);
+}
+}
+
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 27 мая 2018 в 19:16

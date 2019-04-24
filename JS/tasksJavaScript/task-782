@@ -1,0 +1,68 @@
+
+6. Работа с эффектами
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+#block {
+background: orange;
+color: white;
+text-align: center;
+height: 300px;
+width: 300px;
+padding: 30px;
+}
+
+.center {
+position: fixed;
+top: 100px;
+left: 500px;
+
+}
+
+
+</style>
+
+<script src="jquery.js"></script>
+<script src="jquery1.js"></script>
+<script src="jquery2.js"></script>
+
+</head>
+
+<body>
+
+<div class="center">
+<div id="block">
+<h2>Нажми на меня</h2>
+<ol>
+<li>пункт</li>
+<li>пункт</li>
+<li>пункт</li>
+<li>пункт</li>
+<li>пункт</li>
+<li>пункт</li>
+<li>пункт</li>
+</ol>
+</div>
+</div>
+
+<script>
+
+$('document').ready(function() {
+$('div').click(function() {
+$(this).effect('blind', {direction: 'right'}, 1000);
+
+});
+});
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 31 июл 2018 в 14:52

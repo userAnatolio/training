@@ -1,0 +1,35 @@
+
+13. Дан ul. Дан массив. Вставьте элементы этого массива в конец ul так, чтобы каждый элемент стоял в своем li. Сделайте так, чтобы к вставляемым li было привязано следующее событие: по нажатию на li она должна вывести на экран свой текст.
+
+<body>
+
+<div>
+
+<ul id="ul"></ul>
+<input type="submit" onclick="func()">
+
+</div>
+
+<script>
+var arr = ['яблоко', 'апельсин', 'груша'];
+function func() {
+var elem = document.getElementById('ul');
+for(var i = 0; i < arr.length; i++) {
+var li = document.createElement('li');
+li.innerHTML = arr[i];
+li.addEventListener('click', text);
+elem.appendChild(li);
+}
+}
+function text() {
+alert(this.innerHTML);
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 30 апр 2018 в 5:09

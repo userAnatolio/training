@@ -1,0 +1,12 @@
+
+40. То же самое с учетом padding, границы и margin
+
+<script>
+$('.wrapper > div:lt(3)').each(function () {
+alert('Длина: ' + $(this).outerWidth(true) + ' высота: ' + $(this).outerHeight(true));
+});
+</script>
+*********
+*********
+*********
+********* 12 июл 2018 в 17:04

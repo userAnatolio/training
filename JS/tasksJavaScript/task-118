@@ -1,0 +1,18 @@
+
+14. Преобразуйте строку 'var_test_text' в 'varTestText'. Скрипт, конечно же, должен работать с любыми аналогичными строками.
+
+<script>
+var str = 'var_test_text';
+var arr = str.split('_');
+for(var i = 1; i < arr.length; i++) {
+if(arr[i] != 0) {
+arr[i] = arr[i].substr(0,1).toUpperCase() + arr[i].substr(1);
+}
+}
+var result = arr.join('');
+alert(result);
+</script>
+*********
+*********
+*********
+********* 11 апр 2018 в 7:01

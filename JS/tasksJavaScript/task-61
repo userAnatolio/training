@@ -1,0 +1,22 @@
+
+4. С помощью цикла найдите сумму чисел от 1 до 100.
+
+<script>
+var result = 0;
+for(var i = 0; i<=100; i++) {
+result += i;
+}
+document.write(result + '<br>');
+
+var result1 = 0;
+var i = 0;
+while(i<=100) {
+result1 += i;
+i++;
+}
+document.write(result1);
+</script>
+*********
+*********
+*********
+********* 26 мар 2018 в 0:25

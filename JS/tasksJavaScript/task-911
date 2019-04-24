@@ -1,0 +1,42 @@
+
+1. Установите куку с именем 'name' и значением 'Иван'. Выведите содержимое этой куки на экран.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+<link rel="stylesheet" href="jquery/jquery-ui.min.css">
+<script src="jquery/jquery.min.js"></script>
+<script src="jquery/jquery-ui.min.js"></script>
+<script src="cookies.min.js"></script>
+</head>
+
+<body>
+
+<script>
+
+document.cookie = "name=Иван";
+
+function getCookie(name) {
+var matches = document.cookie.match(new RegExp(
+"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+));
+return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+alert(getCookie('name'));
+
+
+</script>
+
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 авг 2018 в 0:38

@@ -1,0 +1,17 @@
+
+3. Повторите страницу по данному по образцу:
+
+<script>
+function func() {
+document.getElementById('test').outerHTML = '<h3>' + test.innerHTML + '</h3>';
+}
+</script>
+<div>
+<p id="test">При нажатии на кнопку абзац станет h3, но текст останется.</p>
+<input type="submit" onclick="func()">
+</div>
+</body>
+*********
+*********
+*********
+********* 23 апр 2018 в 4:06

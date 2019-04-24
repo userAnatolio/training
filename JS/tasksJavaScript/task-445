@@ -1,0 +1,38 @@
+
+3. Дан инпут. В него вводится число. По потери фокуса найдите сумму цифр этого числа.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<input value="222" id="num">
+
+<input type="submit" onclick="func()">
+
+<p id="result"></p>
+
+<script>
+function func() {
+var sum = 0;
+var num = document.getElementById('num');
+var arr = num.value.split('');
+for(var i = 0; i < arr.length; i++) {
+sum += Number(arr[i]);
+}
+document.write(sum);
+}
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 10 мая 2018 в 12:43

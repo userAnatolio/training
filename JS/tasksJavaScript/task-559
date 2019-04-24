@@ -1,0 +1,22 @@
+
+7. Дан массив с числами. Оставьте в нем только четные числа.
+
+<script>
+
+var arr = [-2, 5, 1, -5, -1, 1, 3, 4, -1];
+
+var resultArr = arr.filter(function(elem) {
+if(elem % 2 == 0) {
+return true;
+}
+else {
+return false;
+}
+});
+console.log(resultArr);
+
+</script>
+*********
+*********
+*********
+********* 8 июл 2018 в 4:37

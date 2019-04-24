@@ -1,0 +1,17 @@
+
+6. Повторите страницу по данному по образцу:
+
+<body>
+<script>
+function func() {
+var elem = document.getElementById('test');
+elem.value = 'ой поменял текст';
+}
+</script>
+<input type = "submit" onclick = "func()">
+<input type = "text" value = "КУ-КУ" id = "test">
+</body>
+*********
+*********
+*********
+********* 19 апр 2018 в 0:00

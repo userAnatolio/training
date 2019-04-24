@@ -1,0 +1,53 @@
+
+<script>
+
+var yes = 0;
+var no = 0;
+var none = 0;
+var statistic = 0;
+var num = 0;
+
+var question = document.getElementsByClassName('question');
+var show = document.getElementsByClassName('show');
+var result = document.getElementById('result');
+var stop = document.getElementById('stop');
+show[num].style.display = 'block';
+
+function showQuestion() {
+num++;
+show[num - 1].style.display = 'none';
+show[num].style.display = 'block';
+if(num + 1 == show.length) {
+result.style.display = "inline";
+stop.style.display = "none"
+}
+}
+
+function func() {
+for(var i = 0; i < question.length; i++) {
+
+for(var j = 0; j < question[i].children.length; j++) {
+if(question[i].children[j].children[0].checked == true) {
+if(question[i].children[j].children[0].value == 1) {
+yes++;
+}
+else {
+no++;
+}
+}
+
+}
+}
+none = question.length - (yes + no);
+statistic = Math.round(yes/(question.length/100));
+alert('Правильных ответов: ' + yes + ' (' + statistic + '%)\n' + 'неправильных ответов: ' + no + '\n' + 'без ответа: ' + none);
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 3 июн 2018 в 3:38

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<form>
+<input value="1">
+<input value="2">
+<input value="3">
+</form>
+
+<input value="" id="text" placeholder="результат">
+<input type="submit" onclick="func()">
+<script>
+function func() {
+var forms = document.forms;
+var sum = 0;
+for (var i = 0; i < forms.length; i++) {
+for(var j = 0; j < forms[i].elements.length; j++) {
+var result = Number(forms[i].elements[j].value);
+sum = sum + result;
+}
+}
+var text = document.getElementById('text');
+text.value = sum;
+}
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 10 мая 2018 в 10:01

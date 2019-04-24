@@ -1,0 +1,85 @@
+
+55. Сделайте селекты день, мес, год. Сделайте так, чтобы не корректную дату нельзя было выбрать (например, 30 февраля нельзя, а 30 марта можно или 29 февраля можно, но только в високосный год).
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+td {
+border: 1px solid black;
+width: 250px;
+height: 50px;
+text-align: center;
+}
+.activ {
+background: red;
+}
+</style>
+
+</head>
+
+<body>
+
+<select id="month">
+<option value="1">Январь</option>
+<option value="2">Февраль</option>
+<option value="3">Март</option>
+<option value="4">Апрель</option>
+<option value="5">Май</option>
+<option value="6">Июнь</option>
+<option value="7">Июль</option>
+<option value="8">Август</option>
+<option value="9">Сентябрь</option>
+<option value="10">Октябрь</option>
+<option value="11">Ноябрь</option>
+<option value="12">Декабрь</option>
+</select>
+
+<select id="year" style="width: 100px">
+</select>
+
+<select id="day" style="width: 100px">
+</select><br>
+
+<script>
+
+var month = document.getElementById('month');
+var days = document.getElementById('day');
+var years = document.getElementById('year');
+month.addEventListener('change', getYear);
+
+function getYear() {
+var date = new Date();
+for(var i = 1970; i <= date.getFullYear(); i++) {
+var newYear = document.createElement('option');
+newYear.innerHTML = i;
+newYear.value = i;
+year.appendChild(newYear);
+}
+year.addEventListener('change', getDays)
+}
+
+function getDays() {
+var index = month.selectedIndex;
+var newMonth = month[index].value;
+var indexYear = year.selectedIndex;
+var newYear = year[indexYear].value;
+var date = new Date(newYear, newMonth, 0);
+var day = date.getDate();
+for(var i = 1; i <= day; i++) {
+var newDay = document.createElement('option');
+newDay.innerHTML = i;
+days.appendChild(newDay);
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 27 мая 2018 в 17:55

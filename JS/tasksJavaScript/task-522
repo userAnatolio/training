@@ -1,0 +1,58 @@
+
+<script>
+
+var arr = [];
+var key = '';
+
+var question = document.getElementsByClassName('question');
+var show = document.getElementsByClassName('show');
+var result = document.getElementById('result');
+var text = document.getElementsByClassName('text');
+var start = document.getElementById('start');
+var p = document.getElementById('p');
+
+function func() {
+for(var i = 0; i < question.length; i++) {
+
+for(var j = 0; j < question[i].children.length; j++) {
+
+if(question[i].children[j].children[0].checked == true && text[i].value.length == 0) {
+key = 'Ответ на вопрос ' + (i+1);
+arr[key] = question[i].children[j].lastElementChild.innerHTML;
+}
+
+}
+if(text[i].value.length > 1) {
+key = 'Ответ на вопрос ' + (i+1);
+arr[key] = text[i].value;
+}
+}
+
+for (key in arr) {
+p.innerHTML += key + ': ' + arr[key] + '<br>';
+}
+
+console.log(arr);
+start.style.display = 'inline';
+result.style.display = 'none';
+
+}
+
+function restart() {
+for(var i = 0; i < text.length; i++) {
+text[i].value = '';
+}
+arr = [];
+start.style.display = 'none';
+result.style.display = 'inline';
+
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 5 июн 2018 в 9:06

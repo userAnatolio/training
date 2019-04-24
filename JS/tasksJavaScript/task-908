@@ -1,0 +1,15 @@
+
+2. Дан объект {a: 'aaa', b: 'bbb'}. Преобразуйте его в JSON.
+
+<script>
+
+var obj = {a: 'aaa', b: 'bbb'};
+
+var result = JSON.stringify(obj);
+console.log(result);
+
+</script>
+*********
+*********
+*********
+********* 13 авг 2018 в 2:44

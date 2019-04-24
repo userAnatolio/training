@@ -1,0 +1,28 @@
+
+19. Дан элемент #elem. Найдите первого потомка этого элемента и сделайте его текст красного цвета.
+
+<body>
+
+<div id="elem">
+<p>абзац</p>
+<p>абзац</p>
+
+</div>
+
+<input type="submit" onclick="func()">
+
+<script>
+
+function func() {
+var elem = document.getElementById('elem');
+elem.firstElementChild.style.color = 'red';
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 30 апр 2018 в 6:55

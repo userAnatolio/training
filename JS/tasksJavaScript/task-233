@@ -1,0 +1,20 @@
+
+13. Повторите страницу по данному по образцу:
+
+<body>
+<script>
+function func(elem) {
+elem.src = "2.jpg";
+}
+function func2(elem) {
+elem.src = "1.jpg";
+}
+</script>
+
+<img src="1.jpg" width="200px" onmouseover="func(this)" onmouseout="func2(this)">
+
+</body>
+*********
+*********
+*********
+********* 19 апр 2018 в 1:56

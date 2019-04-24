@@ -1,0 +1,31 @@
+
+34. Всплывающая подсказка
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+<link rel="stylesheet" href="jquery/jquery-ui.min.css">
+<script src="jquery/jquery.min.js"></script>
+<script src="jquery/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+<script>
+$(document).ready(function(){
+$( document ).tooltip();
+});
+</script>
+<p <a href="#" title="Описание ссылки находится в атрибуте title.">Наведи на меня мышкой!</a></p>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 2 авг 2018 в 12:34

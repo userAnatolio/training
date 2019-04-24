@@ -1,0 +1,96 @@
+
+52. Дана таблица. По нажатию на ячейку в ней появляется инпут с содержимым этой ячейки и кнопка сохранить. Можно поредактировать текст в инпуте, сохранить - и текст ячейки поменяется.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+td {
+border: 1px solid black;
+width: 250px;
+height: 50px;
+text-align: center;
+}
+.activ {
+background: red;
+}
+</style>
+</head>
+
+<body>
+
+<table id="parent">
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+
+</table>
+
+<script>
+
+var submit = document.createElement('input');
+
+var td = document.querySelectorAll('td');
+for(var i = 0; i < td.length; i++) {
+td[i].addEventListener('click', func1);
+}
+
+function func1() {
+
+var text = this.innerHTML;
+this.style.display = "none";
+var input = document.createElement('input');
+var submit = document.createElement('input');
+submit.type = "submit";
+submit.value = "редактировать";
+input.value = text;
+this.parentElement.insertBefore(submit, this.nextSibling);
+this.parentElement.insertBefore(input, this.nextSibling);
+
+input.addEventListener('change', func2);
+function func2() {
+this.previousElementSibling.innerHTML = this.value;
+this.previousElementSibling.style.display = "";
+this.parentElement.removeChild(this.nextSibling);
+this.parentElement.removeChild(this);
+}
+
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 25 мая 2018 в 10:36

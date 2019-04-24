@@ -1,0 +1,14 @@
+
+10.Выведите на экран количество секунд с начала дня до настоящего момента времени.
+
+<script>
+var date = new Date();
+var date1 = date.getTime();
+var date2 = Date.parse('2018-04-28T00:00:00');
+var result = (date1 - date2) / 1000;
+alert(result);
+</script>
+*********
+*********
+*********
+********* 28 апр 2018 в 8:12

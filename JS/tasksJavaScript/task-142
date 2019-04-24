@@ -1,0 +1,12 @@
+
+14. Дан объект {js:'test', jq: 'hello', css: 'world'}. Получите массив его ключей.
+
+<script>
+var obj = {js:'test', jq: 'hello', css: 'world'};
+var result = Object.keys(obj);
+console.log(result);
+</script>
+*********
+*********
+*********
+********* 11 апр 2018 в 17:36

@@ -1,0 +1,32 @@
+
+12.Создайте инпут, в который пользователь вводит дату своего рождения в формате '2014-12-31' (с конкретным годом). По потери фокуса выведите под инпутом сколько дней осталось до его дня рождения. Воспользуйтесь методом Date.parse.
+
+<body>
+
+<script>
+
+function func() {
+var elem = document.getElementById('day');
+var value = String(elem.value);
+var arr = value.split('-');
+var date = new Date();
+arr[0] = String(date.getFullYear());
+var value = arr.join('-');
+var date1 = date.getTime();
+var date2 = Date.parse(value);
+var happy = Math.floor((date2 - date1)/1000/60/60/24);
+return alert('До вашего дня рождения осталось ' + happy + ' дней');
+}
+</script>
+
+<div>
+
+<input type="text" id="day" placeholder="введите дату" value="" onblur="func()">
+
+</div>
+
+</body>
+*********
+*********
+*********
+********* 28 апр 2018 в 10:04

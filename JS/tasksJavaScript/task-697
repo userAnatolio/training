@@ -1,0 +1,23 @@
+
+9. Дополнить предыдущую задачу: после первого наведению на ссылку следует отвязать от нее событие, которое добавляет href в конец текста.
+
+<body>
+
+<a href="www.privet.ru">Ссылка</a>
+<a href="www.privet.ru">Ссылка</a>
+<a href="www.privet.ru">Ссылка</a>
+
+<script>
+
+$('a').on('mousemove', function func() {
+$(this).append('(' + $(this).attr('href') + ')');
+$(this).off('mousemove', func);
+});
+
+</script>
+
+</body>
+*********
+*********
+*********
+********* 15 июл 2018 в 16:17

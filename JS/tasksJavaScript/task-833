@@ -1,0 +1,13 @@
+
+7. Дана строка 'aa aba abba abbba abca abea'. Напишите регулярку, которая найдет строки aa, aba, abba, abbba, не захватив abca abea.
+
+<script>
+var str = 'aa aba abba abbba abca abea';
+
+alert(str.replace(/ab*a/g, '!'));
+
+</script>
+*********
+*********
+*********
+********* 7 авг 2018 в 1:02

@@ -1,0 +1,27 @@
+
+4. Выведите на экран текущую дату-время в формате '12:59:59 31.12.2014'. Для решения этой задачи напишите функцию, которая будет добавлять 0 перед днями и месяцами, которые состоят из одной цифры (из 1.9.2014 сделает 01.09.2014).
+
+<script>
+var date = new Date();
+var hours = date.getHours();
+var min = date.getMinutes();
+var sec = date.getSeconds();
+var day = date.getDate();
+var month = date.getMonth();
+var Year = date.getFullYear();
+
+document.write(func(hours) + ':' + func(min) + ':' + func(sec) + ' ' + func(day) + '-' + func(month + 1)+ '-' + Year);
+
+function func(value) {
+if(value < 10) {
+return '0' + value;
+}
+else {
+return value;
+}
+}
+</script>
+*********
+*********
+*********
+********* 28 апр 2018 в 3:13

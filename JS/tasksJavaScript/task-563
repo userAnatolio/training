@@ -1,0 +1,18 @@
+
+На reduce, reduceRight
+11. Дан массив с числами. Найдите сумму этих чисел.
+
+<script>
+
+var arr = [1, 2, 3, 4, 5, 6];
+
+var result = arr.reduce(function(sum, elem) {
+return sum += elem;
+},0);
+console.log(result);
+
+</script>
+*********
+*********
+*********
+********* 8 июл 2018 в 4:38

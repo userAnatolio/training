@@ -1,0 +1,37 @@
+
+<script>
+var country = ["Австралия", "Австрия", "Азербайджан"];
+var text = document.getElementById('text');
+var element = document.getElementById('element');
+text.addEventListener('keyup', func);
+
+function func() {
+element.innerHTML = '';
+if(text.value.length > 0) {
+for(var i = 0; i < country.length; i++) {
+var num = text.value.length;
+var str = country[i];
+var str2 = str.substr(0,1).toLowerCase() + str.substr(1);
+if(str.substr(0, num) == text.value || str2.substr(0, num) == text.value) {
+var p = document.createElement('p');
+p.innerHTML = country[i];
+element.appendChild(p);
+p.addEventListener('click', func1);
+}
+}
+}
+}
+
+function func1() {
+text.value = this.innerHTML;
+element.innerHTML = '';
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 18 июн 2018 в 15:27

@@ -1,0 +1,25 @@
+
+23. Повторите страницу по данному по образцу:
+
+<body>
+<script>
+function func() {
+var elem1 = document.getElementById('test1');
+var elem2 = document.getElementById('test2');
+if(!isNaN(elem1.value)) {
+elem2.value = Number(elem1.value) * Number(elem1.value);
+}
+else {
+alert('не число!');
+}
+}
+</script>
+<input type="text" placeholder="введи число" id="test1"><br><br>
+<input type="text" value="результат" id="test2" disabled><br><br>
+<input type="submit" value="нажми на меня" onclick="func()">
+
+</body>
+*********
+*********
+*********
+********* 22 апр 2018 в 4:07

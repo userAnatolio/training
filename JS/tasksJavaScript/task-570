@@ -1,0 +1,20 @@
+
+2. Дан массив. Запишите последний элемент этого массива в переменную elem1, а предпоследний - в переменную elem2.
+
+<script>
+let arrElem = ['num1', 'num2', 'num3', 'num4', 'num5', 'num6'];
+var newArr = [];
+for(var i = arrElem.length -1; i >= 0; i--) {
+newArr.push(arrElem[i]);
+}
+var [ elem1, elem2] = newArr;
+
+console.log(elem1);
+console.log(elem2);
+console.log(newArr);
+
+</script>
+*********
+*********
+*********
+********* 8 июл 2018 в 4:40

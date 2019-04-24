@@ -1,0 +1,11 @@
+
+8. С помощью test определите, что переданная строка начинается с http или с https.
+
+<script>
+var result = /^(http|https)/.test('http://site.com');
+console.log(result);
+</script>
+*********
+*********
+*********
+********* 8 авг 2018 в 18:01

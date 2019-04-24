@@ -1,0 +1,13 @@
+
+35 Установите все неотмеченные чекбоксы в отмеченные и наоборот.
+
+<script>
+$('input.check').each(function (){
+if($(this).prop('checked') == true) {$(this).prop('checked', false);}
+else { $(this).prop('checked', true);}
+});
+</script>
+*********
+*********
+*********
+********* 12 июл 2018 в 16:23

@@ -1,0 +1,31 @@
+
+<div id="hey">А теперь все вместе!<div id="exit">x</div></div>
+
+<script>
+
+var hey = document.getElementById('hey');
+var exit = document.getElementById('exit');
+window.addEventListener('scroll', show);
+exit.addEventListener('click', close);
+var stat = false;
+var num = 1000;
+
+function show() {
+if(pageYOffset > num - 100 && pageYOffset < num + 100 && stat == false) {
+hey.style.display = 'block';
+stat = true;
+}
+}
+
+function close() {
+hey.style.display = 'none';
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 30 июн 2018 в 19:39

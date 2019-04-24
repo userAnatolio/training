@@ -1,0 +1,16 @@
+
+7. Узнайте, какой был 7-го января 2015 года.
+
+<script>
+var date = new Date(2017, 0, 7);
+var num = date.getDay();
+function func(num) {
+var day = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+return day[num]
+}
+alert(func(num));
+</script>
+*********
+*********
+*********
+********* 28 апр 2018 в 3:24

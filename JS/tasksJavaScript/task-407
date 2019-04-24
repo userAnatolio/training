@@ -1,0 +1,41 @@
+
+1. Повторите поведение страницы по данному образцу:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+#elem {
+width: 500px;
+height: 500px;
+border: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+<div id="elem">
+
+</div>
+
+<input type="submit" id="click">
+
+<script>
+
+var elem = document.getElementById('elem');
+elem.onmousemove = func;
+function func(event) {
+elem.innerHTML = 'X: ' + event.clientX + 'Y: ' + event.clientY;
+}
+
+</script>
+
+
+</body>
+</html>
+*********
+*********
+*********
+********* 6 мая 2018 в 10:55

@@ -1,0 +1,40 @@
+
+2. Даны N инпутов с классом .num и кнопка. По нажатию на кнопку получите числа, стоящие в этих инпутах и запишите их сумму в абзац с id="result".
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<input value="1" class="num">
+<input value="2" class="num">
+<input value="3" class="num">
+
+<input type="submit" onclick="func()">
+
+<p id="result"></p>
+
+<script>
+function func() {
+var sum = 0;
+var result = document.getElementById('result');
+var obj = document.getElementsByClassName('num');
+for(var i = 0; i < obj.length; i++) {
+sum += Number(obj[i].value);
+}
+result.innerHTML = sum;
+}
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 10 мая 2018 в 11:36

@@ -1,0 +1,25 @@
+
+5. Сделайте функцию each, которая первым параметром принимает массив, а вторым - функцию, которая применится к каждому элементу массива. Функция each должна вернуть измененный массив.
+
+<script>
+
+var newArr = [ 1, 2, 3, 4 ];
+
+function each(arr, func) {
+return func(arr);
+}
+
+var squareElement = function(arr) {
+for(var i = 0; i < arr.length; i++) {
+arr[i] = arr[i] * arr[i];
+}
+return arr;
+}
+
+console.log(squareElement(newArr));
+
+</script>
+*********
+*********
+*********
+********* 8 июл 2018 в 4:35

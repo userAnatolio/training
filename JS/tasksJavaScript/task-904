@@ -1,0 +1,15 @@
+
+11. Удалите одной регуляркой все повторяющиеся слова из строки, например для 'dsf xxx xxx sd' должно вернуть 'dsf xxx sd'.
+
+<script>
+
+var str = 'Hello hello my friend!';
+var result = str.replace(/(\w+)\s\1/ig, '$1');
+
+alert(result);
+
+</script>
+*********
+*********
+*********
+********* 9 авг 2018 в 18:16

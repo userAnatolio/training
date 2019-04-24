@@ -1,0 +1,23 @@
+
+3. Найдите все абзацы <p>, и замените их на тег <div> с таким же содержимым.
+
+<body>
+
+<p class="www">я абзац</p>
+<p class="www">я абзац</p>
+<p class="www">я абзац</p>
+<p class="www">я абзац</p>
+
+<script>
+
+$('p.www').each(function() {
+$(this).replaceWith('<div>' + $(this).html() + '</div>');
+});
+
+</script>
+
+</body>
+*********
+*********
+*********
+********* 17 июл 2018 в 0:15

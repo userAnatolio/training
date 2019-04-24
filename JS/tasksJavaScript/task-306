@@ -1,0 +1,72 @@
+
+8. Создайте отсчет до полуночи:
+
+<style>
+div {
+width: 300px;
+margin: 0 auto;
+text-align: center;
+}
+
+table {
+text-align: center;
+border: 1px solid black;
+padding: 10px;
+margin: 0 auto;
+}
+td {
+padding: 0 10px;
+font-size: 20px;
+font-weight: bold;
+}
+</style>
+</head>
+
+<body onload="start()">
+
+<script>
+
+function start() {
+setInterval(clock, 1000);
+}
+
+function clock() {
+var elem1 = document.getElementById('text1');
+var elem2 = document.getElementById('text2');
+var elem3 = document.getElementById('text3');
+var date = new Date();
+elem1.innerHTML = ziro(date.getHours());
+elem2.innerHTML = ziro(date.getMinutes());
+elem3.innerHTML = ziro(date.getSeconds());
+}
+
+function ziro(num) {
+if(num < 10) {
+return '0' + num;
+}
+else return num;
+}
+</script>
+
+<div>
+<h3>До полуночи осталось</h3>
+<table>
+<tr>
+<td>часы</td>
+<td>минуты</td>
+<td>секунды</td>
+</tr>
+<tr>
+<td id="text1">00</td>
+<td id="text2">00</td>
+<td id="text3">00</td>
+</tr>
+</table>
+
+</div>
+
+</body>
+*********
+*********
+*********
+********* 29 апр 2018 в 3:32

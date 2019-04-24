@@ -1,0 +1,68 @@
+
+9. Дан инпут. В него можно ввести данные, затем поредактировать их, затем еще поредактировать. Пусть инпут хранит историю своих изменений (даже после перезагрузки страницы). Сверху над инпутом должны появится стрелочки, с помощью которых можно перемещаться по истории.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+input {
+margin: 20px 10px;
+}
+
+</style>
+<link rel="stylesheet" href="jquery/jquery-ui.min.css">
+<script src="jquery/jquery.min.js"></script>
+<script src="jquery/jquery-ui.min.js"></script>
+<script src="cookies.min.js"></script>
+<script src="jquery.cookie.js"></script>
+</head>
+
+<body>
+
+<button id="left">«</button><input id="text"><button id="right">»</button>
+
+
+<script>
+
+$(document).ready(function(){
+var history = [];
+$('#text').on('change', function() {
+history.push($(this).val());
+console.log(history);
+$.cookie("history", history.join(','), { expires: 7});
+});
+
+if($.cookie('history') ) {
+var checkArr = $.cookie('history').split(',');
+var num = checkArr.length;
+var key = num;
+}
+
+
+$('#left').on('click', function() {
+key--;
+if(key >= 0) {
+$('#text').val(checkArr[key]);
+}
+});
+
+$('#right').on('click', function() {
+key++;
+if(key < checkArr.length) {
+$('#text').val(checkArr[key]);
+}
+});
+
+});
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 19 авг 2018 в 16:27

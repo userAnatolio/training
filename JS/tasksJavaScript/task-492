@@ -1,0 +1,44 @@
+
+45. В инпут через запятую вводятся страны. По нажатию на кнопку сделайте так, чтобы эти страны записались в ul под инпутом (каждая страна отдельный li).
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+</head>
+
+<body>
+
+<input id="text">
+<input type="submit" onclick="func()">
+
+<ul id="ul">
+</ul>
+
+<script>
+
+var text = document.getElementById('text');
+var ul = document.getElementById('ul');
+var arr = [];
+
+function func() {
+arr = text.value.split(',');
+for(var i = 0; i < arr.length; i++) {
+var li = document.createElement('li');
+li.innerHTML = arr[i];
+ul.appendChild(li);
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 19 мая 2018 в 9:11

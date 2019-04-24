@@ -1,0 +1,36 @@
+
+32. Повторите страницу по данному по образцу (русификация):
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+<link rel="stylesheet" href="jquery/jquery-ui.min.css">
+<script src="jquery/jquery.min.js"></script>
+<script src="jquery/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+<script>
+$(document).ready(function(){
+$("#datepicker").datepicker({
+dayNamesMin: ['Вс', 'Пн' , 'Вт' , 'Ср' , 'Чт' , 'Пт' , 'Сб' ],
+monthNames: ['Январь' , 'Февраль' , 'Март' , 'Апрель' , 'Май' , 'Июнь' , 'Июль' , 'Август' , 'Сентябрь' , 'Октябрь' , 'Ноябрь' , 'Декабрь'],
+dateFormat: "dd-mm-yy"
+});
+});
+</script>
+
+<input type="text" id="datepicker">
+
+</body>
+</html>
+*********
+*********
+*********
+********* 2 авг 2018 в 12:25

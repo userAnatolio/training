@@ -1,0 +1,43 @@
+
+42. Дан инпут. Даны li. В инпут пишется номер. Сделайте так, чтобы по вводу числа, li с заданным номером покрасился в красный цвет.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<input id="text" onblur="func()">
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+
+<script>
+
+var text = document.getElementById('text');
+var li = document.getElementsByTagName('li');
+
+function func() {
+if(text.value > 3 || text.value < 1) {
+alert('Такой лишки нет');
+}
+else {
+li[text.value - 1].style.background = 'red';
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 18 мая 2018 в 3:03

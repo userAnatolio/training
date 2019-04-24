@@ -1,0 +1,79 @@
+
+4. Реализуйте тест, в котором показывается один вопрос, 5 чекбоксов для ответа (может быть несколько правильных ответов). Под чекбоксами ссылка 'следующий вопрос'. По нажатию на эту ссылку вместо текущего вопроса показывается следующий. Когда вопросы заканчиваются, в последнем вопросе будет стоять ссылка не 'следующий вопрос', а 'показать результат'.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+#wrapping {
+border: 1px solid;
+width: 900px;
+}
+
+input:checked {
+color: red;
+}
+
+.show, #result{
+display: none;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapping">
+
+<ul>
+
+<li class="show">
+<p>Столица Китая?</p>
+<ol class="question">
+<li><input type="checkbox" name="radio1">Горшки</li>
+<li><input type="checkbox" name="radio1">Токио</li>
+<li><input type="checkbox" name="radio1">Пулкино</li>
+<li><input type="checkbox" name="radio1" value='1'>Пекин</li>
+<li><input type="checkbox" name="radio1">Тайланд</li>
+</ol>
+</li>
+
+<li class="show">
+<p>Столица Италии?</p>
+<ol class="question">
+<li><input type="checkbox" name="radio2" value='1'>Рим</li>
+<li><input type="checkbox" name="radio2">Бутово</li>
+<li><input type="checkbox" name="radio2">Лохмандия</li>
+<li><input type="checkbox" name="radio2">Голивуд</li>
+<li><input type="checkbox" name="radio2">Грим</li>
+</ol>
+</li>
+
+<li class="show">
+<p>Столица Испании?</p>
+<ol class="question">
+<li><input type="checkbox" name="radio3">Гуково</li>
+<li><input type="checkbox" name="radio3">Харьков</li>
+<li><input type="checkbox" name="radio3" value='1'>Мадрид</li>
+<li><input type="checkbox" name="radio3">Барселона</li>
+<li><input type="checkbox" name="radio3">Банкок</li>
+</ol>
+</li>
+
+<ul>
+
+<br>
+
+<input type="submit" value="Следующий" onclick="showQuestion()" id="stop">
+<input type="submit" value="Проверить" onclick="func()" id="result">
+
+</div>
+*********
+*********
+*********
+********* 2 июн 2018 в 16:36

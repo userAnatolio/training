@@ -1,0 +1,21 @@
+
+2. Дана строка вида 'var_text_hello'. Сделайте из него текст 'varTextHello'.
+
+<script>
+var str = 'var_text_hello';
+function ucfirst(str) {
+var result = [];
+var split = str.split('_');
+for(var i = 0; i < split.length; i++) {
+result[i] = split[i].substr(0, 1).toUpperCase() + split[i].substr(1);
+}
+str = result.join('');
+str = str.substr(0, 1).toLowerCase() + str.substr(1);
+return alert(str);
+}
+ucfirst(str);
+</script>
+*********
+*********
+*********
+********* 17 апр 2018 в 3:07

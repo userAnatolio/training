@@ -1,0 +1,19 @@
+
+На окружности
+
+14. Используя метод arc, нарисуйте на канвасе следующую фигуру:
+
+<script>
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+ctx.strokeStyle = 'blue';
+ctx.arc(200, 200, 30, 0, getRadians(360));
+ctx.stroke();
+function getRadians(degrees) {
+return (Math.PI/180)*degrees;
+}
+</script>
+*********
+*********
+*********
+********* 27 авг 2018 в 1:09

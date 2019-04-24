@@ -1,0 +1,41 @@
+
+21. Даны N картинок размера 30px. По нажатию на картинку под ними эта картинка появляется размером в 50px.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<img src="1.png" height="30px">
+<img src="2.png" height="30px">
+<img src="3.png" height="30px">
+<br>
+<img id="big" height="50px">
+
+
+
+<script>
+var img = document.getElementsByTagName('img');
+for(var i = 0; i < img.length; i++) {
+img[i].addEventListener('click', func);
+}
+
+function func() {
+var img = document.getElementById('big');
+img.src = this.src;
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 мая 2018 в 12:09

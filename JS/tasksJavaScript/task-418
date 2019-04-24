@@ -1,0 +1,49 @@
+
+1. Дан ul, в нем несколько li. Под ul сделайте кнопку, по нажатию на которую в конец ul будет добавляться новый li с текстом 'пункт'. Сделайте так, чтобы при клике на каждый li, ему в конец добавлялся '!'. Это должно работать и для вновь добавленных li. Задачу решите с помощью делегирования (то есть событие должно быть навешано на ul).
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<ul id="ul">
+<li>Лишка1<i> я курсив</i></li>
+<li>Лишка2<i> я курсив</i></li>
+<li>Лишка3<i> я курсив</i></li>
+</ul>
+
+<input type="submit" id="elem">
+
+<script>
+
+var elem = document.getElementById('elem');
+var ul = document.getElementById('ul');
+elem.addEventListener('click', func);
+
+function func() {
+var li = document.createElement('li');
+li.innerHTML = 'Пункт';
+ul.appendChild(li);
+}
+
+ul.addEventListener('click', addSign);
+
+function addSign() {
+var li = event.target.closest('li')
+li.innerHTML += '!';
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 7 мая 2018 в 6:58

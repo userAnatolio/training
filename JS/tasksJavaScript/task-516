@@ -1,0 +1,134 @@
+
+<body>
+
+<div id="wrapping">
+<div id="game">
+<div class="cell" value="0"></div>
+<div class="cell" value="1"></div>
+<div class="cell" value="2"></div>
+<div class="cell" value="3"></div>
+<div class="cell" value="4"></div>
+<div class="cell" value="5"></div>
+<div class="cell" value="6"></div>
+<div class="cell" value="7"></div>
+<div class="cell" value="8"></div>
+</div>
+<p id="message">Ходи</p>
+<button id="restart">Начать заново</button>
+<div id="result">
+<p>Выиграл 0:<span id="result_0"></span></p>
+<p>Выиграл x:<span id="result_x"></span></p>
+<p>Ничья:<span id="draw"></span></p>
+</div>
+</div>
+
+<script>
+
+var cells = document.getElementsByClassName('cell');
+var message = document.getElementById('message');
+var restart = document.getElementById('restart');
+var draw = document.getElementById('draw');
+var zero = document.getElementById('result_0');
+var x = document.getElementById('result_x');
+
+var value = 'x';
+var data = [];
+var count = 0;
+
+var index = [
+[0, 1, 2],
+[3, 4, 5],
+[6, 7, 8],
+[0, 3, 6],
+[1, 4, 7],
+[2, 5, 8],
+[0, 4, 8],
+[2, 4, 6]
+];
+
+var num1 = 0;
+var num2 = 0;
+var num = 0;
+
+for (var i = 0; i < cells.length; i++) {
+player(cells[i]);
+}
+
+function player(cell) {
+cell.addEventListener('click', start);
+
+function start() {
+if(!cell.innerHTML) {
+cell.innerHTML = value;
+var id = cell.getAttribute('value');
+data[id] = value;
+count++;
+
+restart.addEventListener('click', clear);
+
+if(bingo()) {
+message.innerHTML = 'Выиграл: ' + value;
+if(value == 'x') {
+num1++;
+x.innerHTML = num1;;
+}
+else {
+num2++;
+zero.innerHTML = num2;;
+}
+message.innerHTML = 'Выиграл ' + value;
+clear();
+}
+
+else {
+goOn();
+}
+
+if(count >= 9) {
+num++;
+draw.innerHTML = num;
+message.innerHTML = 'Ничья, начать заново?';
+}
+
+}
+}
+}
+
+function bingo() {
+for(var i = 0; i < index.length; i++) {
+var id = index[i];
+var check = data[id[0]] && data[id[0]] == data[id[1]] && data[id[1]] == data[id[2]];
+if(check) {
+return true;
+}
+}
+return false;
+}
+
+function goOn() {
+if(value == 'x') {
+value = '0';
+message.innerHTML = 'ходит 0';
+}
+else {
+value = 'x';
+message.innerHTML = 'ходит x';
+}
+}
+
+function clear() {
+for (var i = 0; i < cells.length; i++) {
+cells[i].innerHTML = '';
+}
+count = 0;
+data = [];
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 2 июн 2018 в 1:18

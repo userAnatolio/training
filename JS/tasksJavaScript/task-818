@@ -1,0 +1,21 @@
+
+38. Повторите страницу по данному по образцу (модальное окно):
+
+<body>
+
+<script>
+$(document).ready(function(){
+$("#dialog").dialog({title: 'Простое диалоговое окно', autoOpen: false, modal: true});
+$('#show').click(function(){$('#dialog').dialog("open")});
+$('#hide').click(function(){$('#dialog').dialog("close")});
+});
+</script>
+<p id="show">Показать диалоговое окно</p>
+<p id="hide">Скрыть диалоговое окно</p>
+<div id="dialog">Содержимое диалогового окна</div>
+
+</body>
+*********
+*********
+*********
+********* 2 авг 2018 в 13:35

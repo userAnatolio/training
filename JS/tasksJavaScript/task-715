@@ -1,0 +1,18 @@
+
+4. Найдите все чекбоксы на странице и заблокируйте четные из найденных.
+
+<script>
+
+$('input[type="checkbox"]:odd').prop('disabled', 'true');
+
+</script>
+
+<script>
+
+$(':checkbox:odd').prop('disabled', 'true');
+
+</script>
+*********
+*********
+*********
+********* 17 июл 2018 в 0:22

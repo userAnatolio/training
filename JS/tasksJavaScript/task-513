@@ -1,0 +1,108 @@
+
+1. Реализуйте калькулятор. Должны быть кнопки цифр и операций. По нажатию на кнопку '=' должен посчитаться результат. Совет: используйте фунцию eval.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+#wrapping {
+background: grey;
+border: 1px solid;
+padding: 5px;
+width: 400px;
+height: 350px;
+}
+
+#block {
+background: #f0f0f0;
+width: 100%;
+height: 100%;
+}
+
+#display {
+background: white;
+width: 100%;
+height: 60px;
+outline: 1px solid;
+margin: 5px auto;
+text-align: right;
+font-size: 30px;
+line-height: 60px;
+}
+
+button, input {
+width: 20%;
+height: 40px;
+margin: 2.1%;
+border: 1px solid;
+font-weight: bold;
+font-size: 20px;
+float: left;
+text-align: center;
+line-height: 40px;
+}
+
+b{ float: right; margin: 20px;}
+
+span{margin-right: 20px;}
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapping">
+<div id="block">
+<div id="display"><span id="span"></span></div>
+<button value="1">1</button>
+<button value="2">2</button>
+<button value="3">3</button>
+<button value="4">4</button>
+<button value="5">5</button>
+<button value="6">6</button>
+<button value="7">7</button>
+<button value="8">8</button>
+<button value="9">9</button>
+<button value="0">0</button>
+<button value="*">*</button>
+<button value="/">/</button>
+<button value="-">-</button>
+<button value="+">+</button>
+<button onclick="result()">=</button>
+<button value=".">.</button>
+<button onclick="deleteValue()">clear</button>
+<b><i>Pipetcin___made in Toly</i></b>
+</div>
+</div>
+
+<script>
+
+var value = '';
+var display = document.getElementById('span');
+var buttons = document.querySelectorAll('button');
+for(var i = 0; i < buttons.length; i++) {
+buttons[i].addEventListener('click', func);
+}
+
+function func() {
+value = display.innerHTML += this.value;
+}
+
+function result() {
+display.innerHTML = eval(value);
+}
+
+function deleteValue() {
+display.innerHTML = '';
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 29 мая 2018 в 12:34

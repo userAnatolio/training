@@ -1,0 +1,33 @@
+
+14. Дан элемент ul, а в нем li #elem. Вставьте перед элементом #elem новую li с текстом '!!!'.
+
+<body>
+
+<div>
+
+<ul id="elem1">
+<li id="elem2">???</li>
+</ul>
+
+<input type="submit" onclick="func()">
+
+</div>
+
+<script>
+
+function func() {
+var elem1 = document.getElementById('elem1');
+var elem2 = document.getElementById('elem2');
+var li = document.createElement('li');
+li.innerHTML = '!!!';
+elem1.insertBefore(li, elem2);
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 30 апр 2018 в 5:21

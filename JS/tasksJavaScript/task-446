@@ -1,0 +1,39 @@
+
+4. Дан инпут. В него вводятся числа через запятую. По потери фокуса найдите среднее арифметическое этих чисел (сумма делить на количество).
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<input value="222" id="num" onblur="func()">
+
+<script>
+function func() {
+var sum = 0;
+var j = 0;
+var num = document.getElementById('num');
+var arr = num.value.split('');
+for(var i = 0; i < arr.length; i++) {
+if(isNaN(Number(arr[i])) == false) {
+sum += Number(arr[i]);
+j++
+}
+}
+result = sum/j;
+document.write('средне арифметическое: ' + result);
+}
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 10 мая 2018 в 12:44

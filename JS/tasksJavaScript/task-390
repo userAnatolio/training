@@ -1,0 +1,18 @@
+
+14. Дан элемент #elem с вертикальной полосой прокрутки. По нажатию на кнопку прокрутите его до позиции 100px от нижнего края элемента.
+
+<input type="submit" onclick="func()">
+
+<script>
+
+function func() {
+var elem = document.getElementById('elem');
+var height = elem.scrollHeight;
+var newHeigth = height - 100;
+elem.scrollTop = newHeigth;
+}
+</script>
+*********
+*********
+*********
+********* 3 мая 2018 в 16:19

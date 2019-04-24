@@ -1,0 +1,27 @@
+
+16.Дан элемент #elem. Вставьте после него span с текстом '!!!'.
+
+<body>
+
+<div id="elem">
+
+
+</div>
+
+<input type="submit" onclick="func()">
+
+<script>
+
+function func() {
+var elem = document.getElementById('elem');
+elem.insertAdjacentHTML('afterEnd', '<span>Новый азац</span>');
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 30 апр 2018 в 5:48

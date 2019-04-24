@@ -1,0 +1,16 @@
+
+40. Найдите всех родителей элемента #test и создайте массив из CSS классов этих родителей.
+
+<script>
+var arr = [];
+$('#test').parents().each(function () {
+if($(this).attr('class')) {
+arr.push($(this).attr('class'));
+}
+});
+console.log(arr);
+</script>
+*********
+*********
+*********
+********* 17 июл 2018 в 15:58

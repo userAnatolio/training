@@ -1,0 +1,16 @@
+
+15. Найдите и удалите все комментарии CSS.
+
+<script>
+
+var str = 'font-family: Arial, Verdana, sans-serif; /* Семейство шрифтов */';
+
+
+var result = str.replace(/\/\*.+\*\//g, "");
+alert(result);
+
+</script>
+*********
+*********
+*********
+********* 8 авг 2018 в 20:24

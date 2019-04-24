@@ -1,0 +1,18 @@
+
+20. Повторите страницу по данному по образцу:
+
+<body>
+<script>
+function func() {
+var elem = document.getElementById('test');
+elem.value = 'мои css классы: ' + elem.className;
+}
+</script>
+<input type="text" value="ку-ку" id="test" class="eee www ddd">
+<input type="submit" value="нажми на меня" onclick="func()">
+
+</body>
+*********
+*********
+*********
+********* 21 апр 2018 в 23:57

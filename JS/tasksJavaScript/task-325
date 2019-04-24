@@ -1,0 +1,33 @@
+
+5. Дан элемент #elem. Узнайте количество его классов.
+
+<body id="elem">
+
+<div>
+<input type="submit" onclick="func()">
+<input type="submit" onclick="func2()">
+
+
+</div>
+
+<script>
+
+function func() {
+var elem = document.getElementById('elem');
+elem.classList.add('www');
+}
+
+function func2() {
+var elem = document.getElementById('elem');
+var result = elem.classList.length;
+alert(result);
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 29 апр 2018 в 16:43

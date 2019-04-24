@@ -1,0 +1,31 @@
+
+28. Дан ol. По нажатию на кнопку получите его последнего потомка и удалите его.
+<body>
+
+<ol id="parent">
+<li></li>
+<li></li>
+<li></li>
+</ol>
+
+</div>
+
+<input type="submit" onclick="func()">
+
+<script>
+
+function func() {
+var parent = document.getElementById('parent');
+parent.removeChild(parent.lastElementChild);
+
+}
+
+</script>
+
+
+
+</body>
+*********
+*********
+*********
+********* 30 апр 2018 в 8:39

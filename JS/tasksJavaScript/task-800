@@ -1,0 +1,17 @@
+
+24.
+
+<script>
+
+$('document').ready(function() {
+$('div').click(function() {
+$(this).effect('slide',{mode: 'hide', direction: 'up'}, 1000);
+
+});
+});
+
+</script>
+*********
+*********
+*********
+********* 31 июл 2018 в 16:22

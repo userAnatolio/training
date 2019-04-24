@@ -1,0 +1,70 @@
+
+<body>
+<div id="wrapping">
+<input placeholder="Введите задачу" id="text" autofocus>
+</div>
+<br><br>
+<div id="parentDiv"></div>
+
+
+<script>
+
+var text = document.getElementById('text');
+var parentDiv = document.getElementById('parentDiv');
+text.onkeypress = func;
+
+function func() {
+var code = event.keyCode;
+if(code == 13 && text.value.length > 0) {
+var div = document.createElement('div');
+var input = document.createElement('input');
+var button = document.createElement('button');
+var i = document.createElement('i');
+i.classList.add('class_i');
+input.type = "checkbox";
+button.innerHTML = "x";
+div.appendChild(input);
+div.appendChild(button);
+i.innerHTML = text.value;
+div.appendChild(i);
+parentDiv.appendChild(div);
+text.value = "";
+input.addEventListener('click', deleteCheckbox);
+button.addEventListener('click', deleteDiv);
+div.addEventListener('dblclick', changeDiv);
+}
+}
+
+function deleteCheckbox() {
+var parent = this.parentNode;
+parent.style.textDecoration = 'line-through';
+this.parentNode.removeChild(this);
+}
+
+function deleteDiv() {
+parentDiv.removeChild(this.parentNode);
+}
+
+function changeDiv() {
+var elems = this.getElementsByTagName('i');
+var str = elems[0].innerHTML;
+elems[0].innerHTML = '';
+var inputText = document.createElement('input');
+inputText.placeholder = "введите новое задание";
+elems[0].appendChild(inputText);
+inputText.focus();
+inputText.value = str;
+inputText.addEventListener('blur', function() {
+elems[0].innerHTML = inputText.value;
+elems[0].removeChild(inputText);
+});
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 12 июн 2018 в 12:59

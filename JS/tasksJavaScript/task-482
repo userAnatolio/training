@@ -1,0 +1,38 @@
+
+36. Дана ссылка. Дан чекбокс. По нажатию на ссылку меняйте состояние чекбокса с отмеченного на неотмеченное и наоборот.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<a href="#" onclick="func()">ссылка</a>
+
+<input type="checkbox" id="elem">
+
+<script>
+var elem = document.getElementById('elem');
+
+function func() {
+if(elem.checked) {
+elem.checked = false;
+}
+else {
+elem.checked = true;
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 17 мая 2018 в 1:49

@@ -1,0 +1,17 @@
+
+9.
+
+<script>
+
+$('document').ready(function() {
+$('div').click(function() {
+$(this).effect('drop', {direction: 'down'}, 1000);
+
+});
+});
+
+</script>
+*********
+*********
+*********
+********* 31 июл 2018 в 14:54

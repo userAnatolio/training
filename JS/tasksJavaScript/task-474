@@ -1,0 +1,50 @@
+
+30. Модифицируйте предыдущую задачу так, чтобы был еще один инпут, в котором задаются символы, из которых формируется эта случайна строка. Символы задаются без всяких разделитетей, в одну строку.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+</style>
+</head>
+
+<body>
+
+<input id="text">
+<input id="length" placeholder="длина строки" value="">
+<input id="elem" placeholder="символы" value="">
+<input type="submit" onclick="func()">
+
+<script>
+
+var text = document.getElementById('text');
+var str = '';
+
+var min = 0;
+var num = 0;
+
+function getRandomInt(min, max) {
+return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function func() {
+var length = document.getElementById('length');
+var elem = document.getElementById('elem');
+var arr = elem.value.split('');
+var max = arr.length - 1;
+for(var i = 0; i < length.value; i++) {
+str += arr[getRandomInt(min, max)];
+}
+text.value = str;
+str = "";
+}
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 15 мая 2018 в 20:45

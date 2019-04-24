@@ -1,0 +1,15 @@
+
+9. Повторите страницу по данному по образцу:
+
+<body>
+<script>
+function func(elem) {
+elem.value = 'ой поменялся текст';
+}
+</script>
+<input type = "text" onclick = "func(this)" value = "Привет">
+</body>
+*********
+*********
+*********
+********* 19 апр 2018 в 0:13

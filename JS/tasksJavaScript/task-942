@@ -1,0 +1,23 @@
+
+6. Нарисуйте на канвасе такую же фигуру, как показано в образце:
+
+<script>
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.strokeStyle = 'blue';
+ctx.moveTo(50, 50);
+ctx.lineTo(200, 50);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle = 'blue';
+ctx.moveTo(175, 25);
+ctx.lineTo(200, 50);
+ctx.lineTo(175, 75);
+ctx.stroke();
+</script>
+*********
+*********
+*********
+********* 27 авг 2018 в 0:41

@@ -1,0 +1,25 @@
+
+31. Дан инпут. Дана кнопка. По нажатию на кнопку клонируйте этот инпут.
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Пример веб-страницы</title>
+</head>
+<body>
+<input type="submit" onclick="func()" id="test">
+<script>
+function func() {
+var elem = document.getElementById('test');
+var clone = elem.cloneNode(true);
+elem.parentElement.appendChild(clone);
+}
+</script>
+</body>
+</html>
+*********
+*********
+*********
+********* 3 мая 2018 в 11:30

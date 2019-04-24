@@ -1,0 +1,37 @@
+
+3. Дан div 200 на 200 пикселей. Сделайте так, чтобы по клику на этот div на экран выводились координаты места нажатия. Задача на основы работы с объектом Event.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+div {
+width: 200px;
+height: 200px;
+border: 1px solid;
+}
+</style>
+</head>
+<body>
+
+<div id="elem"></div>
+
+<script>
+
+var elem = document.getElementById('elem');
+elem.addEventListener('click', func);
+
+function func(event) {
+this.innerHTML = 'x: ' + event.clientX +'y: ' + event.clientY;
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 8 мая 2018 в 9:34

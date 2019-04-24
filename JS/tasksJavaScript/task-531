@@ -1,0 +1,102 @@
+
+<script>
+
+var num = 1;
+var time = 60;
+var arr = [];
+var stop = false;
+var text = document.getElementById('text');
+var click = document.getElementById('click');
+var click2 = document.getElementById('click2');
+click2.style.display = 'none';
+var tableGame = document.getElementById('tableGame');
+var frame = document.getElementById('frame');
+frame.style.display = 'none';
+var arrColor = ['green', 'red', 'yellow', 'brown', 'blue', 'Orange'];
+
+
+function start() {
+gameStart();
+click.style.display = 'none';
+timerId = setInterval(timer, 1000);
+}
+
+function timer() {
+time--;
+text.innerHTML = 'Времени осталось: ' + time;
+if(time == 0) {
+clearInterval(timerId);
+text.innerHTML = 'Вы проиграли';
+click2.style.display = 'block';
+stopGame();
+}
+}
+
+function gameStart() {
+click2.style.display = 'none';
+frame.style.display = 'block';
+arrNum();
+for(var i = 0; i <= 4; i++) {
+var tr = document.createElement('tr');
+for(var j = 0; j <= 4; j++) {
+var td = document.createElement('td');
+td.innerHTML = randomNum();
+td.style.color = arrColor[Math.floor(Math.random() * (6 - 0 + 1)) + 0];
+td.style.fontSize = (Math.floor(Math.random() * (40 - 10 + 1)) + 10) + 'px';
+td.addEventListener('click', game);
+tr.appendChild(td);
+}
+tableGame.appendChild(tr);
+}
+}
+
+function arrNum() {
+for(var i = 0; i < 25; i++) {
+arr[i] = i + 1;
+}
+console.log(arr);
+}
+
+function randomNum() {
+var numb = (Math.floor(Math.random() * ((arr.length - 1) - 0 + 1)) + 0);
+var result = arr[numb];
+arr.splice(numb, 1);
+return result;
+}
+
+function game() {
+if(this.innerHTML == num) {
+this.style.background = "gray";
+if(num == 25) {
+text.innerHTML = 'Вы молодец';
+clearInterval(timerId);
+click2.style.display = 'block';
+stopGame();
+}
+num++;
+}
+}
+
+function restart() {
+var stop = false;
+tableGame.innerHTML = '';
+time = 60;
+num = 1;
+start();
+}
+
+function stopGame() {
+var tdArr = document.getElementsByTagName('td');
+for(var i = 0; i < tdArr.length; i++) {
+tdArr[i].removeEventListener('click', game);
+}
+}
+
+</script>
+
+</body>
+</html>
+*********
+*********
+*********
+********* 26 июн 2018 в 9:51

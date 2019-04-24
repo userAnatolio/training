@@ -1,0 +1,19 @@
+
+7. Сделайте функцию getDivisors, которая параметром принимает число и возвращает массив его делителей (чисел, на которое делится данное число).
+
+<script>
+function getDivisors(num) {
+var result = [];
+for(var i = 1; i <= num; i++) {
+if(num % i == 0) {
+result.push(i);
+}
+}
+return result;
+}
+console.log(getDivisors(10));
+</script>
+*********
+*********
+*********
+********* 16 апр 2018 в 2:43

@@ -1,0 +1,65 @@
+
+10. Дан сайт. Пусть каждая страница для каждого посетителя хранит время последнего захода и количество заходов на нее этим посетителем. Пусть эти данные показываются при заходе в формате 'с последнего захода прошло ... вы посещали эту страницу ... раз'.
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Шаблон</title>
+<style>
+
+#time {
+font-size: 40px;
+}
+
+</style>
+
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="cookies.min.js"></script>
+<script src="jquery.cookie.js"></script>
+</head>
+
+<body>
+
+<p id="text"></p>
+
+<script>
+
+var count = 1;
+var historyArr = [];
+
+if($.cookie('history') ) {
+var historyArr = $.cookie('history').split(',');
+}
+if($.cookie('count') ) {
+count = Number($.cookie('count')) + 1;
+}
+
+var date = new Date();
+var newDate = date.getTime();
+var result = newDate - historyArr[historyArr.length - 1];
+
+document.addEventListener('DOMContentLoaded', function () {
+historyArr.push(newDate);
+$.cookie("history", historyArr.join(','), { expires: 7});
+$.cookie("count", count, { expires: 7});
+showDate(count, result);
+}, false);
+
+function showDate(count, result) {
+var sec = Math.floor(result/1000);
+var min = Math.floor(sec/60);
+var hours = Math.floor(min/60);
+var day = Math.floor(hours/24);
+if(result) {
+$('#text').html('Вы заходили на страницу: ' + count + ' раз ' + 'Вас не было : ' + day + ' дней ' + hours + ' часов ' + min + ' минут ' + sec + ' секунд');
+}
+}
+</script>
+</body>
+</html>
+*********
+*********
+*********
+********* 19 авг 2018 в 17:37

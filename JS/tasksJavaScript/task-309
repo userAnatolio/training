@@ -1,0 +1,32 @@
+
+1. Даны картинки. Привяжите к каждой картинке событие, чтобы по клику на картинку алертом выводился ее src.
+
+<body>
+
+<div>
+
+<img src="1.png" id="img1">
+<img src="2.png" id="img2">
+<img src="3.png" id="img3">
+<img src="4.png" id="img4">
+
+</div>
+
+<script>
+var elems = document.getElementsByTagName('img');
+for (var i = 0; i < elems.length; i++) {
+elems[i].onclick = func;
+}
+
+function func() {
+alert(this.getAttribute('src'));
+}
+
+</script>
+
+
+</body>
+*********
+*********
+*********
+********* 29 апр 2018 в 7:43

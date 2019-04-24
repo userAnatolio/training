@@ -1,0 +1,26 @@
+
+8. Повторите страницу по данному по образцу:
+
+<body>
+
+<script>
+function func() {
+var text = document.querySelector('p.my-class');
+alert(text.getAttribute('class'));
+}
+</script>
+
+<div>
+<p class="my-class">Абзац с class="my-class".</p>
+<p class="www">Абзац с классом www.</p>
+<p class="www">Абзац с классом www.</p>
+<p>Просто абзац, не поменяется.</p>
+<input type="submit" onclick="func()">
+
+</div>
+
+</body>
+*********
+*********
+*********
+********* 23 апр 2018 в 5:30

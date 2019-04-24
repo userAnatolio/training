@@ -1,0 +1,20 @@
+
+1. Дана строка. Сделайте заглавным первый символ каждого слова этой строки. Для этого сделайте вспомогательную функцию ucfirst, которая будет получать строку, делать первый символ этой строки заглавным и возвращать обратно строку с заглавной первой буквой.
+
+<script>
+var str = 'гуд май лав, гуд бай!';
+function ucfirst(str) {
+var result = [];
+var split = str.split(' ');
+for(var i = 0; i < split.length; i++) {
+result[i] = split[i].substr(0, 1).toUpperCase() + split[i].substr(1);
+}
+str = result.join(' ');
+return alert(str);
+}
+ucfirst(str);
+</script>
+*********
+*********
+*********
+********* 17 апр 2018 в 3:06

@@ -1,0 +1,27 @@
+
+4. Повторите страницу по данному по образцу:
+
+<body>
+<script>
+function func() {
+var value1 = document.getElementById('num1');
+var value2 = document.getElementById('num2');
+var text = document.getElementById('text');
+text.innerHTML = Number(value1.value) + Number(value2.value);
+}
+</script>
+<div>
+
+<input value="" id="num1">
+<b>+</b>
+<input value="" id="num2">
+<b>=</b>
+<p id="text"></p>
+<input type="submit" onclick="func()">
+
+</div>
+</body>
+*********
+*********
+*********
+********* 23 апр 2018 в 4:07

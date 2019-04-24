@@ -1,0 +1,19 @@
+
+8. Используя методы moveTo и lineTo для рисования контура и метод fill для его заливки, нарисуйте на канвасе следующую фигуру:
+
+<script>
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+ctx.beginPath();
+ctx.strokeStyle = 'blue';
+ctx.moveTo(100, 50);
+ctx.lineTo(150, 100);
+ctx.lineTo(50, 100);
+ctx.closePath();
+ctx.fill();
+ctx.stroke();
+</script>
+*********
+*********
+*********
+********* 27 авг 2018 в 0:46
