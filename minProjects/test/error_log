@@ -1,4 +1,0 @@
-[25-May-2018 04:32:00 UTC] PHP Fatal error:  Call to undefined function mysqli_query() in /home/anatolio/public_html/test/new.php on line 15
-[25-May-2018 04:32:10 UTC] PHP Fatal error:  Call to undefined function mysqli_query() in /home/anatolio/public_html/test/new.php on line 15
-[25-May-2018 04:33:28 UTC] PHP Fatal error:  Call to undefined function mysqli_query() in /home/anatolio/public_html/test/new.php on line 15
-[25-May-2018 04:33:31 UTC] PHP Fatal error:  Call to undefined function mysqli_query() in /home/anatolio/public_html/test/new.php on line 15
