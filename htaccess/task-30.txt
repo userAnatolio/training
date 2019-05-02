@@ -1,0 +1,7 @@
+Задача 31: 
+Выполните редирект всех запросов, НЕ являющихся существующими файлами и папками, на index.php.
+
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^ index.php [L]
+НравитсяПоказать список оценивших

@@ -1,0 +1,5 @@
+Задача 22: 
+Выполните редирект всех файлов, НЕ заканчивающихся на .html, на index.php.
+RewriteCond %{REQUEST_URI} !.html$ 
+RewriteRule .+ index.php
+НравитсяПоказать список оценивших

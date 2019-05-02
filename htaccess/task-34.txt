@@ -1,0 +1,7 @@
+Задача 35: 
+Выполните редирект запроса test.php на index.php. Сделайте так, чтобы адрес зарпоса можно было набрать в любом регистре.
+
+RewriteCond %{REQUEST_URI} !index.php 
+RewriteCond %{REQUEST_URI} (test.php) [NC] 
+RewriteRule (.+) index.php?get1=%1$1
+НравитсяПоказать список оценивших

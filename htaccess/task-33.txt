@@ -1,0 +1,5 @@
+Задача 34: 
+Выполните редирект всех запросов на index.php, положив запрошенный адрес в карман и передав GET-параметром в index.php.
+RewriteCond %{REQUEST_URI} index.php$ 
+RewriteRule (.+) index.php?get1=$1
+НравитсяПоказать список оценивших

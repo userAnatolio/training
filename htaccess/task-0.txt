@@ -1,0 +1,7 @@
+Задача 1
+Выполните редирект страницы index.php на страницу test.php.
+RewriteEngine On 
+RewriteBase / 
+
+Redirect /index.php /test.php
+НравитсяПоказать список оценивших

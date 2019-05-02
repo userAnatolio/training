@@ -1,0 +1,6 @@
+Задача 24: 
+Выполните редирект всех файлов, имеющих расширение .html ИЛИ расширение .php, на index.php.
+RewriteCond %{REQUEST_URI} .html$ [OR] 
+RewriteCond %{REQUEST_URI} .php$ 
+RewriteRule .+ index.php
+НравитсяПоказать список оценивших

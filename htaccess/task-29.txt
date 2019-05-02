@@ -1,0 +1,6 @@
+Задача 30: 
+Выполните редирект всех запросов, являющихся существующими файлами и имеющим расширение .html, на index.php.
+RewriteCond %{REQUEST_URI} .html$ 
+RewriteCond %{REQUEST_FILENAME} -f 
+RewriteRule ^ index.php [L]
+НравитсяПоказать список оценивших

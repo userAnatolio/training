@@ -1,0 +1,7 @@
+Задача 25: 
+Выполните редирект всех файлов, имеющих расширение .css ИЛИ путь к которым начинается с /styles/, на index.php.
+#php_value error_reporting 0 
+RewriteCond %{REQUEST_URI} .css$ [OR] 
+RewriteCond %{REQUEST_URI} ^styles/ [OR] 
+RewriteRule .+ index.php
+НравитсяПоказать список оценивших

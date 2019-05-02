@@ -1,0 +1,8 @@
+Задача 3: 
+Выполните редирект страницы index.php на страницу http://site.com.
+
+RewriteEngine On 
+RewriteBase / 
+
+Redirect /index1.php /http://site.com.
+НравитсяПоказать список оценивших

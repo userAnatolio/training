@@ -1,0 +1,5 @@
+Задача 23: 
+Выполните редирект всех файлов, имеющих расширение .html и адрес которых начинается с /content/, на index.php.
+RewriteCond %{REQUEST_URI} ^/content/.*\.html$ 
+RewriteRule .+ index.php
+НравитсяПоказать список оценивших
