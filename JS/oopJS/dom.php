@@ -54,10 +54,10 @@ class Elem
 	
 	each(func)
 	{
+		var test = this;
 		for (var i = 0; i < this.elem.length; i++) {
-		func(this);
+		func.call(elem);
 		}
-		return this;
 	}
 	
 }
@@ -73,7 +73,7 @@ elem.attr('class', 'www'); //запишет в атрибут class значен
 //Должны работать цепочки методов:
 elem.html('hello').append('!').prepend('!');
 elem.attr('class', 'www').attr('title', 'hello');
-elem.each(function (test){ console.log(test.getHTML()); });
+elem.each(function(){this.getHTML();});
 console.log(elem);
 
 </script>
